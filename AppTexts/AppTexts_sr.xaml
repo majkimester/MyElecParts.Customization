@@ -1,0 +1,989 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="sr-Latn-RS">
+
+    <!-- Tab names -->
+    <system:String x:Key="TabDashboard">Početna</system:String>
+    <system:String x:Key="TabParts">Komponente</system:String>
+    <system:String x:Key="TabStorageLocations">Lokacije skladišta</system:String>
+    <system:String x:Key="TabManufacturers">Proizvođači</system:String>
+    <system:String x:Key="TabPackages">Kućišta</system:String>
+    <system:String x:Key="TabProjects">Projekti</system:String>
+    <system:String x:Key="TabPartMetaSearch">Meta pretraga</system:String>
+    <system:String x:Key="TabMarkingCodeSearch">Pretraga SMD oznaka</system:String>
+    <system:String x:Key="TabDistributorSearch">Pretraga distributera</system:String>
+
+    <!-- Action buttons -->
+    <system:String x:Key="ButtonSearch">Pretraži</system:String>
+    <system:String x:Key="ButtonDelete">Obriši</system:String>
+    <system:String x:Key="ButtonEdit">Izmeni</system:String>
+    <system:String x:Key="ButtonEditName">Izmeni naziv</system:String>
+    <system:String x:Key="ButtonClosePart">Zatvori komponentu</system:String>
+    <system:String x:Key="ButtonStopSearch">Zaustavi pretragu</system:String>
+    <system:String x:Key="ButtonOpenSearchPage">Otvori stranicu pretrage</system:String>
+    <system:String x:Key="ButtonCreateNewPart">Kreiraj novu komponentu</system:String>
+    <system:String x:Key="ButtonStopDownload">Zaustavi preuzimanje</system:String>
+    <system:String x:Key="ButtonDownloadFile">Preuzmi {0}</system:String>
+    <system:String x:Key="ButtonExit">Izađi</system:String>
+    <system:String x:Key="ButtonSelect">Izaberi</system:String>
+    <system:String x:Key="ButtonAccept">Prihvati</system:String>
+    <system:String x:Key="ButtonSolveCapcha">Reši Captcha</system:String>
+    <system:String x:Key="ButtonExport">Izvezi</system:String>
+    <system:String x:Key="ButtonImport">Uvezi</system:String>
+    <system:String x:Key="ButtonContinue">Nastavi</system:String>
+
+    <!-- Error -->
+    <system:String x:Key="StatusRequiredSoftwareIsNotInstalled">{0} je neophodan za rad ovog programa. Preuzmite i instalirajte ga pre nastavka.</system:String>
+    <system:String x:Key="StatusAnotherInstanceAlreadyRunning">Druga instanca programa {0} je već pokrenuta. Možete pokrenuti samo jednu instancu ovog programa.</system:String>
+    <system:String x:Key="StatusNoDatabaseAccess">Baza podataka nije dostupna, proverite server baze. Bez baze podataka radi samo ograničena funkcionalnost.</system:String>
+    <system:String x:Key="StatusDatabaseAssetUpdateFailed">Neuspešno umetanje ili ažuriranje početnih podataka.</system:String>
+    <system:String x:Key="StatusInvalidDataDirectory">Konfigurisani DataDirectory nije validan.</system:String>
+
+    <!-- Common -->
+    <system:String x:Key="TitleConfirmation">Potvrda</system:String>
+    <system:String x:Key="LabelSearchResults">Rezultati</system:String>
+    <system:String x:Key="LabelPreview">Pregled</system:String>
+
+    <!-- Dimension -->
+    <system:String x:Key="LabelMillimeter">mm</system:String>
+    <system:String x:Key="LabelLenght">Dužina</system:String>
+    <system:String x:Key="LabelWidth">Širina</system:String>
+    <system:String x:Key="LabelHeight">Visina</system:String>
+
+    <!-- Mounting enum -->
+    <system:String x:Key="EnumMountingUnknown">Nepoznato</system:String>
+    <system:String x:Key="EnumMountingTHT">THT</system:String>
+    <system:String x:Key="EnumMountingSMD">SMD</system:String>
+    <system:String x:Key="EnumMountingStud">Navojni nosač / Stud</system:String>
+    <system:String x:Key="EnumMountingOther">Ostalo</system:String>
+
+    <!-- Condition enum -->
+    <system:String x:Key="EnumConditionsUnknown">Nepoznato</system:String>
+    <system:String x:Key="EnumConditionsNew">Novo</system:String>
+    <system:String x:Key="EnumConditionsUsed">Korišćeno</system:String>
+    <system:String x:Key="EnumConditionsNewAndUsed">Novo i korišćeno</system:String>
+
+    <!-- ParamTypes enum -->
+    <system:String x:Key="EnumParamTypesNumber">Broj</system:String>
+    <system:String x:Key="EnumParamTypesMinMaxRange">Min ... Max</system:String>
+    <system:String x:Key="EnumParamTypesMinTypMax">Min. / Tip. / Maks.</system:String>
+    <system:String x:Key="EnumParamTypesText">Tekst</system:String>
+    <system:String x:Key="EnumParamTypesEnumeration">Enumeracija</system:String>
+    <system:String x:Key="EnumParamTypesBoolean">Logički</system:String>
+    <system:String x:Key="EnumParamTypesDate">Datum</system:String>
+    <system:String x:Key="EnumParamTypesDimension">Dimenzija</system:String>
+
+    <!-- AttachmentType enum -->
+    <system:String x:Key="EnumAttachmentTypeUnknown">Nepoznato</system:String>
+    <system:String x:Key="EnumAttachmentTypePdf">Pdf</system:String>
+    <system:String x:Key="EnumAttachmentTypeImage">Slika</system:String>
+    <system:String x:Key="EnumAttachmentTypeText">Tekst</system:String>
+
+    <!-- SearchMode enum -->
+    <system:String x:Key="EnumSearchModeExactMatch">Tačno poklapanje</system:String>
+    <system:String x:Key="EnumSearchModeStartsWith">Počinje sa</system:String>
+    <system:String x:Key="EnumSearchModeEndsWith">Završava se sa</system:String>
+    <system:String x:Key="EnumSearchModeContains">Sadrži</system:String>
+
+    <!-- ExportFormats enum -->
+    <system:String x:Key="EnumExportFormatsXLSX">Tabela (*.xlsx)</system:String>
+    <system:String x:Key="EnumExportFormatsJSON">JavaScript objekat (*.json)</system:String>
+
+    <!-- DisplayFormatsSource enum -->
+    <system:String x:Key="DisplayFormatsSourceSelectedLanguage">Prema izabranom jeziku</system:String>
+    <system:String x:Key="DisplayFormatsSourceWindowsDefault">Prema Windows formatu</system:String>
+    <system:String x:Key="DisplayFormatsSourceInvariant">Kulturno neutralno</system:String>
+
+    <!-- WindowOpenPosition enum -->
+    <system:String x:Key="WindowOpenPositionDefault">Podrazumevano</system:String>
+    <system:String x:Key="WindowOpenPositionCenterScreen">Centar ekrana</system:String>
+    <system:String x:Key="WindowOpenPositionMaximized">Maksimizovano</system:String>
+    <system:String x:Key="WindowOpenPositionLastPosition">Poslednja pozicija i veličina</system:String>
+
+    <!-- TabStripLocation enum -->
+    <system:String x:Key="TabStripLocationTop">Gore</system:String>
+    <system:String x:Key="TabStripLocationLeft">Levo</system:String>
+    <system:String x:Key="TabStripLocationRight">Desno</system:String>
+
+    <!-- AttachmentsFitMode enum -->
+    <system:String x:Key="AttachmentsFitModeFitHeight">Prilagodi visinu</system:String>
+    <system:String x:Key="AttachmentsFitModeFitWidth">Prilagodi širinu</system:String>
+
+    <!-- ProjectHistoryEventType enum -->
+    <system:String x:Key="EnumProjectHistoryEventTypeUnknown">Nepoznato</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeCreated">Kreirano</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeModified">Izmenjeno</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeArchived">Arhivirano</system:String>
+
+    <!-- MetaSearchCategory enum -->
+    <system:String x:Key="MetaSearchCategoryNONE">—</system:String>
+
+    <system:String x:Key="MetaSearchCategoryANALOG_AUDIO_AMP">Analogni / Audio pojačavač</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_COMPARATOR">Analogni / Komparator</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_OPAMP">Analogni / Operacioni pojačavač</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_TRANSISTOR_ARRAY">Analogni / Niz tranzistora</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_LINEAR_REGULATOR">Analogni / Linearni regulator</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_VOLTAGE_REFERENCE">Analogni / Naponska referenca</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SMPS_CONTROLLER">Analogni / SMPS kontroler</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SWITCHED_REGULATOR">Analogni / Prekidački regulator</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_MOSFET_DRIVER">Analogni / MOSFET drajver</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_ADC">Analogni / ADC</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_DAC">Analogni / DAC</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_DIGITAL_POTMETER">Analogni / Digipot</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SENSOR">Analogni / Senzor</system:String>
+    
+    <system:String x:Key="MetaSearchCategoryDIODE_BRIDGE">Dioda / Grecov spoj</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_RECTIFIER">Dioda / Ispravljačka dioda</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_SWITCH">Dioda / Prekidačka dioda</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_SCHOTTKY">Dioda / Schottky</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_TVS">Dioda / TVS</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_ZENER">Dioda / Zener</system:String>
+    
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_BJT">Tranzistor / BJT</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_IGBT">Tranzistor / IGBT</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_JFET">Tranzistor / JFET</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_MOSFET">Tranzistor / MOSFET</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_UJT">Tranzistor / UJT</system:String>
+
+    <system:String x:Key="MetaSearchCategoryTRIGGER_DIAC">Okidač / Dijak</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_SCR">Okidač / Tiristor (SCR)</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_TRIAC">Okidač / Trijak</system:String>
+
+    <system:String x:Key="MetaSearchCategoryOPTO_OPTOCOUPLER">Opto / Optokapler</system:String>
+
+    <system:String x:Key="MetaSearchCategoryDIGITAL_INTERFACE">Digitalni / Interfejs</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_EPROM">Memorija / EPROM</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_PARALLEL_EEPROM">Memorija / Paralelni EEPROM ili Flash</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_RAM">Memorija / RAM</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_SERIAL_EEPROM">Memorija / Serijski EEPROM ili Flash</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_RTC">Digitalni / RTC</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_4000">Digitalni / 4000</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_7400">Digitalni / 7400</system:String>
+
+    <system:String x:Key="MetaSearchCategoryMCU_8051">MCU / 8051</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_AVR">MCU / AVR</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_MSP">MCU / MSP</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_PIC">MCU / PIC</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_PIC24">MCU / PIC24 or dsPIC</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_STM8">MCU / STM8</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_STM32">MCU / STM32</system:String>
+
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_CERAMIC">Kondenzator / Keramički</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_ELECTROLITIC">Kondenzator / Elektrolitski</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_FILM">Kondenzator / Filmski</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_INDUCTOR">Induktor</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_RESISTOR">Otpornik</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_QUARTZ_AND_FILTER">Kvarc / Filter</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_TRANSFORMER">Transformator</system:String>
+
+    <!-- Dashboard -->
+    <system:String x:Key="TitleDashboard">Početna</system:String>
+
+    <system:String x:Key="LabelDashboardPartsButtonTooltip">Otvori komponente</system:String>
+    <system:String x:Key="LabelDashboardPartCategoriesCount">Kategorije komponenti</system:String>
+    <system:String x:Key="LabelDashboardPartTypesCount">Kataloški brojevi</system:String>
+    <system:String x:Key="LabelDashboardPartAttachmentsCount">Prilozi</system:String>
+    <system:String x:Key="LabelDashboardTotalPartsCount">Ukupno komponenti</system:String>
+
+    <system:String x:Key="LabelDashboardStorageLocationsButtonTooltip">Otvori lokacije skladišta</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationGroupsCount">Grupe lokacija</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsCount">Lokacije</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsInUseCount">Lokacije u upotrebi</system:String>
+
+    <system:String x:Key="LabelDashboardPackagesButtonTooltip">Otvori kućišta</system:String>
+    <system:String x:Key="LabelDashboardPackageCategoriesCount">Kategorije kućišta</system:String>
+    <system:String x:Key="LabelDashboardPackagesCount">Kućišta</system:String>
+    <system:String x:Key="LabelDashboardPackagesInUseCount">Kućišta u upotrebi</system:String>
+
+    <system:String x:Key="LabelDashboardManufacturersButtonTooltip">Otvori proizvođače</system:String>
+    <system:String x:Key="LabelDashboardManufacturersCount">Proizvođači</system:String>
+    <system:String x:Key="LabelDashboardManufacturersInUseCount">Proizvođači u upotrebi</system:String>
+
+    <system:String x:Key="LabelDashboardProjectsButtonTooltip">Otvori projekte</system:String>
+    <system:String x:Key="LabelDashboardProjectGroupsCount">Grupe projekata</system:String>
+    <system:String x:Key="LabelDashboardProjectsCount">Projekti</system:String>
+
+    <system:String x:Key="LabelDashboardPartMetaSearchButtonTooltip">Otvori meta pretragu</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchSourceCount">Izvori</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchCount">Izvršene pretrage</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchResults">Dobijeni rezultati</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchCreatedParts">Kreirane komponente</system:String>
+
+    <system:String x:Key="LabelDashboardMarkingCodeSearchButtonTooltip">Otvori pretragu SMD oznaka</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSourceCount">Izvori</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSearchCount">Izvršene pretrage</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSearchResults">Dobijeni rezultati</system:String>
+
+    <system:String x:Key="LabelDashboardDistributorSearchButtonTooltip">Otvori pretragu distributera</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchSourceCount">Izvori</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchCount">Izvršene pretrage</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchResults">Dobijeni rezultati</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchCreatedParts">Kreirane komponente</system:String>
+
+    <system:String x:Key="LabelDashboardSettingsButtonTooltip">Otvori podešavanja</system:String>
+    <system:String x:Key="LabelDashboardSettingsGeneralButton">Opšta podešavanja</system:String>
+    <system:String x:Key="LabelDashboardSettingsTableButton">Podešavanja tabela</system:String>
+    <system:String x:Key="LabelDashboardSettingsRegionalButton">Regionalna podešavanja</system:String>
+
+    <system:String x:Key="LabelDashboardAboutButtonTooltip">O programu</system:String>
+    <system:String x:Key="LabelDashboardAboutButton">O programu</system:String>
+    <system:String x:Key="LabelDashboardLicensesButton">Licence</system:String>
+    <system:String x:Key="LabelDashboardDonationButton">Donacija</system:String>
+
+    <system:String x:Key="StatusDashboardLoadUnsuccessful">Nije moguće učitati podatke početne strane.</system:String>
+
+    <!-- Part Categories -->
+    <system:String x:Key="TitlePartCategories">Kategorije komponenti</system:String>
+    <system:String x:Key="TitleAddNewPartCategoryGroup">Dodaj novu grupu kategorija</system:String>
+    <system:String x:Key="TitleAddNewPartCategory">Dodaj novu kategoriju komponenti</system:String>
+    <system:String x:Key="TitleEditPartCategory">Izmeni kategoriju komponenti</system:String>
+    <system:String x:Key="TitleDownloadDatasheets">Preuzmi datasheet-ove</system:String>
+    <system:String x:Key="TitleDeleteAllParts">Obriši komponente</system:String>
+    <system:String x:Key="TitleDeletePartCategory">Obriši kategoriju komponenti</system:String>
+
+    <system:String x:Key="MessagePartCategoryGroupDeleteEmptyConfirmation">Da li ste sigurni da želite da obrišete praznu grupu kategorija komponenti {0}?</system:String>
+    <system:String x:Key="MessagePartCategoryGroupDeleteEmptySubgroupsConfirmation">Da li ste sigurni da želite da obrišete grupu kategorija komponenti {0} sa {1} praznih podkategorija?</system:String>
+    <system:String x:Key="MessagePartCategoryGroupDeleteUsedSubgroupsConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete grupu kategorija komponenti {0} sa {1} podkategorija?
+
+{2} komponenta(i) u ovoj kategoriji će takođe biti OBRISANO.</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteAllPartsConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete sve komponente u kategoriji {0}?
+
+{1} komponenta(i) u ovoj kategoriji će biti OBRISANO.</system:String>
+
+    <system:String x:Key="MessagePartCategoryDelete">Obriši kategoriju komponenti {0}</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteAllParts">Obriši sve komponente u kategoriji {0}</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteEmptyConfirmation">Da li ste sigurni da želite da obrišete praznu kategoriju komponenti {0}?</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteUsedConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete kategoriju komponenti {0}?
+
+{1} komponenta(i) u ovoj kategoriji će takođe biti OBRISANO.</system:String>
+
+    <system:String x:Key="LabelPartCategoryAddButtonTooltip">Dodaj novu kategoriju komponenti</system:String>
+    <system:String x:Key="LabelPartCategoryEditButtonTooltip">Izmeni kategoriju komponenti</system:String>
+    <system:String x:Key="LabelPartCategoryDeleteButtonTooltip">Obriši kategoriju komponenti</system:String>
+    <system:String x:Key="LabelPartCategoryDeleteAllPartsButtonTooltip">Obriši sve komponente u ovoj kategoriji</system:String>
+    <system:String x:Key="LabelPartCategoryGoToButtonTooltip">Idi na kategoriju komponenti</system:String>
+
+    <system:String x:Key="LabelPartCategoryName">Naziv kategorije</system:String>
+    <system:String x:Key="LabelPartCategoryDescription">Opis</system:String>
+    <system:String x:Key="LabelPartCategoryIsGroup">Grupa</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchCategory">Kategorija meta pretrage</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchCategoryTooltip">Koristi se za povezivanje kategorije rezultata meta pretrage sa ovom kategorijom komponenti. Kada kreirate komponentu iz rezultata meta pretrage, komponenta će biti kreirana u povezanoj kategoriji.</system:String>
+
+    <system:String x:Key="StatusPartCategoryLoadUnsuccessful">Nije moguće učitati kategorije komponenti.</system:String>
+    <system:String x:Key="StatusPartCategoryDeleteUnsuccessful">Nije moguće obrisati kategoriju komponenti {0}.</system:String>
+    <system:String x:Key="StatusPartCategorySaveUnsuccessful">Nije moguće sačuvati kategoriju komponenti {0}.</system:String>
+    <system:String x:Key="StatusPartCategoryDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusPartCategorySaved">{0} uspešno sačuvano.</system:String>
+
+    <system:String x:Key="StatusPartCategoryAllPartsDeleteNothing">Nema komponenti za brisanje u kategoriji {0}.</system:String>
+    <system:String x:Key="StatusPartCategoryAllPartsDeleteUnsuccessful">Nije moguće obrisati sve komponente u kategoriji {0}.</system:String>
+    <system:String x:Key="StatusPartCategoryAllPartsDeleted">Sve komponente u {0} uspešno obrisane.</system:String>
+
+    <!-- Part Category Parameters -->
+    <system:String x:Key="TitleManagePartCategoryParameters">Upravljanje parametrima kategorije</system:String>
+    <system:String x:Key="TitleAddNewPartCategoryParameter">Dodaj novi parametar kategorije</system:String>
+    <system:String x:Key="TitleEditPartCategoryParameter">Izmeni parametar kategorije</system:String>
+
+    <system:String x:Key="MessagePartCategoryParameterDeleteUnusedConfirmation">Da li ste sigurni da želite da obrišete parametar {0}?</system:String>
+    <system:String x:Key="MessagePartCategoryParameterDeleteUsedConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete parametar {0}?
+        
+{1} komponenta(i) već koristi ovaj parametar i biće uklonjen i odatle.</system:String>
+    <system:String x:Key="MessagePartCategoryParameterChangeTypeConfirmation" xml:space="preserve">Da li ste sigurni da želite da promenite tip parametra {0} sa {1} na {2}?
+        
+{3} komponenta(i) već koristi ovaj parametar i sačuvana vrednost parametra će biti uklonjena.</system:String>
+    <system:String x:Key="MessagePartCategoryParameterChangeEnumListConfirmation" xml:space="preserve">Da li ste sigurni da želite da uklonite enum opcije {0} iz parametra {1}?
+
+{2} komponenta(i) već koristi te opcije i sačuvana vrednost parametra će biti uklonjena.</system:String>
+
+    <system:String x:Key="ColumnPartCategoryParameterID">ID</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterName">Naziv</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterDescription">Opis</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterType">Tip</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterUnit">Jedinica</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterEnumeration">Enumeracija</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterDefault">Podrazumevano</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterActionEdit">Izmeni parametar kategorije</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterActionDelete">Obriši parametar kategorije</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterMetaId">Meta ID</system:String>
+
+    <system:String x:Key="LabelPartCategoryParent">Nadređena kategorija</system:String>
+    <system:String x:Key="LabelPartCategoryParameterName">Naziv parametra</system:String>
+    <system:String x:Key="LabelPartCategoryParameterDescription">Opis</system:String>
+    <system:String x:Key="LabelPartCategoryParameterType">Tip</system:String>
+    <system:String x:Key="LabelPartCategoryParameterUnit">Jedinica</system:String>
+    <system:String x:Key="LabelPartCategoryParameterEnumeration">Enumeracija</system:String>
+    <system:String x:Key="LabelPartCategoryParameterDefaultValue">Podrazumevana vrednost</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamID">ID meta pretrage</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamIDTooltip">ID parametra u meta pretrazi za automatsko mapiranje.</system:String>
+
+    <system:String x:Key="LabelPartCategoryParameterAddButtonTooltip">Dodaj novi parametar</system:String>
+    <system:String x:Key="LabelPartManagePartCategoryParametersTooltip">Upravljaj parametrima kategorije</system:String>
+
+    <system:String x:Key="StatusPartCategoryParameterLoadUnsuccessful">Nije moguće učitati parametre kategorije.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterDeleteUnsuccessful">Nije moguće obrisati parametar {0}.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterSaveUnsuccessful">Nije moguće sačuvati parametar {0}.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterSaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Parts -->
+    <system:String x:Key="TitleParts">Komponente</system:String>
+    <system:String x:Key="TitlePartDetails">Detalji komponente</system:String>
+    <system:String x:Key="TitleParameters">Parametri</system:String>
+    <system:String x:Key="TitleAddNewPart">Dodaj novu komponentu</system:String>
+    <system:String x:Key="TitleDuplicatePart">Dupliraj komponentu</system:String>
+    <system:String x:Key="TitleEditPart">Izmeni komponentu</system:String>
+
+    <system:String x:Key="MessagePartDeleteConfirmation">Da li ste sigurni da želite da obrišete komponentu {0}?</system:String>
+    <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">Imate nesačuvane izmene. Da li ste sigurni da želite da zatvorite komponentu {0}?</system:String>
+    
+    <system:String x:Key="ColumnPartCategory">Kategorija</system:String>
+    <system:String x:Key="ColumnPartName">Kataloški broj</system:String>
+    <system:String x:Key="ColumnManufacturerPartName">MPN</system:String>
+    <system:String x:Key="ColumnPartDescription">Opis</system:String>
+    <system:String x:Key="ColumnPartManufacturer">Proizvođač</system:String>
+    <system:String x:Key="ColumnPartPackage">Kućište</system:String>
+    <system:String x:Key="ColumnPartMounting">Montaža</system:String>
+    <system:String x:Key="ColumnPartMarking">Oznaka</system:String>
+    <system:String x:Key="ColumnPartStorageLocation">Lokacija</system:String>
+    <system:String x:Key="ColumnPartStockLevel">Zaliha</system:String>
+    <system:String x:Key="ColumnPartMinStockLevel">Min. zaliha</system:String>
+    <system:String x:Key="ColumnPartCondition">Stanje</system:String>
+    <system:String x:Key="ColumnPartNote">Beleška</system:String>
+    <system:String x:Key="ColumnPartActionEdit">Izmeni komponentu</system:String>
+    <system:String x:Key="ColumnPartActionDelete">Obriši komponentu</system:String>
+    <system:String x:Key="ColumnPartActionDuplicate">Dupliraj komponentu</system:String>
+    <system:String x:Key="ColumnPartActionEditStockLevel">Izmeni nivo zalihe</system:String>
+    <system:String x:Key="ColumnPartActionIncreaseStock">Povećaj zalihu</system:String>
+    <system:String x:Key="ColumnPartActionDecreaseStock">Smanji zalihu</system:String>
+
+    <system:String x:Key="LabelPartName">Kataloški broj</system:String>
+    <system:String x:Key="LabelPartManufacturerName">MPN</system:String>
+    <system:String x:Key="LabelPartMarking">Oznaka</system:String>
+    <system:String x:Key="LabelPartDescription">Opis</system:String>
+    <system:String x:Key="LabelPartManufacturer">Proizvođač</system:String>
+    <system:String x:Key="LabelPartPackageFilter">Filter kućišta</system:String>
+    <system:String x:Key="LabelPartPackage">Kućište</system:String>
+    <system:String x:Key="LabelPartMounting">Montaža</system:String>
+    <system:String x:Key="LabelPartStorageLocation">Lokacija</system:String>
+    <system:String x:Key="LabelPartStockLevel">Na stanju</system:String>
+    <system:String x:Key="LabelPartMinStockLevel">Min. zaliha</system:String>
+    <system:String x:Key="LabelPartCondition">Stanje</system:String>
+    <system:String x:Key="LabelPartNote">Beleška</system:String>
+
+    <system:String x:Key="LabelPartGoToCategory">Idi na kategoriju {0}</system:String>
+    <system:String x:Key="LabelPartGoToPart">Idi na komponentu {0}</system:String>
+    <system:String x:Key="LabelPartGoToStorageLocation">Idi na lokaciju {0}</system:String>
+
+    <system:String x:Key="LabelPartDetailedFilterButtonTooltip">Detaljni filter komponenti</system:String>
+    <system:String x:Key="LabelPartAddButtonTooltip">Dodaj novu komponentu</system:String>
+    <system:String x:Key="LabelPartSaveButtonTooltip">Sačuvaj komponentu</system:String>
+    <system:String x:Key="LabelPartEditButtonTooltip">Izmeni komponentu</system:String>
+    <system:String x:Key="LabelPartCancelButtonTooltip">Odbaci izmene</system:String>
+    <system:String x:Key="LabelPartDuplicateAppendText">(Kopija)</system:String>
+
+    <system:String x:Key="LabelPartMoreActionButtonTooltip">Više akcija</system:String>
+    <system:String x:Key="LabelPartExportPartsButton">Izvezi komponente</system:String>
+    <system:String x:Key="LabelPartImportPartsButton">Uvezi komponente</system:String>
+
+    <system:String x:Key="StatusPartLoadUnsuccessful">Nije moguće učitati komponente.</system:String>
+    <system:String x:Key="StatusPartDeleteUnsuccessful">Nije moguće obrisati komponentu {0}.</system:String>
+    <system:String x:Key="StatusPartSaveUnsuccessful">Nije moguće sačuvati komponentu {0}.</system:String>
+    <system:String x:Key="StatusPartDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusPartSaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Part export / import -->
+    <system:String x:Key="TitleExportPart">Izvezi komponente</system:String>
+    <system:String x:Key="TitleImportPart">Uvezi komponente</system:String>
+
+    <system:String x:Key="MessageImportPartsWithCount">Uvezi {0} komponenti</system:String>
+
+    <system:String x:Key="LabelExportFileFormat">Format izvoza</system:String>
+    <system:String x:Key="LabelExportColumns">Kolone</system:String>
+    <system:String x:Key="LabelExportCopyAttachments">Kopiraj fajlove priloga</system:String>
+    <system:String x:Key="LabelExportXlsxUseColorTheme">Koristi temu boja</system:String>
+    <system:String x:Key="LabelExportXlsxUseAutoFilter">Koristi auto filter</system:String>
+    <system:String x:Key="LabelExportXlsxFreezePane">Zamrzni okno</system:String>
+
+    <system:String x:Key="LabelImportFileName">Ime fajla za uvoz</system:String>
+    <system:String x:Key="LabelImportFileFormat">Format fajla za uvoz</system:String>
+    <system:String x:Key="LabelImportImportCategory">Uvezi kategoriju</system:String>
+    <system:String x:Key="LabelImportMappedCategory">Mapirana kategorija</system:String>
+    <system:String x:Key="LabelImportImportManufacturer">Uvezi proizvođača</system:String>
+    <system:String x:Key="LabelImportMappedManufacturer">Mapirani proizvođač</system:String>
+    <system:String x:Key="LabelImportImportPackage">Uvezi kućište</system:String>
+    <system:String x:Key="LabelImportMappedPackage">Mapirano kućište</system:String>
+    <system:String x:Key="LabelImportAliasPackage">Alias</system:String>
+    <system:String x:Key="LabelImportImportStorageLocation">Uvezi lokaciju skladišta</system:String>
+    <system:String x:Key="LabelImportNewStorageLocation">Novo</system:String>
+    <system:String x:Key="LabelImportMappedStorageLocation">Mapirana lokacija</system:String>
+    <system:String x:Key="LabelImportPartDetails">Podaci o komponenti</system:String>
+
+    <system:String x:Key="LabelImportCreateMissingPartCategories">Kreiraj nedostajuće kategorije komponenti</system:String>
+    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Kreiraj nedostajuće parametre kategorija</system:String>
+    <system:String x:Key="LabelImportCreateMissingManufacturers">Kreiraj nedostajuće proizvođače</system:String>
+    <system:String x:Key="LabelImportCreateMissingPackages">Kreiraj nedostajuća kućišta</system:String>
+    <system:String x:Key="LabelImportCreateMissingStorageLocations">Kreiraj nedostajuće lokacije skladišta</system:String>
+    <system:String x:Key="LabelImportAttachments">Uvezi fajlove priloga</system:String>
+
+    <system:String x:Key="StatusExportPartsDone">Izabrane kategorije komponenti su uspešno izvezene.</system:String>
+    <system:String x:Key="StatusExportPartsFailed">Izvoz izabranih kategorija komponenti nije uspeo.</system:String>
+
+    <system:String x:Key="StatusImportPartsDone">Uvoz komponenti uspešno završen.</system:String>
+    <system:String x:Key="StatusImportPartsFailed">Uvoz komponenti nije uspeo.</system:String>
+    <system:String x:Key="StatusImportPartsOpenFailed">Nije moguće otvoriti fajl. Proverite da nije otvoren u drugom programu.</system:String>
+    <system:String x:Key="StatusImportPartsUnsupportedFormat">Nepodržan format uvoza.</system:String>
+    <system:String x:Key="StatusImportPartsNotFound">Nema pronađenih komponenti u ulaznom fajlu.</system:String>
+    <system:String x:Key="StatusImportPartsCategoryNotSelected">Nije izabrana kategorija.</system:String>
+    <system:String x:Key="StatusImportSelectValidPartCategory">Izaberite validnu kategoriju komponenti.</system:String>
+    <system:String x:Key="StatusImportSelectValidManufacturer">Izaberite validnog proizvođača.</system:String>
+    <system:String x:Key="StatusImportSelectValidPackage">Izaberite validno kućište.</system:String>
+    <system:String x:Key="StatusImportSelectValidStorageLocation">Izaberite validnu lokaciju skladišta.</system:String>
+    <system:String x:Key="StatusImportCannotCreateStorageLocation">Nije moguće kreirati lokaciju skladišta {0}. Lokacija {1} već postoji.</system:String>
+
+    <system:String x:Key="ExportDialogFilterXLSX">Tabela</system:String>
+    <system:String x:Key="ExportDialogFilterJSON">JavaScript objekat</system:String>
+
+    <!-- Part attachments -->
+    <system:String x:Key="TitleAttachments">Prilozi</system:String>
+    <system:String x:Key="TitleEditAttachmentName">Izmeni naziv priloga</system:String>
+    <system:String x:Key="TitleAddNewAttachment">Dodaj novi prilog</system:String>
+
+    <system:String x:Key="MessageCannotOpenAttachment">Nije moguće otvoriti prilog {0}.</system:String>
+    <system:String x:Key="MessageAttachmentDeleteConfirmation">Da li ste sigurni da želite da obrišete prilog {0}?</system:String>
+
+    <system:String x:Key="LabelPartAttachmentName">Naziv priloga</system:String>
+    <system:String x:Key="LabelPartAttachmentType">Tip</system:String>
+    <system:String x:Key="LabelPartAttachmentFileName">Ime fajla</system:String>
+    <system:String x:Key="LabelPartAttachmentAddButtonTooltip">Dodaj novi prilog</system:String>
+    <system:String x:Key="LabelPartAttachmentPasteButtonTooltip">Nalepi iz clipboard-a</system:String>
+    <system:String x:Key="LabelPartAttachmentMetaSearchTooltip">Pretraži datasheet meta pretragom</system:String>
+
+    <system:String x:Key="LabelPartAttachmentDropZone">Prevuci ovde</system:String>
+    <system:String x:Key="LabelPartAttachmentAllSupportedFiles">Svi podržani fajlovi</system:String>
+    <system:String x:Key="LabelPartAttachmentImageFiles">Fajlovi slika</system:String>
+    <system:String x:Key="LabelPartAttachmentPdfFiles">Pdf fajlovi</system:String>
+    <system:String x:Key="LabelPartAttachmentAllFiles">Svi fajlovi</system:String>
+
+    <system:String x:Key="StatusAttachmentDeleteUnsuccessful">Nije moguće obrisati prilog: {0}</system:String>
+    <system:String x:Key="StatusAttachmentSaveUnsuccessful">Nije moguće sačuvati prilog: {0}</system:String>
+    <system:String x:Key="StatusAttachmentDeleted">Prilog {0} uspešno obrisan.</system:String>
+    <system:String x:Key="StatusAttachmentSaved">Prilog {0} uspešno sačuvan.</system:String>
+    <system:String x:Key="StatusAttachmentNotSupportedFormat">Format fajla nije podržan: {0}</system:String>
+    <system:String x:Key="StatusAttachmentPasteNotSupported">Podržan format nije pronađen u clipboard-u.</system:String>
+    <system:String x:Key="StatusAttachmentDropNotSupported">Podržan format nije pronađen pri prevlačenju.</system:String>
+    <system:String x:Key="StatusAttachmentDownloadEmptyFile">Preuzeti fajl {0} je prazan ili nije validan.</system:String>
+
+    <!-- Storage Locations -->
+    <system:String x:Key="TitleStorageLocations">Lokacije skladišta</system:String>
+    <system:String x:Key="TitleAddNewStorageLocation">Dodaj novu lokaciju skladišta</system:String>
+    <system:String x:Key="TitleDuplicateStorageLocation">Dupliraj lokaciju skladišta</system:String>
+    <system:String x:Key="TitleEditStorageLocation">Izmeni lokaciju skladišta</system:String>
+    <system:String x:Key="TitleEditPartStockLevel">Izmeni nivo zalihe</system:String>
+    <system:String x:Key="TitleMovePartsIntoNewStorageLocation">Premesti komponente</system:String>
+
+    <system:String x:Key="MessageStorageLocationGroupDeleteEmptyConfirmation">Da li ste sigurni da želite da obrišete praznu grupu lokacija skladišta {0}?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUnusedConfirmation">Da li ste sigurni da želite da obrišete grupu lokacija skladišta {0} sa {1} neiskorišćenih podlokacija?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUsedConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete grupu lokacija skladišta {0} sa {1} podlokacija?
+
+{2} komponenta(i) sa ove lokacije će biti premešteno na lokaciju {3}.</system:String>
+
+    <system:String x:Key="MessageStorageLocationDeleteEmptyConfirmation">Da li ste sigurni da želite da obrišete praznu lokaciju skladišta {0}?</system:String>
+    <system:String x:Key="MessageStorageLocationDeleteUsedConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete lokaciju skladišta {0}?
+
+{1} komponenta(i) sa ove lokacije će biti premešteno na lokaciju {2}.</system:String>
+
+    <system:String x:Key="MessageStorageLocationMovePartsMessage">Premesti izabrane komponente ({0}) na sledeću lokaciju skladišta:</system:String>
+
+    <system:String x:Key="LabelStorageLocationName">Naziv lokacije</system:String>
+    <system:String x:Key="LabelStorageLocationDescription">Opis</system:String>
+    <system:String x:Key="LabelStorageLocationIsGroup">Grupa</system:String>
+    <system:String x:Key="LabelStorageLocationParent">Nadređena lokacija</system:String>
+
+    <system:String x:Key="LabelStorageLocationAddButtonTooltip">Dodaj novu lokaciju skladišta</system:String>
+    <system:String x:Key="LabelStorageLocationGoToButtonTooltip">Idi na lokaciju skladišta</system:String>
+    <system:String x:Key="LabelStorageLocationEditButton">Izmeni lokaciju skladišta</system:String>
+    <system:String x:Key="LabelStorageLocationDeleteButton">Obriši lokaciju skladišta</system:String>
+    <system:String x:Key="LabelStorageLocationDuplicateButton">Dupliraj lokaciju skladišta</system:String>
+    <system:String x:Key="LabelStorageLocationShowPartsInThisLocation">Prikaži komponente na ovoj lokaciji</system:String>
+
+    <system:String x:Key="LabelStorageLocationMoveToNewLocationButton">Premesti izabrane komponente na novu lokaciju</system:String>
+    <system:String x:Key="LabelStorageLocationLowStockWarning">Prikaži niske zalihe</system:String>
+    <system:String x:Key="LabelStorageLocationDuplicateAppendText">(Kopija)</system:String>
+
+    <system:String x:Key="StatusStorageLocationLoadUnsuccessful">Nije moguće učitati lokacije skladišta.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleteUnsuccessful">Nije moguće obrisati lokaciju skladišta {0}.</system:String>
+    <system:String x:Key="StatusStorageLocationSaveUnsuccessful">Nije moguće sačuvati lokaciju skladišta {0}.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusStorageLocationSaved">{0} uspešno sačuvano.</system:String>
+
+    <system:String x:Key="StatusStorageLocationStockLevelSaved">{0} uspešno sačuvano.</system:String>
+    <system:String x:Key="StatusStorageLocationStockLevelSaveUnsuccessful">Nije moguće sačuvati komponentu {0}.</system:String>
+
+    <system:String x:Key="StatusStorageLocationMovePartsSaved">{0} komponenta(i) uspešno premešteno na novu lokaciju.</system:String>
+    <system:String x:Key="StatusStorageLocationMovePartsSaveUnsuccessful">Nije moguće premestiti {0} komponenta(i) na novu lokaciju.</system:String>
+
+    <!-- Package Categories -->
+    <system:String x:Key="TitlePackageCategories">Kategorije kućišta</system:String>
+    <system:String x:Key="TitleAddNewPackageCategory">Dodaj novu kategoriju kućišta</system:String>
+    <system:String x:Key="TitleEditPackageCategory">Izmeni kategoriju kućišta</system:String>
+
+    <system:String x:Key="MessagePackageCategoryDeleteEmptyConfirmation">Da li ste sigurni da želite da obrišete praznu kategoriju kućišta {0}?</system:String>
+    <system:String x:Key="MessagePackageCategoryDeleteWithUnusedPackagesConfirmation">Da li ste sigurni da želite da obrišete kategoriju kućišta {0} i {1} neiskorišćenih kućišta?</system:String>
+    <system:String x:Key="MessagePackageCategoryDeleteWithUsedPackagesConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete kategoriju kućišta {0} i {1} kućišta?
+
+{2} komponenta(i) u ovoj kategoriji kućišta biće ažurirano na kućište {3}.</system:String>
+
+    <system:String x:Key="ColumnPackageCategoryID">ID</system:String>
+    <system:String x:Key="ColumnPackageCategoryName">Naziv</system:String>
+    <system:String x:Key="ColumnPackageCategoryDescription">Opis</system:String>
+    <system:String x:Key="ColumnPackageCategoryPackageCount"># Kućišta</system:String>
+    <system:String x:Key="ColumnPackageCategoryActionEdit">Izmeni kategoriju kućišta</system:String>
+    <system:String x:Key="ColumnPackageCategoryActionDelete">Obriši kategoriju kućišta</system:String>
+
+    <system:String x:Key="ColumnPackageCategoryPackageCountTooltip">Broj kućišta koja koriste ovu kategoriju</system:String>
+
+    <system:String x:Key="LabelPackageCategoryName">Naziv kategorije</system:String>
+    <system:String x:Key="LabelPackageCategoryDescription">Opis</system:String>
+
+    <system:String x:Key="LabelPackageCategoryAddButtonTooltip">Dodaj novu kategoriju kućišta</system:String>
+
+    <system:String x:Key="StatusPackageCategoryLoadUnsuccessful">Nije moguće učitati kategorije kućišta.</system:String>
+    <system:String x:Key="StatusPackageCategoryDeleteUnsuccessful">Nije moguće obrisati kategoriju kućišta {0}.</system:String>
+    <system:String x:Key="StatusPackageCategorySaveUnsuccessful">Nije moguće sačuvati kategoriju kućišta {0}.</system:String>
+    <system:String x:Key="StatusPackageCategoryDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusPackageCategorySaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Packages -->
+    <system:String x:Key="TitlePackages">Kućišta</system:String>
+    <system:String x:Key="TitleAddNewPackage">Dodaj novo kućište</system:String>
+    <system:String x:Key="TitleDuplicatePackage">Dupliraj kućište</system:String>
+    <system:String x:Key="TitleEditPackage">Izmeni kućište</system:String>
+    <system:String x:Key="TitlePackageDimension">Dimenzije kućišta {0}</system:String>
+    <system:String x:Key="TitlePackageImage">Slika kućišta {0}</system:String>
+    <system:String x:Key="TitlePackageDetails">Detalji kućišta</system:String>
+
+    <system:String x:Key="MessagePackageDeleteUnusedConfirmation">Da li ste sigurni da želite da obrišete neiskorišćeno kućište {0}?</system:String>
+    <system:String x:Key="MessagePackageDeleteUsedConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete kućište {0}?
+
+{1} komponenta(i) ga već koristi i biće ažurirano na kućište {2}.</system:String>
+
+    <system:String x:Key="ColumnPackageID">ID</system:String>
+    <system:String x:Key="ColumnPackageImage">Slika</system:String>
+    <system:String x:Key="ColumnPackageCategory">Kategorija</system:String>
+    <system:String x:Key="ColumnPackageMounting">Montaža</system:String>
+    <system:String x:Key="ColumnPackagePinCount"># Pinova</system:String>
+    <system:String x:Key="ColumnPackagePinPitch">Razmak pinova</system:String>
+    <system:String x:Key="ColumnPackageBodySize">Veličina tela</system:String>
+    <system:String x:Key="ColumnPackageName">Naziv</system:String>
+    <system:String x:Key="ColumnPackageAlias">Alias</system:String>
+    <system:String x:Key="ColumnPackageDescription">Opis</system:String>
+    <system:String x:Key="ColumnPackagePartsCount"># Komponenti</system:String>
+    <system:String x:Key="ColumnPackageActionShowDetails">Prikaži detalje kućišta</system:String>
+    <system:String x:Key="ColumnPackageActionShowDimension">Prikaži crtež dimenzija kućišta</system:String>
+    <system:String x:Key="ColumnPackageActionEdit">Izmeni kućište</system:String>
+    <system:String x:Key="ColumnPackageActionDelete">Obriši kućište</system:String>
+    <system:String x:Key="ColumnPackageActionDuplicate">Dupliraj kućište</system:String>
+    <system:String x:Key="ColumnPackageActionShowPartsWithThisPackage">Prikaži komponente sa ovim kućištem</system:String>
+
+    <system:String x:Key="ColumnPackagePinCountTooltip">Broj pinova</system:String>
+    <system:String x:Key="ColumnPackagePinPitchTooltip">Razmak pinova (mm)</system:String>
+    <system:String x:Key="ColumnPackageBodySizeTooltip">Veličina tela bez pinova (Dužina x Širina x Visina mm)</system:String>
+    <system:String x:Key="ColumnPackagePartsCountTooltip">Broj komponenti koje koriste ovo kućište</system:String>
+
+    <system:String x:Key="LabelPackageCategory">Kategorija</system:String>
+    <system:String x:Key="LabelPackageName">Naziv kućišta</system:String>
+    <system:String x:Key="LabelPackageDescription">Opis</system:String>
+    <system:String x:Key="LabelPackageAlias">Alias</system:String>
+    <system:String x:Key="LabelPackageMounting">Montaža</system:String>
+    <system:String x:Key="LabelPackagePinCount">Broj pinova</system:String>
+    <system:String x:Key="LabelPackagePinPitch">Razmak pinova</system:String>
+    <system:String x:Key="LabelPackageBodySize">Veličina tela</system:String>
+    <system:String x:Key="LabelPackageBodySizeTooltip">Veličina tela bez pinova (Dužina x Širina x Visina mm)</system:String>
+    <system:String x:Key="LabelPackageImagePath">Slika kućišta</system:String>
+    <system:String x:Key="LabelPackageDimensionsDrawingPath">Crtež dimenzija</system:String>
+    <system:String x:Key="LabelPackagePartCount">Broj komponenti</system:String>
+    <system:String x:Key="LabelPackagePartsCountTooltip">Broj komponenti koje koriste ovo kućište</system:String>
+
+    <system:String x:Key="LabelPackageDetailedFilterButtonTooltip">Detaljni filter kućišta</system:String>
+    <system:String x:Key="LabelPackageAddButtonTooltip">Dodaj novo kućište</system:String>
+    <system:String x:Key="LabelPackageShowDimensionDrawingTooltip">Prikaži crtež dimenzija kućišta</system:String>
+    <system:String x:Key="LabelPackageShowPackageDetailsTooltip">Prikaži detalje kućišta</system:String>
+    <system:String x:Key="LabelPackageDuplicateAppendText">(Kopija)</system:String>
+
+    <system:String x:Key="StatusPackageLoadUnsuccessful">Nije moguće učitati kućišta.</system:String>
+    <system:String x:Key="StatusPackageDeleteUnsuccessful">Nije moguće obrisati kućište {0}.</system:String>
+    <system:String x:Key="StatusPackageSaveUnsuccessful">Nije moguće sačuvati kućište {0}.</system:String>
+    <system:String x:Key="StatusPackageDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusPackageSaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Manufacturers -->
+    <system:String x:Key="TitleManufacturers">Proizvođači</system:String>
+    <system:String x:Key="TitleAddNewManufacturer">Dodaj novog proizvođača</system:String>
+    <system:String x:Key="TitleEditManufacturer">Izmeni proizvođača</system:String>
+    <system:String x:Key="TitleManufacturerDetails">Detalji proizvođača</system:String>
+
+    <system:String x:Key="MessageManufacturerDeleteUnusedConfirmation">Da li ste sigurni da želite da obrišete neiskorišćenog proizvođača {0}?</system:String>
+    <system:String x:Key="MessageManufacturerDeleteUsedConfirmation" xml:space="preserve">Da li ste sigurni da želite da obrišete proizvođača {0}?
+
+{1} komponenta(i) ga već koristi i biće ažurirano na proizvođača {2}.</system:String>
+
+    <system:String x:Key="ColumnManufacturerID">ID</system:String>
+    <system:String x:Key="ColumnManufacturerLogo">Logo</system:String>
+    <system:String x:Key="ColumnManufacturerName">Naziv</system:String>
+    <system:String x:Key="ColumnManufacturerShortName">Kratki naziv</system:String>
+    <system:String x:Key="ColumnManufacturerDescription">Opis</system:String>
+    <system:String x:Key="ColumnManufacturerURL">URL</system:String>
+    <system:String x:Key="ColumnManufacturerICLogo">IC Logo</system:String>
+    <system:String x:Key="ColumnManufacturerPartsCount"># Komponenti</system:String>
+    <system:String x:Key="ColumnManufacturerActionShowDetails">Prikaži detalje proizvođača</system:String>
+    <system:String x:Key="ColumnManufacturerActionEdit">Izmeni proizvođača</system:String>
+    <system:String x:Key="ColumnManufacturerActionDelete">Obriši proizvođača</system:String>
+    <system:String x:Key="ColumnManufacturerActionShowPartFromThisManufacturer">Prikaži komponente ovog proizvođača</system:String>
+
+    <system:String x:Key="ColumnManufacturerPartsCountTooltip">Broj komponenti ovog proizvođača</system:String>
+
+    <system:String x:Key="LabelManufacturerName">Naziv proizvođača</system:String>
+    <system:String x:Key="LabelManufacturerShortName">Kratki naziv</system:String>
+    <system:String x:Key="LabelManufacturerDescription">Opis</system:String>
+    <system:String x:Key="LabelManufacturerURL">URL</system:String>
+    <system:String x:Key="LabelManufacturerLogoPath">Logo</system:String>
+    <system:String x:Key="LabelManufacturerICLogoPath">IC Logo</system:String>
+    <system:String x:Key="LabelManufacturerPartCount">Broj komponenti</system:String>
+    <system:String x:Key="LabelManufacturerPartsCountTooltip">Broj komponenti ovog proizvođača</system:String>
+
+    <system:String x:Key="LabelManufacturerDetailedFilterButtonTooltip">Detaljni filter proizvođača</system:String>
+    <system:String x:Key="LabelManufacturerAddButtonTooltip">Dodaj novog proizvođača</system:String>
+    <system:String x:Key="LabelManufacturerShowManufacturerDetailsTooltip">Prikaži detalje proizvođača</system:String>
+    <system:String x:Key="LabelManufacturerOpenManufacturerLinkTooltip">Otvori link u pregledaču</system:String>
+
+    <system:String x:Key="StatusManufacturerLoadUnsuccessful">Nije moguće učitati proizvođače.</system:String>
+    <system:String x:Key="StatusManufacturerDeleteUnsuccessful">Nije moguće obrisati proizvođača {0}.</system:String>
+    <system:String x:Key="StatusManufacturerSaveUnsuccessful">Nije moguće sačuvati proizvođača {0}.</system:String>
+    <system:String x:Key="StatusManufacturerDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusManufacturerSaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Projects -->
+    <system:String x:Key="TitleProjects">Projekti</system:String>
+    <system:String x:Key="TitleAddNewProject">Dodaj novi projekat</system:String>
+    <system:String x:Key="TitleDuplicateProject">Dupliraj projekat</system:String>
+    <system:String x:Key="TitleEditProject">Izmeni projekat</system:String>
+
+    <system:String x:Key="MessageProjectGroupDeleteEmptyConfirmation">Da li ste sigurni da želite da obrišete praznu grupu projekata {0}?</system:String>
+    <system:String x:Key="MessageProjectGroupDeleteNotEmptyConfirmation">Da li ste sigurni da želite da obrišete grupu projekata {0} sa {1} podprojekata?</system:String>
+
+    <system:String x:Key="MessageProjectDeleteConfirmation">Da li ste sigurni da želite da obrišete projekat {0}?</system:String>
+
+    <system:String x:Key="LabelProjectName">Naziv projekta</system:String>
+    <system:String x:Key="LabelProjectDescription">Opis</system:String>
+    <system:String x:Key="LabelProjectIsGroup">Grupa</system:String>
+    <system:String x:Key="LabelProjectIsArchived">Arhivirano</system:String>
+    <system:String x:Key="LabelProjectImageFileName">Slika projekta</system:String>
+    <system:String x:Key="LabelProjectNote">Beleška</system:String>
+    <system:String x:Key="LabelProjectParent">Nadređena grupa</system:String>
+
+    <system:String x:Key="LabelProjectAddButtonTooltip">Dodaj novi projekat</system:String>
+    <system:String x:Key="LabelProjectEditButton">Izmeni projekat</system:String>
+    <system:String x:Key="LabelProjectDeleteButton">Obriši projekat</system:String>
+    <system:String x:Key="LabelProjectDuplicateButton">Dupliraj projekat</system:String>
+    <system:String x:Key="LabelProjectDuplicateAppendText">(Kopija)</system:String>
+    <system:String x:Key="LabelProjectCreatedTooltip">Projekat je kreiran</system:String>
+
+    <system:String x:Key="StatusProjectLoadUnsuccessful">Nije moguće učitati projekte.</system:String>
+    <system:String x:Key="StatusProjectBomLoadUnsuccessful">Nije moguće učitati BOM projekta.</system:String>
+    <system:String x:Key="StatusProjectHistoryLoadUnsuccessful">Nije moguće učitati istoriju projekta.</system:String>
+    <system:String x:Key="StatusProjectDeleteUnsuccessful">Nije moguće obrisati projekat {0}.</system:String>
+    <system:String x:Key="StatusProjectSaveUnsuccessful">Nije moguće sačuvati projekat {0}.</system:String>
+    <system:String x:Key="StatusProjectDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusProjectSaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Project tabs -->
+    <system:String x:Key="TabProjectDetails">Detalji</system:String>
+    <system:String x:Key="TabProjectBOM">BOM</system:String>
+    <system:String x:Key="TabProjectAttachment">Prilozi</system:String>
+    <system:String x:Key="TabProjectBulids">Izrade</system:String>
+    <system:String x:Key="TabProjectHistory">Istorija</system:String>
+
+    <!-- Projects BOM Entry -->
+    <system:String x:Key="TitleProjectBom">Lista komponenti (BOM)</system:String>
+    <system:String x:Key="TitleAddNewProjectBomEntry">Dodaj novu BOM stavku</system:String>
+    <system:String x:Key="TitleEditProjectBomEntry">Izmeni BOM stavku</system:String>
+
+    <system:String x:Key="ColumnProjectBomEntryID">ID</system:String>
+    <system:String x:Key="ColumnProjectBomEntryQuantity">Količina</system:String>
+    <system:String x:Key="ColumnProjectBomEntryComponent">Komponenta</system:String>
+    <system:String x:Key="ColumnProjectBomEntryDesignators">Referentne oznake</system:String>
+    <system:String x:Key="ColumnProjectBomEntryDescription">Opis</system:String>
+    <system:String x:Key="ColumnProjectBomEntryActionEdit">Izmeni BOM stavku</system:String>
+    <system:String x:Key="ColumnProjectBomEntryActionDelete">Obriši BOM stavku</system:String>
+
+    <system:String x:Key="LabelProjectBomEntryQuantity">Količina</system:String>
+    <system:String x:Key="LabelProjectBomEntryComponentName">Komponenta</system:String>
+    <system:String x:Key="LabelProjectBomEntryDesignators">Referentne oznake</system:String>
+    <system:String x:Key="LabelProjectBomEntryDescription">Opis</system:String>
+
+    <system:String x:Key="LabelProjectBomEntryAddButtonTooltip">Dodaj novu komponentu</system:String>
+
+    <system:String x:Key="MessageProjectBomEntryDeleteConfirmation">Da li ste sigurni da želite da obrišete komponentu {0}?</system:String>
+
+    <system:String x:Key="StatusProjectBomEntryDeleteUnsuccessful">Nije moguće obrisati BOM stavku {0}.</system:String>
+    <system:String x:Key="StatusProjectBomEntrySaveUnsuccessful">Nije moguće sačuvati BOM stavku {0}.</system:String>
+    <system:String x:Key="StatusProjectBomEntryDeleted">{0} uspešno obrisano.</system:String>
+    <system:String x:Key="StatusProjectBomEntrySaved">{0} uspešno sačuvano.</system:String>
+
+    <!-- Projects History -->
+    <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventData">Datum</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventType">Događaj</system:String>
+    <system:String x:Key="ColumnProjectHistoryDescription">Opis</system:String>
+
+    <system:String x:Key="LabelProjectHistoryEventType">Tip događaja</system:String>
+    <system:String x:Key="LabelProjectHistoryDate">Datum</system:String>
+    <system:String x:Key="LabelProjectHistoryDescription">Opis</system:String>
+
+    <!-- Meta Search -->
+    <system:String x:Key="TitleMetaSearch">Meta pretraga</system:String>
+    <system:String x:Key="TitleMetaSearchPackageImage">Slika kućišta {0}</system:String>
+    <system:String x:Key="TitleMetaSearchPackageImages">Slike kućišta</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsPackage">Kućište</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsParameters">Parametri</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsManufacturer">Proizvođač</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsDatasheets">Datasheet-ovi</system:String>
+    <system:String x:Key="TitleMetaSearchSaveDatasheet">Sačuvaj datasheet</system:String>
+    <system:String x:Key="TitleMetaSearchDatasheetPreview">{0} datasheet</system:String>
+    <system:String x:Key="TitleMetaSearchRecentSearches">Nedavne pretrage</system:String>
+    <system:String x:Key="TitleMetaSearchPrepareDatasheets">Priprema datasheet-ova</system:String>
+    <system:String x:Key="TitleMetaSearchHumanVerification">Provera da ste čovek</system:String>
+
+    <system:String x:Key="LabelMetaSearchCountFailed">neuspešno</system:String>
+    <system:String x:Key="LabelMetaSearchInfoButtonTooltip">Prikaži info</system:String>
+    <system:String x:Key="LabelMetaSearchRecentSearchesButtonTooltip">Prikaži nedavne pretrage</system:String>
+    <system:String x:Key="LabelMetaSearchRecentSearchAgainButtonTooltip">Ponovo pretraži {0}</system:String>
+    <system:String x:Key="LabelMetaSearchSourceFaildTooltip">Greška izvora: {0}</system:String>
+    <system:String x:Key="LabelMetaSearchInfo" xml:space="preserve">Možete pretraživati komponente na internetu i na osnovu rezultata kreirati sopstvenu komponentu u inventaru, zajedno sa parametrima i datasheet-ovima.
+
+Saveti:
+    • Neke kolone se mogu ažurirati kada izaberete red da biste videli detalje.
+    • Preuzimanje parametara radi samo za diskretne poluprovodnike, uglavnom sa izvora alltransistor.
+    • Nema garancije da su prikazane vrednosti parametara tačne za vašu komponentu. 
+    • Komponenta sa istim brojem, ali od drugog proizvođača, može imati drugačije specifikacije u datasheet-ovima.
+    • Ova funkcija se oslanja na internet izvore. Oni ne moraju biti tačni i u budućnosti mogu postati nedostupni.
+    • Prilikom kreiranja komponente u inventaru pažljivo izaberite naziv kategorije, jer ga kasnije nećete moći promeniti.
+    • Neki izvori ne navode proizvođača, kućište ili parametre. Aplikacija ih pokušava pogoditi iz opisa.
+    </system:String>
+    <system:String x:Key="LabelMetaSearchPreviewDatasheetButtonTooltip">Prikaži datasheet preview</system:String>
+    <system:String x:Key="LabelMetaSearchSaveDatasheetButtonTooltip">Sačuvaj datasheet</system:String>
+    <system:String x:Key="LabelMetaSearchCopyDatasheetToClipboarButtonTooltip">Kopiraj datasheet u clipboard</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnPartsTooltip">Prikaži sopstvene komponente u delu Komponente:</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnStockTooltip">Prikaži sopstvene komponente u delu Lokacije skladišta:</system:String>
+
+    <system:String x:Key="LabelMetaSearchDetailsNoPackageAvailable">Kućište nije dostupno</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoParameterAvailable">Parametar nije dostupan</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoManufacturerAvailable">Proizvođač nije dostupan</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoDatasheetAvailable">Datasheet nije dostupan</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsTooMuchTrafficDetected">Izvorni sajt je detektovao previše saobraćaja. Rešite captcha i ručno preuzmite datasheet.</system:String>
+    <system:String x:Key="LabelMetaSearchHumanVerificationMessage">Izvor {0} pri prvoj pretrazi proverava da li ste čovek. Sačekajte da se stranica učita i po potrebi kliknite na polje za potvrdu. Na modernim sistemima nastaviće se automatski.</system:String>
+    <system:String x:Key="LabelMetaSearchHumanVerificationMissingWebView2">{0} je neophodan za proveru izvora {1}. Preuzmite i instalirajte ga pre pretrage na ovom izvoru ili onemogućite taj izvor.</system:String>
+
+    <system:String x:Key="ColumnMetaSearchSource">Izvor</system:String>
+    <system:String x:Key="ColumnMetaSearchCategory">Kategorija</system:String>
+    <system:String x:Key="ColumnMetaSearchPartType">Kataloški broj</system:String>
+    <system:String x:Key="ColumnMetaSearchMarking">Oznaka</system:String>
+    <system:String x:Key="ColumnMetaSearchManufacturer">Proizvođač</system:String>
+    <system:String x:Key="ColumnMetaSearchPackageShow">Prikaži crtež kućišta</system:String>
+    <system:String x:Key="ColumnMetaSearchPackage">Kućište</system:String>
+    <system:String x:Key="ColumnMetaSearchDescription">Opis</system:String>
+
+    <system:String x:Key="StatusMetaSearchSaveDatasheetDone">Datasheet je uspešno sačuvan.</system:String>
+    <system:String x:Key="StatusMetaSearchSaveDatasheetFailed">Neuspešno čuvanje datasheet-a.</system:String>
+
+    <system:String x:Key="StatusMetaSearchCopyDatasheetToClipboardDone">Datasheet kopiran.</system:String>
+    <system:String x:Key="StatusMetaSearchCopyDatasheetToClipboardFailed">Neuspešno kopiranje u clipboard.</system:String>
+    <system:String x:Key="StatusMetaSearchDownloadTryAgainLater">Nije moguće preuzeti {0}. Pokušajte ponovo kasnije.</system:String>
+
+    <!-- Marking Code Search -->
+    <system:String x:Key="TitleSearchMarkingCode">Pretraga SMD oznaka</system:String>
+    <system:String x:Key="TitleSearchMarkingCodePackageImage">Slika kućišta {0}</system:String>
+    <system:String x:Key="TitleSearchMarkingCodePackageImages">Slike kućišta</system:String>
+    <system:String x:Key="TitleSearchMarkingCodeRecentSearches">Nedavne pretrage</system:String>
+    <system:String x:Key="TitleSearchMarkingCodeDatasheetPreview">{0} datasheet</system:String>
+
+    <system:String x:Key="LabelMarkingCodeSearchCountFailed">neuspešno</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchInfoButtonTooltip">Prikaži info</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchRecentSearchesButtonTooltip">Prikaži nedavne pretrage</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchRecentSearchAgainButtonTooltip">Ponovo pretraži {0}</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchInfo" xml:space="preserve">Zbog male veličine većine SMD komponenti, proizvođači ne mogu da odštampaju pun kataloški broj na kućištu. Umesto toga koriste oznaku, obično sastavljenu od 2 ili 3 slova ili cifre. Pretragom po oznaci biće prikazan originalni broj komponente.
+
+Saveti:
+    • Ako je moguće, koristite tačno poklapanje da biste ograničili broj rezultata.
+    • Ako je moguće, u polje za unos upisujte samo slova i cifre.    
+    • Specijalni karakteri možda nisu podržani na svim izvorima. To može dovesti do dugog odziva i/ili greške na tim izvorima. 
+    • Neki izvori podržavaju samo režime tačnog poklapanja i „počinje sa“. 
+    • Neki izvori vraćaju rezultate po stranicama; program preuzima rezultate sa ograničenog broja prvih stranica (10). 
+    • Za više rezultata možete otvoriti originalnu stranicu rezultata izvora malim dugmetom sa strelicom udesno.   
+    • Oznaka u rezultatu može sadržati zvezdicu (*). To je džoker znak koji zamenjuje bilo koji broj drugih karaktera.
+    • Oznaka u rezultatu može sadržati znak pitanja (?). To je džoker znak koji zamenjuje jedan karakter.
+    • Oznaka u rezultatu može sadržati više od jedne oznake.
+    • Ova funkcija se oslanja na internet izvore. U budućnosti mogu postati nedostupni.
+    </system:String>
+
+    <system:String x:Key="LabelMarkingCodeDetailedFilterButtonTooltip">Detaljni filter oznaka</system:String>
+    <system:String x:Key="LabelMarkingCodeSourceFaildTooltip">Greška izvora: {0}</system:String>
+
+    <system:String x:Key="ColumnMarkingCodeSource">Izvor</system:String>
+    <system:String x:Key="ColumnMarkingCodeMarking">Oznaka</system:String>
+    <system:String x:Key="ColumnMarkingCodeDatasheetShow">Prikaži datasheet</system:String>
+    <system:String x:Key="ColumnMarkingCodePartTypeSearch">Pretraga datasheet-a putem meta pretrage</system:String>
+    <system:String x:Key="ColumnMarkingCodePartType">Kataloški broj</system:String>
+    <system:String x:Key="ColumnMarkingCodeManufacturer">Proizvođač</system:String>
+    <system:String x:Key="ColumnMarkingCodePackageShow">Prikaži crtež kućišta</system:String>
+    <system:String x:Key="ColumnMarkingCodePackage">Kućište</system:String>
+    <system:String x:Key="ColumnMarkingCodePinCount"># Pinova</system:String>
+    <system:String x:Key="ColumnMarkingCodeDescription">Opis</system:String>
+
+    <!-- Distributor Search -->
+    <system:String x:Key="TitleDistributorSearch">Pretraga distributera</system:String>
+
+    <system:String x:Key="TitleDistributorSearchProductImage">Slika proizvoda {0}</system:String>
+    <system:String x:Key="TitleDistributorSearchPackageImage">Slika kućišta {0}</system:String>
+    <system:String x:Key="TitleDistributorSearchPackageImages">Slike kućišta</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsPackage">Kućište</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsParameters">Parametri</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsManufacturer">Proizvođač</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsAvailability">Dostupnost</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsDatasheets">Datasheet-ovi</system:String>
+    <system:String x:Key="TitleDistributorSearchSaveDatasheet">Sačuvaj datasheet</system:String>
+    <system:String x:Key="TitleDistributorSearchDatasheetPreview">{0} datasheet</system:String>
+    <system:String x:Key="TitleDistributorSearchRecentSearches">Nedavne pretrage</system:String>
+    <system:String x:Key="TitleDistributorSearchPrepareDatasheets">Priprema datasheet-ova</system:String>
+    <system:String x:Key="TitleDistributorSearchHumanVerification">Provera da ste čovek</system:String>
+
+    <system:String x:Key="LabelDistributorSearchCountFailed">neuspešno</system:String>
+    <system:String x:Key="LabelDistributorSearchInfoButtonTooltip">Prikaži info</system:String>
+    <system:String x:Key="LabelDistributorSearchRecentSearchesButtonTooltip">Prikaži nedavne pretrage</system:String>
+    <system:String x:Key="LabelDistributorSearchRecentSearchAgainButtonTooltip">Ponovo pretraži {0}</system:String>
+    <system:String x:Key="LabelDistributorSearchSourceFaildTooltip">Greška izvora: {0}</system:String>
+    <system:String x:Key="LabelDistributorSearchInfo" xml:space="preserve">Možete pretraživati distributere na internetu da biste proverili dostupnost i cene.
+
+Saveti:
+    • Ova funkcija se oslanja na internet izvore. Oni ne moraju biti tačni i u budućnosti mogu postati nedostupni.
+    </system:String>
+    <system:String x:Key="LabelDistributorSearchPreviewDatasheetButtonTooltip">Prikaži datasheet preview</system:String>
+    <system:String x:Key="LabelDistributorSearchSaveDatasheetButtonTooltip">Sačuvaj datasheet</system:String>
+    <system:String x:Key="LabelDistributorSearchCopyDatasheetToClipboarButtonTooltip">Kopiraj datasheet u clipboard</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnPartsTooltip">Prikaži sopstvene komponente u delu Komponente:</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnStockTooltip">Prikaži sopstvene komponente u delu Lokacije skladišta:</system:String>
+
+    <system:String x:Key="LabelDistributorSearchDetailsNoPackageAvailable">Kućište nije dostupno</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoParameterAvailable">Parametar nije dostupan</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">Proizvođač nije dostupan</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">Podaci o ceni nisu dostupni</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">Datasheet nije dostupan</system:String>
+    <system:String x:Key="LabelDistributorSearchAddProductImage">Dodaj sliku proizvoda</system:String>
+
+    <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">Broj narudžbine</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNameStock">Zaliha</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNameMOC">Min. kol.</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNamePrices">Cene</system:String>
+
+    <system:String x:Key="LabelDistributorSearchAvailTooltipOrderNr">Broj narudžbine distributera</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipStock">Dostupna zaliha</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipMOC">Minimalna količina narudžbine</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipPrices">Cene za količine veće od navedene</system:String>
+
+    <system:String x:Key="ColumnDistributorSearchSource">Izvor</system:String>
+    <system:String x:Key="ColumnDistributorSearchCategory">Kategorija</system:String>
+    <system:String x:Key="ColumnDistributorSearchPartShowDistributorPage">Prikaži stranicu distributera</system:String>
+    <system:String x:Key="ColumnDistributorSearchPartType">Kataloški broj</system:String>
+    <system:String x:Key="ColumnDistributorSearchMarking">Oznaka</system:String>
+    <system:String x:Key="ColumnDistributorSearchManufacturer">Proizvođač</system:String>
+    <system:String x:Key="ColumnDistributorSearchPackageShow">Prikaži crtež kućišta</system:String>
+    <system:String x:Key="ColumnDistributorSearchPackage">Kućište</system:String>
+    <system:String x:Key="ColumnDistributorSearchOrderNumber">Broj narudžbine</system:String>
+    <system:String x:Key="ColumnDistributorSearchStockLevel">Zaliha</system:String>
+    <system:String x:Key="ColumnDistributorSearchPrice">Cena</system:String>
+    <system:String x:Key="ColumnDistributorSearchDescription">Opis</system:String>
+
+    <system:String x:Key="StatusDistributorSearchSaveDatasheetDone">Datasheet je uspešno sačuvan.</system:String>
+    <system:String x:Key="StatusDistributorSearchSaveDatasheetFailed">Neuspešno čuvanje datasheet-a.</system:String>
+
+    <system:String x:Key="StatusDistributorSearchCopyDatasheetToClipboardDone">Datasheet kopiran.</system:String>
+    <system:String x:Key="StatusDistributorSearchCopyDatasheetToClipboardFailed">Neuspešno kopiranje u clipboard.</system:String>
+    <system:String x:Key="StatusDistributorSearchDownloadTryAgainLater">Nije moguće preuzeti {0}. Pokušajte ponovo kasnije.</system:String>
+
+    <!-- Settings -->
+    <system:String x:Key="TitleSettings">Podešavanja</system:String>
+    <system:String x:Key="TitleInitialSelectLanguage">Izaberite jezik</system:String>
+    <system:String x:Key="TitleInitialAcceptLicense">Prihvatite licencu aplikacije</system:String>
+    <system:String x:Key="TitleNewVersionAvailable">Dostupna je nova verzija</system:String>
+
+    <system:String x:Key="TabSettingsGeneral">Opšte</system:String>
+    <system:String x:Key="TabSettingsTables">Tabele</system:String>
+    <system:String x:Key="TabSettingsRegional">Regionalno</system:String>
+
+    <system:String x:Key="LabelSettingsStartupPage">Početna stranica</system:String>
+    <system:String x:Key="LabelSettingsWindowOpenPosition">Pozicija otvaranja prozora</system:String>
+    <system:String x:Key="LabelSettingsTabStripLocation">Položaj tabova</system:String>
+    <system:String x:Key="LabelSettingsAttachmentsInitialFit">Režim otvaranja priloga</system:String>
+
+    <system:String x:Key="LabelSettingsTableUseAlternateColors">Koristi naizmenične boje</system:String>
+    <system:String x:Key="LabelSettingsTableUseHeaderSeparatorLine">Koristi liniju separatora zaglavlja</system:String>
+    <system:String x:Key="LabelSettingsTableBorderMode">Režim ivica</system:String>
+    <system:String x:Key="LabelSettingsTableRowSeparatorMode">Režim separatora redova</system:String>
+    <system:String x:Key="LabelSettingsTableExample">Primer</system:String>
+
+    <system:String x:Key="LabelSettingsLanguage">Jezik</system:String>
+    <system:String x:Key="LabelSettingsDisplayFormats">Formati prikaza</system:String>
+
+    <system:String x:Key="LabelSettingsFormatsExample">Primer formata</system:String>
+    <system:String x:Key="LabelSettingsCultureInfoName">Naziv kulture</system:String>
+    <system:String x:Key="LabelSettingsSampleNumber">Format broja</system:String>
+    <system:String x:Key="LabelSettingsSampleDate">Format datuma</system:String>
+
+    <system:String x:Key="LabelSettingsAcceptLicense">Razumem i prihvatam uslove licence</system:String>
+
+    <system:String x:Key="MessageSettingCloseAllTabsForLanguageChange">Promena jezika zahteva ponovno otvaranje svih tabova. Imate nesačuvane izmene. Da li ste sigurni da želite da nastavite?</system:String>
+
+    <system:String x:Key="StatusSettingsSaved">Podešavanja uspešno sačuvana.</system:String>
+    <system:String x:Key="StatusSetttingsSaveUnsuccessful">Nije moguće sačuvati podešavanja.</system:String>
+
+    <!-- About -->
+    <system:String x:Key="TitleAbout">O programu</system:String>
+
+    <system:String x:Key="TabAboutAbout">O programu</system:String>
+    <system:String x:Key="TabAboutLicenses">Licence</system:String>
+    <system:String x:Key="TabAboutDonation">Donacija</system:String>
+
+    <system:String x:Key="LabelAboutSubtitle">Pretraga i inventar elektronskih komponenti</system:String>
+    <system:String x:Key="LabelAboutDescription">MyElecParts je besplatan, jednostavan softver za pronalaženje i inventar elektronskih komponenti namenjen hobistima i entuzijastima. Nije namenjen za komercijalnu upotrebu.</system:String>
+
+    <system:String x:Key="LabelAboutWantsToHelp">Želite da pomognete?</system:String>
+    <system:String x:Key="LabelAboutFeedbackButton">• Podelite svoje ideje</system:String>
+    <system:String x:Key="LabelAboutTranslationButton">• Prevedite tekstove aplikacije</system:String>
+    <system:String x:Key="LabelAboutDonationButton">• Uplatite donaciju</system:String>
+    <system:String x:Key="LabelAboutVisitHomepageButton">• Posetite web stranicu</system:String>
+
+    <system:String x:Key="LabelLicenseLicenseLink">(licenca)</system:String>
+
+    <system:String x:Key="LabelLicenseAppLicenseHeader">Licenca aplikacije</system:String>
+    <system:String x:Key="LabelLicenseAppLicense1">MyElecPart je besplatni softver distribuiran isključivo u binarnom formatu i licenciran pod Creative Commons CC BY-NC-ND 4.0 International licencom. Kliknite na logo da otvorite originalni tekst licence.</system:String>
+    <system:String x:Key="LabelLicenseAppLicense2"  xml:space="preserve">Ova licenca vam daje sledeća prava:
+
+    • Slobodni ste da koristite MyElecPart u lične svrhe.
+    • Dozvoljeno je distribuiranje MyElecPart u originalnom neizmenjenom formatu besplatno.
+    • Komercijalna upotreba i redistribucija nisu dozvoljene.
+    • Neke funkcije MyElecPart koriste web servise informacija, 
+       nije garantovano da su 100% tačne ili bez grešaka ili da će biti dostupne u budućnosti.
+    • Softver se isporučuje "kakav jeste" bez ikakve garancije. 
+    • Program možete koristiti na sopstveni rizik. 
+    • Autor ne snosi odgovornost za eventualne gubitke ili štete.</system:String>
+
+    <system:String x:Key="LabelLicenseThirdPartyLicenseHeader">Licence trećih strana</system:String>
+    <system:String x:Key="LabelLicenseThirdPartyLicense">MyElecPart je izgrađen na sledećim open source bibliotekama i resursima:</system:String>
+
+    <system:String x:Key="LabelDontionHeader">Donacija</system:String>
+    <system:String x:Key="LabelDontionText" xml:space="preserve">Razvijam MyElecPart u slobodno vreme. Ovo je projekat jednog čoveka, i kao što možete videti, iza njega stoji mnogo posla. Proveo sam ogromnu količinu vremena dodajući jedinstvene funkcije, praveći korisnu biblioteku kućišta i doterujući svaki detalj da bi korišćenje bilo zabavnije i praktičnije.
+
+To je besplatni softver, možete ga koristiti besplatno za ličnu upotrebu, ali ako možete, podržite dalji razvoj i pozovite me na virtuelnu kafu :)</system:String>
+
+</ResourceDictionary>

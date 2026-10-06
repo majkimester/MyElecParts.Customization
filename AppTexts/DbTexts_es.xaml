@@ -1,0 +1,1104 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="es">
+
+    <!-- Part categories -->
+    <system:String x:Key="DbPartCategoryNameRoot">Todo</system:String>
+    <system:String x:Key="DbPartCategoryDescRoot">Todos los componentes</system:String>
+
+    <!-- Part categories - Analog IC -->
+    <system:String x:Key="DbPartCategoryNameAnalogIC">CI Analógico</system:String>
+    <system:String x:Key="DbPartCategoryDescAnalogIC">Circuitos Integrados Analógicos</system:String>
+
+    <system:String x:Key="DbPartCategoryNameADC">Convertidor A/D</system:String>
+    <system:String x:Key="DbPartCategoryDescADC">Convertidores Analógico-Digital</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCResolution">Resolución</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCResolution">Resolución</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCSpeed">Velocidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCSpeed">Muestras por segundo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCInterface">Interfaz digital</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCVcc">Rango de tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCDifferential">Diferencial</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCDifferential">Entrada diferencial</system:String>
+
+    <system:String x:Key="DbPartCategoryNameAudioAmp">Amplificador de audio</system:String>
+    <system:String x:Key="DbPartCategoryDescAudioAmp">CI para amplificadores de audio</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpClass">Clase</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpClass">Clase del amplificador</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpVcc">Rango de tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpPo">Po</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpPo">Potencia máxima de salida</system:String>
+
+    <system:String x:Key="DbPartCategoryNameComparator">Comparador</system:String>
+    <system:String x:Key="DbPartCategoryDescComparator">Comparadores</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorSingleVcc">Vcc simple</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorSingleVcc">Rango de tensión de alimentación unipolar</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorDoubleVcc">Vcc dual ±</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorDoubleVcc">Rango de tensión de alimentación simétrica ±</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorVio">Vio</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorVio">Tension offset de entrada</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorTr">Tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorTr">Tiempo de respuesta típico</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDAC">Convertidor D/A</system:String>
+    <system:String x:Key="DbPartCategoryDescDAC">Convertidores Digital-Analógico</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACResolution">Resolución</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACResolution">Resolución</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACSpeed">Velocidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACSpeed">Muestras por segundo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACInterface">Interfaz digital</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACVcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDigipot">Potenciómetro digital</system:String>
+    <system:String x:Key="DbPartCategoryDescDigipot">Potenciómetros digitales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotPositions">Posiciones</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotPositions">Posiciones</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotInterface">Interfaz digital</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotVcc">Rango de tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotResistance">Resistencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotResistance">Resistencia</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMOSFETDriver">Controlador MOSFET/IGBT</system:String>
+    <system:String x:Key="DbPartCategoryDescMOSFETDriver">Controladores MOSFET/IGBT</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverType">Tipo de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverVcc">Rango de tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverVs">Vs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverVs">Tensión de fuente del lado alto</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverIo">Corriente de salida</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMiscAnalog">Otros CI analógicos</system:String>
+    <system:String x:Key="DbPartCategoryDescMiscAnalog">Otros circuitos integrados analógicos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMiscAnalogVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMiscAnalogVcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSensor">Sensor</system:String>
+    <system:String x:Key="DbPartCategoryDescSensor">Sensores</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorType">Tipo de sensor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorInterface">Interfaz del sensor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorVcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameOpAmp">Amplificador operacional</system:String>
+    <system:String x:Key="DbPartCategoryDescOpAmp">Amplificadores operationales - Op Amps</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpChannels">Chanales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpSingleVcc">Vcc simple</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpSingleVcc">Rango de tensión de alimentación unipolar</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpDoubleVcc">Vcc dual ±</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpDoubleVcc">Rango de tensión de alimentación simétrica ±</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpVio">Vio</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpVio">Tensión offset de entrada</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpBW">BW</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpBW">Ancho de banda típico de ganancia unidad</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpGain">Ganancia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpGain">Ganancia mínima de tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpSlewRate">Slew rate</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpSlewRate">Velocidad de variación de la tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpInputNoise">Tensión de ruido</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpInputNoise">Tensión de ruido a la entrada</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpRailToRailInput">Entrada riel a riel</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpRailToRailInput">Entrada riel a riel</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpRailToRailOutput">Salida riel a riel</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpRailToRailOutput">Salida riel a riel</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTransistorArray">Array de transistores</system:String>
+    <system:String x:Key="DbPartCategoryDescTransistorArray">Array de transistores</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayVo">Tensión de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayIo">Corriente de salida</system:String>
+
+    <!-- Part categories - Analog IC - Voltage regulator -->
+    <system:String x:Key="DbPartCategoryNameVoltageRegulator">Regulador de tensión</system:String>
+    <system:String x:Key="DbPartCategoryDescVoltageRegulator">Reguladores y controladores de tensión</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLinearRegulator">Regulador lineal</system:String>
+    <system:String x:Key="DbPartCategoryDescLinearRegulator">Reguladores lineales de tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorLDO">LDO</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorLDO">Tipo baja tensión de caída</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorOutput">Salida</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorOutput">Tipo de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVo">Tensión de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVadj">Rango de tensión variable de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorIo">Corriente de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVi">Rango de tensión de entrada</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSMPS">Controlador SMPS</system:String>
+    <system:String x:Key="DbPartCategoryDescSMPS">Conversores CA/CC, Controladores SMPS</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSPo">Po</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSPo">Potencia de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSVi">Rango de tensión de entrada</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSFsw">Fsw</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSFsw">Frecuencia de conmutación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSwitchedRegulator">Regulador de conmutación</system:String>
+    <system:String x:Key="DbPartCategoryDescSwitchedRegulator">Reguladores conmutados de tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorTopology">Topología</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorTopology">Topología</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVo">Tensión de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVadj">Rango de tensión variable de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorIo">Corriente de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVi">Rango de tensión de entrada</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorFsw">Fsw</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorFsw">Frecuencia de conmutación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameReference">Referencia</system:String>
+    <system:String x:Key="DbPartCategoryDescReference">Referencia de tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceVo">Tensión de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceIo">Corriente de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceVadj">Rango de tensión variable de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceTolerance">Precisión</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceTolerance">Precisión en porcentaje</system:String>
+
+    <!-- Part categories - Digital IC -->
+    <system:String x:Key="DbPartCategoryNameDigitalIC">CI Digital</system:String>
+    <system:String x:Key="DbPartCategoryDescDigitalIC">Circuitos integrados digitales</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLogic">Lógico</system:String>
+    <system:String x:Key="DbPartCategoryDesLogicc">Circuitos integrados lógicos</system:String>
+
+    <system:String x:Key="DbPartCategoryName4000">4000</system:String>
+    <system:String x:Key="DbPartCategoryDesc4000">Serie 4000 CMOS</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Function">Función</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Function">Función lógica</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Channels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Channels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Vcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Vcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryName7400">7400</system:String>
+    <system:String x:Key="DbPartCategoryDesc7400">Serie 7400 TTL</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Family">Familia</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Family">Familia lógica</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Function">Función</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Function">Función lógica</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Channels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Channels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Vcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Vcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMemory">Memoria</system:String>
+    <system:String x:Key="DbPartCategoryDescMemory">Memorias</system:String>
+
+    <system:String x:Key="DbPartCategoryNameEPROM">EPROM</system:String>
+    <system:String x:Key="DbPartCategoryDescEPROM">EPROM / PROM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMType">Tipo de PROM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMWordWide">Ancho de palabra</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMWordWide">Ancho de palabra de datos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMCapacity">Capacidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMCapacity">Capacidad de memoria</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMReadTime">Tiempo de lectura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMReadTime">Tiempo de acceso para lectura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMVcc">Tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMVpp">Vpp</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMVpp">Tensión de programación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameParallelEEPROM">EEPROM/Flash paralelo</system:String>
+    <system:String x:Key="DbPartCategoryDescParallelEEPROM">Memoria EEPROM / Flash paralelo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMCapacity">Capacidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMCapacity">Capacidad de memoria</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMReadTime">Tiempo de lectura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMReadTime">Tiempo de acceso para lectura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMVcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameRAM">RAM</system:String>
+    <system:String x:Key="DbPartCategoryDescRAM">RAM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMCapacity">Capacidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMCapacity">Capacidad de memoria</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMReadTime">Tiempo de lectura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMReadTime">Tiempo de acceso para lectura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMVcc">Rango de tensión de alimentación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSerialEEPROM">EEPROM/Flash serie</system:String>
+    <system:String x:Key="DbPartCategoryDescSerialEEPROM">Memoria EEPROM / Flash serie</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMInterface">Tipo de interfaz serie</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMInterfaceSpeed">Velocidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMInterfaceSpeed">Velocidad del interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMCapacity">Capacidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMCapacity">Capacidad de memoria</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMVcc">Rango de tensión de alimentación</system:String>
+
+    <!-- Part categories - Digital IC - Microcontollers -->
+    <system:String x:Key="DbPartCategoryNameMicrocontroller">Microcontrolador</system:String>
+    <system:String x:Key="DbPartCategoryDescMicrocontroller">Microcontroladores</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerVcc">Rango de tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerClock">Reloj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerClock">Frecuencia máxima del reloj</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerFlash">Flash</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerFlash">Tamaño de memoria Flash</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerSRAM">SRAM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerSRAM">Tamaño de memoria SRAM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerEEPROM">EEPROM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerEEPROM">Tamaño de memoria EEPROM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerGPIO">Pines GPIO</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerGPIO">Número de pines GPIO</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerADC">Canales ADC</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerADC">Número de canales de conversión A/D</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerPWM">Salidas PWM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerPWM">Número de salidas de modulación por ancho de pulso</system:String>
+
+    <system:String x:Key="DbPartCategoryName8051">8051</system:String>
+    <system:String x:Key="DbPartCategoryDesc8051">Familia de microcontroladores 8051</system:String>
+
+    <system:String x:Key="DbPartCategoryNameAVR">AVR</system:String>
+    <system:String x:Key="DbPartCategoryDescAVR">Familia de microcontroladores AVR de 8 bits</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMSP">MSP</system:String>
+    <system:String x:Key="DbPartCategoryDescMSP">Familia de microcontroladores MSP430 16-bit</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePIC">PIC</system:String>
+    <system:String x:Key="DbPartCategoryDescPIC">Familia de microcontroladores PIC de 8 bits</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePIC24">PIC24/DSPIC</system:String>
+    <system:String x:Key="DbPartCategoryDescPIC24">Familia de microcontroladores PIC24/DSPIC de 16 bits</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSTM8">STM8</system:String>
+    <system:String x:Key="DbPartCategoryDescSTM8">Familia de microcontroladores STM 8-bit</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSTM32">STM32</system:String>
+    <system:String x:Key="DbPartCategoryDescSTM32">Familia de microcontroladores STM32 32-bit ARM Cortex</system:String>
+
+    <!-- Part categories - Digital IC - Interface -->
+    <system:String x:Key="DbPartCategoryNameInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryDescInterface">CI de interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceFunction">Función</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceFunction">Función</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceChannels">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceChannels">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceSpeed">Velocidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceSpeed">Tasa de transferencia de datos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceVcc">Rango de tensión de alimentación</system:String>
+
+    <!-- Part categories - Digital IC - RTC -->
+    <system:String x:Key="DbPartCategoryNameRTC">RTC</system:String>
+    <system:String x:Key="DbPartCategoryDescRTC">Reloj de tiempo real</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRTCInterface">Interfaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRTCInterface">Tipo de interfaz serie</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRTCVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRTCVcc">Rango de tensión de alimentación</system:String>
+
+    <!-- Part categories - Digital IC - Misc. Digital -->
+    <system:String x:Key="DbPartCategoryNameMiscDigital">Otros CI digitales</system:String>
+    <system:String x:Key="DbPartCategoryDescMiscDigital">Otros circuitos integrados digitales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMiscDigitalVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMiscDigitalVcc">Rango de tensión de alimentación</system:String>
+
+    <!-- Part categories - Diode -->
+    <system:String x:Key="DbPartCategoryNameDiode">Diodo</system:String>
+    <system:String x:Key="DbPartCategoryDescDiode">Diodos</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameDiodeType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeType">Tipo de estructura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeRecovery">Recuperación</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeRecovery">Tipo de recuperación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeUrrm">Vrrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeUrrm">Tensión inversa de pico repetitiva</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeUf">Vf</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeUf">Tensión directa máxima</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeIf">If</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeIf">Valor medio de la corriente directa máxima (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeTrr">trr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeTrr">Tiempo de recuperación en inversa</system:String>
+
+    <system:String x:Key="DbPartCategoryNameBridgeRectifier">Puente de diodos</system:String>
+    <system:String x:Key="DbPartCategoryDescBridgeRectifier">Rectificador en puente de diodos</system:String>
+
+    <system:String x:Key="DbPartCategoryNameRectifier">Rectificador</system:String>
+    <system:String x:Key="DbPartCategoryDescRectifier">Diodos rectificadores</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSwitchDiode">Conmutación</system:String>
+    <system:String x:Key="DbPartCategoryDescSwitchDiode">Diodos de conmutación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSchottky">Schottky</system:String>
+    <system:String x:Key="DbPartCategoryDescSchottky">Diodos Schottky</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTVS">TVS</system:String>
+    <system:String x:Key="DbPartCategoryDescTVS">Diodos de supresión de voltaje transitorio</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTVSUbr">Vbr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTVSUbr">Tension nominal de ruptura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTVSPppm">Pppm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTVSPppm">Potencia de pulso máxima</system:String>
+
+    <system:String x:Key="DbPartCategoryNameZener">Zener</system:String>
+    <system:String x:Key="DbPartCategoryDescZener">Diodos Zener</system:String>
+    <system:String x:Key="DbPartCategoryParamNameZenerUz">Vz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescZenerUz">Tensión Zener</system:String>
+    <system:String x:Key="DbPartCategoryParamNameZenerPtot">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescZenerPtot">Disipación de potencia</system:String>
+
+    <!-- Part categories - Optoelectronics -->
+    <system:String x:Key="DbPartCategoryNameOptoelectronics">Optoelectrónica</system:String>
+    <system:String x:Key="DbPartCategoryDescOptoelectronics">Componentes optoelectrónicos</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplay">Pantalla</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplay">Pantallas</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayDigits">Dígitos</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayDigits">Pantallas de dígitos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsTechnology">Tecnología</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsTechnology">Technología</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsCount">Nº Dígitos</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsCount">Número de dígitos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsType">Tipo de display</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsHeight">Altura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsHeight">Altura de los dígitos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsCommonElectrode">Electrodo común</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsCommonElectrode">Electrodo común</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsColor">Color</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsColor">Color</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayAlphanumeric">Alfanumérica</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayAlphanumeric">Pantallas alfanuméricas</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericTechnology">Tecnología</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericTechnology">Tecnología</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericCharacters">Nº Caracteres</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericCharacters">Número de caracteres (columnas x filas)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericDimension">Tamaño</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericDimension">Tamaño del módulo (Largo x Ancho x Alto mm)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericBacklight">Retro-iluminación</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericBacklight">Retro-iluminación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericSupplyVoltage">Alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericSupplyVoltage">Tension de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericController">Controlador</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericController">CI controlador</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayGraphic">Gráficas</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayGraphic">Pantallas gráficas/de matriz</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicTechnology">Tecnología</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicTechnology">Tecnología</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicDiagonal">Diagonal</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicDiagonal">Diagonal de la pantalla en pulgadas</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicResolution">Resolución</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicResolution">Resolución (columnas x filas)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicDimension">Tamaño</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicDimension">Tamaño del módulo (Largo x Ancho x Alto mm)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicTouch">Táctil</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicTouch">Pantalla táctil</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicSupplyVoltage">Alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicSupplyVoltage">Tensión de alimentación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicController">Controlador</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicController">CI controlador</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLED">LED</system:String>
+    <system:String x:Key="DbPartCategoryDescLED">Diodos de emisión de luz</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDShape">Forma</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDShape">Forma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDColor">Color</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDColor">Color</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDCurrent">Corriente</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDCurrent">Corriente nominal</system:String>
+
+    <system:String x:Key="DbPartCategoryNameOptocoupler">Optoacoplador</system:String>
+    <system:String x:Key="DbPartCategoryDescOptocoupler">Optoacopladores</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerChannel">Canales</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerChannel">Número de canales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputType">Tipo de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputType">Tipo de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputSupplyVoltage">Alimentación de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputSupplyVoltage">Tensión de alimentación de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputVoltage">Tensión de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputVoltage">Tensión máxima de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputCurrent">Corriente de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputCurrent">Corriente máxima de salida</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePhotoelements">Fotoelemento</system:String>
+    <system:String x:Key="DbPartCategoryDescPhotoelements">Fotoelementos</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePhotoelementsType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPhotoelementsType">Tipo de fotoelemento</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePhotoelementsSensitivityPeak">Pico de sensibilidad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPhotoelementsSensitivityPeak">Longitud de onda del pico de sensibilidad</system:String>
+
+    <!-- Part categories - Passive -->
+    <system:String x:Key="DbPartCategoryNamePassive">Pasivo</system:String>
+    <system:String x:Key="DbPartCategoryDescPassive">Componentes pasivos</system:String>
+
+    <system:String x:Key="DbPartCategoryNameResistor">Resistencia</system:String>
+    <system:String x:Key="DbPartCategoryDescResistor">Resistencias</system:String>
+
+    <system:String x:Key="DbPartCategoryNameFixResistor">Resistencia fija</system:String>
+    <system:String x:Key="DbPartCategoryDescFixResistor">Resistencias fijas</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorType">Tipo de resistencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorPower">Potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorPower">Potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorTolerance">Tolerancia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorTolerance">Tolerancia Violeta(B)=0.1%, Azul(C)=0.25%, Verde(D)=0.5%, Marrón(F)=1%, Rojo(G)=2%, Dorado(J)=5%, Plateado(K)=10%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorMaxVoltage">Tensión máx.</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorMaxVoltage">Tensión de trabajo máxima</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorTempco">Tempco</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorTempco">Coeficiente de temperatura Violeta=5, Azul=10, Amarillo=25, Naranja=15, Rojo=50, Marrón=100</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePotentiometer">Potenciómetro</system:String>
+    <system:String x:Key="DbPartCategoryDescPotentiometer">Potenciómetros</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerType">Tipo de potenciómetro</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerShaft">Diámetro de eje</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerShaft">Diámetro del eje</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerCharacteristic">Características</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerCharacteristic">Características</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTrimmer">Resistencia de ajuste</system:String>
+    <system:String x:Key="DbPartCategoryDescTrimmer">Resistencias variables de ajuste</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTrimmerType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTrimmerType">Tipo de ajuste</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTrimmerOrientation">Orientación</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTrimmerOrientation">Orientación</system:String>
+
+    <system:String x:Key="DbPartCategoryNameNTC">NTC</system:String>
+    <system:String x:Key="DbPartCategoryDescNTC">Termistores NTC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameNTCResistor">Resistencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescNTCResistor">Resistencia nominal a 25 °C</system:String>
+    <system:String x:Key="DbPartCategoryParamNameNTCTemperatureRange">Rango de temperatura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescNTCTemperatureRange">Rango de temperatura</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePTC">PTC</system:String>
+    <system:String x:Key="DbPartCategoryDescPTC">Termistores PTC</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCVoltage">Tensión máx.</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCVoltage">Tensión máxima</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCCurrent">Corriente</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCCurrent">Valor nominal de corriente</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCPitch">Ráster</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCPitch">Distancia entre terminales</system:String>
+
+    <system:String x:Key="DbPartCategoryNameVaristor">Varistor</system:String>
+    <system:String x:Key="DbPartCategoryDescVaristor">Varistores</system:String>
+    <system:String x:Key="DbPartCategoryParamNameVaristorVoltage">Tensión de varistor</system:String>
+    <system:String x:Key="DbPartCategoryParamDescVaristorVoltage">Tensión del varistor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameVaristorPitch">Ráster</system:String>
+    <system:String x:Key="DbPartCategoryParamDescVaristorPitch">Distancia entre terminales</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitor">Condensador</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitor">Condensadores</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorCeramic">Condensador cerámico</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorCeramic">Condensadores cerámicos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicDielectric">Dieléctrico</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicDielectric">Dieléctrico</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicVoltage">Tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicVoltage">Tensión de trabajo CC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicVoltageAC">Tensión CA</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicVoltageAC">Tensión de trabajo CA</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicTolerance">Tolerancia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicTolerance">Tolerancia E=0.5%, F=1%, G=2%, H=3%, J=5%, K=10%, L=15%, M=20%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicPitch">Ráster</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicPitch">Distancia entre terminales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicSafety">Clase de seguridad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicSafety">Condensador de clase X o Y</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorFilm">Condensador de película</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorFilm">Condensadores de película</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmDielectric">Dieléctrico</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmDielectric">Dieléctrico</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmVoltage">Tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmVoltage">Tensión de trabajo CC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmVoltageAC">Tensión CA</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmVoltageAC">Tensión de trabajo CA</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmTolerance">Tolerancia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmTolerance">Tolerancia E=0.5%, F=1%, G=2%, H=3%, J=5%, K=10%, L=15%, M=20%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmPitch">Ráster</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmPitch">Distancia entre terminales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmSafety">Clase de seguridad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmSafety">Condensador de clase X o Y</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmDimension">Tamaño</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmDimension">Tamaño (Largo x Ancho x Alto mm)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorElectrolitic">Condensador electrolítico</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorElectrolitic">Condensadores electrolíticos</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticVoltage">Tensión</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticVoltage">Tensión de trabajo CC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticMaxTemp">Temperatura máx.</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticMaxTemp">Temperatura máxima de trabajo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticPitch">Ráster</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticPitch">Distancia entre terminales</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticOrientation">Orientación</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticOrientation">Orientación</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticLowESR">Baja ESR</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticLowESR">Resistencia serie equivalente baja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticDiameter">Diámetro</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticDiameter">Diámetro de la carcasa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticLength">Largo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticLength">Largo de la carcasa sin terminales</system:String>
+    
+    <system:String x:Key="DbPartCategoryNameInductor">Bobina</system:String>
+    <system:String x:Key="DbPartCategoryDescInductor">Bobinas o Inductores</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorCurrent">Corriente</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorCurrent">Corriente de trabajo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorResistance">Resistencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorResistance">Resistencia en serie</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorTolerance">Tolerancia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorTolerance">Tolerancia Marrón(F)=1%, Rojo(G)=2%, Dorado(J)=5%, Plateado(K)=10%, Negro(M)=20%</system:String>
+
+    <system:String x:Key="DbPartCategoryNameQuartz">Cuarzo y filtro</system:String>
+    <system:String x:Key="DbPartCategoryDescQuartz">Cristales de cuarzo, osciladores y filtros</system:String>
+    <system:String x:Key="DbPartCategoryParamNameQuartzType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescQuartzType">Tipo</system:String>
+    <system:String x:Key="DbPartCategoryParamNameQuartzFrequency">Frecuencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescQuartzFrequency">Frecuencia</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTransformer">Transformador</system:String>
+    <system:String x:Key="DbPartCategoryDescTransformer">Transformadores de red</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPower">Potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPower">Potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPrimaryVoltage1">Pr. V1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPrimaryVoltage1">Tensión del primario 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPrimaryVoltage2">Pr. V2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPrimaryVoltage2">Tensión del primario 2</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryVoltage1">Sec. V1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryVoltage1">Tensión del secundario 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryCurrent1">Sec. I1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryCurrent1">Corriente del secundario 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryVoltage2">Sec. V2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryVoltage2">Tensión del secundario 2</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryCurrent2">Sec. I2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryCurrent2">Corriente del secundario 2</system:String>
+
+    <!-- Part categories - Transistor -->
+    <system:String x:Key="DbPartCategoryNameTransistor">Transistor</system:String>
+    <system:String x:Key="DbPartCategoryDescTransistor">Transistores</system:String>
+
+    <system:String x:Key="DbPartCategoryNameBJT">BJT</system:String>
+    <system:String x:Key="DbPartCategoryDescBJT">Transistor de unión bipolar</system:String>
+    
+    <system:String x:Key="DbPartCategoryParamNameBJTMaterial">Material</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTMaterial">Material</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTPolarity">Polaridad</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTPolarity">Polaridad</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUce">Vce</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUce">Tensión máx. Colector-Emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUcb">Vcb</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUcb">Tensión máx. Colector-Base</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUeb">Veb</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUeb">Tensión máx. Emisor-Base</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTIcmax">Icmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTIcmax">Corriente máx. de colector (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTPd">Disipación máx. de potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTft">ft</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTft">Frecuencia de transición</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJThFE">hFE</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJThFE">Ganancia de corriente continua</system:String>
+
+    <system:String x:Key="DbPartCategoryNameIGBT">IGBT</system:String>
+    <system:String x:Key="DbPartCategoryDescIGBT">Transistor bipolar de puerta aislada</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTStructure">Estructura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTStructure">Tipo de estructura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUce">Vce</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUce">Tensión máx. Colector-Emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUcesat">Vce(sat)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUcesat">Tensión máx. de saturación Colector-Emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUge">Vge</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUge">Tensión máx. Puerta-Emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUgeth">Vge(th)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUgeth">Tensión umbral Puerta-Emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTIcmax">Icmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTIcmax">Corriente máx. de colector (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTPd">Disipación máx. de potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTQg">Qg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTQg">Carga total de puerta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTtr">tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTtr">Tiempo máx. de subida</system:String>
+
+    <system:String x:Key="DbPartCategoryNameJFET">JFET</system:String>
+    <system:String x:Key="DbPartCategoryDescJFET">Transistor de efecto de campo de unión</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETChannel">Canal</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETChannel">Tipo de canal</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUds">Vds</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUds">Tensión máx. Drenador-Fuente</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUgsoff">Vgs(off)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUgsoff">Tensión de corte Puerta-Fuente</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUgs">Vgs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUgs">Tensión Puerta-Fuente</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETIdmax">Idmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETIdmax">Corriente máx. de drenador (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETPd">Disipación máx. de potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETRds">Rds(on)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETRds">Resistencia máx. Drenador-Fuente en conducción</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETCoss">Coss</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETCoss">Capacidad de salida</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMOSFET">MOSFET</system:String>
+    <system:String x:Key="DbPartCategoryDescMOSFET">Transistor de metal-óxido-semiconductor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETChannel">Canal</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETChannel">Tipo de canal</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUds">Vds</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUds">Tensión máx. Drenador-Fuente</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUgs">Vgs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUgs">Tensión máx. Puerta-Fuente</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUgsth">Vgs(th)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUgsth">Tensión umbral máx. de puerta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETIdmax">Idmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETIdmax">Corriente máx. de drenador (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETPd">Disipación máx. de potencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETRds">Rds(on)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETRds">Resistencia máx. Drenador-Fuente en conducción</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETQg">Qg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETQg">Carga total de puerta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETtr">tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETtr">Tiempo máx. de subida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETCoss">Coss</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETCoss">Capacidad de salida</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETLogicLevel">Nivel lógico</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETLogicLevel">Entrada a nivel lógico</system:String>
+
+    <system:String x:Key="DbPartCategoryNameUJT">UJT</system:String>
+    <system:String x:Key="DbPartCategoryDescUJT">Transistor uniunión (UJT, PUT)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTUb2e">Vb2e</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTUb2e">Tensión inversa de emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTUb2b1">Vb2b1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTUb2b1">Tensión interbase</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTIerms">Ierms</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTIerms">Corriente eficaz de emisor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTIe">Ie</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTIe">Corriente de pico de emisor</system:String>
+      
+    <!-- Part categories - Trigger device -->
+    <system:String x:Key="DbPartCategoryNameTriggerDevice">Tipo tiristor</system:String>
+    <system:String x:Key="DbPartCategoryDescTriggerDevice">Dispositivos de tipo tiristor</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUdrm">Vdrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUdrm">Tensión directa de pico repetitiva</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUt">Vt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUt">Tensión directa máxima</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceItrms">It(rms)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceItrms">Corriente directa eficaz</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceIh">Ih</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceIh">Corriente de mantenimiento</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUgt">Vgt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUgt">Tensión de disparo de puerta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceIgt">Igt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceIgt">Corriente de disparo de puerta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDevicedIdt">dI/dt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDevicedIdt">Velocidad crítica de crecimiento de la corriente</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDevicedUdt">dV/dt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDevicedUdt">Velocidad crítica de crecimiento de la tensión</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTriac">Triac</system:String>
+    <system:String x:Key="DbPartCategoryDescTriac">Triacs</system:String>
+
+    <system:String x:Key="DbPartCategoryNameThyristor">Tiristor</system:String>
+    <system:String x:Key="DbPartCategoryDescThyristor">Tiristores (SCR, GTO)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDiac">Diac</system:String>
+    <system:String x:Key="DbPartCategoryDescDiac">Diodo para corriente alterna</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiacItrm">Itrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiacItrm">Corriente de pico repetitiva en conducción</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiacUbo">Vbo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiacUbo">Tensión de disparo</system:String>
+
+
+    <!-- Storage locations -->
+    <system:String x:Key="DbStorageLocationNameRoot">Todo</system:String>
+    <system:String x:Key="DbStorageLocationDescRoot">Todas las ubicaciones de almacén</system:String>
+
+    <system:String x:Key="DbStorageLocationNameUnknown">Desconocida</system:String>
+    <system:String x:Key="DbStorageLocationDescUnknown">Sin especificar</system:String>
+
+    
+    <!-- Package categories + Packages -->
+    <system:String x:Key="DbPackageCategoryNameUnknown">Desconocida</system:String>
+    <system:String x:Key="DbPackageCategoryDescUnknown">Encapsulado desconocido</system:String>
+    <system:String x:Key="DbPackageNameUnknown">Desconocido</system:String>
+    <system:String x:Key="DbPackageDescUnknown">Sin especificar</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameBridge">Puente</system:String>
+    <system:String x:Key="DbPackageCategoryDescBridge">Encapsulado de Puente de Diodos</system:String>
+    <system:String x:Key="DbPackageDescBridgeDIL">Puente de Diodos DIL</system:String>
+    <system:String x:Key="DbPackageDescBridgeInLine">Puente de Diodos en Fila</system:String>
+    <system:String x:Key="DbPackageDescBridgeRound">Puente de Diodos Redondo</system:String>
+    <system:String x:Key="DbPackageDescBridgeQuad">Puente de Diodos Cuadrado</system:String>
+    <system:String x:Key="DbPackageDescBridge3PhaseQuad">Puente de Diodos Cuadrado de 3 Fases</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCapacitor">Condensador</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitor">Encapsulado de condensador</system:String>
+    <system:String x:Key="DbPackageDescCapacitorMLCC">Encapsulado de condensador cerámico multicapa</system:String>
+    <system:String x:Key="DbPackageDescCapacitorCeramicDisc">Encapsulado de condensador cerámico de disco</system:String>
+    <system:String x:Key="DbPackageDescCapacitorFilm">Encapsulado de condensador de película</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCapacitorPolarised">Condensador pol.</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitorPolarised">Encapsulado de condensador polarizado</system:String>
+    <system:String x:Key="DbPackageDescCapacitorElectrolytic">Encapsulado de condensador electrolítico</system:String>
+    <system:String x:Key="DbPackageDescCapacitorTantalun">Encapsulado de condensador de tántalo</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDecawatt">Decawatt</system:String>
+    <system:String x:Key="DbPackageCategoryDescDecawatt">Encapsulado de transistor Decawatt</system:String>
+    <system:String x:Key="DbPackageDescDecawatt">Encapsulado Decawatt</system:String>
+    <system:String x:Key="DbPackageDescDecawatt2">Encapsulado Decawatt doble</system:String>
+    <system:String x:Key="DbPackageDescDecawatt3">Encapsulado Decawatt triple</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDisplay">Pantalla</system:String>
+    <system:String x:Key="DbPackageCategoryDescDisplay">Pantalla</system:String>
+    <system:String x:Key="DbPackageDescDisplayLED">Pantalla LED</system:String>
+    <system:String x:Key="DbPackageDescDisplayLCD">Pantalla de cristal líquido</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCDIP">CDIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescCDIP">Encapsulado DIP cerámico con ventana</system:String>
+    <system:String x:Key="DbPackageDescCDIL">Encapsulado DIP cerámico con ventana</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDIP">DIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescDIP">Encapsulado DIP (doble fila de pines)</system:String>
+    <system:String x:Key="DbPackageDescDIL">Encapsulado DIP</system:String>
+    <system:String x:Key="DbPackageDescDILTabs">Encapsulado DIP con lengüetas</system:String>
+    <system:String x:Key="DbPackageDescDILWide">Encapsulado DIP ancho</system:String>
+    
+    <system:String x:Key="DbPackageCategoryNameDO">DO</system:String>
+    <system:String x:Key="DbPackageCategoryDescDO">Encapsulado de diodo</system:String>
+    <system:String x:Key="DbPackageDescDiode">Encapsulado de diodo</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameInductorSMD">Bobina SMD</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorSMD">Encapsulado de bobina SMD</system:String>
+    <system:String x:Key="DbPackageDescInductorShilded">Bobina SMD blindada</system:String>
+    <system:String x:Key="DbPackageDescInductorUnshilded">Bobina SMD no blindada</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameInductorTH">Bobina THT</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorTH">Encapsulado de bobina THT</system:String>
+    <system:String x:Key="DbPackageDescInductorAxialLeaded">Bobina axial</system:String>
+    <system:String x:Key="DbPackageDescInductorRadialLeaded">Bobina radial</system:String>
+    <system:String x:Key="DbPackageDescInductorToroid">Bobina toroidal</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameLED">LED</system:String>
+    <system:String x:Key="DbPackageCategoryDescLED">Diodo emisor de luz</system:String>
+    <system:String x:Key="DbPackageDescLED">Diodo emisor de luz</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameOpto">Opto</system:String>
+    <system:String x:Key="DbPackageCategoryDescOpto">Encapsulado de optoacoplador</system:String>
+    <system:String x:Key="DbPackageDescOptoGullWings">Encapsulado de doble fila (montaje superficial)</system:String>
+    <system:String x:Key="DbPackageDescOptoMFP">Encapsulado MFP</system:String>
+    <system:String x:Key="DbPackageDescOptoSOIC">Encapsulado SOIC opto</system:String>
+
+    <system:String x:Key="DbPackageCategoryNamePLCC">PLCC</system:String>
+    <system:String x:Key="DbPackageCategoryDescPLCC">Encapsulado PLCC</system:String>
+    <system:String x:Key="DbPackageDescPLCC">Encapsulado PLCC</system:String>
+
+    <system:String x:Key="DbPackageCategoryNamePotmeter">Potenciómetro</system:String>
+    <system:String x:Key="DbPackageCategoryDescPotmeter">Potenciómetros de ajuste y de control</system:String>
+    <system:String x:Key="DbPackageDescPotmeterTrimmer">Potenciómetro de ajuste</system:String>
+    <system:String x:Key="DbPackageDescPotmeterControl">Potenciómetro de control</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameResistor">Resistencia</system:String>
+    <system:String x:Key="DbPackageCategoryDescResistor">Encapsulados de resistencia</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0402">Resistencia SMD de 0.0625W o 0.125W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0603">Resistencia SMD de 0.1W o 0.2W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0805">Resistencia SMD de 0.125W o 0.25W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1206">Resistencia SMD de 0.25W o 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1210">Resistencia SMD de 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1218">Resistencia SMD de 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD2010">Resistencia SMD de 0.75W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD2512">Resistencia SMD de 1W o 2W</system:String>
+    <system:String x:Key="DbPackageDescResistorMF0204">Resistencia de película metálica de 0.4W</system:String>
+    <system:String x:Key="DbPackageDescResistorMF0207">Resistencia de película metálica de 0.6W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF0623">Resistencia de óxido metálico de 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF0932">Resistencia de óxido metálico de 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1145">Resistencia de óxido metálico de 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1550">Resistencia de óxido metálico de 2W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1765">Resistencia de óxido metálico de 3W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF2485">Resistencia de óxido metálico de 5W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW3W">Resistencia bobinada cementada de 3W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW5W">Resistencia bobinada cementada de 5W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW7W">Resistencia bobinada cementada de 7W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW10W">Resistencia bobinada cementada de 10W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW15W">Resistencia bobinada cementada de 15W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW20W">Resistencia bobinada cementada de 20W</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameQuartz">Cuarzo</system:String>
+    <system:String x:Key="DbPackageCategoryDescQuartz">Cuarzo, resonador y oscilador</system:String>
+    <system:String x:Key="DbPackageDescQuartz">Encapsulado de cristal de cuarzo</system:String>
+    <system:String x:Key="DbPackageDescResonator">Encapsulado de resonador cerámico</system:String>
+    <system:String x:Key="DbPackageDescOscillator">Encapsulado de oscilador</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSIP">SIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescSIP">Encapsulado SIP (1 fila)</system:String>
+    <system:String x:Key="DbPackageDescSIP">Encapsulado SIP</system:String>
+    <system:String x:Key="DbPackageDescSIPMiddlePower">Encapsulado SIP de media potencia</system:String>
+    <system:String x:Key="DbPackageDescSIPPower">Encapsulado SIP de potencia</system:String>
+    <system:String x:Key="DbPackageDescSIPPowerZigZag">Encapsulado SIP de potencia en zig-zag</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOD">SOD</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOD">Encapsulado de diodo SOD</system:String>
+    <system:String x:Key="DbPackageDescMELF">Encapsulado de diodo MELF</system:String>
+    <system:String x:Key="DbPackageDescSOD">Encapsulado de diodo SOD</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOIC">SOIC</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOIC">Circuito integrado SOIC</system:String>
+    <system:String x:Key="DbPackageDescSOIC">Circuito integrado SOIC</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOJ">SOJ</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOJ">Circuito integrado SOJ</system:String>
+    <system:String x:Key="DbPackageDescSOJ">Circuito integrado SOJ</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameMSOP">MSOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescMSOP">Encapsulado Mini SOP</system:String>
+    <system:String x:Key="DbPackageDescMSOP">Encapsulado Mini SOP</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOP">SOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOP">Encapsulado SOP</system:String>
+    <system:String x:Key="DbPackageDescSOP">Encapsulado SOP</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOT">SOT</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOT">Encapsulado de transistor SOT</system:String>
+    <system:String x:Key="DbPackageDescSOT">Encapsulado de transistor SOT</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameStud">Perno</system:String>
+    <system:String x:Key="DbPackageCategoryDescStud">Encapsulado de montaje por perno</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM5">Encapsulado de diodo con perno (M5x0.8)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM6orM8">Encapsulado de diodo con perno (M6x1, M8x1.25)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM12">Encapsulado de diodo con perno (M12x1.75)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM16">Encapsulado de diodo con perno (M16x1.5)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM24">Encapsulado de diodo con perno (M24x1.5)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM6">Encapsulado de tiristor con perno (M6x1)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM12">Encapsulado de tiristor con perno (M12x1.75)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM16">Encapsulado de tiristor con perno (M16x1.5)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM24">Encapsulado de tiristor con perno (M24x1.5)</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTOPlastic">TO plástico</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOPlastic">Encapsulado plástico de transistor</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated">Encapsulado de plástico con lengüeta aislada</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated2Pin">Encapsulado de plástico con lengüeta aislada de 2 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated3Pin">Encapsulado de plástico con lengüeta aislada de 3 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic">Encapsulado de plástico</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic2Pin">Encapsulado de plástico de 2 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic5Pin">Encapsulado de plástico de 5 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic7Pin">Encapsulado de plástico de 7 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic9Pin">Encapsulado de plástico de 9 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic11Pin">Encapsulado de plástico de 11 terminales</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic15Pin">Encapsulado de plástico de 15 terminales</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTOMetal">TO metal</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOMetal">Encapsulado metálico de transistor</system:String>
+    <system:String x:Key="DbPackageDescTOMetal">Encapsulado de metal</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTQFP">TQFP</system:String>
+    <system:String x:Key="DbPackageCategoryDescTQFP">Circuito integrado cuadrado TQFP</system:String>
+    <system:String x:Key="DbPackageDescTQFP">Encapsulado cuadrado TQFP</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTransformer">Transformador</system:String>
+    <system:String x:Key="DbPackageCategoryDescTransformer">Transformadores de red</system:String>
+    <system:String x:Key="DbPackageDescTransformer">Transformador PCB</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTSSOP">TSSOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescTSSOP">Encapsulado TSSOP</system:String>
+    <system:String x:Key="DbPackageDescTSSOP">Encapsulado TSSOP</system:String>
+
+
+    <!-- Manufacturers -->
+    <system:String x:Key="DbManufacturerNameUnknown">Desconocido</system:String>
+    <system:String x:Key="DbManufacturerDescUnknown">No disponible</system:String>
+
+    <system:String x:Key="DbManufacturerDescAdvancedLinearDevices">Advanced Linear Devices, Inc</system:String>
+    <system:String x:Key="DbManufacturerDescAdvancedMicroDevices">Advanced Micro Devices</system:String>
+    <system:String x:Key="DbManufacturerDescAgilent">Agilent Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescAllegro">Allegro Microsystems</system:String>
+    <system:String x:Key="DbManufacturerDescAlphaAndOmega">Alpha and Omega Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescAnalogDevices">Analog Devices, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescArcotronics">AV Arcotronics (ahora KEMET)</system:String>
+    <system:String x:Key="DbManufacturerDescAtmel">Desde 2016 forma parte de Microchip</system:String>
+    <system:String x:Key="DbManufacturerDescAvisor">Avisor</system:String>
+    <system:String x:Key="DbManufacturerDescAVX">Kyocera AVX</system:String>
+    <system:String x:Key="DbManufacturerDescBBC">Brown, Boveri and Cie (disuelta en 1988)</system:String>
+    <system:String x:Key="DbManufacturerDescBourns">Bourns, Inc</system:String>
+    <system:String x:Key="DbManufacturerDescBroadcom">Broadcom Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescBurrBrown">Se fusionó con Texas Instruments</system:String>
+    <system:String x:Key="DbManufacturerDescCatalyst">Catalyst Semiconductor, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescCentralSemiconductor">Central Semiconductor LLC.</system:String>
+    <system:String x:Key="DbManufacturerDescCirrusLogic">Cirrus Logic</system:String>
+    <system:String x:Key="DbManufacturerDescCoilcraft">Coilcraft Magnetic Components</system:String>
+    <system:String x:Key="DbManufacturerDescComsetSemiconductor">Comset Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescContinentalDevice">Continental Device India Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescCypress">Cypress Semiconductor. Forma parte de Infineon desde 2020</system:String>
+    <system:String x:Key="DbManufacturerDescDallasSemiconductor">Desde 2001 forma parte de Maxim Integrated</system:String>
+    <system:String x:Key="DbManufacturerDescDCComponents">DC Components Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescDiodes">Diodes Incorporated</system:String>
+    <system:String x:Key="DbManufacturerDescDiotec">Diotec Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescElna">ELNA Co., Ltd</system:String>
+    <system:String x:Key="DbManufacturerDescEpcos">Se fusionó con TDK</system:String>
+    <system:String x:Key="DbManufacturerDescERO">Roederstein Electronics, Inc. (ahora Vishay)</system:String>
+    <system:String x:Key="DbManufacturerDescEupec">Se fusionó con Infineon</system:String>
+    <system:String x:Key="DbManufacturerDescEspressif">Espressif Systems</system:String>
+    <system:String x:Key="DbManufacturerDescExarCorporation">Desde 2017 forma parte de MaxLinear</system:String>
+    <system:String x:Key="DbManufacturerDescFagor">Fagor Electrónica</system:String>
+    <system:String x:Key="DbManufacturerDescFairchildSemiconductor">Desde 2001 forma parte de Onsemi</system:String>
+    <system:String x:Key="DbManufacturerDescFenghua">Fenghua (HK) Electronics Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescFerroCore">FerroCore</system:String>
+    <system:String x:Key="DbManufacturerDescFreescaleSemiconductor">Desde 2015 forma parte de NXP</system:String>
+    <system:String x:Key="DbManufacturerDescFujiElectric">Fuji Electric Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescFujitsu">Fujitsu Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescGeneralInstrument">Se disolvió en 1997</system:String>
+    <system:String x:Key="DbManufacturerDescGeneralSemiconductor">Ahora es Vishay</system:String>
+    <system:String x:Key="DbManufacturerDescGLuxon">Lexon Electronics Corporation: se fusionó con Teapo en 2005</system:String>
+    <system:String x:Key="DbManufacturerDescGERTH">GERTH Transformatorenbau GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescGoldStar">GoldStar (ahora LG Electronics)</system:String>
+    <system:String x:Key="DbManufacturerDescHAHN">HAHN GmbH and Co. KG</system:String>
+    <system:String x:Key="DbManufacturerDescHarrisCorporation">Algunas de sus divisiones pasaron a manos de Texas Instruments (1998) e Intersil (1999)</system:String>
+    <system:String x:Key="DbManufacturerDescHewlettPackard">Pasó a llamarse Agilent Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescHitachi">Hitachi Semiconductor (Now Renesas)</system:String>
+    <system:String x:Key="DbManufacturerDescHitano">Hitano Enterprise Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescHoltek">Holtek Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescHoneywell">Honeywell</system:String>
+    <system:String x:Key="DbManufacturerDescInchange">Inchange Semiconductor Company Limited</system:String>
+    <system:String x:Key="DbManufacturerDescIndel">INDEL Co Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescInfineon">Infineon Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescIntegratedDeviceTechnology">Integrated Device Technology, Inc. (ahora Renesas)</system:String>
+    <system:String x:Key="DbManufacturerDescIntegratedSiliconSolution">Integrated Silicon Solution, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescIntel">Intel technologies</system:String>
+    <system:String x:Key="DbManufacturerDescIntersil">Desde 2017 forma parte de Renesas</system:String>
+    <system:String x:Key="DbManufacturerDescInternationalRectifier">Desde 2015 forma parte de Infineon</system:String>
+    <system:String x:Key="DbManufacturerDescIXYS">Desde 2018 forma parte de Littlefuse</system:String>
+    <system:String x:Key="DbManufacturerDescJamicon">Jamicon</system:String>
+    <system:String x:Key="DbManufacturerDescJapanRadio">Japan Radio Co.</system:String>
+    <system:String x:Key="DbManufacturerDescKemet">Kemet (Yageo Group)</system:String>
+    <system:String x:Key="DbManufacturerDescKingbright">Kingbright Electronic Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescKoreaElectronics">Korea Electronics</system:String>
+    <system:String x:Key="DbManufacturerDescLattice">Lattice Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescLinearTechnology">Desde 2017 forma parte de Analog Devices</system:String>
+    <system:String x:Key="DbManufacturerDescLiteOn">Lite-On Technology Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescLittelFuse">Littelfuse, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescMakrai">MAKRAI Transformers Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescMatsushitaElectronics">Panasonic desde 2008</system:String>
+    <system:String x:Key="DbManufacturerDescMaxim">Maxim Integrated</system:String>
+    <system:String x:Key="DbManufacturerDescMaxLinear">MaxLinear</system:String>
+    <system:String x:Key="DbManufacturerDescMicrel">Desde 2015 forma parte de Microchip</system:String>
+    <system:String x:Key="DbManufacturerDescMicroCommercialComponents">Micro Commercial Components</system:String>
+    <system:String x:Key="DbManufacturerDescMicrochip">Microchip Technology</system:String>
+    <system:String x:Key="DbManufacturerDescMikroelektronikaiVallalat">Desapareció en 1986</system:String>
+    <system:String x:Key="DbManufacturerDescMiniCircuits">Mini-Circuits</system:String>
+    <system:String x:Key="DbManufacturerDescMitelSemiconductor">Mitel Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescMitsubishi">Mitsubishi Electric</system:String>
+    <system:String x:Key="DbManufacturerDescMicrosemi">Microsemi Corporation (adquirida por Microchip en 2018)</system:String>
+    <system:String x:Key="DbManufacturerDescMicronas">TDK-Micronas GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescMonolithicPowerSystems">Monolithic Power Systems, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescMospec">Mospec Semiconductor corp.</system:String>
+    <system:String x:Key="DbManufacturerDescMotorola">Freescale desde 2004</system:String>
+    <system:String x:Key="DbManufacturerDescMulticomp">Multicomp Pro</system:String>
+    <system:String x:Key="DbManufacturerDescMurata">Murata</system:String>
+    <system:String x:Key="DbManufacturerDescMyrra">Myrra</system:String>
+    <system:String x:Key="DbManufacturerDescNationalSemiconductor">Desde 2011 forma parte de Texas Instruments</system:String>
+    <system:String x:Key="DbManufacturerDescNEC">NEC Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNewJerseySemiconductor">New Jersey Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescNichicon">Nichicon Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNipponChemiCon">Nippon Chemi-Con Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNexperia">Nexperia</system:String>
+    <system:String x:Key="DbManufacturerDescNuvoton">Nuvoton Technology Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescNTEElectronics">NTE Electronics, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescNXPSemiconductors">NXP Semiconductors</system:String>
+    <system:String x:Key="DbManufacturerDescOhmite">Ohmite Mfg Co.</system:String>
+    <system:String x:Key="DbManufacturerDescOmron">Omron</system:String>
+    <system:String x:Key="DbManufacturerDescOnsemi">ON Semiconductor Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescOSRAM">ams OSRAM AG</system:String>
+    <system:String x:Key="DbManufacturerDescPanasonic">Panasonic</system:String>
+    <system:String x:Key="DbManufacturerDescPanJit">PanJit Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescPhilipsSemiconductors">NXP desde 2006</system:String>
+    <system:String x:Key="DbManufacturerDescPiher">Piher sensing systems</system:String>
+    <system:String x:Key="DbManufacturerDescPowerex">Powerex Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescPowerInnovations">Power Innovations Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescPowerIntegrations">Power Integrations</system:String>
+    <system:String x:Key="DbManufacturerDescPulseElectronics">Pulse Electronics (parte de Yageo Group)</system:String>
+    <system:String x:Key="DbManufacturerDescRadiohm">Radiohm (New Tunirama)</system:String>
+    <system:String x:Key="DbManufacturerDescRCA">Radio Corporation of America (se disolvió en 1987)</system:String>
+    <system:String x:Key="DbManufacturerDescRemix">REMIX Radiotechnic Company (parte de TEMIC desde 1992)</system:String>
+    <system:String x:Key="DbManufacturerDescRenesas">Renesas Electronics Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescRIFA">RIFA AB, posteriormente Evox Rifa (ahora KEMET)</system:String>
+    <system:String x:Key="DbManufacturerDescROE">Roederstein Electronics, Inc. (ahora Vishay)</system:String>
+    <system:String x:Key="DbManufacturerDescROHM">Rohm Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescRubycon">Rubycon Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescSamsung">Samsung Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescSamwha">Samwha Capacitor Group</system:String>
+    <system:String x:Key="DbManufacturerDescSanKen">SanKen Electric Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescSANYO">Parte de ONSemi</system:String>
+    <system:String x:Key="DbManufacturerDescSemikron">En 2022 se fusionó con Danfoss Silicon Power</system:String>
+    <system:String x:Key="DbManufacturerDescSemtech">Semtech Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescSharp">Sharp Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescShinySpace">Shiny Space Enterprise Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescSiemens">Siemens Microelectronics, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescSiliconLaboratories">Silicon Laboratories</system:String>
+    <system:String x:Key="DbManufacturerDescSTMicroelectronics">STMicroelectronics</system:String>
+    <system:String x:Key="DbManufacturerDescTaiwanSemiconductor">Taiwan Semiconductor Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescTalema">Talema group</system:String>
+    <system:String x:Key="DbManufacturerDescTDK">TDK Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescTEConnectivity">TE Connectivity</system:String>
+    <system:String x:Key="DbManufacturerDescTeapo">Teapo</system:String>
+    <system:String x:Key="DbManufacturerDescTelefunken">Se fusionó con AEG</system:String>
+    <system:String x:Key="DbManufacturerDescTemic">Cerró en 1998. Atmel y Vishay se hicieron cargo de ella.</system:String>
+    <system:String x:Key="DbManufacturerDescTesla">Tesla Elektronicke (privatizada en 1991)</system:String>
+    <system:String x:Key="DbManufacturerDescTexasInstruments">Texas Instruments Incorporated</system:String>
+    <system:String x:Key="DbManufacturerDescToshiba">Toshiba Semiconductor and Storage</system:String>
+    <system:String x:Key="DbManufacturerDescTungsram">La división de semiconductores fué adquirida por MEV en 1982</system:String>
+    <system:String x:Key="DbManufacturerDescVAC">Vacuumschmelze GmbH and Co. KG</system:String>
+    <system:String x:Key="DbManufacturerDescViking">Viking Tech.</system:String>
+    <system:String x:Key="DbManufacturerDescVishay">Vishay Intertechnology, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescVitrohm">Forma parte de Yageo Group</system:String>
+    <system:String x:Key="DbManufacturerDescWalsin">Walsin Technology</system:String>
+    <system:String x:Key="DbManufacturerDescWima">Wima</system:String>
+    <system:String x:Key="DbManufacturerDescWurth">Würth Elektronik GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescYageo">Yageo Group</system:String>
+    <system:String x:Key="DbManufacturerDescYangjie">Yangzhou Yangjie Electronic Technology Co., Ltd</system:String>
+    <system:String x:Key="DbManufacturerDescZetex">Zetex Semiconductors plc (adquirida por Diodes Incorporated)</system:String>
+    <system:String x:Key="DbManufacturerDescZilog">Zilog, Inc.</system:String>
+
+    <!-- Projects -->
+    <system:String x:Key="DbProjectNameRoot">Todo</system:String>
+    <system:String x:Key="DbProjectDescRoot">Todos los proyectos</system:String>
+
+</ResourceDictionary>

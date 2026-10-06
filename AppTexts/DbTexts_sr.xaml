@@ -1,0 +1,1104 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="sr-Latn-RS">
+
+    <!-- Part categories -->
+    <system:String x:Key="DbPartCategoryNameRoot">Sve</system:String>
+    <system:String x:Key="DbPartCategoryDescRoot">Sve komponente</system:String>
+
+    <!-- Part categories - Analog IC -->
+    <system:String x:Key="DbPartCategoryNameAnalogIC">Analogna IC kola</system:String>
+    <system:String x:Key="DbPartCategoryDescAnalogIC">Analogna integrisana kola</system:String>
+
+    <system:String x:Key="DbPartCategoryNameADC">ADC</system:String>
+    <system:String x:Key="DbPartCategoryDescADC">Analogno-digitalni konvertori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCResolution">Rezolucija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCResolution">Rezolucija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCSpeed">Brzina</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCSpeed">Odabiraka po sekundi</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCInterface">Digitalni interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCVcc">Opseg napona napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCDifferential">Diferencijalni</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCDifferential">Diferencijalni ulaz</system:String>
+
+    <system:String x:Key="DbPartCategoryNameAudioAmp">Audio pojačavač</system:String>
+    <system:String x:Key="DbPartCategoryDescAudioAmp">IC audio pojačavača</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpClass">Klasa</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpClass">Klasa pojačavača</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpVcc">Opseg napona napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpPo">Po</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpPo">Maksimalna izlazna snaga</system:String>
+
+    <system:String x:Key="DbPartCategoryNameComparator">Komparator</system:String>
+    <system:String x:Key="DbPartCategoryDescComparator">Komparatori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorSingleVcc">Jedno napajanje</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorSingleVcc">Opseg napona za jedno napajanje</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorDoubleVcc">Dvostruko napajanje ±</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorDoubleVcc">Opseg napona za dvostruko napajanje ±</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorVio">Vio</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorVio">Ulazni naponski ofset</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorTr">Tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorTr">Tipično vreme odziva</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDAC">DAC</system:String>
+    <system:String x:Key="DbPartCategoryDescDAC">Digitalno-analogni konvertori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACResolution">Rezolucija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACResolution">Rezolucija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACSpeed">Brzina</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACSpeed">Odabiraka po sekundi</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACInterface">Digitalni interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACVcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDigipot">Digitalni potenciometar</system:String>
+    <system:String x:Key="DbPartCategoryDescDigipot">Digitalni potenciometri</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotPositions">Pozicije</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotPositions">Broj pozicija klizača</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotInterface">Digitalni interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotVcc">Opseg napona napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotResistance">Otpornost</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotResistance">Otpornost</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMOSFETDriver">MOSFET/IGBT drajver</system:String>
+    <system:String x:Key="DbPartCategoryDescMOSFETDriver">MOSFET/IGBT drajveri</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverType">Tip izlaza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverVcc">Opseg napona napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverVs">Vs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverVs">Napon napajanja gornje strane (high side)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverIo">Izlazna struja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMiscAnalog">Ostala analogna</system:String>
+    <system:String x:Key="DbPartCategoryDescMiscAnalog">Ostala analogna IC kola</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMiscAnalogVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMiscAnalogVcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSensor">Senzor</system:String>
+    <system:String x:Key="DbPartCategoryDescSensor">Senzori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorType">Tip senzora</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorInterface">Interfejs senzora</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorVcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameOpAmp">Operacioni pojačavač</system:String>
+    <system:String x:Key="DbPartCategoryDescOpAmp">Operacioni pojačavači</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpSingleVcc">Jedno napajanje</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpSingleVcc">Opseg napona za jedno napajanje</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpDoubleVcc">Dvostruko napajanje ±</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpDoubleVcc">Opseg napona za dvostruko napajanje ±</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpVio">Vio</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpVio">Ulazni naponski ofset</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpBW">BW</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpBW">Tipičan propusni opseg pri jediničnom pojačanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpGain">Pojačanje</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpGain">Minimalno naponsko pojačanje</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpSlewRate">Slew rate</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpSlewRate">Brzina promene izlaznog napona (slew rate)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpInputNoise">Napon ulaznog šuma</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpInputNoise">Napon ulaznog šuma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpRailToRailInput">Rail-to-Rail ulaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpRailToRailInput">Rail-to-Rail ulaz</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpRailToRailOutput">Rail-to-Rail izlaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpRailToRailOutput">Rail-to-Rail izlaz</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTransistorArray">Niz tranzistora</system:String>
+    <system:String x:Key="DbPartCategoryDescTransistorArray">Nizovi tranzistora</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayVo">Izlazni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayIo">Izlazna struja</system:String>
+
+    <!-- Part categories - Analog IC - Voltage regulator -->
+    <system:String x:Key="DbPartCategoryNameVoltageRegulator">Regulator napona</system:String>
+    <system:String x:Key="DbPartCategoryDescVoltageRegulator">Regulatori napona i kontroleri</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLinearRegulator">Linearni regulator</system:String>
+    <system:String x:Key="DbPartCategoryDescLinearRegulator">Linearni regulatori napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorLDO">LDO</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorLDO">Tip sa malim padom napona (low dropout)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorOutput">Izlaz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorOutput">Tip izlaza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVo">Izlazni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVadj">Opseg podesivog izlaznog napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorIo">Izlazna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVi">Opseg ulaznog napona</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSMPS">SMPS kontroler</system:String>
+    <system:String x:Key="DbPartCategoryDescSMPS">AC/DC pretvarač, SMPS kontroler</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSPo">Po</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSPo">Izlazna snaga</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSVi">Opseg ulaznog napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSFsw">Fsw</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSFsw">Frekvencija prekidanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSwitchedRegulator">Prekidački regulator</system:String>
+    <system:String x:Key="DbPartCategoryDescSwitchedRegulator">Prekidački regulator napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorTopology">Topologija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorTopology">Topologija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVo">Izlazni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVadj">Opseg podesivog izlaznog napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorIo">Izlazna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVi">Opseg ulaznog napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorFsw">Fsw</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorFsw">Frekvencija prekidanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameReference">Referenca</system:String>
+    <system:String x:Key="DbPartCategoryDescReference">Naponska referenca</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceVo">Izlazni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceIo">Izlazna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceVadj">Opseg podesivog izlaznog napona</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceTolerance">Tolerancija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceTolerance">Tolerancija u procentima</system:String>
+
+    <!-- Part categories - Digital IC -->
+    <system:String x:Key="DbPartCategoryNameDigitalIC">Digitalna IC kola</system:String>
+    <system:String x:Key="DbPartCategoryDescDigitalIC">Digitalna integrisana kola</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLogic">Logička kola</system:String>
+    <system:String x:Key="DbPartCategoryDesLogicc">Logička integrisana kola</system:String>
+
+    <system:String x:Key="DbPartCategoryName4000">4000</system:String>
+    <system:String x:Key="DbPartCategoryDesc4000">CMOS serija 4000</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Function">Funkcija</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Function">Funkcija</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Channels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Channels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Vcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Vcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryName7400">7400</system:String>
+    <system:String x:Key="DbPartCategoryDesc7400">TTL serija 7400</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Family">Familija</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Family">Familija</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Function">Funkcija</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Function">Funkcija</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Channels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Channels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Vcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Vcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMemory">Memorija</system:String>
+    <system:String x:Key="DbPartCategoryDescMemory">Memorije</system:String>
+
+    <system:String x:Key="DbPartCategoryNameEPROM">EPROM</system:String>
+    <system:String x:Key="DbPartCategoryDescEPROM">EPROM / PROM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMType">Tip PROM-a</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMWordWide">Širina reči</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMWordWide">Širina podatkovne reči</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMCapacity">Kapacitet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMCapacity">Kapacitet memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMReadTime">Vreme čitanja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMReadTime">Vreme pristupa pri čitanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMVcc">Napon napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMVpp">Vpp</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMVpp">Napon programiranja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameParallelEEPROM">Paralelni EEPROM/Flash</system:String>
+    <system:String x:Key="DbPartCategoryDescParallelEEPROM">Paralelna EEPROM / Flash memorija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMCapacity">Kapacitet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMCapacity">Kapacitet memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMReadTime">Vreme čitanja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMReadTime">Vreme pristupa pri čitanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMVcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameRAM">RAM</system:String>
+    <system:String x:Key="DbPartCategoryDescRAM">RAM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMCapacity">Kapacitet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMCapacity">Kapacitet memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMReadTime">Vreme čitanja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMReadTime">Vreme pristupa pri čitanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMVcc">Opseg napona napajanja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSerialEEPROM">Serijski EEPROM/Flash</system:String>
+    <system:String x:Key="DbPartCategoryDescSerialEEPROM">Serijski EEPROM / Flash</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMInterface">Tip serijskog interfejsa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMInterfaceSpeed">Brzina interfejsa</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMInterfaceSpeed">Brzina interfejsa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMCapacity">Kapacitet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMCapacity">Kapacitet memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMVcc">Opseg napona napajanja</system:String>
+
+    <!-- Part categories - Digital IC - Microcontollers -->
+    <system:String x:Key="DbPartCategoryNameMicrocontroller">Mikrokontroler</system:String>
+    <system:String x:Key="DbPartCategoryDescMicrocontroller">Mikrokontroleri</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerVcc">Opseg napona napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerClock">Takt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerClock">Maksimalna frekvencija takta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerFlash">Flash</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerFlash">Veličina Flash memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerSRAM">SRAM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerSRAM">Veličina SRAM memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerEEPROM">EEPROM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerEEPROM">Veličina EEPROM memorije</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerGPIO">GPIO pinovi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerGPIO">Broj GPIO pinova</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerADC">ADC kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerADC">Broj ADC kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerPWM">PWM izlazi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerPWM">Broj PWM izlaza</system:String>
+
+    <system:String x:Key="DbPartCategoryName8051">8051</system:String>
+    <system:String x:Key="DbPartCategoryDesc8051">Familija 8051</system:String>
+
+    <system:String x:Key="DbPartCategoryNameAVR">AVR</system:String>
+    <system:String x:Key="DbPartCategoryDescAVR">8-bitna AVR familija</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMSP">MSP</system:String>
+    <system:String x:Key="DbPartCategoryDescMSP">MSP430 16-bitna familija mikrokontrolera</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePIC">PIC</system:String>
+    <system:String x:Key="DbPartCategoryDescPIC">8-bitna PIC familija</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePIC24">PIC24/DSPIC</system:String>
+    <system:String x:Key="DbPartCategoryDescPIC24">16-bitna PIC24/DSPIC familija</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSTM8">STM8</system:String>
+    <system:String x:Key="DbPartCategoryDescSTM8">STM 8-bitna familija mikrokontrolera</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSTM32">STM32</system:String>
+    <system:String x:Key="DbPartCategoryDescSTM32">STM32 32-bitna ARM Cortex familija mikrokontrolera</system:String>
+
+    <!-- Part categories - Digital IC - Interface -->
+    <system:String x:Key="DbPartCategoryNameInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryDescInterface">Interfejs IC-ovi</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceFunction">Funkcija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceFunction">Funkcija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceChannels">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceChannels">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceSpeed">Brzina</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceSpeed">Brzina prenosa podataka</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceVcc">Opseg napona napajanja</system:String>
+
+    <!-- Part categories - Digital IC - RTC -->
+    <system:String x:Key="DbPartCategoryNameRTC">RTC</system:String>
+    <system:String x:Key="DbPartCategoryDescRTC">Sat realnog vremena</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRTCInterface">Interfejs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRTCInterface">Tip serijskog interfejsa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRTCVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRTCVcc">Opseg napona napajanja</system:String>
+
+    <!-- Part categories - Digital IC - Misc. Digital -->
+    <system:String x:Key="DbPartCategoryNameMiscDigital">Ostala digitalna</system:String>
+    <system:String x:Key="DbPartCategoryDescMiscDigital">Ostala digitalna IC kola</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMiscDigitalVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMiscDigitalVcc">Opseg napona napajanja</system:String>
+
+    <!-- Part categories - Diode -->
+    <system:String x:Key="DbPartCategoryNameDiode">Dioda</system:String>
+    <system:String x:Key="DbPartCategoryDescDiode">Diode</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameDiodeType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeType">Tip strukture</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeRecovery">Oporavak diode</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeRecovery">Tip oporavka diode</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeUrrm">Vrrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeUrrm">Maksimalni vršni napon u zapornom smeru</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeUf">Vf</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeUf">Maksimalni napon u propusnom smeru</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeIf">If</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeIf">Maksimalna srednja struja u propusnom smeru (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeTrr">trr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeTrr">Vreme reverznog oporavka</system:String>
+
+    <system:String x:Key="DbPartCategoryNameBridgeRectifier">Grecov spoj</system:String>
+    <system:String x:Key="DbPartCategoryDescBridgeRectifier">Grecovi spojevi</system:String>
+
+    <system:String x:Key="DbPartCategoryNameRectifier">Ispravljačka dioda</system:String>
+    <system:String x:Key="DbPartCategoryDescRectifier">Ispravljačke diode</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSwitchDiode">Prekidačka dioda</system:String>
+    <system:String x:Key="DbPartCategoryDescSwitchDiode">Prekidačke diode</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSchottky">Schottky</system:String>
+    <system:String x:Key="DbPartCategoryDescSchottky">Schottky diode</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTVS">TVS</system:String>
+    <system:String x:Key="DbPartCategoryDescTVS">Supresori prelaznih napona (TVS diode)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTVSUbr">Vbr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTVSUbr">Nominalni probojni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTVSPppm">Pppm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTVSPppm">Vršna impulsna snaga</system:String>
+
+    <system:String x:Key="DbPartCategoryNameZener">Zener</system:String>
+    <system:String x:Key="DbPartCategoryDescZener">Zener diode</system:String>
+    <system:String x:Key="DbPartCategoryParamNameZenerUz">Vz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescZenerUz">Zenerov napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameZenerPtot">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescZenerPtot">Disipacija snage</system:String>
+
+    <!-- Part categories - Optoelectronics -->
+    <system:String x:Key="DbPartCategoryNameOptoelectronics">Optoelektronika</system:String>
+    <system:String x:Key="DbPartCategoryDescOptoelectronics">Optoelektronske komponente</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplay">Displej</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplay">Displeji</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayDigits">Numerički</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayDigits">Numerički displeji</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsTechnology">Tehnologija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsTechnology">Tehnologija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsCount"># Cifara</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsCount">Broj cifara</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsType">Tip displeja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsHeight">Visina</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsHeight">Visina cifre</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsCommonElectrode">Zajednička elektroda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsCommonElectrode">Zajednička elektroda (anoda/katoda)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsColor">Boja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsColor">Boja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayAlphanumeric">Alfanumerički</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayAlphanumeric">Alfanumerički displeji</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericTechnology">Tehnologija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericTechnology">Tehnologija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericCharacters"># Karaktera</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericCharacters">Broj karaktera (kolone x redovi)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericDimension">Dimenzije</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericDimension">Dimenzije modula (Dužina x Širina x Visina mm)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericBacklight">Pozadinsko osvetljenje</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericBacklight">Pozadinsko osvetljenje</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericSupplyVoltage">Napon napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericSupplyVoltage">Napon napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericController">Kontroler</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericController">Kontroler (IC)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayGraphic">Grafički</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayGraphic">Grafički/matrični displeji</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicTechnology">Tehnologija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicTechnology">Tehnologija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicDiagonal">Dijagonala</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicDiagonal">Dijagonala displeja u inčima</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicResolution">Rezolucija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicResolution">Rezolucija (kolone x redovi)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicDimension">Dimenzije</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicDimension">Dimenzije modula (Dužina x Širina x Visina mm)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicTouch">Ekran osetljiv na dodir</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicTouch">Ekran osetljiv na dodir</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicSupplyVoltage">Napon napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicSupplyVoltage">Napon napajanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicController">Kontroler</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicController">Kontroler (IC)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLED">LED</system:String>
+    <system:String x:Key="DbPartCategoryDescLED">Svetleće diode</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDShape">Oblik</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDShape">Oblik</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDColor">Boja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDColor">Boja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDCurrent">Struja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDCurrent">Nominalna struja</system:String>
+
+    <system:String x:Key="DbPartCategoryNameOptocoupler">Optokapler</system:String>
+    <system:String x:Key="DbPartCategoryDescOptocoupler">Optokapleri</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerChannel">Kanali</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerChannel">Broj kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputType">Tip izlaza</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputType">Tip izlaza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputSupplyVoltage">Napon napajanja izlaza</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputSupplyVoltage">Napon napajanja izlaza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputVoltage">Izlazni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputVoltage">Maksimalni izlazni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputCurrent">Izlazna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputCurrent">Maksimalna izlazna struja</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePhotoelements">Fotoelement</system:String>
+    <system:String x:Key="DbPartCategoryDescPhotoelements">Fotoelementi</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePhotoelementsType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPhotoelementsType">Tip fotoelementa</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePhotoelementsSensitivityPeak">Vrh osetljivosti</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPhotoelementsSensitivityPeak">Talasna dužina maksimalne osetljivosti</system:String>
+
+    <!-- Part categories - Passive -->
+    <system:String x:Key="DbPartCategoryNamePassive">Pasivne</system:String>
+    <system:String x:Key="DbPartCategoryDescPassive">Pasivne komponente</system:String>
+
+    <system:String x:Key="DbPartCategoryNameResistor">Otpornik</system:String>
+    <system:String x:Key="DbPartCategoryDescResistor">Otpornici</system:String>
+
+    <system:String x:Key="DbPartCategoryNameFixResistor">Fiksni otpornik</system:String>
+    <system:String x:Key="DbPartCategoryDescFixResistor">Fiksni otpornici</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorType">Tip otpornika</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorType">Tip otpornika</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorPower">Snaga</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorPower">Snaga</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorTolerance">Tolerancija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorTolerance">Tolerancija Ljubičasta(B)=0.1%, Plava(C)=0.25%, Zelena(D)=0.5%, Smeđa(F)=1%, Crvena(G)=2%, Zlatna(J)=5%, Srebrna(K)=10%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorMaxVoltage">Maks. napon</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorMaxVoltage">Maksimalni radni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorTempco">Tempco</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorTempco">Temperaturni koeficijent Ljubičasta=5, Plava=10, Žuta=25, Narandžasta=15, Crvena=50, Smeđa=100</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePotentiometer">Potenciometar</system:String>
+    <system:String x:Key="DbPartCategoryDescPotentiometer">Potenciometri</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerType">Tip potenciometra</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerType">Tip potenciometra</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerShaft">Prečnik osovine</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerShaft">Prečnik osovine</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerCharacteristic">Karakteristika</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerCharacteristic">Karakteristika</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTrimmer">Trimer</system:String>
+    <system:String x:Key="DbPartCategoryDescTrimmer">Trimer potenciometri</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTrimmerType">Tip trimera</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTrimmerType">Tip trimera</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTrimmerOrientation">Orijentacija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTrimmerOrientation">Orijentacija</system:String>
+
+    <system:String x:Key="DbPartCategoryNameNTC">NTC</system:String>
+    <system:String x:Key="DbPartCategoryDescNTC">NTC termistori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameNTCResistor">Otpornost</system:String>
+    <system:String x:Key="DbPartCategoryParamDescNTCResistor">Nominalna otpornost na 25 °C</system:String>
+    <system:String x:Key="DbPartCategoryParamNameNTCTemperatureRange">Temperaturni opseg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescNTCTemperatureRange">Temperaturni opseg</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePTC">PTC</system:String>
+    <system:String x:Key="DbPartCategoryDescPTC">PTC termistori</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCVoltage">Maks. napon</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCVoltage">Maksimalni napon</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCCurrent">Nazivna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCCurrent">Nazivna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCPitch">Razmak izvoda</system:String>
+
+    <system:String x:Key="DbPartCategoryNameVaristor">Varistor</system:String>
+    <system:String x:Key="DbPartCategoryDescVaristor">Varistori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameVaristorVoltage">Napon varistora</system:String>
+    <system:String x:Key="DbPartCategoryParamDescVaristorVoltage">Napon varistora</system:String>
+    <system:String x:Key="DbPartCategoryParamNameVaristorPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescVaristorPitch">Razmak izvoda</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitor">Kondenzator</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitor">Kondenzatori</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorCeramic">Keramički kondenzator</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorCeramic">Keramički kondenzatori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicDielectric">Dielektrik</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicDielectric">Dielektrik</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicVoltage">Napon</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicVoltage">Radni napon DC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicVoltageAC">Napon AC</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicVoltageAC">Radni napon AC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicTolerance">Tolerancija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicTolerance">Tolerancija E=0.5%, F=1%, G=2%, H=3%, J=5%, K=10%, L=15%, M=20%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicSafety">Klasa bezbednosti</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicSafety">Bezbednosni kondenzator klase X ili Y</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorFilm">Filmski kondenzator</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorFilm">Filmski kondenzatori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmDielectric">Dielektrik</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmDielectric">Dielektrik</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmVoltage">Napon</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmVoltage">Radni napon DC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmVoltageAC">Napon AC</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmVoltageAC">Radni napon AC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmTolerance">Tolerancija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmTolerance">Tolerancija E=0.5%, F=1%, G=2%, H=3%, J=5%, K=10%, L=15%, M=20%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmSafety">Klasa bezbednosti</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmSafety">Bezbednosni kondenzator klase X ili Y</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmDimension">Dimenzije</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmDimension">Dimenzije (Dužina x Širina x Visina mm)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorElectrolitic">Elektrolitski kondenzator</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorElectrolitic">Elektrolitski kondenzatori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticVoltage">Napon</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticVoltage">Radni napon DC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticMaxTemp">Maks. temperatura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticMaxTemp">Maksimalna radna temperatura</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticPitch">Razmak izvoda</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticOrientation">Orijentacija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticOrientation">Orijentacija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticLowESR">Nizak ESR</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticLowESR">Nizak ESR</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticDiameter">Prečnik</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticDiameter">Prečnik tela</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticLength">Dužina</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticLength">Dužina tela bez izvoda</system:String>
+    
+    <system:String x:Key="DbPartCategoryNameInductor">Induktor</system:String>
+    <system:String x:Key="DbPartCategoryDescInductor">Induktori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorCurrent">Struja</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorCurrent">Radna struja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorResistance">Otpornost</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorResistance">Redna otpornost</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorTolerance">Tolerancija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorTolerance">Tolerancija Smeđa(F)=1%, Crvena(G)=2%, Zlatna(J)=5%, Srebrna(K)=10%, Crna(M)=20%</system:String>
+
+    <system:String x:Key="DbPartCategoryNameQuartz">Kvarc i filter</system:String>
+    <system:String x:Key="DbPartCategoryDescQuartz">Kvarcni kristali, oscilatori i filteri</system:String>
+    <system:String x:Key="DbPartCategoryParamNameQuartzType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamDescQuartzType">Tip</system:String>
+    <system:String x:Key="DbPartCategoryParamNameQuartzFrequency">Frekvencija</system:String>
+    <system:String x:Key="DbPartCategoryParamDescQuartzFrequency">Frekvencija</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTransformer">Transformator</system:String>
+    <system:String x:Key="DbPartCategoryDescTransformer">Mrežni transformatori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPower">Snaga</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPower">Snaga</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPrimaryVoltage1">Prim. V1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPrimaryVoltage1">Primarni napon 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPrimaryVoltage2">Prim. V2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPrimaryVoltage2">Primarni napon 2</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryVoltage1">Sek. V1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryVoltage1">Sekundarni napon 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryCurrent1">Sek. I1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryCurrent1">Sekundarna struja 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryVoltage2">Sek. V2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryVoltage2">Sekundarni napon 2</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryCurrent2">Sek. I2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryCurrent2">Sekundarna struja 2</system:String>
+
+    <!-- Part categories - Transistor -->
+    <system:String x:Key="DbPartCategoryNameTransistor">Tranzistor</system:String>
+    <system:String x:Key="DbPartCategoryDescTransistor">Tranzistori</system:String>
+
+    <system:String x:Key="DbPartCategoryNameBJT">BJT</system:String>
+    <system:String x:Key="DbPartCategoryDescBJT">Bipolarni tranzistori</system:String>
+    
+    <system:String x:Key="DbPartCategoryParamNameBJTMaterial">Materijal</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTMaterial">Materijal</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTPolarity">Polaritet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTPolarity">Polaritet</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUce">Vce</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUce">Maks. napon kolektor-emitor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUcb">Vcb</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUcb">Maks. napon kolektor-baza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUeb">Veb</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUeb">Maks. napon emitor-baza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTIcmax">Icmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTIcmax">Maks. struja kolektora (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTPd">Maks. disipacija snage</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTft">ft</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTft">Granična frekvencija</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJThFE">hFE</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJThFE">Strujno pojačanje u direktnom režimu (hFE)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameIGBT">IGBT</system:String>
+    <system:String x:Key="DbPartCategoryDescIGBT">IGBT tranzistori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTStructure">Struktura</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTStructure">Tip strukture</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUce">Vce</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUce">Maks. napon kolektor-emitor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUcesat">Vce(sat)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUcesat">Maks. napon zasićenja kolektor-emitor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUge">Vge</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUge">Maks. napon gejt-emitor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUgeth">Vge(th)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUgeth">Pragovni napon gejt-emitor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTIcmax">Icmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTIcmax">Maks. struja kolektora (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTPd">Maks. disipacija snage</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTQg">Qg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTQg">Ukupno naelektrisanje gejta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTtr">tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTtr">Maks. vreme porasta</system:String>
+
+    <system:String x:Key="DbPartCategoryNameJFET">JFET</system:String>
+    <system:String x:Key="DbPartCategoryDescJFET">JFET tranzistori</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETChannel">Kanal</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETChannel">Tip upravljačkog kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUds">Vds</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUds">Maks. napon drejn-sors</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUgsoff">Vgs(off)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUgsoff">Napon odsecanja gejt-sors</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUgs">Vgs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUgs">Napon gejt-sors</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETIdmax">Idmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETIdmax">Maks. struja drejna (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETPd">Maks. disipacija snage</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETRds">Rds(on)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETRds">Maks. otpornost drejn-sors u provodnom stanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETCoss">Coss</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETCoss">Izlazna kapacitivnost</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMOSFET">MOSFET</system:String>
+    <system:String x:Key="DbPartCategoryDescMOSFET">Metal-oksid poluprovodnički tranzistori sa efektom polja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETChannel">Kanal</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETChannel">Tip upravljačkog kanala</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUds">Vds</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUds">Maks. napon drejn-sors</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUgs">Vgs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUgs">Maks. napon gejt-sors</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUgsth">Vgs(th)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUgsth">Maks. pragovni napon gejta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETIdmax">Idmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETIdmax">Maks. struja drejna (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETPd">Maks. disipacija snage</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETRds">Rds(on)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETRds">Maks. otpornost drejn-sors u provodnom stanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETQg">Qg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETQg">Ukupno naelektrisanje gejta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETtr">tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETtr">Maks. vreme porasta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETCoss">Coss</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETCoss">Izlazna kapacitivnost</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETLogicLevel">Logički nivo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETLogicLevel">Upravljanje logičkim nivoom na ulazu</system:String>
+
+    <system:String x:Key="DbPartCategoryNameUJT">UJT</system:String>
+    <system:String x:Key="DbPartCategoryDescUJT">Unipolarni spojni tranzistori (UJT, PUT)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTUb2e">Vb2e</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTUb2e">Napon emitora u zapornom smeru</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTUb2b1">Vb2b1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTUb2b1">Napon između baza</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTIerms">Ierms</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTIerms">Efektivna struja emitora</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTIe">Ie</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTIe">Vršna struja emitora</system:String>
+      
+    <!-- Part categories - Trigger device -->
+    <system:String x:Key="DbPartCategoryNameTriggerDevice">Okidački element</system:String>
+    <system:String x:Key="DbPartCategoryDescTriggerDevice">Okidački elementi</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUdrm">Vdrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUdrm">Ponavljajući vršni napon u blokirajućem stanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUt">Vt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUt">Vršni napon u provodnom stanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceItrms">It(rms)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceItrms">Efektivna struja u provodnom stanju (puna perioda)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceIh">Ih</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceIh">Struja držanja</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUgt">Vgt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUgt">Okidni napon gejta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceIgt">Igt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceIgt">Okidna struja gejta</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDevicedIdt">dI/dt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDevicedIdt">Kritična brzina porasta struje u provodnom stanju (ponavljajuća)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDevicedUdt">dV/dt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDevicedUdt">Kritična brzina porasta napona u blokirajućem stanju</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTriac">Trijak</system:String>
+    <system:String x:Key="DbPartCategoryDescTriac">Trijaci</system:String>
+
+    <system:String x:Key="DbPartCategoryNameThyristor">Tiristor</system:String>
+    <system:String x:Key="DbPartCategoryDescThyristor">Tiristori (SCR, GTO)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDiac">Dijak</system:String>
+    <system:String x:Key="DbPartCategoryDescDiac">Dioda za naizmeničnu struju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiacItrm">Itrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiacItrm">Ponavljajuća vršna struja u provodnom stanju</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiacUbo">Ubo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiacUbo">Napon preklapanja (breakover)</system:String>
+
+
+    <!-- Storage locations -->
+    <system:String x:Key="DbStorageLocationNameRoot">Sve</system:String>
+    <system:String x:Key="DbStorageLocationDescRoot">Sve lokacije skladišta</system:String>
+
+    <system:String x:Key="DbStorageLocationNameUnknown">Nepoznato</system:String>
+    <system:String x:Key="DbStorageLocationDescUnknown">Nije navedeno</system:String>
+
+    
+    <!-- Package categories + Packages -->
+    <system:String x:Key="DbPackageCategoryNameUnknown">Nepoznato</system:String>
+    <system:String x:Key="DbPackageCategoryDescUnknown">Nepoznato kućište</system:String>
+    <system:String x:Key="DbPackageNameUnknown">Nepoznato</system:String>
+    <system:String x:Key="DbPackageDescUnknown">Nije navedeno</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameBridge">Grecov spoj</system:String>
+    <system:String x:Key="DbPackageCategoryDescBridge">Kućišta Grecovih spojeva</system:String>
+    <system:String x:Key="DbPackageDescBridgeDIL">DIL Grecov spoj</system:String>
+    <system:String x:Key="DbPackageDescBridgeInLine">In-line Grecov spoj</system:String>
+    <system:String x:Key="DbPackageDescBridgeRound">Okrugli Grecov spoj</system:String>
+    <system:String x:Key="DbPackageDescBridgeQuad">Quad Grecov spoj</system:String>
+    <system:String x:Key="DbPackageDescBridge3PhaseQuad">Trofazni quad Grecov spoj</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCapacitor">Kondenzator</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitor">Kućišta kondenzatora</system:String>
+    <system:String x:Key="DbPackageDescCapacitorMLCC">Kućište višeslojnog keramičkog kondenzatora (MLCC)</system:String>
+    <system:String x:Key="DbPackageDescCapacitorCeramicDisc">Kućište keramičkog disk kondenzatora</system:String>
+    <system:String x:Key="DbPackageDescCapacitorFilm">Kućište filmskog kondenzatora</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCapacitorPolarised">Kondenzator pol.</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitorPolarised">Kućišta polarizovanih kondenzatora</system:String>
+    <system:String x:Key="DbPackageDescCapacitorElectrolytic">Kućište elektrolitskog kondenzatora</system:String>
+    <system:String x:Key="DbPackageDescCapacitorTantalun">Kućište tantalskog kondenzatora</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDecawatt">Decawatt</system:String>
+    <system:String x:Key="DbPackageCategoryDescDecawatt">Decawatt kućišta tranzistora</system:String>
+    <system:String x:Key="DbPackageDescDecawatt">Decawatt kućište</system:String>
+    <system:String x:Key="DbPackageDescDecawatt2">Dvostruko Decawatt kućište</system:String>
+    <system:String x:Key="DbPackageDescDecawatt3">Trostruko Decawatt kućište</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDisplay">Displej</system:String>
+    <system:String x:Key="DbPackageCategoryDescDisplay">Displej</system:String>
+    <system:String x:Key="DbPackageDescDisplayLED">LED displej</system:String>
+    <system:String x:Key="DbPackageDescDisplayLCD">LCD displej</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCDIP">CDIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescCDIP">Keramičko DIP kućište sa prozorom</system:String>
+    <system:String x:Key="DbPackageDescCDIL">Keramičko DIP kućište sa prozorom</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDIP">DIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescDIP">Dual in-line kućište</system:String>
+    <system:String x:Key="DbPackageDescDIL">Dual in-line kućište</system:String>
+    <system:String x:Key="DbPackageDescDILTabs">Dual in-line kućište sa metalnim jezičcima</system:String>
+    <system:String x:Key="DbPackageDescDILWide">Široko dual in-line kućište</system:String>
+    
+    <system:String x:Key="DbPackageCategoryNameDO">DO</system:String>
+    <system:String x:Key="DbPackageCategoryDescDO">Kućišta dioda (Diode Outline)</system:String>
+    <system:String x:Key="DbPackageDescDiode">Kućište diode</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameInductorSMD">Induktor SMD</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorSMD">Kućišta SMD induktora</system:String>
+    <system:String x:Key="DbPackageDescInductorShilded">Oklopljeni SMD induktori</system:String>
+    <system:String x:Key="DbPackageDescInductorUnshilded">Neoklopljeni SMD induktori</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameInductorTH">Induktor TH</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorTH">Kućišta TH induktora</system:String>
+    <system:String x:Key="DbPackageDescInductorAxialLeaded">Aksijalni induktor sa izvodima</system:String>
+    <system:String x:Key="DbPackageDescInductorRadialLeaded">Radijalni induktor sa izvodima</system:String>
+    <system:String x:Key="DbPackageDescInductorToroid">Toroidni induktor</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameLED">LED</system:String>
+    <system:String x:Key="DbPackageCategoryDescLED">Svetleća dioda</system:String>
+    <system:String x:Key="DbPackageDescLED">Svetleća dioda</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameOpto">Opto</system:String>
+    <system:String x:Key="DbPackageCategoryDescOpto">Kućišta optokaplera</system:String>
+    <system:String x:Key="DbPackageDescOptoGullWings">Dual in-line kućište sa gull-wing izvodima</system:String>
+    <system:String x:Key="DbPackageDescOptoMFP">Mini flat kućište</system:String>
+    <system:String x:Key="DbPackageDescOptoSOIC">Opto SOIC kućište</system:String>
+
+    <system:String x:Key="DbPackageCategoryNamePLCC">PLCC</system:String>
+    <system:String x:Key="DbPackageCategoryDescPLCC">Plastični nosač čipa sa izvodima (Plastic leaded chip carrier)</system:String>
+    <system:String x:Key="DbPackageDescPLCC">Plastični nosač čipa sa izvodima (Plastic leaded chip carrier)</system:String>
+
+    <system:String x:Key="DbPackageCategoryNamePotmeter">Potenciometar</system:String>
+    <system:String x:Key="DbPackageCategoryDescPotmeter">Upravljački i trimer potenciometri</system:String>
+    <system:String x:Key="DbPackageDescPotmeterTrimmer">Trimer potenciometri</system:String>
+    <system:String x:Key="DbPackageDescPotmeterControl">Upravljački potenciometri</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameResistor">Otpornik</system:String>
+    <system:String x:Key="DbPackageCategoryDescResistor">Kućišta otpornika</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0402">SMD čip otpornik 0.0625W ili 0.125W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0603">SMD čip otpornik 0.1W ili 0.2W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0805">SMD čip otpornik 0.125W ili 0.25W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1206">SMD čip otpornik 0.25W ili 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1210">SMD čip otpornik 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1218">SMD čip otpornik 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD2010">SMD čip otpornik 0.75W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD2512">SMD čip otpornik 1W ili 2W</system:String>
+    <system:String x:Key="DbPackageDescResistorMF0204">Metalfilmski otpornik 0.4W</system:String>
+    <system:String x:Key="DbPackageDescResistorMF0207">Metalfilmski otpornik 0.6W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF0623">Metaloksidni filmski otpornik 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF0932">Metaloksidni filmski otpornik 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1145">Metaloksidni filmski otpornik 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1550">Metaloksidni filmski otpornik 2W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1765">Metaloksidni filmski otpornik 3W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF2485">Metaloksidni filmski otpornik 5W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW3W">Žičani cementni otpornik 3W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW5W">Žičani cementni otpornik 5W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW7W">Žičani cementni otpornik 7W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW10W">Žičani cementni otpornik 10W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW15W">Žičani cementni otpornik 15W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW20W">Žičani cementni otpornik 20W</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameQuartz">Kvarc</system:String>
+    <system:String x:Key="DbPackageCategoryDescQuartz">Kvarc, rezonator i oscilator</system:String>
+    <system:String x:Key="DbPackageDescQuartz">Kućište kvarcnog kristala</system:String>
+    <system:String x:Key="DbPackageDescResonator">Kućište keramičkog rezonatora</system:String>
+    <system:String x:Key="DbPackageDescOscillator">Kućište oscilatora</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSIP">SIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescSIP">Single in-line kućište</system:String>
+    <system:String x:Key="DbPackageDescSIP">Single in-line kućište</system:String>
+    <system:String x:Key="DbPackageDescSIPMiddlePower">Single in-line kućište srednje snage</system:String>
+    <system:String x:Key="DbPackageDescSIPPower">Single in-line kućište za veće snage</system:String>
+    <system:String x:Key="DbPackageDescSIPPowerZigZag">Single in-line zig-zag kućište za veće snage</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOD">SOD</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOD">Small Outline Diode (SOD), kućišta dioda</system:String>
+    <system:String x:Key="DbPackageDescMELF">Metal electrode leadless face (MELF)</system:String>
+    <system:String x:Key="DbPackageDescSOD">Small Outline Diode (SOD), kućište diode</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOIC">SOIC</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOIC">Small Outline integrisano kolo</system:String>
+    <system:String x:Key="DbPackageDescSOIC">Small Outline integrisano kolo</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOJ">SOJ</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOJ">Small Outline kućište sa J izvodima</system:String>
+    <system:String x:Key="DbPackageDescSOJ">Small Outline kućište sa J izvodima</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameMSOP">MSOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescMSOP">Mini Small Outline kućište</system:String>
+    <system:String x:Key="DbPackageDescMSOP">Mini Small Outline kućište</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOP">SOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOP">Small Outline kućište</system:String>
+    <system:String x:Key="DbPackageDescSOP">Small Outline kućište</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOT">SOT</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOT">Small Outline Transistor (SOT), kućišta tranzistora</system:String>
+    <system:String x:Key="DbPackageDescSOT">Small Outline Transistor (SOT), kućište tranzistora</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameStud">Stud</system:String>
+    <system:String x:Key="DbPackageCategoryDescStud">Stud montaža / Montaža sa navojnim nosačem (stud)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM5">Dioda za stud montažu (M5×0,8)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM6orM8">Dioda za stud montažu (M6×1, M8×1,25)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM12">Dioda za stud montažu (M12×1,75)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM16">Dioda za stud montažu (M16×1,5)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM24">Dioda za stud montažu (M24×1,5)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM6">SCR za stud montažu (M6×1)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM12">SCR za stud montažu (M12×1,75)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM16">SCR za stud montažu (M16×1,5)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM24">SCR za stud montažu (M24×1,5)</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTOPlastic">TO plastično</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOPlastic">Plastična TO kućišta tranzistora</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated">Izolovano plastično kućište</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated2Pin">Izolovano plastično kućište sa 2 pina</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated3Pin">Izolovano plastično kućište sa 3 pina</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic">Plastično kućište</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic2Pin">Plastično kućište sa 2 pina</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic5Pin">Plastično kućište sa 5 pinova</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic7Pin">Plastično kućište sa 7 pinova</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic9Pin">Plastično kućište sa 9 pinova</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic11Pin">Plastično kućište sa 11 pinova</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic15Pin">Plastično kućište sa 15 pinova</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTOMetal">TO metalno</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOMetal">Metalna TO kućišta tranzistora (metal can)</system:String>
+    <system:String x:Key="DbPackageDescTOMetal">Metalno kućište (metal can)</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTQFP">TQFP</system:String>
+    <system:String x:Key="DbPackageCategoryDescTQFP">Thin quad flat kućište</system:String>
+    <system:String x:Key="DbPackageDescTQFP">Thin quad flat kućište</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTransformer">Transformator</system:String>
+    <system:String x:Key="DbPackageCategoryDescTransformer">Mrežni transformatori</system:String>
+    <system:String x:Key="DbPackageDescTransformer">Transformator za štampanu ploču</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTSSOP">TSSOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescTSSOP">Thin Shrink Small Outline kućište</system:String>
+    <system:String x:Key="DbPackageDescTSSOP">Thin Shrink Small Outline kućište</system:String>
+
+
+    <!-- Manufacturers -->
+    <system:String x:Key="DbManufacturerNameUnknown">Nepoznato</system:String>
+    <system:String x:Key="DbManufacturerDescUnknown">Nije dostupno</system:String>
+
+    <system:String x:Key="DbManufacturerDescAdvancedLinearDevices">Advanced Linear Devices, Inc</system:String>
+    <system:String x:Key="DbManufacturerDescAdvancedMicroDevices">Advanced Micro Devices</system:String>
+    <system:String x:Key="DbManufacturerDescAgilent">Agilent Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescAllegro">Allegro Microsystems</system:String>
+    <system:String x:Key="DbManufacturerDescAlphaAndOmega">Alpha and Omega Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescAnalogDevices">Analog Devices, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescArcotronics">AV Arcotronics (sada KEMET)</system:String>
+    <system:String x:Key="DbManufacturerDescAtmel">Deo kompanije Microchip od 2016.</system:String>
+    <system:String x:Key="DbManufacturerDescAvisor">Avisor</system:String>
+    <system:String x:Key="DbManufacturerDescAVX">Kyocera AVX</system:String>
+    <system:String x:Key="DbManufacturerDescBBC">Brown, Boveri and Cie (prestala sa radom 1988.)</system:String>
+    <system:String x:Key="DbManufacturerDescBourns">Bourns, Inc</system:String>
+    <system:String x:Key="DbManufacturerDescBroadcom">Broadcom Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescBurrBrown">Deo kompanije Texas Instruments</system:String>
+    <system:String x:Key="DbManufacturerDescCatalyst">Catalyst Semiconductor, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescCentralSemiconductor">Central Semiconductor LLC.</system:String>
+    <system:String x:Key="DbManufacturerDescCirrusLogic">Cirrus Logic</system:String>
+    <system:String x:Key="DbManufacturerDescCoilcraft">Coilcraft Magnetic Components</system:String>
+    <system:String x:Key="DbManufacturerDescComsetSemiconductor">Comset Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescContinentalDevice">Continental Device India Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescCypress">Cypress Semiconductor. Deo kompanije Infineon od 2020.</system:String>
+    <system:String x:Key="DbManufacturerDescDallasSemiconductor">Deo kompanije Maxim Integrated od 2001.</system:String>
+    <system:String x:Key="DbManufacturerDescDCComponents">DC Components Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescDiodes">Diodes Incorporated</system:String>
+    <system:String x:Key="DbManufacturerDescDiotec">Diotec Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescElna">ELNA Co., Ltd</system:String>
+    <system:String x:Key="DbManufacturerDescEpcos">Deo kompanije TDK</system:String>
+    <system:String x:Key="DbManufacturerDescERO">Roederstein Electronics, Inc. (sada Vishay)</system:String>
+    <system:String x:Key="DbManufacturerDescEupec">Deo kompanije Infineon</system:String>
+    <system:String x:Key="DbManufacturerDescEspressif">Espressif Systems</system:String>
+    <system:String x:Key="DbManufacturerDescExarCorporation">Deo kompanije MaxLinear od 2017.</system:String>
+    <system:String x:Key="DbManufacturerDescFagor">Fagor Electrónica</system:String>
+    <system:String x:Key="DbManufacturerDescFairchildSemiconductor">Deo kompanije Onsemi od 2001.</system:String>
+    <system:String x:Key="DbManufacturerDescFenghua">Fenghua (HK) Electronics Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescFerroCore">FerroCore</system:String>
+    <system:String x:Key="DbManufacturerDescFreescaleSemiconductor">Deo kompanije NXP od 2015.</system:String>
+    <system:String x:Key="DbManufacturerDescFujiElectric">Fuji Electric Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescFujitsu">Fujitsu Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescGeneralInstrument">Prestala sa radom 1997.</system:String>
+    <system:String x:Key="DbManufacturerDescGeneralSemiconductor">Sada Vishay</system:String>
+    <system:String x:Key="DbManufacturerDescGLuxon">Lexon Electronics Corporation - spojena sa Teapo 2005.</system:String>
+    <system:String x:Key="DbManufacturerDescGERTH">GERTH Transformatorenbau GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescGoldStar">GoldStar (sada LG Electronics)</system:String>
+    <system:String x:Key="DbManufacturerDescHAHN">HAHN GmbH and Co. KG</system:String>
+    <system:String x:Key="DbManufacturerDescHarrisCorporation">Delovi preuzeti od strane Texas Instruments 1998. i Intersil 1999.</system:String>
+    <system:String x:Key="DbManufacturerDescHewlettPackard">Pogledajte Agilent Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescHitachi">Hitachi Semiconductor (sada Renesas)</system:String>
+    <system:String x:Key="DbManufacturerDescHitano">Hitano Enterprise Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescHoltek">Holtek Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescHoneywell">Honeywell</system:String>
+    <system:String x:Key="DbManufacturerDescInchange">Inchange Semiconductor Company Limited</system:String>
+    <system:String x:Key="DbManufacturerDescIndel">INDEL Co Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescInfineon">Infineon Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescIntegratedDeviceTechnology">Integrated Device Technology, Inc. (sada Renesas)</system:String>
+    <system:String x:Key="DbManufacturerDescIntegratedSiliconSolution">Integrated Silicon Solution, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescIntel">Intel technologies</system:String>
+    <system:String x:Key="DbManufacturerDescIntersil">Deo kompanije Renesas od 2017.</system:String>
+    <system:String x:Key="DbManufacturerDescInternationalRectifier">Deo kompanije Infineon od 2015.</system:String>
+    <system:String x:Key="DbManufacturerDescIXYS">Deo kompanije Littelfuse od 2018.</system:String>
+    <system:String x:Key="DbManufacturerDescJamicon">Jamicon</system:String>
+    <system:String x:Key="DbManufacturerDescJapanRadio">Japan Radio Co.</system:String>
+    <system:String x:Key="DbManufacturerDescKemet">Kemet (Yageo Group)</system:String>
+    <system:String x:Key="DbManufacturerDescKingbright">Kingbright Electronic Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescKoreaElectronics">Korea Electronics</system:String>
+    <system:String x:Key="DbManufacturerDescLattice">Lattice Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescLinearTechnology">Deo kompanije Analog Devices od 2017.</system:String>
+    <system:String x:Key="DbManufacturerDescLiteOn">Lite-On Technology Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescLittelFuse">Littelfuse, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescMakrai">MAKRAI Transformers Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescMatsushitaElectronics">Panasonic od 2008.</system:String>
+    <system:String x:Key="DbManufacturerDescMaxim">Maxim Integrated</system:String>
+    <system:String x:Key="DbManufacturerDescMaxLinear">MaxLinear</system:String>
+    <system:String x:Key="DbManufacturerDescMicrel">Deo kompanije Microchip od 2015.</system:String>
+    <system:String x:Key="DbManufacturerDescMicroCommercialComponents">Micro Commercial Components</system:String>
+    <system:String x:Key="DbManufacturerDescMicrochip">Microchip Technology</system:String>
+    <system:String x:Key="DbManufacturerDescMikroelektronikaiVallalat">Prestala sa radom 1986.</system:String>
+    <system:String x:Key="DbManufacturerDescMiniCircuits">Mini-Circuits</system:String>
+    <system:String x:Key="DbManufacturerDescMitelSemiconductor">Mitel Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescMitsubishi">Mitsubishi Electric</system:String>
+    <system:String x:Key="DbManufacturerDescMicrosemi">Microsemi Corporation (preuzeta od strane Microchip 2018.)</system:String>
+    <system:String x:Key="DbManufacturerDescMicronas">TDK-Micronas GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescMonolithicPowerSystems">Monolithic Power Systems, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescMospec">Mospec Semiconductor corp.</system:String>
+    <system:String x:Key="DbManufacturerDescMotorola">Freescale od 2004.</system:String>
+    <system:String x:Key="DbManufacturerDescMulticomp">Multicomp Pro</system:String>
+    <system:String x:Key="DbManufacturerDescMurata">Murata</system:String>
+    <system:String x:Key="DbManufacturerDescMyrra">Myrra</system:String>
+    <system:String x:Key="DbManufacturerDescNationalSemiconductor">Deo kompanije Texas Instruments od 2011.</system:String>
+    <system:String x:Key="DbManufacturerDescNEC">NEC Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNewJerseySemiconductor">New Jersey Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescNichicon">Nichicon Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNipponChemiCon">Nippon Chemi-Con Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNexperia">Nexperia</system:String>
+    <system:String x:Key="DbManufacturerDescNuvoton">Nuvoton Technology Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescNTEElectronics">NTE Electronics, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescNXPSemiconductors">NXP Semiconductors</system:String>
+    <system:String x:Key="DbManufacturerDescOhmite">Ohmite Mfg Co.</system:String>
+    <system:String x:Key="DbManufacturerDescOmron">Omron</system:String>
+    <system:String x:Key="DbManufacturerDescOnsemi">ON Semiconductor Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescOSRAM">ams OSRAM AG</system:String>
+    <system:String x:Key="DbManufacturerDescPanasonic">Panasonic</system:String>
+    <system:String x:Key="DbManufacturerDescPanJit">PanJit Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescPhilipsSemiconductors">NXP od 2006.</system:String>
+    <system:String x:Key="DbManufacturerDescPiher">Piher sensing systems</system:String>
+    <system:String x:Key="DbManufacturerDescPowerex">Powerex Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescPowerInnovations">Power Innovations Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescPowerIntegrations">Power Integrations</system:String>
+    <system:String x:Key="DbManufacturerDescPulseElectronics">Pulse Electronics (deo grupe Yageo)</system:String>
+    <system:String x:Key="DbManufacturerDescRadiohm">Radiohm (New Tunirama)</system:String>
+    <system:String x:Key="DbManufacturerDescRCA">Radio Corporation of America (prestala sa radom 1987.)</system:String>
+    <system:String x:Key="DbManufacturerDescRemix">REMIX Radiotechnic Company (preuzeta od strane TEMIC 1992.)</system:String>
+    <system:String x:Key="DbManufacturerDescRenesas">Renesas Electronics Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescRIFA">RIFA AB, kasnije Evox Rifa (sada KEMET)</system:String>
+    <system:String x:Key="DbManufacturerDescROE">Roederstein Electronics, Inc. (sada Vishay)</system:String>
+    <system:String x:Key="DbManufacturerDescROHM">Rohm Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescRubycon">Rubycon Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescSamsung">Samsung Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescSamwha">Samwha Capacitor Group</system:String>
+    <system:String x:Key="DbManufacturerDescSanKen">SanKen Electric Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescSANYO">Deo kompanije ONSemi</system:String>
+    <system:String x:Key="DbManufacturerDescSemikron">Spojena sa Danfoss Silicon Power (2022.)</system:String>
+    <system:String x:Key="DbManufacturerDescSemtech">Semtech Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescSharp">Sharp Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescShinySpace">Shiny Space Enterprise Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescSiemens">Siemens Microelectronics, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescSiliconLaboratories">Silicon Laboratories</system:String>
+    <system:String x:Key="DbManufacturerDescSTMicroelectronics">STMicroelectronics</system:String>
+    <system:String x:Key="DbManufacturerDescTaiwanSemiconductor">Taiwan Semiconductor Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescTalema">Talema group</system:String>
+    <system:String x:Key="DbManufacturerDescTDK">TDK Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescTEConnectivity">TE Connectivity</system:String>
+    <system:String x:Key="DbManufacturerDescTeapo">Teapo</system:String>
+    <system:String x:Key="DbManufacturerDescTelefunken">Spojena sa AEG</system:String>
+    <system:String x:Key="DbManufacturerDescTemic">Prestala sa radom 1998. Preuzeli su je Atmel i Vishay.</system:String>
+    <system:String x:Key="DbManufacturerDescTesla">Tesla Elektronicke (privatizovana 1991.)</system:String>
+    <system:String x:Key="DbManufacturerDescTexasInstruments">Texas Instruments Incorporated</system:String>
+    <system:String x:Key="DbManufacturerDescToshiba">Toshiba Semiconductor and Storage</system:String>
+    <system:String x:Key="DbManufacturerDescTungsram">Odeljenje za poluprovodnike preuzeo je MEV 1982.</system:String>
+    <system:String x:Key="DbManufacturerDescVAC">Vacuumschmelze GmbH and Co. KG</system:String>
+    <system:String x:Key="DbManufacturerDescViking">Viking Tech.</system:String>
+    <system:String x:Key="DbManufacturerDescVishay">Vishay Intertechnology, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescVitrohm">Deo kompanije Yageo</system:String>
+    <system:String x:Key="DbManufacturerDescWalsin">Walsin Technology</system:String>
+    <system:String x:Key="DbManufacturerDescWima">Wima</system:String>
+    <system:String x:Key="DbManufacturerDescWurth">Würth Elektronik GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescYageo">Yageo Group</system:String>
+    <system:String x:Key="DbManufacturerDescYangjie">Yangzhou Yangjie Electronic Technology Co., Ltd</system:String>
+    <system:String x:Key="DbManufacturerDescZetex">Zetex Semiconductors plc (preuzela kompanija Diodes Incorporated)</system:String>
+    <system:String x:Key="DbManufacturerDescZilog">Zilog, Inc.</system:String>
+
+    <!-- Projects -->
+    <system:String x:Key="DbProjectNameRoot">Sve</system:String>
+    <system:String x:Key="DbProjectDescRoot">Svi projekti</system:String>
+
+</ResourceDictionary>

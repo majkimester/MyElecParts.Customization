@@ -1,0 +1,1104 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="hu">
+
+    <!-- Part categories -->
+    <system:String x:Key="DbPartCategoryNameRoot">Minden</system:String>
+    <system:String x:Key="DbPartCategoryDescRoot">Minden alkatrész</system:String>
+
+    <!-- Part categories - Analog IC -->
+    <system:String x:Key="DbPartCategoryNameAnalogIC">Analóg IC</system:String>
+    <system:String x:Key="DbPartCategoryDescAnalogIC">Analóg integrált áramkörök</system:String>
+
+    <system:String x:Key="DbPartCategoryNameADC">ADC</system:String>
+    <system:String x:Key="DbPartCategoryDescADC">Analóg-digitális átalakítók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCResolution">Felbontás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCResolution">Felbontás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCSpeed">Sebesség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCSpeed">Mintavétel másodpercenként</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCInterface">Digitális interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCVcc">Tápfeszültség-tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameADCDifferential">Differenciális</system:String>
+    <system:String x:Key="DbPartCategoryParamDescADCDifferential">Differenciális bemenet</system:String>
+
+    <system:String x:Key="DbPartCategoryNameAudioAmp">Audio erősítő</system:String>
+    <system:String x:Key="DbPartCategoryDescAudioAmp">Audio erősítő IC-k</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpClass">Osztály</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpClass">Erősítő osztálya</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpVcc">Tápfeszültség-tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameAudioAmpPo">Po</system:String>
+    <system:String x:Key="DbPartCategoryParamDescAudioAmpPo">Maximum kimeneti teljesítmény</system:String>
+
+    <system:String x:Key="DbPartCategoryNameComparator">Komparátor</system:String>
+    <system:String x:Key="DbPartCategoryDescComparator">Komparátorok</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorSingleVcc">Szimpla Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorSingleVcc">Szimpla tápfeszültség-tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorDoubleVcc">Dupla Vcc ±</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorDoubleVcc">Dupla tápfeszültség-tartomány ±</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorVio">Vio</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorVio">Bemeneti offsetfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameComparatorTr">Tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescComparatorTr">Tipikus válaszidő</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDAC">DAC</system:String>
+    <system:String x:Key="DbPartCategoryDescDAC">Digitális-analóg átalakítók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACResolution">Felbontás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACResolution">Felbontás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACSpeed">Sebesség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACSpeed">Mintavétel másodpercenként</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACInterface">Digitális interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDACVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDACVcc">Tápfeszültség-tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDigipot">Digitális potméter</system:String>
+    <system:String x:Key="DbPartCategoryDescDigipot">Digitális potencióméterek</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotPositions">Pozíciók</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotPositions">Pozíciók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotInterface">Digitális interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotVcc">Tápfeszültség-tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDigipotResistance">Ellenállás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDigipotResistance">Ellenállás</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMOSFETDriver">MOSFET/IGBT meghajtó</system:String>
+    <system:String x:Key="DbPartCategoryDescMOSFETDriver">MOSFET/IGBT meghajtók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverType">Kimenet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverType">Kimenet típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverVcc">Tápfeszültség-tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverVs">Vs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverVs">Felső oldali tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETDriverIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETDriverIo">Kimeneti áram</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMiscAnalog">Egyéb Analóg</system:String>
+    <system:String x:Key="DbPartCategoryDescMiscAnalog">Egyéb analóg integrált áramkörök</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMiscAnalogVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMiscAnalogVcc">Tápfeszültség-tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSensor">Szenzor</system:String>
+    <system:String x:Key="DbPartCategoryDescSensor">Szenzorok</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorType">Szenzor típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorInterface">Szenzor interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSensorVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSensorVcc">Tápfeszültség-tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameOpAmp">Műveleti erősítő</system:String>
+    <system:String x:Key="DbPartCategoryDescOpAmp">Műveleti erősítők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpSingleVcc">Szimpla Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpSingleVcc">Szimpla tápfeszültség-tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpDoubleVcc">Dupla Vcc ±</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpDoubleVcc">Dupla tápfeszültség-tartomány ±</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpVio">Vio</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpVio">Bemeneti offsetfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpBW">Sávszélesség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpBW">Tipikus sávszélesség egységerősítésnél (BW)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpGain">Erősítés</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpGain">Minimum feszültség erősítés (Gain)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpSlewRate">Slew rate</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpSlewRate">Feszültségnövekedés sebessége</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpInputNoise">Zajfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpInputNoise">Bemeneti zajfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpRailToRailInput">Rail-to-Rail bemenet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpRailToRailInput">Rail-to-Rail bemenet</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOpAmpRailToRailOutput">Rail-to-Rail kimenet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOpAmpRailToRailOutput">Rail-to-Rail kimenet</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTransistorArray">Tranzisztormező</system:String>
+    <system:String x:Key="DbPartCategoryDescTransistorArray">Tranzisztormezők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayVo">Kimeneti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransistorArrayIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransistorArrayIo">Kimeneti áram</system:String>
+
+    <!-- Part categories - Analog IC - Voltage regulator -->
+    <system:String x:Key="DbPartCategoryNameVoltageRegulator">Tápegység IC</system:String>
+    <system:String x:Key="DbPartCategoryDescVoltageRegulator">Feszültségszabályzó és vezérlő</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLinearRegulator">Lineáris</system:String>
+    <system:String x:Key="DbPartCategoryDescLinearRegulator">Lineáris Feszültségszabályzók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorLDO">LDO</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorLDO">Alacsony feszültségejtésű típus (Low drop out)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorOutput">Kimenet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorOutput">Kimenet fajtája</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVo">Kimeneti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVadj">Változtatható kimeneti feszültség tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorIo">Kimeneti áram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLinearRegulatorVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLinearRegulatorVi">Bemeneti feszültségtartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSMPS">SMPS Vezérlő</system:String>
+    <system:String x:Key="DbPartCategoryDescSMPS">AC/DC Szaggatók, SMPS Vezérlők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSPo">Po</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSPo">Kimeneti teljesítmény</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSVi">Bemeneti feszültség tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSMPSFsw">Fsw</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSMPSFsw">Kapcsolási frekvencia</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSwitchedRegulator">Kapcsolóüzemű</system:String>
+    <system:String x:Key="DbPartCategoryDescSwitchedRegulator">Kapcsolóüzemű Feszültségszabályzók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorTopology">Topológia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorTopology">Topológia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVo">Kimeneti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVadj">Változtatható kimeneti feszültség tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorIo">Kimeneti áram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorVi">Vi</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorVi">Bemeneti feszültségtartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSwitchedRegulatorFsw">Fsw</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSwitchedRegulatorFsw">Kapcsolási frekvencia</system:String>
+
+    <system:String x:Key="DbPartCategoryNameReference">Referencia</system:String>
+    <system:String x:Key="DbPartCategoryDescReference">Feszültség referencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceVo">Vo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceVo">Kimeneti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceIo">Io</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceIo">Kimeneti áram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceVadj">Vadj</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceVadj">Változtatható kimeneti feszültség tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameReferenceTolerance">Pontosság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescReferenceTolerance">Pontosság százalékban</system:String>
+
+    <!-- Part categories - Digital IC -->
+    <system:String x:Key="DbPartCategoryNameDigitalIC">Digitális IC</system:String>
+    <system:String x:Key="DbPartCategoryDescDigitalIC">Digitális integrált áramkörök</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLogic">Logikai</system:String>
+    <system:String x:Key="DbPartCategoryDesLogicc">Logikai integrált áramkörök</system:String>
+
+    <system:String x:Key="DbPartCategoryName4000">4000</system:String>
+    <system:String x:Key="DbPartCategoryDesc4000">CMOS 4000-es sorozat</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Function">Funkció</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Function">Funkció</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Channels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Channels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamName4000Vcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc4000Vcc">Tápfeszültség tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryName7400">7400</system:String>
+    <system:String x:Key="DbPartCategoryDesc7400">TTL 7400-es sorozat</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Family">Család</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Family">Család</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Function">Funkció</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Function">Funkció</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Channels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Channels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamName7400Vcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDesc7400Vcc">Tápfeszültség tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMemory">Memória</system:String>
+    <system:String x:Key="DbPartCategoryDescMemory">Memóriák</system:String>
+
+    <system:String x:Key="DbPartCategoryNameEPROM">EPROM</system:String>
+    <system:String x:Key="DbPartCategoryDescEPROM">EPROM / PROM memóriák</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMType">PROM Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMWordWide">Adat szélesség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMWordWide">Adatbusz szélessége</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMCapacity">Kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMCapacity">Memória kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMReadTime">Olvasási idő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMReadTime">Olvasási hozzáférési idő</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMVcc">Tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameEPROMVpp">Vpp</system:String>
+    <system:String x:Key="DbPartCategoryParamDescEPROMVpp">Programozó feszültség</system:String>
+
+    <system:String x:Key="DbPartCategoryNameParallelEEPROM">EEPROM/Flash</system:String>
+    <system:String x:Key="DbPartCategoryDescParallelEEPROM">Párhuzamos EEPROM / Flash memória</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMCapacity">Kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMCapacity">Memória kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMReadTime">Olvasási idő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMReadTime">Olvasási hozzáférési idő</system:String>
+    <system:String x:Key="DbPartCategoryParamNameParallelEEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescParallelEEPROMVcc">Tápfeszültség tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameRAM">RAM</system:String>
+    <system:String x:Key="DbPartCategoryDescRAM">RAM</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMCapacity">Kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMCapacity">Memória kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMReadTime">Olvasási idő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMReadTime">Olvasási hozzáférési idő</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRAMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRAMVcc">Tápfeszültség tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSerialEEPROM">Soros EEPROM/Flash</system:String>
+    <system:String x:Key="DbPartCategoryDescSerialEEPROM">Soros EEPROM / Flash</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMInterface">Soros interfész típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMInterfaceSpeed">Interfész sebessége</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMInterfaceSpeed">Interfész sebessége</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMCapacity">Kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMCapacity">Memória kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameSerialEEPROMVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescSerialEEPROMVcc">Tápfeszültség tartomány</system:String>
+
+    <!-- Part categories - Digital IC - Microcontollers -->
+    <system:String x:Key="DbPartCategoryNameMicrocontroller">Mikrokontroller</system:String>
+    <system:String x:Key="DbPartCategoryDescMicrocontroller">Mikrokontrollerek</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerVcc">Tápfeszültség tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerClock">Órajel</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerClock">Maximum órajel frekvencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerFlash">Flash</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerFlash">Flash memória méret</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerSRAM">SRAM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerSRAM">SRAM memória méret</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerEEPROM">EEPROM</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerEEPROM">EEPROM memória méret</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerGPIO">GPIO lábak</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerGPIO">GPIO lábak száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerADC">ADC csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerADC">ADC csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMicrocontrollerPWM">PWM kimenetek</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMicrocontrollerPWM">PWM kimenetek száma</system:String>
+
+    <system:String x:Key="DbPartCategoryName8051">8051</system:String>
+    <system:String x:Key="DbPartCategoryDesc8051">8051 mikrovezérlő család</system:String>
+
+    <system:String x:Key="DbPartCategoryNameAVR">AVR</system:String>
+    <system:String x:Key="DbPartCategoryDescAVR">8 bites AVR mikrovezérlő család</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMSP">MSP</system:String>
+    <system:String x:Key="DbPartCategoryDescMSP">MSP430 16-bit mikrovezérlő család</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePIC">PIC</system:String>
+    <system:String x:Key="DbPartCategoryDescPIC">8 bites PIC mikrovezérlő család</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePIC24">PIC24/DSPIC</system:String>
+    <system:String x:Key="DbPartCategoryDescPIC24">16 bites PIC24/DSPIC mikrovezérlő család</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSTM8">STM8</system:String>
+    <system:String x:Key="DbPartCategoryDescSTM8">STM 8-bit mikrovezérlő család</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSTM32">STM32</system:String>
+    <system:String x:Key="DbPartCategoryDescSTM32">STM32 32-bit ARM Cortex mikrovezérlő család</system:String>
+
+    <!-- Part categories - Digital IC - Interface -->
+    <system:String x:Key="DbPartCategoryNameInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryDescInterface">Interfész IC-k</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceFunction">Funkció</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceFunction">Funkció</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceChannels">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceChannels">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceSpeed">Sebesség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceSpeed">Adatátviteli sebesség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInterfaceVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInterfaceVcc">Tápfeszültség-tartomány</system:String>
+
+    <!-- Part categories - Digital IC - RTC -->
+    <system:String x:Key="DbPartCategoryNameRTC">RTC</system:String>
+    <system:String x:Key="DbPartCategoryDescRTC">Valós idejű óra</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRTCInterface">Interfész</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRTCInterface">Soros interfész típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameRTCVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescRTCVcc">Tápfeszültség-tartomány</system:String>
+
+    <!-- Part categories - Digital IC - Misc. Digital -->
+    <system:String x:Key="DbPartCategoryNameMiscDigital">Egyéb Digitális</system:String>
+    <system:String x:Key="DbPartCategoryDescMiscDigital">Egyéb digitális integrált áramkörök</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMiscDigitalVcc">Vcc</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMiscDigitalVcc">Tápfeszültség-tartomány</system:String>
+
+    <!-- Part categories - Diode -->
+    <system:String x:Key="DbPartCategoryNameDiode">Dióda</system:String>
+    <system:String x:Key="DbPartCategoryDescDiode">Diódák</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameDiodeType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeType">Struktúra típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeRecovery">Recovery</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeRecovery">Recovery típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeUrrm">Urrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeUrrm">Maximum ellenfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeUf">Uf</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeUf">Maximum vezetési feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeIf">If</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeIf">Maximum nyitóirányú áram átlagértéke (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiodeTrr">trr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiodeTrr">Újraéledési idő</system:String>
+
+    <system:String x:Key="DbPartCategoryNameBridgeRectifier">Diódahíd</system:String>
+    <system:String x:Key="DbPartCategoryDescBridgeRectifier">Diódahidak (Graetz)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameRectifier">Egyenirányító</system:String>
+    <system:String x:Key="DbPartCategoryDescRectifier">Egyenirányító diódák</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSwitchDiode">Kapcsoló</system:String>
+    <system:String x:Key="DbPartCategoryDescSwitchDiode">Kapcsoló diódák</system:String>
+
+    <system:String x:Key="DbPartCategoryNameSchottky">Schottky</system:String>
+    <system:String x:Key="DbPartCategoryDescSchottky">Schottky diódák</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTVS">TVS</system:String>
+    <system:String x:Key="DbPartCategoryDescTVS">Szupresszor diódák</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTVSUbr">Ubr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTVSUbr">Névleges letörési feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTVSPppm">Pppm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTVSPppm">Impulzus csúcsteljesítmény</system:String>
+
+    <system:String x:Key="DbPartCategoryNameZener">Zéner</system:String>
+    <system:String x:Key="DbPartCategoryDescZener">Zéner diódák</system:String>
+    <system:String x:Key="DbPartCategoryParamNameZenerUz">Uz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescZenerUz">Zéner feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameZenerPtot">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescZenerPtot">Max teljesítmény disszipáció</system:String>
+
+    <!-- Part categories - Optoelectronics -->
+    <system:String x:Key="DbPartCategoryNameOptoelectronics">Optoelektronika</system:String>
+    <system:String x:Key="DbPartCategoryDescOptoelectronics">Optoelektronikai alkatrészek</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplay">Kijelző</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplay">Kijelzők</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayDigits">Számjegy</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayDigits">Számjegy kijelzők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsTechnology">Technológia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsTechnology">Technológia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsCount">Számjegyek</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsCount">Számjegyek száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsType">Kijelző típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsHeight">Magasság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsHeight">Szemjegy magassága</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsCommonElectrode">Közös elektróda</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsCommonElectrode">Közös elektróda</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayDigitsColor">Szín</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayDigitsColor">Szín</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayAlphanumeric">Alfanumerikus</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayAlphanumeric">Alfanumerikus kijelzők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericTechnology">Technológia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericTechnology">Technológia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericCharacters">Karakterek</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericCharacters">Karakterek száma (oszlop x sor)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericDimension">Méret</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericDimension">Modul mérete (Hossz x Szélesség x Magasság mm)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericBacklight">Háttárvilágítás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericBacklight">Háttárvilágítás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericSupplyVoltage">Tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericSupplyVoltage">Tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericController">Vezérlő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericController">Vezérlő IC</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDisplayGraphic">Grafikus</system:String>
+    <system:String x:Key="DbPartCategoryDescDisplayGraphic">Grafikus/mátrix kijelzők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicTechnology">Technológia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicTechnology">Technológia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicDiagonal">Képátló</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicDiagonal">Képátló (inch)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicResolution">Felbontás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicResolution">Felbontás (oszlop x sor)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicDimension">Méret</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicDimension">Modul mérete (Hossz x Szélesség x Magasság mm)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicTouch">Érintőpanel</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicTouch">Érintőpanel</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicSupplyVoltage">Tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicSupplyVoltage">Tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDisplayGraphicController">Vezérlő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicController">Vezérlő IC</system:String>
+
+    <system:String x:Key="DbPartCategoryNameLED">LED</system:String>
+    <system:String x:Key="DbPartCategoryDescLED">Fénykibocsátó diódák</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDShape">Alak</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDShape">Alak</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDColor">Szín</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDColor">Szín</system:String>
+    <system:String x:Key="DbPartCategoryParamNameLEDCurrent">Áram</system:String>
+    <system:String x:Key="DbPartCategoryParamDescLEDCurrent">Névleges áram</system:String>
+
+    <system:String x:Key="DbPartCategoryNameOptocoupler">Optocsatoló</system:String>
+    <system:String x:Key="DbPartCategoryDescOptocoupler">Optocsatolók</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerChannel">Csatornák</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerChannel">Csatornák száma</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputType">Kimenet típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputType">Kimenet típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputSupplyVoltage">Kimeneti tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputSupplyVoltage">Kimeneti tápfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputVoltage">Kimeneti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputVoltage">Maximum kimeneti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameOptocouplerOutputCurrent">Kimeneti áram</system:String>
+    <system:String x:Key="DbPartCategoryParamDescOptocouplerOutputCurrent">Maximum kimeneti áram</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePhotoelements">Fotóelem</system:String>
+    <system:String x:Key="DbPartCategoryDescPhotoelements">Fotóelemek</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePhotoelementsType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPhotoelementsType">Fotóelem típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePhotoelementsSensitivityPeak">Érzékenység maximuma</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPhotoelementsSensitivityPeak">Maximális érzékenység hullámhossza</system:String>
+
+    <!-- Part categories - Passive -->
+    <system:String x:Key="DbPartCategoryNamePassive">Passzív</system:String>
+    <system:String x:Key="DbPartCategoryDescPassive">Passzív alkatrészek</system:String>
+
+    <system:String x:Key="DbPartCategoryNameResistor">Ellenállás</system:String>
+    <system:String x:Key="DbPartCategoryDescResistor">Ellenállások</system:String>
+
+    <system:String x:Key="DbPartCategoryNameFixResistor">Fix ellenállás</system:String>
+    <system:String x:Key="DbPartCategoryDescFixResistor">Fix ellenállások</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorType">Ellenállás típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorPower">Teljesítmény</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorPower">Teljesítmény</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorTolerance">Tűrés</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorTolerance">Tűrés Lila(B)=0,1%, Kék(C)=0,25%, Zöld(D)=0,5%, Barna(F)=1%, Piros(G)=2%, Arany(J)=5%, Ezüst(K)=10%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorMaxVoltage">Max. feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorMaxVoltage">Maximum működési feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameFixResistorTempco">Tempco</system:String>
+    <system:String x:Key="DbPartCategoryParamDescFixResistorTempco">Hőmérsékleti együttható Lila=5, Kék=10, Sárga=25, Narancs=15, Piros=50, Barna=100</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePotentiometer">Potenciométer</system:String>
+    <system:String x:Key="DbPartCategoryDescPotentiometer">Potenciométerek</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerType">Potenciométer típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerShaft">Tengelyátmérő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerShaft">Tengelyátmérő</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePotentiometerCharacteristic">Karakterisztika</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPotentiometerCharacteristic">Karakterisztika</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTrimmer">Trimmer</system:String>
+    <system:String x:Key="DbPartCategoryDescTrimmer">Trimmer potenciométerek</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTrimmerType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTrimmerType">Trimmer típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTrimmerOrientation">Orientáció</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTrimmerOrientation">Orientáció</system:String>
+
+    <system:String x:Key="DbPartCategoryNameNTC">NTC</system:String>
+    <system:String x:Key="DbPartCategoryDescNTC">NTC termisztor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameNTCResistor">Ellenállás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescNTCResistor">Névleges ellenállás 25 °C-on</system:String>
+    <system:String x:Key="DbPartCategoryParamNameNTCTemperatureRange">Hőmérséklet tartomány</system:String>
+    <system:String x:Key="DbPartCategoryParamDescNTCTemperatureRange">Hőmérséklet tartomány</system:String>
+
+    <system:String x:Key="DbPartCategoryNamePTC">PTC</system:String>
+    <system:String x:Key="DbPartCategoryDescPTC">PTC termisztor</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCVoltage">Max. feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCVoltage">Maximum feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCCurrent">Áram</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCCurrent">Áram</system:String>
+    <system:String x:Key="DbPartCategoryParamNamePTCPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescPTCPitch">Lábtávolság</system:String>
+
+    <system:String x:Key="DbPartCategoryNameVaristor">Varisztor</system:String>
+    <system:String x:Key="DbPartCategoryDescVaristor">Varisztorok</system:String>
+    <system:String x:Key="DbPartCategoryParamNameVaristorVoltage">Varisztor feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescVaristorVoltage">Varisztor feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameVaristorPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescVaristorPitch">Lábtávolság</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitor">Kondenzátor</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitor">Kondenzátorok</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorCeramic">Kerámiakondenzátor</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorCeramic">Kerámiakondenzátorok</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicDielectric">Dielektrikum</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicDielectric">Dielektrikum</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicVoltage">Feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicVoltage">Működési feszültség DC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicVoltageAC">Feszültség AC</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicVoltageAC">Működési feszültség AC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicTolerance">Tűrés</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicTolerance">Tűrés E=0,5%, F=1%, G=2%, H=3%, J=5%, K=10%, L=15%, M=20%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorCeramicSafety">Biztonsági osztály</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorCeramicSafety">X vagy Y osztályú biztonsági kondenzátor</system:String>
+
+    <system:String x:Key="DbPartCategoryNameCapacitorFilm">Fóliakondenzátor</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorFilm">Fóliakondenzátorok</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmDielectric">Dielektrikum</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmDielectric">Dielektrikum</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmVoltage">Feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmVoltage">Működési feszültség DC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmVoltageAC">Feszültség AC</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmVoltageAC">Működési feszültség AC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmTolerance">Tűrés</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmTolerance">Tűrés E=0,5%, F=1%, G=2%, H=3%, J=5%, K=10%, L=15%, M=20%</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmSafety">Biztonsági osztály</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmSafety">X vagy Y osztályú biztonsági kondenzátor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorFilmDimension">Méret</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorFilmDimension">Méret (Hossz x Szélesség x Magasság mm)</system:String>
+    
+    <system:String x:Key="DbPartCategoryNameCapacitorElectrolitic">Elektrolitkondenzátor</system:String>
+    <system:String x:Key="DbPartCategoryDescCapacitorElectrolitic">Elektrolitkondenzátorok</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticVoltage">Feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticVoltage">Működési feszültség DC</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticMaxTemp">Max. hőmérséklet</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticMaxTemp">Maximum működési hőmérséklet</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticPitch">Lábtávolság</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticOrientation">Orientáció</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticOrientation">Orientáció</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticLowESR">Low ESR típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticLowESR">Low ESR típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticDiameter">Átmérő</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticDiameter">Ház átmérője</system:String>
+    <system:String x:Key="DbPartCategoryParamNameCapacitorElectroliticLength">Hossz</system:String>
+    <system:String x:Key="DbPartCategoryParamDescCapacitorElectroliticLength">Ház hossza lábak nélkül</system:String>
+
+    <system:String x:Key="DbPartCategoryNameInductor">Induktivitás</system:String>
+    <system:String x:Key="DbPartCategoryDescInductor">Induktivitások</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorCurrent">Áram</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorCurrent">Működési áram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorResistance">Ellenállás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorResistance">Soros ellenállás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameInductorTolerance">Tűrés</system:String>
+    <system:String x:Key="DbPartCategoryParamDescInductorTolerance">Tűrés Barna(F)=1%, Piros(G)=2%, Arany(J)=5%, Ezüst(K)=10%, Fekete(M)=20%</system:String>
+
+    <system:String x:Key="DbPartCategoryNameQuartz">Kvarc és szűrő</system:String>
+    <system:String x:Key="DbPartCategoryDescQuartz">Kvarc kristályok, oszcillátorok és szűrők</system:String>
+    <system:String x:Key="DbPartCategoryParamNameQuartzType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamDescQuartzType">Típus</system:String>
+    <system:String x:Key="DbPartCategoryParamNameQuartzFrequency">Frekvencia</system:String>
+    <system:String x:Key="DbPartCategoryParamDescQuartzFrequency">Frekvencia</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTransformer">Transzformátor</system:String>
+    <system:String x:Key="DbPartCategoryDescTransformer">Hálózati transzformátor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPower">Teljesítmény</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPower">Teljesítmény</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPrimaryVoltage1">Pr. U1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPrimaryVoltage1">Primer feszültség 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerPrimaryVoltage2">Pr. U2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerPrimaryVoltage2">Primer feszültség 2</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryVoltage1">Szek. U1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryVoltage1">Szekunder feszültség 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryCurrent1">Szek. I1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryCurrent1">Szekunder áram 1</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryVoltage2">Szek. U2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryVoltage2">Szekunder feszültség 2</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTransformerSecondaryCurrent2">Szek. I2</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTransformerSecondaryCurrent2">Szekunder áram 2</system:String>
+
+    <!-- Part categories - Transistor -->
+    <system:String x:Key="DbPartCategoryNameTransistor">Tranzisztor</system:String>
+    <system:String x:Key="DbPartCategoryDescTransistor">Tranzisztorok</system:String>
+
+    <system:String x:Key="DbPartCategoryNameBJT">Bipoláris Tranzisztor</system:String>
+    <system:String x:Key="DbPartCategoryDescBJT">Bipoláris Tranzisztorok</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameBJTMaterial">Anyag</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTMaterial">Félvezető anyaga</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTPolarity">Polaritás</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTPolarity">Polaritás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUce">Uce</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUce">Max. Kollektor-Emitter feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUcb">Ucb</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUcb">Max. Kollektor-Bázis feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTUeb">Ueb</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTUeb">Max. Emitter-Bázis feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTIcmax">Icmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTIcmax">Max. Kollektoráram (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTPd">Max. teljesítmény disszipáció</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJTft">ft</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJTft">Határfrekvencia</system:String>
+    <system:String x:Key="DbPartCategoryParamNameBJThFE">hFE</system:String>
+    <system:String x:Key="DbPartCategoryParamDescBJThFE">Áramerősítési tényező</system:String>
+
+    <system:String x:Key="DbPartCategoryNameIGBT">IGBT</system:String>
+    <system:String x:Key="DbPartCategoryDescIGBT">Szigetelt vezérlőelektródás bipoláris tranzisztor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTStructure">Struktúra</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTStructure">Struktúra típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUce">Uce</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUce">Max. Kollektor-Emitter feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUcesat">Uce(sat)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUcesat">Max. Kollektor-Emitter szaturációs feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUge">Uge</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUge">Max. Gate-Emitter feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTUgeth">Uge(th)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTUgeth">Gate-Emitter küszöbfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTIcmax">Icmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTIcmax">Max. Kollektoráram (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTPd">Max. teljesítmény disszipáció</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTQg">Qg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTQg">Teljes kapu töltési kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameIGBTtr">tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescIGBTtr">Max. felfutási idő</system:String>
+
+    <system:String x:Key="DbPartCategoryNameJFET">JFET</system:String>
+    <system:String x:Key="DbPartCategoryDescJFET">Záróréteges térvezérlésű tranzisztor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETChannel">Csatorna</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETChannel">Csatorna típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUds">Uds</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUds">Max. Drain-Source feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUgsoff">Ugs(off)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUgsoff">Gate-Source elzáródási feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETUgs">Ugs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETUgs">Gate-Source feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETIdmax">Idmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETIdmax">Max. Drain áram (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETPd">Max. teljesítmény disszipáció</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETRds">Rds(on)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETRds">Max. Drain-Source ellenállás vezetési állapotban</system:String>
+    <system:String x:Key="DbPartCategoryParamNameJFETCoss">Coss</system:String>
+    <system:String x:Key="DbPartCategoryParamDescJFETCoss">Kimeneti kapacitás</system:String>
+
+    <system:String x:Key="DbPartCategoryNameMOSFET">MOSFET</system:String>
+    <system:String x:Key="DbPartCategoryDescMOSFET">Fém-oxid félvezető térvezérlésű tranzisztor</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETChannel">Csatorna</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETChannel">Csatorna típusa</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUds">Uds</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUds">Max. Drain-Source feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUgs">Ugs</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUgs">Max. Gate-Source feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETUgsth">Ugs(th)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETUgsth">Max. Gate küszöbfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETIdmax">Idmax</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETIdmax">Max. Drain áram (Tc=25°C)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETPd">Pd</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETPd">Max. teljesítmény disszipáció</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETRds">Rds(on)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETRds">Max. Drain-Source ellenállás vezetési állapotban</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETQg">Qg</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETQg">Teljes kapu töltési kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETtr">tr</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETtr">Max. felfutási idő</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETCoss">Coss</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETCoss">Kimeneti kapacitás</system:String>
+    <system:String x:Key="DbPartCategoryParamNameMOSFETLogicLevel">Logic level</system:String>
+    <system:String x:Key="DbPartCategoryParamDescMOSFETLogicLevel">Logikai szintű bemenet</system:String>
+
+    <system:String x:Key="DbPartCategoryNameUJT">UJT</system:String>
+    <system:String x:Key="DbPartCategoryDescUJT">Egyátmenetű tranzisztor (UJT, PUT)</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTUb2e">Ub2e</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTUb2e">Emitter záróirányú feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTUb2b1">Ub2b1</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTUb2b1">Bázisközti feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTIerms">Ierms</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTIerms">Emitter átlagáram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameUJTIe">Ie</system:String>
+    <system:String x:Key="DbPartCategoryParamDescUJTIe">Emitter csúcsáram</system:String>
+    
+    <!-- Part categories - Trigger device -->
+    <system:String x:Key="DbPartCategoryNameTriggerDevice">Tirisztorféle</system:String>
+    <system:String x:Key="DbPartCategoryDescTriggerDevice">Tirisztorok, Triakok, Diakok</system:String>
+
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUdrm">Udrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUdrm">Zárási feszültség periodikus csúcsértéke</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUt">Ut</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUt">Maximum vezetési feszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceItrms">It(rms)</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceItrms">Maximum nyitóirányú áram négyzetes középértéke</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceIh">Ih</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceIh">Tartóáram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceUgt">Ugt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceUgt">Kapu triggerfeszültség</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDeviceIgt">Igt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDeviceIgt">Kapu triggeráram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDevicedIdt">dI/dt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDevicedIdt">Kritikus áramnövekedés</system:String>
+    <system:String x:Key="DbPartCategoryParamNameTriggerDevicedUdt">dU/dt</system:String>
+    <system:String x:Key="DbPartCategoryParamDescTriggerDevicedUdt">Kritikus feszültségnövekedés</system:String>
+
+    <system:String x:Key="DbPartCategoryNameTriac">Triak</system:String>
+    <system:String x:Key="DbPartCategoryDescTriac">Triakok</system:String>
+
+    <system:String x:Key="DbPartCategoryNameThyristor">Tirisztor</system:String>
+    <system:String x:Key="DbPartCategoryDescThyristor">Tirisztorok (SCR, GTO)</system:String>
+
+    <system:String x:Key="DbPartCategoryNameDiac">Diak</system:String>
+    <system:String x:Key="DbPartCategoryDescDiac">Kétirányú tirisztordióda</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiacItrm">Itrm</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiacItrm">Ismétlődő nyitóirányú csúcsáram</system:String>
+    <system:String x:Key="DbPartCategoryParamNameDiacUbo">Ubo</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDiacUbo">Letörési feszültség</system:String>
+
+
+    <!-- Storage locations -->
+    <system:String x:Key="DbStorageLocationNameRoot">Minden</system:String>
+    <system:String x:Key="DbStorageLocationDescRoot">Minden tárolási hely</system:String>
+
+    <system:String x:Key="DbStorageLocationNameUnknown">Ismeretlen</system:String>
+    <system:String x:Key="DbStorageLocationDescUnknown">Nincs megadva</system:String>
+    
+
+    <!-- Package categories + Packages -->
+    <system:String x:Key="DbPackageCategoryNameUnknown">Ismeretlen</system:String>
+    <system:String x:Key="DbPackageCategoryDescUnknown">Nincs megadva</system:String>
+    <system:String x:Key="DbPackageNameUnknown">Ismeretlen</system:String>
+    <system:String x:Key="DbPackageDescUnknown">Nincs megadva</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameBridge">Diódahíd</system:String>
+    <system:String x:Key="DbPackageCategoryDescBridge">Diódahíd</system:String>
+    <system:String x:Key="DbPackageDescBridgeDIL">DIL diódahíd</system:String>
+    <system:String x:Key="DbPackageDescBridgeInLine">In-Line diódahíd</system:String>
+    <system:String x:Key="DbPackageDescBridgeRound">Kerek diódahíd</system:String>
+    <system:String x:Key="DbPackageDescBridgeQuad">Négyzet alakú diódahíd</system:String>
+    <system:String x:Key="DbPackageDescBridge3PhaseQuad">3 fázisú négyzet alakú diódahíd</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCapacitor">Kondenzátor</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitor">Kondenzátor</system:String>
+    <system:String x:Key="DbPackageDescCapacitorMLCC">Több rétegű kerámiakondenzátor tokozás</system:String>
+    <system:String x:Key="DbPackageDescCapacitorCeramicDisc">Kerámia-tárcsakondenzátor tokozás</system:String>
+    <system:String x:Key="DbPackageDescCapacitorFilm">Fóliakondenzátor tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCapacitorPolarised">Kondenzátor pol.</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitorPolarised">Polarizált kondenzátor</system:String>
+    <system:String x:Key="DbPackageDescCapacitorElectrolytic">Elektrolitkondenzátor tokozás</system:String>
+    <system:String x:Key="DbPackageDescCapacitorTantalun">Tantálkondenzátor tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDecawatt">Decawatt</system:String>
+    <system:String x:Key="DbPackageCategoryDescDecawatt">Decawatt tranzisztor</system:String>
+    <system:String x:Key="DbPackageDescDecawatt">Decawatt tokozás</system:String>
+    <system:String x:Key="DbPackageDescDecawatt2">Dupla Decawatt tokozás</system:String>
+    <system:String x:Key="DbPackageDescDecawatt3">Tripla Decawatt tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDisplay">Kijelző</system:String>
+    <system:String x:Key="DbPackageCategoryDescDisplay">Kijelző</system:String>
+    <system:String x:Key="DbPackageDescDisplayLED">LED kijelző</system:String>
+    <system:String x:Key="DbPackageDescDisplayLCD">Folyadék kristály kijelző</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameCDIP">CDIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescCDIP">Ablakos kerámia DIP tokozás</system:String>
+    <system:String x:Key="DbPackageDescCDIL">Ablakos kerámia DIP tokozás</system:String>
+       
+    <system:String x:Key="DbPackageCategoryNameDIP">DIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescDIP">DIP tokozás (2 lábsor)</system:String>
+    <system:String x:Key="DbPackageDescDIL">DIP tokozás</system:String>
+    <system:String x:Key="DbPackageDescDILTabs">DIP tokozás hűtőfüllel</system:String>
+    <system:String x:Key="DbPackageDescDILWide">Széles DIP tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameDO">DO</system:String>
+    <system:String x:Key="DbPackageCategoryDescDO">Dióda tokozás</system:String>
+    <system:String x:Key="DbPackageDescDiode">Dióda tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameInductorSMD">Induktivitás SMD</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorSMD">SMD induktivitás</system:String>
+    <system:String x:Key="DbPackageDescInductorShilded">Árnyékolt induktivitás</system:String>
+    <system:String x:Key="DbPackageDescInductorUnshilded">Árnyékolás nélküli induktivitás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameInductorTH">Induktivitás TH</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorTH">TH Induktivitás</system:String>
+    <system:String x:Key="DbPackageDescInductorAxialLeaded">Fekvő lábas induktivitás</system:String>
+    <system:String x:Key="DbPackageDescInductorRadialLeaded">Álló lábas induktivitás</system:String>
+    <system:String x:Key="DbPackageDescInductorToroid">Toroid induktivitás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameLED">LED</system:String>
+    <system:String x:Key="DbPackageCategoryDescLED">Világító dióda</system:String>
+    <system:String x:Key="DbPackageDescLED">Világító dióda</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameOpto">Opto</system:String>
+    <system:String x:Key="DbPackageCategoryDescOpto">Optocsatoló</system:String>
+    <system:String x:Key="DbPackageDescOptoGullWings">DIP tokozás felületszerelt</system:String>
+    <system:String x:Key="DbPackageDescOptoMFP">Mini lapos tokozás</system:String>
+    <system:String x:Key="DbPackageDescOptoSOIC">Opto SOIC tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNamePLCC">PLCC</system:String>
+    <system:String x:Key="DbPackageCategoryDescPLCC">PLCC tokozás</system:String>
+    <system:String x:Key="DbPackageDescPLCC">PLCC tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNamePotmeter">Potméter</system:String>
+    <system:String x:Key="DbPackageCategoryDescPotmeter">Vezérlő és trimmer potméterek</system:String>
+    <system:String x:Key="DbPackageDescPotmeterTrimmer">Trimmer potméterek</system:String>
+    <system:String x:Key="DbPackageDescPotmeterControl">Vezérlő potméterek</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameResistor">Ellenállás</system:String>
+    <system:String x:Key="DbPackageCategoryDescResistor">Ellenállás</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0402">SMD ellenállás 0,0625W vagy 0,125W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0603">SMD ellenállás 0,1W vagy 0,2W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD0805">SMD ellenállás 0,125W vagy 0,25W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1206">SMD ellenállás 0,25W vagy 0,5W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1210">SMD ellenállás 0,5W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD1218">SMD ellenállás 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD2010">SMD ellenállás 0,75W</system:String>
+    <system:String x:Key="DbPackageDescResistorSMD2512">SMD ellenállás 1W vagy 2W</system:String>
+    <system:String x:Key="DbPackageDescResistorMF0204">Metal film ellenállás 0,4W</system:String>
+    <system:String x:Key="DbPackageDescResistorMF0207">Metal film ellenállás 0,6W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF0623">Metal oxid ellenállás 0.5W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF0932">Metal oxid ellenállás 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1145">Metal oxid ellenállás 1W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1550">Metal oxid ellenállás 2W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF1765">Metal oxid ellenállás 3W</system:String>
+    <system:String x:Key="DbPackageDescResistorMOF2485">Metal oxid ellenállás 5W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW3W">Cement huzalellenállás 3W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW5W">Cement huzalellenállás 5W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW7W">Cement huzalellenállás 7W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW10W">Cement huzalellenállás 10W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW15W">Cement huzalellenállás 15W</system:String>
+    <system:String x:Key="DbPackageDescResistorWW20W">Cement huzalellenállás 20W</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameQuartz">Quartz</system:String>
+    <system:String x:Key="DbPackageCategoryDescQuartz">Quartz, rezonátor és oszcillátor</system:String>
+    <system:String x:Key="DbPackageDescQuartz">Quartz kristály tok</system:String>
+    <system:String x:Key="DbPackageDescResonator">Kerámiarezonátor tok</system:String>
+    <system:String x:Key="DbPackageDescOscillator">Oszcillátor tok</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSIP">SIP</system:String>
+    <system:String x:Key="DbPackageCategoryDescSIP">SIP tokozás (1 lábsor)</system:String>
+    <system:String x:Key="DbPackageDescSIP">SIP tokozás</system:String>
+    <system:String x:Key="DbPackageDescSIPMiddlePower">SIP közepes teljesítményű tokozás</system:String>
+    <system:String x:Key="DbPackageDescSIPPower">SIP teljesítmény tokozás</system:String>
+    <system:String x:Key="DbPackageDescSIPPowerZigZag">SIP teljesítmény tokozás cikcakk</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOD">SOD</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOD">SOD dióda</system:String>
+    <system:String x:Key="DbPackageDescMELF">MELF dióda tokozás</system:String>
+    <system:String x:Key="DbPackageDescSOD">SOD dióda tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOIC">SOIC</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOIC">SOIC integrált áramkör</system:String>
+    <system:String x:Key="DbPackageDescSOIC">SOIC integrált áramkör</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOJ">SOJ</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOJ">SOJ integrált áramkör</system:String>
+    <system:String x:Key="DbPackageDescSOJ">SOJ integrált áramkör</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameMSOP">MSOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescMSOP">Mini SOP tokozás</system:String>
+    <system:String x:Key="DbPackageDescMSOP">Mini SOP tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOP">SOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOP">SOP tokozás</system:String>
+    <system:String x:Key="DbPackageDescSOP">SOP tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameSOT">SOT</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOT">SOT tranzisztor</system:String>
+    <system:String x:Key="DbPackageDescSOT">SOT tranzisztor tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameStud">Csavaros</system:String>
+    <system:String x:Key="DbPackageCategoryDescStud">Csavaros rögzítésű tokozás</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM5">Csavaros dióda tok (M5x0,8)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM6orM8">Csavaros dióda tok (M6x1, M8x1,25)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM12">Csavaros dióda tok (M12x1,75)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM16">Csavaros dióda tok (M16x1,5)</system:String>
+    <system:String x:Key="DbPackageDescStudDiodeM24">Csavaros dióda tok (M24x1,5)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM6">Csavaros tirisztor tok (M6x1)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM12">Csavaros tirisztor tok (M12x1.75)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM16">Csavaros tirisztor tok (M16x1.5)</system:String>
+    <system:String x:Key="DbPackageDescStudScrM24">Csavaros tirisztor tok (M24x1.5)</system:String>
+    
+    <system:String x:Key="DbPackageCategoryNameTOPlastic">TO Műanyag</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOPlastic">Műanyag tranzisztor</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated">Szigetelt műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated2Pin">2 lábú szigetelt műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlasticIsolated3Pin">3 lábú szigetelt műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic">Műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic2Pin">2 lábú műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic5Pin">5 lábú műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic7Pin">7 lábú műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic9Pin">9 lábú műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic11Pin">11 lábú műanyag tokozás</system:String>
+    <system:String x:Key="DbPackageDescTOPlastic15Pin">15 lábú műanyag tokozás</system:String>
+    
+    <system:String x:Key="DbPackageCategoryNameTOMetal">TO Fém</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOMetal">Fém tranzisztor</system:String>
+    <system:String x:Key="DbPackageDescTOMetal">Fém tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTQFP">TQFP</system:String>
+    <system:String x:Key="DbPackageCategoryDescTQFP">TQFP négyzetes integrált áramkör</system:String>
+    <system:String x:Key="DbPackageDescTQFP">TQFP négyzetes tokozás</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTransformer">Transzformátor</system:String>
+    <system:String x:Key="DbPackageCategoryDescTransformer">Hálózati transzformátor</system:String>
+    <system:String x:Key="DbPackageDescTransformer">NYÁK Transzformátor</system:String>
+
+    <system:String x:Key="DbPackageCategoryNameTSSOP">TSSOP</system:String>
+    <system:String x:Key="DbPackageCategoryDescTSSOP">TSSOP tokozás</system:String>
+    <system:String x:Key="DbPackageDescTSSOP">TSSOP tokozás</system:String>
+
+
+    <!-- Manufacturers -->
+    <system:String x:Key="DbManufacturerNameUnknown">Ismeretlen</system:String>
+    <system:String x:Key="DbManufacturerDescUnknown">Ismeretlen gyártó</system:String>
+
+    <system:String x:Key="DbManufacturerDescAdvancedLinearDevices">Advanced Linear Devices, Inc</system:String>
+    <system:String x:Key="DbManufacturerDescAdvancedMicroDevices">Advanced Micro Devices</system:String>
+    <system:String x:Key="DbManufacturerDescAgilent">Agilent Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescAllegro">Allegro Microsystems</system:String>
+    <system:String x:Key="DbManufacturerDescAlphaAndOmega">Alpha and Omega Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescAnalogDevices">Analog Devices, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescAtmel">2016-től a Microchip része</system:String>
+    <system:String x:Key="DbManufacturerDescArcotronics">AV Arcotronics (Most KEMET)</system:String>
+    <system:String x:Key="DbManufacturerDescAvisor">Avisor</system:String>
+    <system:String x:Key="DbManufacturerDescAVX">Kyocera AVX</system:String>
+    <system:String x:Key="DbManufacturerDescBBC">Brown, Boveri and Cie (Megszünt 1988-ban)</system:String>
+    <system:String x:Key="DbManufacturerDescBourns">Bourns, Inc</system:String>
+    <system:String x:Key="DbManufacturerDescBroadcom">Broadcom Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescBurrBrown">Beolvadt a Texas Instruments-be</system:String>
+    <system:String x:Key="DbManufacturerDescCatalyst">Catalyst Semiconductor, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescCentralSemiconductor">Central Semiconductor LLC.</system:String>
+    <system:String x:Key="DbManufacturerDescCirrusLogic">Cirrus Logic</system:String>
+    <system:String x:Key="DbManufacturerDescCoilcraft">Coilcraft Magnetic Components</system:String>
+    <system:String x:Key="DbManufacturerDescComsetSemiconductor">Comset Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescContinentalDevice">Continental Device India Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescCypress">Cypress Semiconductor. Infineon része 2020-tól</system:String>
+    <system:String x:Key="DbManufacturerDescDallasSemiconductor">2001-ről a Maxim integrated része</system:String>
+    <system:String x:Key="DbManufacturerDescDCComponents">DC Components Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescDiodes">Diodes Incorporated</system:String>
+    <system:String x:Key="DbManufacturerDescDiotec">Diotec Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescElna">ELNA Co., Ltd</system:String>
+    <system:String x:Key="DbManufacturerDescEpcos">Beolvadt a TDK-ba</system:String>
+    <system:String x:Key="DbManufacturerDescERO">Roederstein Electronics, Inc. (most Vishay)</system:String>
+    <system:String x:Key="DbManufacturerDescEupec">Beolvadt az Infineon-ba</system:String>
+    <system:String x:Key="DbManufacturerDescEspressif">Espressif Systems</system:String>
+    <system:String x:Key="DbManufacturerDescExarCorporation">2017-től a MaxLinear része</system:String>
+    <system:String x:Key="DbManufacturerDescFagor">Fagor Electrónica</system:String>
+    <system:String x:Key="DbManufacturerDescFairchildSemiconductor">2001-től az Onsemi része</system:String>
+    <system:String x:Key="DbManufacturerDescFenghua">Fenghua (HK) Electronics Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescFerroCore">FerroCore</system:String>
+    <system:String x:Key="DbManufacturerDescFreescaleSemiconductor">2015-től az NXP része</system:String>
+    <system:String x:Key="DbManufacturerDescFujiElectric">Fuji Electric Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescFujitsu">Fujitsu Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescGeneralInstrument">Megszünt 1997-ben</system:String>
+    <system:String x:Key="DbManufacturerDescGeneralSemiconductor">Most Vishay</system:String>
+    <system:String x:Key="DbManufacturerDescGLuxon">Lexon Electronics Corporation - 2005-ben egyesült a Teapo-vak</system:String>
+    <system:String x:Key="DbManufacturerDescGERTH">GERTH Transformatorenbau GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescGoldStar">GoldStar (Most LG Electronics)</system:String>
+    <system:String x:Key="DbManufacturerDescHAHN">HAHN GmbH and Co. KG</system:String>
+    <system:String x:Key="DbManufacturerDescHarrisCorporation">Egyes részei a Texas Instruments-hez (1998) és az Intersil-hez (1999) kerültek</system:String>
+    <system:String x:Key="DbManufacturerDescHewlettPackard">Átnevezték Agilent Technologies-re</system:String>
+    <system:String x:Key="DbManufacturerDescHitachi">Hitachi Semiconductor (Most Renesas)</system:String>
+    <system:String x:Key="DbManufacturerDescHitano">Hitano Enterprise Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescHoltek">Holtek Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescHoneywell">Honeywell</system:String>
+    <system:String x:Key="DbManufacturerDescInchange">Inchange Semiconductor Company Limited</system:String>
+    <system:String x:Key="DbManufacturerDescIndel">INDEL Co Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescInfineon">Infineon Technologies</system:String>
+    <system:String x:Key="DbManufacturerDescIntegratedDeviceTechnology">Integrated Device Technology, Inc. (Most Renesas)</system:String>
+    <system:String x:Key="DbManufacturerDescIntegratedSiliconSolution">Integrated Silicon Solution, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescIntel">Intel technologies</system:String>
+    <system:String x:Key="DbManufacturerDescIntersil">2017-től a Renesas része</system:String>
+    <system:String x:Key="DbManufacturerDescInternationalRectifier">2015-tól az Infineon része</system:String>
+    <system:String x:Key="DbManufacturerDescIXYS">2018-tól az Infineon része</system:String>
+    <system:String x:Key="DbManufacturerDescJamicon">Jamicon</system:String>
+    <system:String x:Key="DbManufacturerDescJapanRadio">Japan Radio Co.</system:String>
+    <system:String x:Key="DbManufacturerDescKemet">Kemet (Yageo Group)</system:String>
+    <system:String x:Key="DbManufacturerDescKingbright">Kingbright Electronic Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescKoreaElectronics">Korea Electronics</system:String>
+    <system:String x:Key="DbManufacturerDescLattice">Lattice Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescLinearTechnology">2017-től az Analog Devices része</system:String>
+    <system:String x:Key="DbManufacturerDescLiteOn">Lite-On Technology Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescLittelFuse">Littelfuse, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescMakrai">MAKRAI Transformers Kft.</system:String>
+    <system:String x:Key="DbManufacturerDescMatsushitaElectronics">2008-tól Panasonic</system:String>
+    <system:String x:Key="DbManufacturerDescMaxim">Maxim Integrated</system:String>
+    <system:String x:Key="DbManufacturerDescMaxLinear">MaxLinear</system:String>
+    <system:String x:Key="DbManufacturerDescMicrel">2015-től a Microchip része</system:String>
+    <system:String x:Key="DbManufacturerDescMicroCommercialComponents">Micro Commercial Components</system:String>
+    <system:String x:Key="DbManufacturerDescMicrochip">Microchip Technology</system:String>
+    <system:String x:Key="DbManufacturerDescMikroelektronikaiVallalat">1986-ban megszűnt</system:String>
+    <system:String x:Key="DbManufacturerDescMiniCircuits">Mini-Circuits</system:String>
+    <system:String x:Key="DbManufacturerDescMitelSemiconductor">Mitel Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescMitsubishi">Mitsubishi Electric</system:String>
+    <system:String x:Key="DbManufacturerDescMicrosemi">Microsemi Corporation (A Microchip felvásárolta 2018-ban)</system:String>
+    <system:String x:Key="DbManufacturerDescMicronas">TDK-Micronas GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescMonolithicPowerSystems">Monolithic Power Systems, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescMospec">Mospec Semiconductor corp.</system:String>
+    <system:String x:Key="DbManufacturerDescMotorola">2004-től Freescale</system:String>
+    <system:String x:Key="DbManufacturerDescMulticomp">Multicomp Pro</system:String>
+    <system:String x:Key="DbManufacturerDescMurata">Murata</system:String>
+    <system:String x:Key="DbManufacturerDescMyrra">Myrra</system:String>
+    <system:String x:Key="DbManufacturerDescNationalSemiconductor">2011-től a Texas Instruments része</system:String>
+    <system:String x:Key="DbManufacturerDescNEC">NEC Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNewJerseySemiconductor">New Jersey Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescNichicon">Nichicon Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNipponChemiCon">Nippon Chemi-Con Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescNexperia">Nexperia</system:String>
+    <system:String x:Key="DbManufacturerDescNuvoton">Nuvoton Technology Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescNTEElectronics">NTE Electronics, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescNXPSemiconductors">NXP Semiconductors</system:String>
+    <system:String x:Key="DbManufacturerDescOhmite">Ohmite Mfg Co.</system:String>
+    <system:String x:Key="DbManufacturerDescOmron">Omron</system:String>
+    <system:String x:Key="DbManufacturerDescOnsemi">ON Semiconductor Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescOSRAM">ams OSRAM AG</system:String>
+    <system:String x:Key="DbManufacturerDescPanasonic">Panasonic</system:String>
+    <system:String x:Key="DbManufacturerDescPanJit">PanJit Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescPhilipsSemiconductors">2006-tól NXP</system:String>
+    <system:String x:Key="DbManufacturerDescPiher">Piher sensing systems</system:String>
+    <system:String x:Key="DbManufacturerDescPowerex">Powerex Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescPowerInnovations">Power Innovations Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescPowerIntegrations">Power Integrations</system:String>
+    <system:String x:Key="DbManufacturerDescPulseElectronics">Pulse Electronics (Yageo group része)</system:String>
+    <system:String x:Key="DbManufacturerDescRadiohm">Radiohm (New Tunirama)</system:String>
+    <system:String x:Key="DbManufacturerDescRCA">Radio Corporation of America (Megszünt 1987-ben)</system:String>
+    <system:String x:Key="DbManufacturerDescRemix">REMIX Rádiótechnikai Vállalat (TEMIC része 1992-től)</system:String>
+    <system:String x:Key="DbManufacturerDescRenesas">Renesas Electronics Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescRIFA">RIFA AB, később Evox Rifa (most KEMET)</system:String>
+    <system:String x:Key="DbManufacturerDescROE">Roederstein Electronics, Inc. (most Vishay)</system:String>
+    <system:String x:Key="DbManufacturerDescROHM">Rohm Corp.</system:String>
+    <system:String x:Key="DbManufacturerDescRubycon">Rubycon Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescSamsung">Samsung Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescSamwha">Samwha Capacitor Group</system:String>
+    <system:String x:Key="DbManufacturerDescSanKen">SanKen Electric Co. Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescSANYO">Az ONSemi része</system:String>
+    <system:String x:Key="DbManufacturerDescSemikron">2022-ben összeolvadt a Danfoss Silicon Power-rel</system:String>
+    <system:String x:Key="DbManufacturerDescSemtech">Semtech Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescShinySpace">Shiny Space Enterprise Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescSharp">Sharp Corporation</system:String>
+    <system:String x:Key="DbManufacturerDescSiemens">Siemens Microelectronics, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescSiliconLaboratories">Silicon Laboratories</system:String>
+    <system:String x:Key="DbManufacturerDescSTMicroelectronics">STMicroelectronics</system:String>
+    <system:String x:Key="DbManufacturerDescTaiwanSemiconductor">Taiwan Semiconductor Co., Ltd.</system:String>
+    <system:String x:Key="DbManufacturerDescTalema">Talema group</system:String>
+    <system:String x:Key="DbManufacturerDescTDK">TDK Semiconductor</system:String>
+    <system:String x:Key="DbManufacturerDescTEConnectivity">TE Connectivity</system:String>
+    <system:String x:Key="DbManufacturerDescTeapo">Teapo</system:String>
+    <system:String x:Key="DbManufacturerDescTelefunken">Összeolvadt az AEG-gel</system:String>
+    <system:String x:Key="DbManufacturerDescTemic">1998-ban megszűnt. Atmel és Vishay vette át.</system:String>
+    <system:String x:Key="DbManufacturerDescTesla">Tesla Elektronicke (Privatizálták 1991-ben)</system:String>
+    <system:String x:Key="DbManufacturerDescTexasInstruments">Texas Instruments Incorporated</system:String>
+    <system:String x:Key="DbManufacturerDescToshiba">Toshiba Semiconductor and Storage</system:String>
+    <system:String x:Key="DbManufacturerDescTungsram">A félvezető részleget a MEV vette át 1982-ben</system:String>
+    <system:String x:Key="DbManufacturerDescVAC">Vacuumschmelze GmbH and Co. KG</system:String>
+    <system:String x:Key="DbManufacturerDescViking">Viking Tech.</system:String>
+    <system:String x:Key="DbManufacturerDescVishay">Vishay Intertechnology, Inc.</system:String>
+    <system:String x:Key="DbManufacturerDescVitrohm">Yageo Group része</system:String>
+    <system:String x:Key="DbManufacturerDescWalsin">Walsin Technology</system:String>
+    <system:String x:Key="DbManufacturerDescWima">Wima</system:String>
+    <system:String x:Key="DbManufacturerDescWurth">Würth Elektronik GmbH</system:String>
+    <system:String x:Key="DbManufacturerDescYageo">Yageo Group</system:String>
+    <system:String x:Key="DbManufacturerDescYangjie">Yangzhou Yangjie Electronic Technology Co., Ltd</system:String>
+    <system:String x:Key="DbManufacturerDescZetex">Zetex Semiconductors plc (Diodes Incorporated felvásárolta)</system:String>
+    <system:String x:Key="DbManufacturerDescZilog">Zilog, Inc.</system:String>
+
+    <!-- Projects -->
+    <system:String x:Key="DbProjectNameRoot">Minden</system:String>
+    <system:String x:Key="DbProjectDescRoot">Minden projekt</system:String>
+    
+</ResourceDictionary>

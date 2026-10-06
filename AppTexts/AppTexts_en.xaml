@@ -1,0 +1,989 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="en">
+
+    <!-- Tab names -->
+    <system:String x:Key="TabDashboard">Dashboard</system:String>
+    <system:String x:Key="TabParts">Parts</system:String>
+    <system:String x:Key="TabStorageLocations">Storage Locations</system:String>
+    <system:String x:Key="TabManufacturers">Manufacturers</system:String>
+    <system:String x:Key="TabPackages">Packages</system:String>
+    <system:String x:Key="TabProjects">Projects</system:String>
+    <system:String x:Key="TabPartMetaSearch">Meta Search</system:String>
+    <system:String x:Key="TabMarkingCodeSearch">Marking Code</system:String>
+    <system:String x:Key="TabDistributorSearch">Distributor Search</system:String>
+
+    <!-- Action buttons -->
+    <system:String x:Key="ButtonSearch">Search</system:String>
+    <system:String x:Key="ButtonDelete">Delete</system:String>
+    <system:String x:Key="ButtonEdit">Edit</system:String>
+    <system:String x:Key="ButtonEditName">Edit name</system:String>
+    <system:String x:Key="ButtonClosePart">Close part</system:String>
+    <system:String x:Key="ButtonStopSearch">Stop search</system:String>
+    <system:String x:Key="ButtonOpenSearchPage">Open search page</system:String>
+    <system:String x:Key="ButtonCreateNewPart">Create new part</system:String>
+    <system:String x:Key="ButtonStopDownload">Stop download</system:String>
+    <system:String x:Key="ButtonDownloadFile">Download {0}</system:String>
+    <system:String x:Key="ButtonExit">Exit</system:String>
+    <system:String x:Key="ButtonSelect">Select</system:String>
+    <system:String x:Key="ButtonAccept">Accept</system:String>
+    <system:String x:Key="ButtonSolveCapcha">Solve Capcha</system:String>
+    <system:String x:Key="ButtonExport">Export</system:String>
+    <system:String x:Key="ButtonImport">Import</system:String>
+    <system:String x:Key="ButtonContinue">Continue</system:String>
+
+    <!-- Error -->
+    <system:String x:Key="StatusRequiredSoftwareIsNotInstalled">{0} is required to run this program. Download and install it before you can continue.</system:String>
+    <system:String x:Key="StatusAnotherInstanceAlreadyRunning">Another instance of {0} is already running. You can start only a single instace from this program.</system:String>
+    <system:String x:Key="StatusNoDatabaseAccess">The database is not accessible, check your database server. Without database only limited functionality is working.</system:String>
+    <system:String x:Key="StatusDatabaseAssetUpdateFailed">Failed to insert or update initial assets.</system:String>
+    <system:String x:Key="StatusInvalidDataDirectory">Configured DataDirectory is invalid.</system:String>
+
+    <!-- Common -->
+    <system:String x:Key="TitleConfirmation">Confirmation</system:String>
+    <system:String x:Key="LabelSearchResults">Results</system:String>
+    <system:String x:Key="LabelPreview">Preview</system:String>
+
+    <!-- Dimension -->
+    <system:String x:Key="LabelMillimeter">mm</system:String>
+    <system:String x:Key="LabelLenght">Length</system:String>
+    <system:String x:Key="LabelWidth">Width</system:String>
+    <system:String x:Key="LabelHeight">Height</system:String>
+
+    <!-- Mounting enum -->
+    <system:String x:Key="EnumMountingUnknown">Unknown</system:String>
+    <system:String x:Key="EnumMountingTHT">THT</system:String>
+    <system:String x:Key="EnumMountingSMD">SMD</system:String>
+    <system:String x:Key="EnumMountingStud">Stud</system:String>
+    <system:String x:Key="EnumMountingOther">Other</system:String>
+
+    <!-- Condition enum -->
+    <system:String x:Key="EnumConditionsUnknown">Unknown</system:String>
+    <system:String x:Key="EnumConditionsNew">New</system:String>
+    <system:String x:Key="EnumConditionsUsed">Used</system:String>
+    <system:String x:Key="EnumConditionsNewAndUsed">New and used</system:String>
+
+    <!-- ParamTypes enum -->
+    <system:String x:Key="EnumParamTypesNumber">Number</system:String>
+    <system:String x:Key="EnumParamTypesMinMaxRange">Min ... Max</system:String>
+    <system:String x:Key="EnumParamTypesMinTypMax">Min. / Typ. / Max.</system:String>
+    <system:String x:Key="EnumParamTypesText">Text</system:String>
+    <system:String x:Key="EnumParamTypesEnumeration">Enumeration</system:String>
+    <system:String x:Key="EnumParamTypesBoolean">Boolean</system:String>
+    <system:String x:Key="EnumParamTypesDate">Date</system:String>
+    <system:String x:Key="EnumParamTypesDimension">Dimension</system:String>
+
+    <!-- AttachmentType enum -->
+    <system:String x:Key="EnumAttachmentTypeUnknown">Unknown</system:String>
+    <system:String x:Key="EnumAttachmentTypePdf">Pdf</system:String>
+    <system:String x:Key="EnumAttachmentTypeImage">Image</system:String>
+    <system:String x:Key="EnumAttachmentTypeText">Text</system:String>
+
+    <!-- SearchMode enum -->
+    <system:String x:Key="EnumSearchModeExactMatch">Exact match</system:String>
+    <system:String x:Key="EnumSearchModeStartsWith">Starts with</system:String>
+    <system:String x:Key="EnumSearchModeEndsWith">Ends with</system:String>
+    <system:String x:Key="EnumSearchModeContains">Contains</system:String>
+
+    <!-- ExportFormats enum -->
+    <system:String x:Key="EnumExportFormatsXLSX">Spreadsheet (*.xlsx)</system:String>
+    <system:String x:Key="EnumExportFormatsJSON">JavaScript Object (*.json)</system:String>
+
+    <!-- DisplayFormatsSource enum -->
+    <system:String x:Key="DisplayFormatsSourceSelectedLanguage">Based on selected language</system:String>
+    <system:String x:Key="DisplayFormatsSourceWindowsDefault">Based on Windows format settings</system:String>
+    <system:String x:Key="DisplayFormatsSourceInvariant">Culture invariant</system:String>
+
+    <!-- WindowOpenPosition enum -->
+    <system:String x:Key="WindowOpenPositionDefault">Default</system:String>
+    <system:String x:Key="WindowOpenPositionCenterScreen">Center of the screen</system:String>
+    <system:String x:Key="WindowOpenPositionMaximized">Maximized</system:String>
+    <system:String x:Key="WindowOpenPositionLastPosition">Last position and size</system:String>
+
+    <!-- TabStripLocation enum -->
+    <system:String x:Key="TabStripLocationTop">Top</system:String>
+    <system:String x:Key="TabStripLocationLeft">Left</system:String>
+    <system:String x:Key="TabStripLocationRight">Right</system:String>
+
+    <!-- AttachmentsFitMode enum -->
+    <system:String x:Key="AttachmentsFitModeFitHeight">Fit height</system:String>
+    <system:String x:Key="AttachmentsFitModeFitWidth">Fit width</system:String>
+
+    <!-- ProjectHistoryEventType enum -->
+    <system:String x:Key="EnumProjectHistoryEventTypeUnknown">Unknown</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeCreated">Created</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeModified">Modified</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeArchived">Archived</system:String>
+
+    <!-- MetaSearchCategory enum -->
+    <system:String x:Key="MetaSearchCategoryNONE">—</system:String>
+
+    <system:String x:Key="MetaSearchCategoryANALOG_AUDIO_AMP">Analog / Audio Amp</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_COMPARATOR">Analog / Comparator</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_OPAMP">Analog / Op-Amp</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_TRANSISTOR_ARRAY">Analog / Transistor Array</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_LINEAR_REGULATOR">Analog / Linear Regulator</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_VOLTAGE_REFERENCE">Analog / Voltage Reference</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SMPS_CONTROLLER">Analog / SMPS Controller</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SWITCHED_REGULATOR">Analog / Switched Regulator</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_MOSFET_DRIVER">Analog / MOSFET Driver</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_ADC">Analog / ADC</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_DAC">Analog / DAC</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_DIGITAL_POTMETER">Analog / Digipot</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SENSOR">Analog / Sensor</system:String>
+    
+    <system:String x:Key="MetaSearchCategoryDIODE_BRIDGE">Diode / Bridge</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_RECTIFIER">Diode / Rectifier</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_SWITCH">Diode / Switch</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_SCHOTTKY">Diode / Schottky</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_TVS">Diode / TVS</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_ZENER">Diode / Zener</system:String>
+    
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_BJT">Transistor / BJT</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_IGBT">Transistor / IGBT</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_JFET">Transistor / JFET</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_MOSFET">Transistor / MOSFET</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_UJT">Transistor / UJT</system:String>
+
+    <system:String x:Key="MetaSearchCategoryTRIGGER_DIAC">Trigger / Diac</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_SCR">Trigger / SCR</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_TRIAC">Trigger / Triac</system:String>
+
+    <system:String x:Key="MetaSearchCategoryOPTO_OPTOCOUPLER">Opto / Optocoupler</system:String>
+
+    <system:String x:Key="MetaSearchCategoryDIGITAL_INTERFACE">Digital / Interface</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_EPROM">Memory / EPROM</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_PARALLEL_EEPROM">Memory / Parallel EEPROM or Flash</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_RAM">Memory / RAM</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_SERIAL_EEPROM">Memory / Serial EEPROM or Flash</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_RTC">Digital / RTC</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_4000">Digital / 4000</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_7400">Digital / 7400</system:String>
+
+    <system:String x:Key="MetaSearchCategoryMCU_8051">MCU / 8051</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_AVR">MCU / AVR</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_MSP">MCU / MSP</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_PIC">MCU / PIC</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_PIC24">MCU / PIC24 or dsPIC</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_STM8">MCU / STM8</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_STM32">MCU / STM32</system:String>
+
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_CERAMIC">Capacitor / Ceramic</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_ELECTROLYTIC">Capacitor / Electrolytic</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_FILM">Capacitor / Film</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_INDUCTOR">Inductor</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_RESISTOR">Resistor</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_QUARTZ_AND_FILTER">Quartz/Filter</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_TRANSFORMER">Transformer</system:String>
+
+    <!-- Dashboard -->
+    <system:String x:Key="TitleDashboard">Dashboard</system:String>
+
+    <system:String x:Key="LabelDashboardPartsButtonTooltip">Open parts</system:String>
+    <system:String x:Key="LabelDashboardPartCategoriesCount">Part categories</system:String>
+    <system:String x:Key="LabelDashboardPartTypesCount">Part numbers</system:String>
+    <system:String x:Key="LabelDashboardPartAttachmentsCount">Attachments</system:String>
+    <system:String x:Key="LabelDashboardTotalPartsCount">Total parts</system:String>
+
+    <system:String x:Key="LabelDashboardStorageLocationsButtonTooltip">Open storage locations</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationGroupsCount">Location groups</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsCount">Locations</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsInUseCount">Locations in use</system:String>
+
+    <system:String x:Key="LabelDashboardPackagesButtonTooltip">Open packages</system:String>
+    <system:String x:Key="LabelDashboardPackageCategoriesCount">Package categories</system:String>
+    <system:String x:Key="LabelDashboardPackagesCount">Packages</system:String>
+    <system:String x:Key="LabelDashboardPackagesInUseCount">Packages in use</system:String>
+
+    <system:String x:Key="LabelDashboardManufacturersButtonTooltip">Open manufacturers</system:String>
+    <system:String x:Key="LabelDashboardManufacturersCount">Manufacturers</system:String>
+    <system:String x:Key="LabelDashboardManufacturersInUseCount">Manufacturers in use</system:String>
+
+    <system:String x:Key="LabelDashboardProjectsButtonTooltip">Open projects</system:String>
+    <system:String x:Key="LabelDashboardProjectGroupsCount">Project groups</system:String>
+    <system:String x:Key="LabelDashboardProjectsCount">Projects</system:String>
+
+    <system:String x:Key="LabelDashboardPartMetaSearchButtonTooltip">Open part meta search</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchSourceCount">Sources</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchCount">Executed searches</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchResults">Provided results</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchCreatedParts">Created parts</system:String>
+
+    <system:String x:Key="LabelDashboardMarkingCodeSearchButtonTooltip">Open marking code search</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSourceCount">Sources</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSearchCount">Executed searches</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSearchResults">Provided results</system:String>
+
+    <system:String x:Key="LabelDashboardDistributorSearchButtonTooltip">Open distributor search</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchSourceCount">Sources</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchCount">Executed searches</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchResults">Provided results</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchCreatedParts">Created parts</system:String>
+
+    <system:String x:Key="LabelDashboardSettingsButtonTooltip">Open settings</system:String>
+    <system:String x:Key="LabelDashboardSettingsGeneralButton">General settings</system:String>
+    <system:String x:Key="LabelDashboardSettingsTableButton">Table settings</system:String>
+    <system:String x:Key="LabelDashboardSettingsRegionalButton">Regional settings</system:String>
+
+    <system:String x:Key="LabelDashboardAboutButtonTooltip">Open about</system:String>
+    <system:String x:Key="LabelDashboardAboutButton">About</system:String>
+    <system:String x:Key="LabelDashboardLicensesButton">Licenses</system:String>
+    <system:String x:Key="LabelDashboardDonationButton">Donation</system:String>
+
+    <system:String x:Key="StatusDashboardLoadUnsuccessful">Cannot load dashboard data.</system:String>
+
+    <!-- Part Categories -->
+    <system:String x:Key="TitlePartCategories">Part categories</system:String>
+    <system:String x:Key="TitleAddNewPartCategoryGroup">Add new part category group</system:String>
+    <system:String x:Key="TitleAddNewPartCategory">Add new part category</system:String>
+    <system:String x:Key="TitleEditPartCategory">Edit part category</system:String>
+    <system:String x:Key="TitleDownloadDatasheets">Download datasheets</system:String>
+    <system:String x:Key="TitleDeleteAllParts">Delete parts</system:String>
+    <system:String x:Key="TitleDeletePartCategory">Delete part category</system:String>
+
+    <system:String x:Key="MessagePartCategoryGroupDeleteEmptyConfirmation">Are you sure to delete the empty {0} part category group?</system:String>
+    <system:String x:Key="MessagePartCategoryGroupDeleteEmptySubgroupsConfirmation">Are you sure to delete the {0} part category group with {1} empty sub category(es)?</system:String>
+    <system:String x:Key="MessagePartCategoryGroupDeleteUsedSubgroupsConfirmation" xml:space="preserve">Are you sure to delete the {0} part category group with {1} sub category(es)?
+
+{2} part(s) under this category will also be DELETED.</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteAllPartsConfirmation" xml:space="preserve">Are you sure to delete all parts in {0} part category?
+
+{1} part(s) under this category will be DELETED.</system:String>
+
+    <system:String x:Key="MessagePartCategoryDelete">Delete {0} part category</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteAllParts">Delete all parts in {0} part category</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteEmptyConfirmation">Are you sure to delete the empty {0} part category?</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteUsedConfirmation" xml:space="preserve">Are you sure to delete the {0} part category?
+
+{1} part(s) under this category will also be DELETED.</system:String>
+
+    <system:String x:Key="LabelPartCategoryAddButtonTooltip">Add new part category</system:String>
+    <system:String x:Key="LabelPartCategoryEditButtonTooltip">Edit part category</system:String>
+    <system:String x:Key="LabelPartCategoryDeleteButtonTooltip">Delete part category</system:String>
+    <system:String x:Key="LabelPartCategoryDeleteAllPartsButtonTooltip">Delete all parts in this category</system:String>
+    <system:String x:Key="LabelPartCategoryGoToButtonTooltip">Go to part category</system:String>
+
+    <system:String x:Key="LabelPartCategoryName">Category name</system:String>
+    <system:String x:Key="LabelPartCategoryDescription">Description</system:String>
+    <system:String x:Key="LabelPartCategoryIsGroup">Group</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchCategory">Meta search category</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchCategoryTooltip">It is used to link the meta search result category to this part category. When you create a part from the meta search result the part will be created in the associated part category.</system:String>
+
+    <system:String x:Key="StatusPartCategoryLoadUnsuccessful">Cannot load part categories.</system:String>
+    <system:String x:Key="StatusPartCategoryDeleteUnsuccessful">Cannot delete {0} part category.</system:String>
+    <system:String x:Key="StatusPartCategorySaveUnsuccessful">Cannot save {0} part category.</system:String>
+    <system:String x:Key="StatusPartCategoryDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusPartCategorySaved">{0} saved successfully.</system:String>
+
+    <system:String x:Key="StatusPartCategoryAllPartsDeleteNothing">No parts to delete in {0} part category.</system:String>
+    <system:String x:Key="StatusPartCategoryAllPartsDeleteUnsuccessful">Cannot delete all parts in {0} part category.</system:String>
+    <system:String x:Key="StatusPartCategoryAllPartsDeleted">All parts in {0} deleted successfully.</system:String>
+
+    <!-- Part Category Parameters -->
+    <system:String x:Key="TitleManagePartCategoryParameters">Manage part category parameters</system:String>
+    <system:String x:Key="TitleAddNewPartCategoryParameter">Add new part category parameter</system:String>
+    <system:String x:Key="TitleEditPartCategoryParameter">Edit part category parameter</system:String>
+
+    <system:String x:Key="MessagePartCategoryParameterDeleteUnusedConfirmation">Are you sure to delete the {0} parameter?</system:String>
+    <system:String x:Key="MessagePartCategoryParameterDeleteUsedConfirmation" xml:space="preserve">Are you sure to delete the {0} parameter?
+        
+{1} part(s) already use this parameter and will be removed also from there.</system:String>
+    <system:String x:Key="MessagePartCategoryParameterChangeTypeConfirmation" xml:space="preserve">Are you sure to change the type of {0} parameter from {1} to {2}?
+        
+{3} part(s) already use this parameter and the stored parameter value will be removed.</system:String>
+    <system:String x:Key="MessagePartCategoryParameterChangeEnumListConfirmation" xml:space="preserve">Are you sure to remove enum options {0} from {1} parameter?
+
+{2} part(s) already use those options and the stored parameter value will be removed.</system:String>
+
+    <system:String x:Key="ColumnPartCategoryParameterID">ID</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterName">Name</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterDescription">Description</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterType">Type</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterUnit">Unit</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterEnumeration">Enumeration</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterDefault">Default</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterActionEdit">Edit part category parameter</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterActionDelete">Delete part category parameter</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterMetaId">Meta ID</system:String>
+
+    <system:String x:Key="LabelPartCategoryParent">Parent category</system:String>
+    <system:String x:Key="LabelPartCategoryParameterName">Parameter name</system:String>
+    <system:String x:Key="LabelPartCategoryParameterDescription">Description</system:String>
+    <system:String x:Key="LabelPartCategoryParameterType">Type</system:String>
+    <system:String x:Key="LabelPartCategoryParameterUnit">Unit</system:String>
+    <system:String x:Key="LabelPartCategoryParameterEnumeration">Enumeration</system:String>
+    <system:String x:Key="LabelPartCategoryParameterDefaultValue">Default Value</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamID">Meta search ID</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamIDTooltip">Meta search parameter identifier. It is used to assing a meta search result parameter to a real part category parameter.</system:String>
+
+    <system:String x:Key="LabelPartCategoryParameterAddButtonTooltip">Add new part category parameter</system:String>
+    <system:String x:Key="LabelPartManagePartCategoryParametersTooltip">Manage part category parameters</system:String>
+
+    <system:String x:Key="StatusPartCategoryParameterLoadUnsuccessful">Cannot load parameters.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterDeleteUnsuccessful">Cannot delete {0} parameter.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterSaveUnsuccessful">Cannot save {0} parameter.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterSaved">{0} saved successfully.</system:String>
+
+    <!-- Parts -->
+    <system:String x:Key="TitleParts">Parts</system:String>
+    <system:String x:Key="TitlePartDetails">Part details</system:String>
+    <system:String x:Key="TitleParameters">Parameters</system:String>
+    <system:String x:Key="TitleAddNewPart">Add new part</system:String>
+    <system:String x:Key="TitleDuplicatePart">Duplicate part</system:String>
+    <system:String x:Key="TitleEditPart">Edit part</system:String>
+
+    <system:String x:Key="MessagePartDeleteConfirmation">Are you sure to delete the {0} part?</system:String>
+    <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">You have unsaved changes. Are you sure to close {0} part?</system:String>
+    
+    <system:String x:Key="ColumnPartCategory">Category</system:String>
+    <system:String x:Key="ColumnPartName">Part number</system:String>
+    <system:String x:Key="ColumnManufacturerPartName">Manufacturer part number</system:String>
+    <system:String x:Key="ColumnPartDescription">Description</system:String>
+    <system:String x:Key="ColumnPartManufacturer">Manufacturer</system:String>
+    <system:String x:Key="ColumnPartPackage">Package</system:String>
+    <system:String x:Key="ColumnPartMounting">Mounting</system:String>
+    <system:String x:Key="ColumnPartMarking">Marking</system:String>
+    <system:String x:Key="ColumnPartStorageLocation">Location</system:String>
+    <system:String x:Key="ColumnPartStockLevel">Stock</system:String>
+    <system:String x:Key="ColumnPartMinStockLevel">Min. Stock</system:String>
+    <system:String x:Key="ColumnPartCondition">Condition</system:String>
+    <system:String x:Key="ColumnPartNote">Note</system:String>
+    <system:String x:Key="ColumnPartActionEdit">Edit part</system:String>
+    <system:String x:Key="ColumnPartActionDelete">Delete part</system:String>
+    <system:String x:Key="ColumnPartActionDuplicate">Duplicate part</system:String>
+    <system:String x:Key="ColumnPartActionEditStockLevel">Edit stock level</system:String>
+    <system:String x:Key="ColumnPartActionIncreaseStock">Increase stock level</system:String>
+    <system:String x:Key="ColumnPartActionDecreaseStock">Decrease stock level</system:String>
+
+    <system:String x:Key="LabelPartName">Part number</system:String>
+    <system:String x:Key="LabelPartManufacturerName">Manufacturer part number</system:String>
+    <system:String x:Key="LabelPartMarking">Marking</system:String>
+    <system:String x:Key="LabelPartDescription">Description</system:String>
+    <system:String x:Key="LabelPartManufacturer">Manufacturer</system:String>
+    <system:String x:Key="LabelPartPackageFilter">Package filter</system:String>
+    <system:String x:Key="LabelPartPackage">Package</system:String>
+    <system:String x:Key="LabelPartMounting">Mounting</system:String>
+    <system:String x:Key="LabelPartStorageLocation">Location</system:String>
+    <system:String x:Key="LabelPartStockLevel">In Stock</system:String>
+    <system:String x:Key="LabelPartMinStockLevel">Min. Stock</system:String>
+    <system:String x:Key="LabelPartCondition">Condition</system:String>
+    <system:String x:Key="LabelPartNote">Note</system:String>
+
+    <system:String x:Key="LabelPartGoToCategory">Go to {0} part category</system:String>
+    <system:String x:Key="LabelPartGoToPart">Go to {0} part</system:String>
+    <system:String x:Key="LabelPartGoToStorageLocation">Go to {0} storage location</system:String>
+
+    <system:String x:Key="LabelPartDetailedFilterButtonTooltip">Detailed part filter</system:String>
+    <system:String x:Key="LabelPartAddButtonTooltip">Add new part</system:String>
+    <system:String x:Key="LabelPartSaveButtonTooltip">Save part</system:String>
+    <system:String x:Key="LabelPartEditButtonTooltip">Edit part</system:String>
+    <system:String x:Key="LabelPartCancelButtonTooltip">Discard changes</system:String>
+    <system:String x:Key="LabelPartDuplicateAppendText">(Copy)</system:String>
+
+    <system:String x:Key="LabelPartMoreActionButtonTooltip">More action</system:String>
+    <system:String x:Key="LabelPartExportPartsButton">Export parts</system:String>
+    <system:String x:Key="LabelPartImportPartsButton">Import parts</system:String>
+
+    <system:String x:Key="StatusPartLoadUnsuccessful">Cannot load parts.</system:String>
+    <system:String x:Key="StatusPartDeleteUnsuccessful">Cannot delete {0} part.</system:String>
+    <system:String x:Key="StatusPartSaveUnsuccessful">Cannot save {0} part.</system:String>
+    <system:String x:Key="StatusPartDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusPartSaved">{0} saved successfully.</system:String>
+
+    <!-- Part export / import -->
+    <system:String x:Key="TitleExportPart">Export parts</system:String>
+    <system:String x:Key="TitleImportPart">Import parts</system:String>
+
+    <system:String x:Key="MessageImportPartsWithCount">Import {0} parts</system:String>
+
+    <system:String x:Key="LabelExportFileFormat">Export format</system:String>
+    <system:String x:Key="LabelExportColumns">Columns</system:String>
+    <system:String x:Key="LabelExportCopyAttachments">Copy attachment files</system:String>
+    <system:String x:Key="LabelExportXlsxUseColorTheme">Use color theme</system:String>
+    <system:String x:Key="LabelExportXlsxUseAutoFilter">Use auto filter</system:String>
+    <system:String x:Key="LabelExportXlsxFreezePane">Freeze pane</system:String>
+
+    <system:String x:Key="LabelImportFileName">Import file name</system:String>
+    <system:String x:Key="LabelImportFileFormat">Import file format</system:String>
+    <system:String x:Key="LabelImportImportCategory">Import category</system:String>
+    <system:String x:Key="LabelImportMappedCategory">Mapped category</system:String>
+    <system:String x:Key="LabelImportImportManufacturer">Import manufacturer</system:String>
+    <system:String x:Key="LabelImportMappedManufacturer">Mapped manufacturer</system:String>
+    <system:String x:Key="LabelImportImportPackage">Import package</system:String>
+    <system:String x:Key="LabelImportMappedPackage">Mapped package</system:String>
+    <system:String x:Key="LabelImportAliasPackage">Alias</system:String>
+    <system:String x:Key="LabelImportImportStorageLocation">Import storage location</system:String>
+    <system:String x:Key="LabelImportNewStorageLocation">New</system:String>
+    <system:String x:Key="LabelImportMappedStorageLocation">Mapped storage location</system:String>
+    <system:String x:Key="LabelImportPartDetails">Part data</system:String>
+
+    <system:String x:Key="LabelImportCreateMissingPartCategories">Create missing part categories</system:String>
+    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Create missing part category parameters</system:String>
+    <system:String x:Key="LabelImportCreateMissingManufacturers">Create missing manufacturers</system:String>
+    <system:String x:Key="LabelImportCreateMissingPackages">Create missing packages</system:String>
+    <system:String x:Key="LabelImportCreateMissingStorageLocations">Create missing storage locations</system:String>
+    <system:String x:Key="LabelImportAttachments">Import attachment files</system:String>
+
+    <system:String x:Key="StatusExportPartsDone">Selected part categories are successfully exported.</system:String>
+    <system:String x:Key="StatusExportPartsFailed">Export of the selected part categories failed.</system:String>
+
+    <system:String x:Key="StatusImportPartsDone">Import of parts successfully finished.</system:String>
+    <system:String x:Key="StatusImportPartsFailed">Import of parts failed.</system:String>
+    <system:String x:Key="StatusImportPartsOpenFailed">Cannot open file. Ensure that it is not hold by other program.</system:String>
+    <system:String x:Key="StatusImportPartsUnsupportedFormat">Unsupported import format.</system:String>
+    <system:String x:Key="StatusImportPartsNotFound">No parts found in the input file.</system:String>
+    <system:String x:Key="StatusImportPartsCategoryNotSelected">No category selected.</system:String>
+    <system:String x:Key="StatusImportSelectValidPartCategory">Select a valid part category.</system:String>
+    <system:String x:Key="StatusImportSelectValidManufacturer">Select a valid manufacturer.</system:String>
+    <system:String x:Key="StatusImportSelectValidPackage">Select a valid package.</system:String>
+    <system:String x:Key="StatusImportSelectValidStorageLocation">Select a valid storage location.</system:String>
+    <system:String x:Key="StatusImportCannotCreateStorageLocation">Cannot create storage location {0}. Location {1} exist but it is not a group.</system:String>
+
+    <system:String x:Key="ExportDialogFilterXLSX">Spreadsheet</system:String>
+    <system:String x:Key="ExportDialogFilterJSON">JavaScript Object</system:String>
+
+    <!-- Part attachments -->
+    <system:String x:Key="TitleAttachments">Attachments</system:String>
+    <system:String x:Key="TitleEditAttachmentName">Edit attachment name</system:String>
+    <system:String x:Key="TitleAddNewAttachment">Add new attachment</system:String>
+
+    <system:String x:Key="MessageCannotOpenAttachment">Cannot open attachment {0}.</system:String>
+    <system:String x:Key="MessageAttachmentDeleteConfirmation">Are you sure to delete the {0} attachment?</system:String>
+
+    <system:String x:Key="LabelPartAttachmentName">Name</system:String>
+    <system:String x:Key="LabelPartAttachmentType">Type</system:String>
+    <system:String x:Key="LabelPartAttachmentFileName">File name</system:String>
+    <system:String x:Key="LabelPartAttachmentAddButtonTooltip">Add attachment</system:String>
+    <system:String x:Key="LabelPartAttachmentPasteButtonTooltip">Paste from clipboard</system:String>
+    <system:String x:Key="LabelPartAttachmentMetaSearchTooltip">Search datasheet with meta search</system:String>
+
+    <system:String x:Key="LabelPartAttachmentDropZone">Drop Here</system:String>
+    <system:String x:Key="LabelPartAttachmentAllSupportedFiles">All Supported Files</system:String>
+    <system:String x:Key="LabelPartAttachmentImageFiles">Image Files</system:String>
+    <system:String x:Key="LabelPartAttachmentPdfFiles">Pdf Files</system:String>
+    <system:String x:Key="LabelPartAttachmentAllFiles">All Files</system:String>
+
+    <system:String x:Key="StatusAttachmentDeleteUnsuccessful">Cannot delete attachment: {0}</system:String>
+    <system:String x:Key="StatusAttachmentSaveUnsuccessful">Cannot save attachment: {0}</system:String>
+    <system:String x:Key="StatusAttachmentDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusAttachmentSaved">Attachment {0} saved successfully.</system:String>
+    <system:String x:Key="StatusAttachmentNotSupportedFormat">File format is not supported: {0}</system:String>
+    <system:String x:Key="StatusAttachmentPasteNotSupported">Supported format not found on the clipboard.</system:String>
+    <system:String x:Key="StatusAttachmentDropNotSupported">Supported format not found in Drop.</system:String>
+    <system:String x:Key="StatusAttachmentDownloadEmptyFile">Downloaded file {0} is empty or not valid.</system:String>
+
+    <!-- Storage Locations -->
+    <system:String x:Key="TitleStorageLocations">Storage locations</system:String>
+    <system:String x:Key="TitleAddNewStorageLocation">Add new storage location</system:String>
+    <system:String x:Key="TitleDuplicateStorageLocation">Duplicate storage location</system:String>
+    <system:String x:Key="TitleEditStorageLocation">Edit storage location</system:String>
+    <system:String x:Key="TitleEditPartStockLevel">Edit stock level</system:String>
+    <system:String x:Key="TitleMovePartsIntoNewStorageLocation">Move parts</system:String>
+
+    <system:String x:Key="MessageStorageLocationGroupDeleteEmptyConfirmation">Are you sure to delete the empty {0} storage location group?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUnusedConfirmation">Are you sure to delete the {0} storage location group with {1} unused sub location(s)?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUsedConfirmation" xml:space="preserve">Are you sure to delete the {0} storage location group with {1} sub location(s)?
+
+{2} part(s) under this location will be moved into {3} storage location.</system:String>
+
+    <system:String x:Key="MessageStorageLocationDeleteEmptyConfirmation">Are you sure to delete the empty {0} storage location?</system:String>
+    <system:String x:Key="MessageStorageLocationDeleteUsedConfirmation" xml:space="preserve">Are you sure to delete the {0} storage location?
+
+{1} part(s) from this location will be moved into {2} storage location.</system:String>
+
+    <system:String x:Key="MessageStorageLocationMovePartsMessage">Move the selected {0} parts into the following storage location:</system:String>
+
+    <system:String x:Key="LabelStorageLocationName">Location name</system:String>
+    <system:String x:Key="LabelStorageLocationDescription">Description</system:String>
+    <system:String x:Key="LabelStorageLocationIsGroup">Group</system:String>
+    <system:String x:Key="LabelStorageLocationParent">Parent location</system:String>
+
+    <system:String x:Key="LabelStorageLocationAddButtonTooltip">Add new storage location</system:String>
+    <system:String x:Key="LabelStorageLocationGoToButtonTooltip">Go to storage location</system:String>
+    <system:String x:Key="LabelStorageLocationEditButton">Edit storage location</system:String>
+    <system:String x:Key="LabelStorageLocationDeleteButton">Delete storage location</system:String>
+    <system:String x:Key="LabelStorageLocationDuplicateButton">Duplicate storage location</system:String>
+    <system:String x:Key="LabelStorageLocationShowPartsInThisLocation">Show parts in this storage location</system:String>
+
+    <system:String x:Key="LabelStorageLocationMoveToNewLocationButton">Move selected parts into new storage location</system:String>
+    <system:String x:Key="LabelStorageLocationLowStockWarning">Show low stock</system:String>
+    <system:String x:Key="LabelStorageLocationDuplicateAppendText">(Copy)</system:String>
+
+    <system:String x:Key="StatusStorageLocationLoadUnsuccessful">Cannot load storage locations.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleteUnsuccessful">Cannot delete {0} storage location.</system:String>
+    <system:String x:Key="StatusStorageLocationSaveUnsuccessful">Cannot save {0} storage location.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusStorageLocationSaved">{0} saved successfully.</system:String>
+
+    <system:String x:Key="StatusStorageLocationStockLevelSaved">{0} saved successfully.</system:String>
+    <system:String x:Key="StatusStorageLocationStockLevelSaveUnsuccessful">Cannot save {0} part.</system:String>
+
+    <system:String x:Key="StatusStorageLocationMovePartsSaved">{0} parts moved into a new storage location successfully.</system:String>
+    <system:String x:Key="StatusStorageLocationMovePartsSaveUnsuccessful">Cannot move {0} parts into a new location.</system:String>
+
+    <!-- Package Categories -->
+    <system:String x:Key="TitlePackageCategories">Package categories</system:String>
+    <system:String x:Key="TitleAddNewPackageCategory">Add new package category</system:String>
+    <system:String x:Key="TitleEditPackageCategory">Edit package category</system:String>
+
+    <system:String x:Key="MessagePackageCategoryDeleteEmptyConfirmation">Are you sure to delete the empty {0} package category?</system:String>
+    <system:String x:Key="MessagePackageCategoryDeleteWithUnusedPackagesConfirmation">Are you sure to delete the {0} package category and {1} of its unused package(s)?</system:String>
+    <system:String x:Key="MessagePackageCategoryDeleteWithUsedPackagesConfirmation" xml:space="preserve">Are you sure to delete the {0} package category and {1} of its package(s)?
+
+{2} part(s) under this package category will be updated to {3} package.</system:String>
+
+    <system:String x:Key="ColumnPackageCategoryID">ID</system:String>
+    <system:String x:Key="ColumnPackageCategoryName">Name</system:String>
+    <system:String x:Key="ColumnPackageCategoryDescription">Description</system:String>
+    <system:String x:Key="ColumnPackageCategoryPackageCount"># Packages</system:String>
+    <system:String x:Key="ColumnPackageCategoryActionEdit">Edit package category</system:String>
+    <system:String x:Key="ColumnPackageCategoryActionDelete">Delete package category</system:String>
+
+    <system:String x:Key="ColumnPackageCategoryPackageCountTooltip">Number of package use this package category</system:String>
+
+    <system:String x:Key="LabelPackageCategoryName">Category name</system:String>
+    <system:String x:Key="LabelPackageCategoryDescription">Description</system:String>
+
+    <system:String x:Key="LabelPackageCategoryAddButtonTooltip">Add new package category</system:String>
+
+    <system:String x:Key="StatusPackageCategoryLoadUnsuccessful">Cannot load package categories.</system:String>
+    <system:String x:Key="StatusPackageCategoryDeleteUnsuccessful">Cannot delete {0} package category.</system:String>
+    <system:String x:Key="StatusPackageCategorySaveUnsuccessful">Cannot save {0} package category.</system:String>
+    <system:String x:Key="StatusPackageCategoryDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusPackageCategorySaved">{0} saved successfully.</system:String>
+
+    <!-- Packages -->
+    <system:String x:Key="TitlePackages">Packages</system:String>
+    <system:String x:Key="TitleAddNewPackage">Add new package</system:String>
+    <system:String x:Key="TitleDuplicatePackage">Duplicate package</system:String>
+    <system:String x:Key="TitleEditPackage">Edit package</system:String>
+    <system:String x:Key="TitlePackageDimension">{0} package dimensions</system:String>
+    <system:String x:Key="TitlePackageImage">{0} package image</system:String>
+    <system:String x:Key="TitlePackageDetails">Package details</system:String>
+
+    <system:String x:Key="MessagePackageDeleteUnusedConfirmation">Are you sure to delete the unused {0} package?</system:String>
+    <system:String x:Key="MessagePackageDeleteUsedConfirmation" xml:space="preserve">Are you sure to delete the {0} package?
+
+{1} part(s) already use it and will be updated to {2} package.</system:String>
+
+    <system:String x:Key="ColumnPackageID">ID</system:String>
+    <system:String x:Key="ColumnPackageImage">Image</system:String>
+    <system:String x:Key="ColumnPackageCategory">Category</system:String>
+    <system:String x:Key="ColumnPackageMounting">Mounting</system:String>
+    <system:String x:Key="ColumnPackagePinCount"># Pins</system:String>
+    <system:String x:Key="ColumnPackagePinPitch">Pin pitch</system:String>
+    <system:String x:Key="ColumnPackageBodySize">Body size</system:String>
+    <system:String x:Key="ColumnPackageName">Name</system:String>
+    <system:String x:Key="ColumnPackageAlias">Alias</system:String>
+    <system:String x:Key="ColumnPackageDescription">Description</system:String>
+    <system:String x:Key="ColumnPackagePartsCount"># Parts</system:String>
+    <system:String x:Key="ColumnPackageActionShowDetails">Show package details</system:String>
+    <system:String x:Key="ColumnPackageActionShowDimension">Show package dimension drawing</system:String>
+    <system:String x:Key="ColumnPackageActionEdit">Edit package</system:String>
+    <system:String x:Key="ColumnPackageActionDelete">Delete package</system:String>
+    <system:String x:Key="ColumnPackageActionDuplicate">Duplicate package</system:String>
+    <system:String x:Key="ColumnPackageActionShowPartsWithThisPackage">Show parts with this package</system:String>
+
+    <system:String x:Key="ColumnPackagePinCountTooltip">Number of Pins</system:String>
+    <system:String x:Key="ColumnPackagePinPitchTooltip">Pin pitch (mm)</system:String>
+    <system:String x:Key="ColumnPackageBodySizeTooltip">Body size without pins (Length x Width x Height mm)</system:String>
+    <system:String x:Key="ColumnPackagePartsCountTooltip">Number of parts use this package</system:String>
+
+    <system:String x:Key="LabelPackageCategory">Category</system:String>
+    <system:String x:Key="LabelPackageName">Package name</system:String>
+    <system:String x:Key="LabelPackageDescription">Description</system:String>
+    <system:String x:Key="LabelPackageAlias">Alias</system:String>
+    <system:String x:Key="LabelPackageMounting">Mounting</system:String>
+    <system:String x:Key="LabelPackagePinCount">Number of pins</system:String>
+    <system:String x:Key="LabelPackagePinPitch">Pin pitch</system:String>
+    <system:String x:Key="LabelPackageBodySize">Body size</system:String>
+    <system:String x:Key="LabelPackageBodySizeTooltip">Body size without pins (Length x Width x Height mm)</system:String>
+    <system:String x:Key="LabelPackageImagePath">Package image</system:String>
+    <system:String x:Key="LabelPackageDimensionsDrawingPath">Dimension drawing</system:String>
+    <system:String x:Key="LabelPackagePartCount">Number of parts</system:String>
+    <system:String x:Key="LabelPackagePartsCountTooltip">Number of parts use this package</system:String>
+
+    <system:String x:Key="LabelPackageDetailedFilterButtonTooltip">Detailed package filter</system:String>
+    <system:String x:Key="LabelPackageAddButtonTooltip">Add new package</system:String>
+    <system:String x:Key="LabelPackageShowDimensionDrawingTooltip">Show package dimension drawing</system:String>
+    <system:String x:Key="LabelPackageShowPackageDetailsTooltip">Show package details</system:String>
+    <system:String x:Key="LabelPackageDuplicateAppendText">(Copy)</system:String>
+
+    <system:String x:Key="StatusPackageLoadUnsuccessful">Cannot load packages.</system:String>
+    <system:String x:Key="StatusPackageDeleteUnsuccessful">Cannot delete {0} package.</system:String>
+    <system:String x:Key="StatusPackageSaveUnsuccessful">Cannot save {0} package.</system:String>
+    <system:String x:Key="StatusPackageDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusPackageSaved">{0} saved successfully.</system:String>
+
+    <!-- Manufacturers -->
+    <system:String x:Key="TitleManufacturers">Manufacturers</system:String>
+    <system:String x:Key="TitleAddNewManufacturer">Add new manufacturer</system:String>
+    <system:String x:Key="TitleEditManufacturer">Edit manufacturer</system:String>
+    <system:String x:Key="TitleManufacturerDetails">Manufacturer details</system:String>
+
+    <system:String x:Key="MessageManufacturerDeleteUnusedConfirmation">Are you sure to delete the unused {0} manufacturer?</system:String>
+    <system:String x:Key="MessageManufacturerDeleteUsedConfirmation" xml:space="preserve">Are you sure to delete the {0} manufacturer?
+
+{1} part(s) already use it and will be updated to {2} manufacturer.</system:String>
+
+    <system:String x:Key="ColumnManufacturerID">ID</system:String>
+    <system:String x:Key="ColumnManufacturerLogo">Logo</system:String>
+    <system:String x:Key="ColumnManufacturerName">Name</system:String>
+    <system:String x:Key="ColumnManufacturerShortName">Short Name</system:String>
+    <system:String x:Key="ColumnManufacturerDescription">Description</system:String>
+    <system:String x:Key="ColumnManufacturerURL">URL</system:String>
+    <system:String x:Key="ColumnManufacturerICLogo">IC Logo</system:String>
+    <system:String x:Key="ColumnManufacturerPartsCount"># Parts</system:String>
+    <system:String x:Key="ColumnManufacturerActionShowDetails">Show manufacturer details</system:String>
+    <system:String x:Key="ColumnManufacturerActionEdit">Edit manufacturer</system:String>
+    <system:String x:Key="ColumnManufacturerActionDelete">Delete manufacturer</system:String>
+    <system:String x:Key="ColumnManufacturerActionShowPartFromThisManufacturer">Show parts from this manufacturer</system:String>
+
+    <system:String x:Key="ColumnManufacturerPartsCountTooltip">Number of part use this manufacturer</system:String>
+
+    <system:String x:Key="LabelManufacturerName">Manufacturer name</system:String>
+    <system:String x:Key="LabelManufacturerShortName">Short name</system:String>
+    <system:String x:Key="LabelManufacturerDescription">Description</system:String>
+    <system:String x:Key="LabelManufacturerURL">URL</system:String>
+    <system:String x:Key="LabelManufacturerLogoPath">Logo</system:String>
+    <system:String x:Key="LabelManufacturerICLogoPath">IC Logo</system:String>
+    <system:String x:Key="LabelManufacturerPartCount">Number of parts</system:String>
+    <system:String x:Key="LabelManufacturerPartsCountTooltip">Number of parts from this manufacturer</system:String>
+
+    <system:String x:Key="LabelManufacturerDetailedFilterButtonTooltip">Detailed manufacturer filter</system:String>
+    <system:String x:Key="LabelManufacturerAddButtonTooltip">Add new manufacturer</system:String>
+    <system:String x:Key="LabelManufacturerShowManufacturerDetailsTooltip">Show manufacturer details</system:String>
+    <system:String x:Key="LabelManufacturerOpenManufacturerLinkTooltip">Open link in browser</system:String>
+
+    <system:String x:Key="StatusManufacturerLoadUnsuccessful">Cannot load manufacturers.</system:String>
+    <system:String x:Key="StatusManufacturerDeleteUnsuccessful">Cannot delete {0} manufacturer.</system:String>
+    <system:String x:Key="StatusManufacturerSaveUnsuccessful">Cannot save {0} manufacturer.</system:String>
+    <system:String x:Key="StatusManufacturerDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusManufacturerSaved">{0} saved successfully.</system:String>
+
+    <!-- Projects -->
+    <system:String x:Key="TitleProjects">Projects</system:String>
+    <system:String x:Key="TitleAddNewProject">Add new project</system:String>
+    <system:String x:Key="TitleDuplicateProject">Duplicate project</system:String>
+    <system:String x:Key="TitleEditProject">Edit project</system:String>
+
+    <system:String x:Key="MessageProjectGroupDeleteEmptyConfirmation">Are you sure to delete the empty {0} project group?</system:String>
+    <system:String x:Key="MessageProjectGroupDeleteNotEmptyConfirmation">Are you sure to delete the {0} project group with {1} sub project(s)?</system:String>
+
+    <system:String x:Key="MessageProjectDeleteConfirmation">Are you sure to delete the {0} project?</system:String>
+
+    <system:String x:Key="LabelProjectName">Project name</system:String>
+    <system:String x:Key="LabelProjectDescription">Description</system:String>
+    <system:String x:Key="LabelProjectIsGroup">Group</system:String>
+    <system:String x:Key="LabelProjectIsArchived">Archived</system:String>
+    <system:String x:Key="LabelProjectImageFileName">Project image</system:String>
+    <system:String x:Key="LabelProjectNote">Note</system:String>
+    <system:String x:Key="LabelProjectParent">Parent project</system:String>
+
+    <system:String x:Key="LabelProjectAddButtonTooltip">Add new project</system:String>
+    <system:String x:Key="LabelProjectEditButton">Edit project</system:String>
+    <system:String x:Key="LabelProjectDeleteButton">Delete project</system:String>
+    <system:String x:Key="LabelProjectDuplicateButton">Duplicate project</system:String>
+    <system:String x:Key="LabelProjectDuplicateAppendText">(Copy)</system:String>
+    <system:String x:Key="LabelProjectCreatedTooltip">Project created</system:String>
+
+    <system:String x:Key="StatusProjectLoadUnsuccessful">Cannot load projects.</system:String>
+    <system:String x:Key="StatusProjectBomLoadUnsuccessful">Cannot load project BOM.</system:String>
+    <system:String x:Key="StatusProjectHistoryLoadUnsuccessful">Cannot load project history.</system:String>
+    <system:String x:Key="StatusProjectDeleteUnsuccessful">Cannot delete {0} project.</system:String>
+    <system:String x:Key="StatusProjectSaveUnsuccessful">Cannot save {0} project.</system:String>
+    <system:String x:Key="StatusProjectDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusProjectSaved">{0} saved successfully.</system:String>
+
+    <!-- Project tabs -->
+    <system:String x:Key="TabProjectDetails">Details</system:String>
+    <system:String x:Key="TabProjectBOM">BOM</system:String>
+    <system:String x:Key="TabProjectAttachment">Attachments</system:String>
+    <system:String x:Key="TabProjectBulids">Builds</system:String>
+    <system:String x:Key="TabProjectHistory">History</system:String>
+
+    <!-- Projects BOM Entry -->
+    <system:String x:Key="TitleProjectBom">Bill of Material</system:String>
+    <system:String x:Key="TitleAddNewProjectBomEntry">Add new BOM entry</system:String>
+    <system:String x:Key="TitleEditProjectBomEntry">Edit BOM entry</system:String>
+
+    <system:String x:Key="ColumnProjectBomEntryID">ID</system:String>
+    <system:String x:Key="ColumnProjectBomEntryQuantity">Quantity</system:String>
+    <system:String x:Key="ColumnProjectBomEntryComponent">Component</system:String>
+    <system:String x:Key="ColumnProjectBomEntryDesignators">Designators</system:String>
+    <system:String x:Key="ColumnProjectBomEntryDescription">Description</system:String>
+    <system:String x:Key="ColumnProjectBomEntryActionEdit">Edit BOM entry</system:String>
+    <system:String x:Key="ColumnProjectBomEntryActionDelete">Delete BOM entry</system:String>
+
+    <system:String x:Key="LabelProjectBomEntryQuantity">Quantity</system:String>
+    <system:String x:Key="LabelProjectBomEntryComponentName">Component</system:String>
+    <system:String x:Key="LabelProjectBomEntryDesignators">Designators</system:String>
+    <system:String x:Key="LabelProjectBomEntryDescription">Description</system:String>
+
+    <system:String x:Key="LabelProjectBomEntryAddButtonTooltip">Add new part</system:String>
+
+    <system:String x:Key="MessageProjectBomEntryDeleteConfirmation">Are you sure to delete the {0} part?</system:String>
+
+    <system:String x:Key="StatusProjectBomEntryDeleteUnsuccessful">Cannot delete {0} BOM entry.</system:String>
+    <system:String x:Key="StatusProjectBomEntrySaveUnsuccessful">Cannot save {0} BOM entry.</system:String>
+    <system:String x:Key="StatusProjectBomEntryDeleted">{0} deleted successfully.</system:String>
+    <system:String x:Key="StatusProjectBomEntrySaved">{0} saved successfully.</system:String>
+
+    <!-- Projects History -->
+    <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventData">Date</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventType">Event</system:String>
+    <system:String x:Key="ColumnProjectHistoryDescription">Description</system:String>
+
+    <system:String x:Key="LabelProjectHistoryEventType">Event type</system:String>
+    <system:String x:Key="LabelProjectHistoryDate">Date</system:String>
+    <system:String x:Key="LabelProjectHistoryDescription">Description</system:String>
+
+    <!-- Meta Search -->
+    <system:String x:Key="TitleMetaSearch">Meta search</system:String>
+    <system:String x:Key="TitleMetaSearchPackageImage">{0} package image</system:String>
+    <system:String x:Key="TitleMetaSearchPackageImages">Package images</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsPackage">Package</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsParameters">Parameters</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsManufacturer">Manufacturer</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsDatasheets">Datasheets</system:String>
+    <system:String x:Key="TitleMetaSearchSaveDatasheet">Save datasheet</system:String>
+    <system:String x:Key="TitleMetaSearchDatasheetPreview">{0} datasheet</system:String>
+    <system:String x:Key="TitleMetaSearchRecentSearches">Recent searches</system:String>
+    <system:String x:Key="TitleMetaSearchPrepareDatasheets">Prepare datasheets</system:String>
+    <system:String x:Key="TitleMetaSearchHumanVerification">Human verification</system:String>
+
+    <system:String x:Key="LabelMetaSearchCountFailed">failed</system:String>
+    <system:String x:Key="LabelMetaSearchInfoButtonTooltip">Show info</system:String>
+    <system:String x:Key="LabelMetaSearchRecentSearchesButtonTooltip">Show recent searches</system:String>
+    <system:String x:Key="LabelMetaSearchRecentSearchAgainButtonTooltip">Search again {0}</system:String>
+    <system:String x:Key="LabelMetaSearchSourceFaildTooltip">Source failed: {0}</system:String>
+    <system:String x:Key="LabelMetaSearchInfo" xml:space="preserve">You can search parts on the internet and from the result you can create your own inventory part including the parameters and datasheets.
+
+Hints:
+    • Some colums might be updated when the row is selected to see the details.
+    • Parameter collection works only with discret semiconductor mainly from the alltransistor source.
+    • No garantee that the provided parameter values are correct for your part. 
+    • A part with the same part number but from different maunfacturer might be specified differently in datasheets.
+    • This function relies on internet sources. They might not accurate and might not be available in the future.
+    • When you create an inventory part select category name carefully as you will not be able to change it later.
+    • Some sources do not provide specific manufacturer, package or parameters. The app tries to guess them from the description.
+    </system:String>
+    <system:String x:Key="LabelMetaSearchPreviewDatasheetButtonTooltip">Show datasheet preview</system:String>
+    <system:String x:Key="LabelMetaSearchSaveDatasheetButtonTooltip">Save datasheet</system:String>
+    <system:String x:Key="LabelMetaSearchCopyDatasheetToClipboarButtonTooltip">Copy datasheet to clipboard</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnPartsTooltip">Show own parts in Parts:</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnStockTooltip">Show own parts in Storage locations:</system:String>
+
+    <system:String x:Key="LabelMetaSearchDetailsNoPackageAvailable">No package available</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoParameterAvailable">No parameter available</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoManufacturerAvailable">No manufacturer available</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoDatasheetAvailable">No datasheet available</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsTooMuchTrafficDetected">Too much traffic detected by the source site. Solve the capcha and download the datasheet manually.</system:String>
+    <system:String x:Key="LabelMetaSearchHumanVerificationMessage">The {0} source does human verification at first search. Please wait for the page loading and click on checkbox if needed. It will continue automatically on modern systems.</system:String>
+    <system:String x:Key="LabelMetaSearchHumanVerificationMissingWebView2">{0} is required to do {1} source human verification. Download and install it before you can do a search on this source or disable it.</system:String>
+
+    <system:String x:Key="ColumnMetaSearchSource">Source</system:String>
+    <system:String x:Key="ColumnMetaSearchCategory">Category</system:String>
+    <system:String x:Key="ColumnMetaSearchPartType">Part number</system:String>
+    <system:String x:Key="ColumnMetaSearchMarking">Marking</system:String>
+    <system:String x:Key="ColumnMetaSearchManufacturer">Manufacturer</system:String>
+    <system:String x:Key="ColumnMetaSearchPackageShow">Show package drawing</system:String>
+    <system:String x:Key="ColumnMetaSearchPackage">Package</system:String>
+    <system:String x:Key="ColumnMetaSearchDescription">Description</system:String>
+
+    <system:String x:Key="StatusMetaSearchSaveDatasheetDone">Datasheet saved successfully.</system:String>
+    <system:String x:Key="StatusMetaSearchSaveDatasheetFailed">Failed to save the datasheet.</system:String>
+
+    <system:String x:Key="StatusMetaSearchCopyDatasheetToClipboardDone">Datasheet copied.</system:String>
+    <system:String x:Key="StatusMetaSearchCopyDatasheetToClipboardFailed">Failed to copy to the clipboard.</system:String>
+    <system:String x:Key="StatusMetaSearchDownloadTryAgainLater">Cannot download {0}. Try again later.</system:String>
+
+    <!-- Marking Code Search -->
+    <system:String x:Key="TitleSearchMarkingCode">Marking code search</system:String>
+    <system:String x:Key="TitleSearchMarkingCodePackageImage">{0} package image</system:String>
+    <system:String x:Key="TitleSearchMarkingCodePackageImages">Package images</system:String>
+    <system:String x:Key="TitleSearchMarkingCodeRecentSearches">Recent searches</system:String>
+    <system:String x:Key="TitleSearchMarkingCodeDatasheetPreview">{0} datasheet</system:String>
+
+    <system:String x:Key="LabelMarkingCodeSearchCountFailed">failed</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchInfoButtonTooltip">Show info</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchRecentSearchesButtonTooltip">Show recent searches</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchRecentSearchAgainButtonTooltip">Search again {0}</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchInfo" xml:space="preserve">Due to the small size of most SMD components, manufacturers are not able to write the full part number on the case. They use instead a marking code typically composed of a combination of 2 or 3 letters or digits. When searching the marking code the original part number will be listed.
+
+Hints:
+    • Use exact match if possible to limit the number of results.
+    • Use only letters and digits in the input field if possible.    
+    • Special characters might not supported by all sources. It can lead to long response time and/or failure on that sources. 
+    • Some sources may only support exact match and starts with modes. 
+    • Some sources return results in paged mode, this program will get results from the first limited number of pages (10). 
+    • For more results you can open the original result page of the source with the small right arrow buttons.   
+    • The result marking code might contain star (*). It is a joker character and can substitute any number of other characters.
+    • The result marking code might contain question mark (?). It is a joker character and can substitute one character.
+    • The result marking code might contain more than one marking code.
+    • This function relies on internet sources. They might not be available in the future.
+    </system:String>
+
+    <system:String x:Key="LabelMarkingCodeDetailedFilterButtonTooltip">Detailed marking code filter</system:String>
+    <system:String x:Key="LabelMarkingCodeSourceFaildTooltip">Source failed: {0}</system:String>
+
+    <system:String x:Key="ColumnMarkingCodeSource">Source</system:String>
+    <system:String x:Key="ColumnMarkingCodeMarking">Marking</system:String>
+    <system:String x:Key="ColumnMarkingCodeDatasheetShow">View datasheet</system:String>
+    <system:String x:Key="ColumnMarkingCodePartTypeSearch">Datasheet search with Meta search</system:String>
+    <system:String x:Key="ColumnMarkingCodePartType">Part number</system:String>
+    <system:String x:Key="ColumnMarkingCodeManufacturer">Manufacturer</system:String>
+    <system:String x:Key="ColumnMarkingCodePackageShow">Show package drawing</system:String>
+    <system:String x:Key="ColumnMarkingCodePackage">Package</system:String>
+    <system:String x:Key="ColumnMarkingCodePinCount"># Pins</system:String>
+    <system:String x:Key="ColumnMarkingCodeDescription">Description</system:String>
+
+    <!-- Distributor Search -->
+    <system:String x:Key="TitleDistributorSearch">Distributor search</system:String>
+
+    <system:String x:Key="TitleDistributorSearchProductImage">{0} product image</system:String>
+    <system:String x:Key="TitleDistributorSearchPackageImage">{0} package image</system:String>
+    <system:String x:Key="TitleDistributorSearchPackageImages">Package images</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsPackage">Package</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsParameters">Parameters</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsManufacturer">Manufacturer</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsAvailability">Availability</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsDatasheets">Datasheets</system:String>
+    <system:String x:Key="TitleDistributorSearchSaveDatasheet">Save datasheet</system:String>
+    <system:String x:Key="TitleDistributorSearchDatasheetPreview">{0} datasheet</system:String>
+    <system:String x:Key="TitleDistributorSearchRecentSearches">Recent searches</system:String>
+    <system:String x:Key="TitleDistributorSearchPrepareDatasheets">Prepare datasheets</system:String>
+    <system:String x:Key="TitleDistributorSearchHumanVerification">Human verification</system:String>
+
+    <system:String x:Key="LabelDistributorSearchCountFailed">failed</system:String>
+    <system:String x:Key="LabelDistributorSearchInfoButtonTooltip">Show info</system:String>
+    <system:String x:Key="LabelDistributorSearchRecentSearchesButtonTooltip">Show recent searches</system:String>
+    <system:String x:Key="LabelDistributorSearchRecentSearchAgainButtonTooltip">Search again {0}</system:String>
+    <system:String x:Key="LabelDistributorSearchSourceFaildTooltip">Source failed: {0}</system:String>
+    <system:String x:Key="LabelDistributorSearchInfo" xml:space="preserve">You can search distributors on the internet to check availability and prices.
+
+Hints:
+    • This function relies on internet sources. They might not accurate and might not be available in the future.
+    </system:String>
+    <system:String x:Key="LabelDistributorSearchPreviewDatasheetButtonTooltip">Show datasheet preview</system:String>
+    <system:String x:Key="LabelDistributorSearchSaveDatasheetButtonTooltip">Save datasheet</system:String>
+    <system:String x:Key="LabelDistributorSearchCopyDatasheetToClipboarButtonTooltip">Copy datasheet to clipboard</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnPartsTooltip">Show own parts in Parts:</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnStockTooltip">Show own parts in Storage locations:</system:String>
+
+    <system:String x:Key="LabelDistributorSearchDetailsNoPackageAvailable">No package available</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoParameterAvailable">No parameter available</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">No manufacturer available</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">No price info available</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">No datasheet available</system:String>
+    <system:String x:Key="LabelDistributorSearchAddProductImage">Add product image</system:String>
+
+    <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">Order Nr.</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNameStock">Stock</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNameMOC">Min. Qty.</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNamePrices">Prices</system:String>
+
+    <system:String x:Key="LabelDistributorSearchAvailTooltipOrderNr">Distributor order number</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipStock">Available stock level</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipMOC">Minimum Order Quantity</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipPrices">Prices above quantity</system:String>
+
+    <system:String x:Key="ColumnDistributorSearchSource">Source</system:String>
+    <system:String x:Key="ColumnDistributorSearchCategory">Category</system:String>
+    <system:String x:Key="ColumnDistributorSearchPartShowDistributorPage">Show distributor page</system:String>
+    <system:String x:Key="ColumnDistributorSearchPartType">Part number</system:String>
+    <system:String x:Key="ColumnDistributorSearchMarking">Marking</system:String>
+    <system:String x:Key="ColumnDistributorSearchManufacturer">Manufacturer</system:String>
+    <system:String x:Key="ColumnDistributorSearchPackageShow">Show package drawing</system:String>
+    <system:String x:Key="ColumnDistributorSearchPackage">Package</system:String>
+    <system:String x:Key="ColumnDistributorSearchOrderNumber">Order Nr.</system:String>
+    <system:String x:Key="ColumnDistributorSearchStockLevel">Stock</system:String>
+    <system:String x:Key="ColumnDistributorSearchPrice">Price</system:String>
+    <system:String x:Key="ColumnDistributorSearchDescription">Description</system:String>
+
+    <system:String x:Key="StatusDistributorSearchSaveDatasheetDone">Datasheet saved successfully.</system:String>
+    <system:String x:Key="StatusDistributorSearchSaveDatasheetFailed">Failed to save the datasheet.</system:String>
+
+    <system:String x:Key="StatusDistributorSearchCopyDatasheetToClipboardDone">Datasheet copied.</system:String>
+    <system:String x:Key="StatusDistributorSearchCopyDatasheetToClipboardFailed">Failed to copy to the clipboard.</system:String>
+    <system:String x:Key="StatusDistributorSearchDownloadTryAgainLater">Cannot download {0}. Try again later.</system:String>
+
+    <!-- Settings -->
+    <system:String x:Key="TitleSettings">Settings</system:String>
+    <system:String x:Key="TitleInitialSelectLanguage">Select your language</system:String>
+    <system:String x:Key="TitleInitialAcceptLicense">Accept the application license</system:String>
+    <system:String x:Key="TitleNewVersionAvailable">New version available</system:String>
+
+    <system:String x:Key="TabSettingsGeneral">General</system:String>
+    <system:String x:Key="TabSettingsTables">Tables</system:String>
+    <system:String x:Key="TabSettingsRegional">Regional</system:String>
+
+    <system:String x:Key="LabelSettingsStartupPage">Startup page</system:String>
+    <system:String x:Key="LabelSettingsWindowOpenPosition">Window open position</system:String>
+    <system:String x:Key="LabelSettingsTabStripLocation">Tab strip location</system:String>
+    <system:String x:Key="LabelSettingsAttachmentsInitialFit">Attachments open mode</system:String>
+
+    <system:String x:Key="LabelSettingsTableUseAlternateColors">Use alternate colors</system:String>
+    <system:String x:Key="LabelSettingsTableUseHeaderSeparatorLine">Use header separator line</system:String>
+    <system:String x:Key="LabelSettingsTableBorderMode">Border mode</system:String>
+    <system:String x:Key="LabelSettingsTableRowSeparatorMode">Row separator mode</system:String>
+    <system:String x:Key="LabelSettingsTableExample">Example</system:String>
+
+    <system:String x:Key="LabelSettingsLanguage">Language</system:String>
+    <system:String x:Key="LabelSettingsDisplayFormats">Display formats</system:String>
+
+    <system:String x:Key="LabelSettingsFormatsExample">Example formats</system:String>
+    <system:String x:Key="LabelSettingsCultureInfoName">Culture name</system:String>
+    <system:String x:Key="LabelSettingsSampleNumber">Number format</system:String>
+    <system:String x:Key="LabelSettingsSampleDate">Date format</system:String>
+
+    <system:String x:Key="LabelSettingsAcceptLicense">I understand and accept the license conditions</system:String>
+
+    <system:String x:Key="MessageSettingCloseAllTabsForLanguageChange">Language change requires to reopen all tabs. You have unsaved changes. Are you sure to continue?</system:String>
+
+    <system:String x:Key="StatusSettingsSaved">Settings saved successfully.</system:String>
+    <system:String x:Key="StatusSetttingsSaveUnsuccessful">Cannot save settings.</system:String>
+
+    <!-- About -->
+    <system:String x:Key="TitleAbout">About</system:String>
+
+    <system:String x:Key="TabAboutAbout">About</system:String>
+    <system:String x:Key="TabAboutLicenses">Licenses</system:String>
+    <system:String x:Key="TabAboutDonation">Donation</system:String>
+
+    <system:String x:Key="LabelAboutSubtitle">Electronic component search and inventory</system:String>
+    <system:String x:Key="LabelAboutDescription">MyElecParts is freeware, easy-to-use electronic part finder and inventory software for hobbyists and makers. Not intended to use for commercial purpose.</system:String>
+
+    <system:String x:Key="LabelAboutWantsToHelp">Want to help?</system:String>
+    <system:String x:Key="LabelAboutFeedbackButton">• Share your ideas</system:String>
+    <system:String x:Key="LabelAboutTranslationButton">• Translate app texts</system:String>
+    <system:String x:Key="LabelAboutDonationButton">• Make a donation</system:String>
+    <system:String x:Key="LabelAboutVisitHomepageButton">• Visit the web page</system:String>
+
+    <system:String x:Key="LabelLicenseLicenseLink">(license)</system:String>
+
+    <system:String x:Key="LabelLicenseAppLicenseHeader">Application license</system:String>
+    <system:String x:Key="LabelLicenseAppLicense1">MyElecPart is a freeware software distributed only in binary format and licensed under Creative Commons CC BY-NC-ND 4.0 International license. Click on the logo to open the original license text.</system:String>
+    <system:String x:Key="LabelLicenseAppLicense2"  xml:space="preserve">This license gives you the following rights:
+
+    • You are free to use MyElecPart for personal purpose.
+    • You are allowed to distribute MyElecPart in the original unmodified format for free of charge.
+    • Commercial use and redistribution is not allowed.
+    • Some MyElecPart features make use of web-based information services, 
+       it is not guaranteed they are 100% accurate or error-free or will be available in the future.
+    • The software is provided "as is" without any warranty. 
+    • You can use the program at your own risk. 
+    • The author takes no responsibility for any possible loss or damage.</system:String>
+
+    <system:String x:Key="LabelLicenseThirdPartyLicenseHeader">Third party licenses</system:String>
+    <system:String x:Key="LabelLicenseThirdPartyLicense">MyElecPart is built on the following open source libraries and resources:</system:String>
+
+    <system:String x:Key="LabelDontionHeader">Donation</system:String>
+    <system:String x:Key="LabelDontionText" xml:space="preserve">I have been developing MyElecPart in my spare time. This is a one-man project, and as you can see there are lot of work behind it. I have spent enormous amount of time adding unique features, making a usable package library, and polish every detail to make it more fun and convenient to use.
+
+It is a freeware software, you can use it for free for personal use, but if you can afford it please support future development and invite me for a virtual coffee :)</system:String>
+
+</ResourceDictionary>

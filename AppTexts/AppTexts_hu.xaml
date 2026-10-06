@@ -1,0 +1,989 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="hu">
+
+    <!-- Tab names -->
+    <system:String x:Key="TabDashboard">Kezdőlap</system:String>
+    <system:String x:Key="TabParts">Alkatrészek</system:String>
+    <system:String x:Key="TabStorageLocations">Tárolóhelyek</system:String>
+    <system:String x:Key="TabManufacturers">Gyártók</system:String>
+    <system:String x:Key="TabPackages">Tokozások</system:String>
+    <system:String x:Key="TabProjects">Projektek</system:String>
+    <system:String x:Key="TabPartMetaSearch">Meta kereső</system:String>
+    <system:String x:Key="TabMarkingCodeSearch">SMD kód kereső</system:String>
+    <system:String x:Key="TabDistributorSearch">Forgalmazó kereső</system:String>
+
+    <!-- Action buttons -->
+    <system:String x:Key="ButtonSearch">Keresés</system:String>
+    <system:String x:Key="ButtonDelete">Törlés</system:String>
+    <system:String x:Key="ButtonEdit">Szerkesztés</system:String>
+    <system:String x:Key="ButtonEditName">Név szerkesztése</system:String>
+    <system:String x:Key="ButtonClosePart">Alkatrész bezárása</system:String>
+    <system:String x:Key="ButtonStopSearch">Keresés leállítása</system:String>
+    <system:String x:Key="ButtonOpenSearchPage">Kereső oldal megnyitása</system:String>
+    <system:String x:Key="ButtonCreateNewPart">Új alkatrész létrehozása</system:String>
+    <system:String x:Key="ButtonStopDownload">Letöltés leállítása</system:String>
+    <system:String x:Key="ButtonDownloadFile">{0} letöltése</system:String>
+    <system:String x:Key="ButtonExit">Kilépés</system:String>
+    <system:String x:Key="ButtonSelect">Kiválaszt</system:String>
+    <system:String x:Key="ButtonAccept">Elfogad</system:String>
+    <system:String x:Key="ButtonSolveCapcha">Capcha megoldása</system:String>
+    <system:String x:Key="ButtonExport">Exportálás</system:String>
+    <system:String x:Key="ButtonImport">Importálás</system:String>
+    <system:String x:Key="ButtonContinue">Folytatás</system:String>
+
+    <!-- Error -->
+    <system:String x:Key="StatusRequiredSoftwareIsNotInstalled">{0} szükséges a program futtatásához. Töltsd le és telepítsd a folytatáshoz.</system:String>
+    <system:String x:Key="StatusAnotherInstanceAlreadyRunning">A {0} program másik példánya már fut. Ez a program egy időben csak egy példányban futtatható.</system:String>
+    <system:String x:Key="StatusNoDatabaseAccess">Az adatbázis nem érhető el. Adatbázis nélkül csak néhány funkció működőképes.</system:String>
+    <system:String x:Key="StatusDatabaseAssetUpdateFailed">Az adatbázis kezdeti tartalmát nem sikerült betölteni vagy frissíteni.</system:String>
+    <system:String x:Key="StatusInvalidDataDirectory">A konfigurált DataDirectory érvénytelen.</system:String>
+
+    <!-- Common -->
+    <system:String x:Key="TitleConfirmation">Megerősítés</system:String>
+    <system:String x:Key="LabelSearchResults">Találatok</system:String>
+    <system:String x:Key="LabelPreview">Előnézet</system:String>
+
+    <!-- Dimension -->
+    <system:String x:Key="LabelMillimeter">mm</system:String>
+    <system:String x:Key="LabelLenght">Hossz</system:String>
+    <system:String x:Key="LabelWidth">Szélesség</system:String>
+    <system:String x:Key="LabelHeight">Magasság</system:String>
+
+    <!-- Mounting enum -->
+    <system:String x:Key="EnumMountingUnknown">Ismeretlen</system:String>
+    <system:String x:Key="EnumMountingTHT">THT</system:String>
+    <system:String x:Key="EnumMountingSMD">SMD</system:String>
+    <system:String x:Key="EnumMountingStud">Csavaros</system:String>
+    <system:String x:Key="EnumMountingOther">Egyéb</system:String>
+
+    <!-- Condition enum -->
+    <system:String x:Key="EnumConditionsUnknown">Ismeretlen</system:String>
+    <system:String x:Key="EnumConditionsNew">Új</system:String>
+    <system:String x:Key="EnumConditionsUsed">Használt</system:String>
+    <system:String x:Key="EnumConditionsNewAndUsed">Új és használt</system:String>
+
+    <!-- ParamTypes enum -->
+    <system:String x:Key="EnumParamTypesNumber">Szám</system:String>
+    <system:String x:Key="EnumParamTypesMinMaxRange">Min ... Max</system:String>
+    <system:String x:Key="EnumParamTypesMinTypMax">Min. / Tip. / Max.</system:String>
+    <system:String x:Key="EnumParamTypesText">Szöveg</system:String>
+    <system:String x:Key="EnumParamTypesEnumeration">Felsorolás</system:String>
+    <system:String x:Key="EnumParamTypesBoolean">Logikai</system:String>
+    <system:String x:Key="EnumParamTypesDate">Dátum</system:String>
+    <system:String x:Key="EnumParamTypesDimension">Méret</system:String>
+
+    <!-- AttachmentType enum -->
+    <system:String x:Key="EnumAttachmentTypeUnknown">Ismeretlen</system:String>
+    <system:String x:Key="EnumAttachmentTypePdf">Pdf</system:String>
+    <system:String x:Key="EnumAttachmentTypeImage">Kép</system:String>
+    <system:String x:Key="EnumAttachmentTypeText">Szöveg</system:String>
+
+    <!-- SearchMode enum -->
+    <system:String x:Key="EnumSearchModeExactMatch">Pontos egyezés</system:String>
+    <system:String x:Key="EnumSearchModeStartsWith">Kezdődik</system:String>
+    <system:String x:Key="EnumSearchModeEndsWith">Végződik</system:String>
+    <system:String x:Key="EnumSearchModeContains">Tartalmaz</system:String>
+
+    <!-- ExportFormats enum -->
+    <system:String x:Key="EnumExportFormatsXLSX">Táblázat (*.xlsx)</system:String>
+    <system:String x:Key="EnumExportFormatsJSON">JavaScript objektum (*.json)</system:String>
+
+    <!-- DisplayFormatsSource enum -->
+    <system:String x:Key="DisplayFormatsSourceSelectedLanguage">Kiválasztott nyelv szerint</system:String>
+    <system:String x:Key="DisplayFormatsSourceWindowsDefault">Windows beállításai alapján</system:String>
+    <system:String x:Key="DisplayFormatsSourceInvariant">Kultúrafüggetlen</system:String>
+
+    <!-- WindowOpenPosition enum -->
+    <system:String x:Key="WindowOpenPositionDefault">Alapértelmezett</system:String>
+    <system:String x:Key="WindowOpenPositionCenterScreen">Képernyő közepén</system:String>
+    <system:String x:Key="WindowOpenPositionMaximized">Teljes képernyős mód</system:String>
+    <system:String x:Key="WindowOpenPositionLastPosition">Kilépéskori pozícióban</system:String>
+
+    <!-- TabStripLocation enum -->
+    <system:String x:Key="TabStripLocationTop">Felül</system:String>
+    <system:String x:Key="TabStripLocationLeft">Bal oldalon</system:String>
+    <system:String x:Key="TabStripLocationRight">Jobb oldalon</system:String>
+
+    <!-- AttachmentsFitMode enum -->
+    <system:String x:Key="AttachmentsFitModeFitHeight">Teljes magasság</system:String>
+    <system:String x:Key="AttachmentsFitModeFitWidth">Teljes szélesség</system:String>
+
+    <!-- ProjectHistoryEventType enum -->
+    <system:String x:Key="EnumProjectHistoryEventTypeUnknown">Ismeretlen</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeCreated">Létrehozva</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeModified">Módosítva</system:String>
+    <system:String x:Key="EnumProjectHistoryEventTypeArchived">Archiválva</system:String>
+
+    <!-- MetaSearchCategory enum -->
+    <system:String x:Key="MetaSearchCategoryNONE">—</system:String>
+
+    <system:String x:Key="MetaSearchCategoryANALOG_AUDIO_AMP">Analóg / Audio erősítő</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_COMPARATOR">Analóg / Komparátor</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_OPAMP">Analóg / Műveleti erősítő</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_TRANSISTOR_ARRAY">Analóg / Tranzisztormező</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_LINEAR_REGULATOR">Analóg / Lineáris stabilzátor</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_VOLTAGE_REFERENCE">Analóg / Feszültségreferencia</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SMPS_CONTROLLER">Analóg / SMPS Vezérlő</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SWITCHED_REGULATOR">Analóg / Kapcsolóüzemű stabilzátor</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_MOSFET_DRIVER">Analóg / MOSFET meghajtó</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_ADC">Analóg / ADC</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_DAC">Analóg / DAC</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_DIGITAL_POTMETER">Analóg / Digipot</system:String>
+    <system:String x:Key="MetaSearchCategoryANALOG_SENSOR">Analóg / Szenzor</system:String>
+
+    <system:String x:Key="MetaSearchCategoryDIODE_BRIDGE">Dióda / Híd</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_RECTIFIER">Dióda / Egyenirányító</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_SWITCH">Dióda / Kapcsoló</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_SCHOTTKY">Dióda / Schottky</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_TVS">Dióda / Szupresszor</system:String>
+    <system:String x:Key="MetaSearchCategoryDIODE_ZENER">Dióda / Zéner</system:String>
+    
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_BJT">Tranzisztor / Bipoláris</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_IGBT">Tranzisztor / IGBT</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_JFET">Tranzisztor / JFET</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_MOSFET">Tranzisztor / MOSFET</system:String>
+    <system:String x:Key="MetaSearchCategoryTRANSISTOR_UJT">Tranzisztor / UJT</system:String>
+
+    <system:String x:Key="MetaSearchCategoryTRIGGER_DIAC">Trigger / Diak</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_SCR">Trigger / Tirisztor</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_TRIAC">Trigger / Triak</system:String>
+
+    <system:String x:Key="MetaSearchCategoryOPTO_OPTOCOUPLER">Opto / Optocsatoló</system:String>
+
+    <system:String x:Key="MetaSearchCategoryDIGITAL_INTERFACE">Digitális / Interfész</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_EPROM">Memória / EPROM</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_PARALLEL_EEPROM">Memória / Párhuzamos EEPROM vagy Flash</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_RAM">Memória / RAM</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_MEMORY_SERIAL_EEPROM">Memória / Soros EEPROM vagy Flash</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_RTC">Digitális / RTC</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_4000">Digitális / 4000</system:String>
+    <system:String x:Key="MetaSearchCategoryDIGITAL_7400">Digitális / 7400</system:String>
+
+    <system:String x:Key="MetaSearchCategoryMCU_8051">MCU / 8051</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_AVR">MCU / AVR</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_MSP">MCU / MSP</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_PIC">MCU / PIC</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_PIC24">MCU / PIC24 vagy dsPIC</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_STM8">MCU / STM8</system:String>
+    <system:String x:Key="MetaSearchCategoryMCU_STM32">MCU / STM32</system:String>
+
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_CERAMIC">Kondenzátor / Kerámia</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_ELECTROLYTIC">Kondenzátor / Elektrolit</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_CAPACITOR_FILM">Kondenzátor / Fólia</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_INDUCTOR">Induktivitás</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_RESISTOR">Ellenállás</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_QUARTZ_AND_FILTER">Kvarc/Szűrő</system:String>
+    <system:String x:Key="MetaSearchCategoryPASSIVE_TRANSFORMER">Transzformátor</system:String>
+
+    <!-- Dashboard -->
+    <system:String x:Key="TitleDashboard">Kezdőlap</system:String>
+
+    <system:String x:Key="LabelDashboardPartsButtonTooltip">Alkatrészek megnyitása</system:String>
+    <system:String x:Key="LabelDashboardPartCategoriesCount">Alkatrész kategóriák</system:String>
+    <system:String x:Key="LabelDashboardPartTypesCount">Alkatrész típusok</system:String>
+    <system:String x:Key="LabelDashboardPartAttachmentsCount">Mellékletek</system:String>
+    <system:String x:Key="LabelDashboardTotalPartsCount">Teljes darabszám</system:String>
+
+    <system:String x:Key="LabelDashboardStorageLocationsButtonTooltip">Tárolóhelyek megnyitása</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationGroupsCount">Tárolóhelycsoportok</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsCount">Tárolóhelyek</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsInUseCount">Tárolóhelyek használatban</system:String>
+
+    <system:String x:Key="LabelDashboardPackagesButtonTooltip">Tokozások megnyitása</system:String>
+    <system:String x:Key="LabelDashboardPackageCategoriesCount">Tokozás kategóriák</system:String>
+    <system:String x:Key="LabelDashboardPackagesCount">Tokozások</system:String>
+    <system:String x:Key="LabelDashboardPackagesInUseCount">Tokozások használatban</system:String>
+
+    <system:String x:Key="LabelDashboardManufacturersButtonTooltip">Gyártók megnyitása</system:String>
+    <system:String x:Key="LabelDashboardManufacturersCount">Összes gyártó</system:String>
+    <system:String x:Key="LabelDashboardManufacturersInUseCount">Gyártók használatban</system:String>
+
+    <system:String x:Key="LabelDashboardProjectsButtonTooltip">Projektek megnyitása</system:String>
+    <system:String x:Key="LabelDashboardProjectGroupsCount">Projekt csoportok</system:String>
+    <system:String x:Key="LabelDashboardProjectsCount">Projektek</system:String>
+
+    <system:String x:Key="LabelDashboardPartMetaSearchButtonTooltip">Meta kereső megnyitása</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchSourceCount">Források</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchCount">Végrehajtott keresések</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchResults">Találatok</system:String>
+    <system:String x:Key="LabelDashboardPartMetaSearchCreatedParts">Létrehozott alkatrészek</system:String>
+
+    <system:String x:Key="LabelDashboardMarkingCodeSearchButtonTooltip">SMD kód kereső megnyitása</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSourceCount">Források</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSearchCount">Végrehajtott keresések</system:String>
+    <system:String x:Key="LabelDashboardMarkingCodeSearchResults">Találatok</system:String>
+
+    <system:String x:Key="LabelDashboardDistributorSearchButtonTooltip">Forgalmazó kereső megnyitása</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchSourceCount">Források</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchCount">Végrehajtott keresések</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchResults">Találatok</system:String>
+    <system:String x:Key="LabelDashboardDistributorSearchCreatedParts">Létrehozott alkatrészek</system:String>
+
+    <system:String x:Key="LabelDashboardSettingsButtonTooltip">Beállítások megnyitása</system:String>
+    <system:String x:Key="LabelDashboardSettingsGeneralButton">Általános beállítások</system:String>
+    <system:String x:Key="LabelDashboardSettingsTableButton">Táblázat beállítások</system:String>
+    <system:String x:Key="LabelDashboardSettingsRegionalButton">Területi beállítások</system:String>
+
+    <system:String x:Key="LabelDashboardAboutButtonTooltip">Névjegy megnyitása</system:String>
+    <system:String x:Key="LabelDashboardAboutButton">Névjegy</system:String>
+    <system:String x:Key="LabelDashboardLicensesButton">Licencek</system:String>
+    <system:String x:Key="LabelDashboardDonationButton">Támogatás</system:String>
+
+    <system:String x:Key="StatusDashboardLoadUnsuccessful">Kezdőlap adatok betöltése sikertelen.</system:String>
+
+    <!-- Part Categories -->
+    <system:String x:Key="TitlePartCategories">Alkatrész kategóriák</system:String>
+    <system:String x:Key="TitleAddNewPartCategoryGroup">Új alkatrész kategória csoport hozzáadása</system:String>
+    <system:String x:Key="TitleAddNewPartCategory">Új alkatrész kategória hozzáadása</system:String>
+    <system:String x:Key="TitleEditPartCategory">Alkatrész kategória szerkesztése</system:String>
+    <system:String x:Key="TitleDownloadDatasheets">Adatlapok letöltése</system:String>
+    <system:String x:Key="TitleDeleteAllParts">Alkatrészek törlése</system:String>
+    <system:String x:Key="TitleDeletePartCategory">Alkatrész kategória törlése</system:String>
+
+    <system:String x:Key="MessagePartCategoryGroupDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} alkatrész kategória csoportot?</system:String>
+    <system:String x:Key="MessagePartCategoryGroupDeleteEmptySubgroupsConfirmation">Biztos, hogy törlöd a(z) {0} alkatrész kategória csoportot {1} üres alkategóriával?</system:String>
+    <system:String x:Key="MessagePartCategoryGroupDeleteUsedSubgroupsConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} alkatrész kategória csoportot {1} alkategóriával?
+
+{2} alkatrész ez alatt a kategória alatt szintén TÖRÖLVE lesz.</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteAllPartsConfirmation" xml:space="preserve">Biztos, hogy törlöd az összes alkatrészt a {0} alkatrész kategóriában?
+
+{1} alkatrész ez alatt a kategória alatt TÖRÖLVE lesz.</system:String>
+
+    <system:String x:Key="MessagePartCategoryDelete">{0} alkatrész kategoria törlése</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteAllParts">Az összes alkatrész törlése a {0} alkatrész kategóriában</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} alkatrész kategóriát?</system:String>
+    <system:String x:Key="MessagePartCategoryDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} alkatrész kategóriát?
+
+{1} alkatrész ez alatt a kategória alatt szintén TÖRÖLVE lesz.</system:String>
+
+    <system:String x:Key="LabelPartCategoryAddButtonTooltip">Új alkatrész kategória</system:String>
+    <system:String x:Key="LabelPartCategoryEditButtonTooltip">Alkatrész kategória szerkesztése</system:String>
+    <system:String x:Key="LabelPartCategoryDeleteButtonTooltip">Alkatrész kategória törlése</system:String>
+    <system:String x:Key="LabelPartCategoryDeleteAllPartsButtonTooltip">Minden alkatrész törlése ebben a kategóriában</system:String>
+    <system:String x:Key="LabelPartCategoryGoToButtonTooltip">Ugrás az alkatrész kategóriára</system:String>
+
+    <system:String x:Key="LabelPartCategoryName">Kategória név</system:String>
+    <system:String x:Key="LabelPartCategoryDescription">Leírás</system:String>
+    <system:String x:Key="LabelPartCategoryIsGroup">Csoport</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchCategory">Meta kereső kategória</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchCategoryTooltip">A meta keresési eredmény kategória és ez az alkatrész kategória összekapcsolására szolgál, azért, hogy amikor a meta keresési eredményből egy alkatrészt rögzítünk, akkor az a megfelelő alkatrész kategóriában jöjjön létre.</system:String>
+
+    <system:String x:Key="StatusPartCategoryLoadUnsuccessful">Az alkatrész kategória betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategoryDeleteUnsuccessful">A(z) {0} alkatrész kategória törlése sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategorySaveUnsuccessful">A(z) {0} alkatrész kategória mentése sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategoryDeleted">{0} alkatrész kategória törölve.</system:String>
+    <system:String x:Key="StatusPartCategorySaved">{0} alkatrész kategória mentve.</system:String>
+
+    <system:String x:Key="StatusPartCategoryAllPartsDeleteNothing">Nincs alkatrész a {0} alkatrész kategóriában.</system:String>
+    <system:String x:Key="StatusPartCategoryAllPartsDeleteUnsuccessful">Az összes alkatrész törlése a {0} alkatrész kategóriában sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategoryAllPartsDeleted">Az összes alkatrész az {0} alkatrész kategóriában törölve.</system:String>
+
+    <!-- Part Category Parameters -->
+    <system:String x:Key="TitleManagePartCategoryParameters">Alkatrész kategória paraméterek kezelése</system:String>
+    <system:String x:Key="TitleAddNewPartCategoryParameter">Új alkatrész kategória paraméter hozzáadása</system:String>
+    <system:String x:Key="TitleEditPartCategoryParameter">Alkatrész kategória paraméter szerkesztése</system:String>
+
+    <system:String x:Key="MessagePartCategoryParameterDeleteUnusedConfirmation">Biztos, hogy törölöd a(z) {0} paramétert?</system:String>
+    <system:String x:Key="MessagePartCategoryParameterDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törölöd a(z) {0} paramétert?
+        
+{1} alkatrész már használja ezt a paramétert és azoknál az alkatrészeknél is törölve lesz.</system:String>
+    <system:String x:Key="MessagePartCategoryParameterChangeTypeConfirmation" xml:space="preserve">Biztos, hogy a(z) {0} paraméter típusát {1}-ről {2}-re változtatod?
+        
+{3} alkatrész már használja ezt a paramétert, és a tárolt paraméterérték törlésre kerül.</system:String>
+    <system:String x:Key="MessagePartCategoryParameterChangeEnumListConfirmation" xml:space="preserve">Biztos, hogy a(z) {0} lehetőség(eket) eltávolítod a(z) {1} paraméterből?
+
+{2} alkatrész már használja ezt a paramétert, és a tárolt paraméterérték törlésre kerül.</system:String>
+
+    <system:String x:Key="ColumnPartCategoryParameterID">Azonosító</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterName">Név</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterDescription">Leírás</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterType">Típus</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterUnit">Mértékegység</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterEnumeration">Felsorolás</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterDefault">Alapérték</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterActionEdit">Paraméter szerkesztése</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterActionDelete">Paraméter törlése</system:String>
+    <system:String x:Key="ColumnPartCategoryParameterMetaId">Meta azonosító</system:String>
+
+    <system:String x:Key="LabelPartCategoryParent">Szülő kategória</system:String>
+    <system:String x:Key="LabelPartCategoryParameterName">Paraméter név</system:String>
+    <system:String x:Key="LabelPartCategoryParameterDescription">Leírás</system:String>
+    <system:String x:Key="LabelPartCategoryParameterType">Típus</system:String>
+    <system:String x:Key="LabelPartCategoryParameterUnit">Mértékegység</system:String>
+    <system:String x:Key="LabelPartCategoryParameterEnumeration">Felsorolás</system:String>
+    <system:String x:Key="LabelPartCategoryParameterDefaultValue">Alapértelmezett érték</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamID">Meta kereső azonosító</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamIDTooltip">Meta keresési paraméter azonosító. Arra szolgál, hogy egy meta keresési eredményéből származó paramétert hozzárendeljünk egy valós alkatrész kategória paraméterhez.</system:String>
+
+    <system:String x:Key="LabelPartCategoryParameterAddButtonTooltip">Alkatrész kategória paraméter hozzáadása</system:String>
+    <system:String x:Key="LabelPartManagePartCategoryParametersTooltip">Alkatrész kategória paraméterek kezelése</system:String>
+
+    <system:String x:Key="StatusPartCategoryParameterLoadUnsuccessful">A paraméterek betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterDeleteUnsuccessful">A {0} paraméter törlése sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterSaveUnsuccessful">A {0} paraméter mentése sikertelen.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterDeleted">{0} paraméter törölve.</system:String>
+    <system:String x:Key="StatusPartCategoryParameterSaved">{0} paraméter elmentve.</system:String>
+
+    <!-- Parts -->
+    <system:String x:Key="TitleParts">Alkatrészek</system:String>
+    <system:String x:Key="TitlePartDetails">Alkatrész részletek</system:String>
+    <system:String x:Key="TitleParameters">Paraméterek</system:String>
+    <system:String x:Key="TitleAddNewPart">Új alkatrész hozzáadása</system:String>
+    <system:String x:Key="TitleDuplicatePart">Alkatrész duplikálása</system:String>
+    <system:String x:Key="TitleEditPart">Alkatrész szerkesztése</system:String>
+
+    <system:String x:Key="MessagePartDeleteConfirmation">Biztos, hogy törlöd a(z) {0} alkatrészt?</system:String>
+    <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">Nincs minden változtatás mentve az oldalon. Biztos, hogy bezárod a {0} alkatrészt mentés nélkül?</system:String>
+    
+    <system:String x:Key="ColumnPartCategory">Kategória</system:String>
+    <system:String x:Key="ColumnPartName">Típusszám</system:String>
+    <system:String x:Key="ColumnManufacturerPartName">Gyártói megnevezés</system:String>
+    <system:String x:Key="ColumnPartDescription">Leírás</system:String>
+    <system:String x:Key="ColumnPartManufacturer">Gyártó</system:String>
+    <system:String x:Key="ColumnPartPackage">Tokozás</system:String>
+    <system:String x:Key="ColumnPartMounting">Szerelés</system:String>
+    <system:String x:Key="ColumnPartMarking">Felirat</system:String>
+    <system:String x:Key="ColumnPartStorageLocation">Tárolóhely</system:String>
+    <system:String x:Key="ColumnPartStockLevel">Raktáron</system:String>
+    <system:String x:Key="ColumnPartMinStockLevel">Min. Készlet</system:String>
+    <system:String x:Key="ColumnPartCondition">Állapot</system:String>
+    <system:String x:Key="ColumnPartNote">Megjegyzés</system:String>
+    <system:String x:Key="ColumnPartActionEdit">Alkatrész szerkesztése</system:String>
+    <system:String x:Key="ColumnPartActionDelete">Alkatrész törlése</system:String>
+    <system:String x:Key="ColumnPartActionDuplicate">Alkatrész duplikálása</system:String>
+    <system:String x:Key="ColumnPartActionEditStockLevel">Raktárkészlet módosítása</system:String>
+    <system:String x:Key="ColumnPartActionIncreaseStock">Raktárkészlet növelése</system:String>
+    <system:String x:Key="ColumnPartActionDecreaseStock">Raktárkészlet csökkentése</system:String>
+
+    <system:String x:Key="LabelPartName">Típusszám</system:String>
+    <system:String x:Key="LabelPartManufacturerName">Gyártói megnevezés</system:String>
+    <system:String x:Key="LabelPartMarking">Felirat</system:String>
+    <system:String x:Key="LabelPartDescription">Leírás</system:String>
+    <system:String x:Key="LabelPartManufacturer">Gyártó</system:String>
+    <system:String x:Key="LabelPartPackageFilter">Tokozás szűrése</system:String>
+    <system:String x:Key="LabelPartPackage">Tokozás</system:String>
+    <system:String x:Key="LabelPartMounting">Szerelés</system:String>
+    <system:String x:Key="LabelPartStorageLocation">Tárolóhely</system:String>
+    <system:String x:Key="LabelPartStockLevel">Raktáron</system:String>
+    <system:String x:Key="LabelPartMinStockLevel">Min. készlet</system:String>
+    <system:String x:Key="LabelPartCondition">Állapot</system:String>
+    <system:String x:Key="LabelPartNote">Megjegyzés</system:String>
+
+    <system:String x:Key="LabelPartGoToCategory">Ugrás a(z) {0} alkatrész kategóriára</system:String>
+    <system:String x:Key="LabelPartGoToPart">{0} részleteinek megnyitása</system:String>
+    <system:String x:Key="LabelPartGoToStorageLocation">Ugrás a(z) {0} tárolóhelyre</system:String>
+
+    <system:String x:Key="LabelPartDetailedFilterButtonTooltip">Részletes szűrés</system:String>
+    <system:String x:Key="LabelPartAddButtonTooltip">Új alkatrész hozzáadása</system:String>
+    <system:String x:Key="LabelPartSaveButtonTooltip">Alkatrész mentése</system:String>
+    <system:String x:Key="LabelPartEditButtonTooltip">Alkatrész szerkesztése</system:String>
+    <system:String x:Key="LabelPartCancelButtonTooltip">Változtatások eldobása</system:String>
+    <system:String x:Key="LabelPartDuplicateAppendText">(Másolat)</system:String>
+
+    <system:String x:Key="LabelPartMoreActionButtonTooltip">További műveletek</system:String>
+    <system:String x:Key="LabelPartExportPartsButton">Alkatrészek exportálása</system:String>
+    <system:String x:Key="LabelPartImportPartsButton">Alkatrészek importálása</system:String>
+
+    <system:String x:Key="StatusPartLoadUnsuccessful">Alkatrészek betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusPartDeleteUnsuccessful">{0} törlése sikertelen.</system:String>
+    <system:String x:Key="StatusPartSaveUnsuccessful">{0} mentése sikertelen.</system:String>
+    <system:String x:Key="StatusPartDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusPartSaved">{0} sikeresen elmentve.</system:String>
+
+    <!-- Part export / import -->
+    <system:String x:Key="TitleExportPart">Alkatrészek exportálása</system:String>
+    <system:String x:Key="TitleImportPart">Alkatrészek importálása</system:String>
+
+    <system:String x:Key="MessageImportPartsWithCount">{0} alkatrész importálása</system:String>
+
+    <system:String x:Key="LabelExportFileFormat">Export formátum</system:String>
+    <system:String x:Key="LabelExportColumns">Oszlopok</system:String>
+    <system:String x:Key="LabelExportCopyAttachments">Mellékletek másolása</system:String>
+    <system:String x:Key="LabelExportXlsxUseColorTheme">Színtéma használata</system:String>
+    <system:String x:Key="LabelExportXlsxUseAutoFilter">Autó szűrő használata</system:String>
+    <system:String x:Key="LabelExportXlsxFreezePane">Panelek rögzítése</system:String>
+
+    <system:String x:Key="LabelImportFileName">Import filenév</system:String>
+    <system:String x:Key="LabelImportFileFormat">Import file formátum</system:String>
+    <system:String x:Key="LabelImportImportCategory">Import kategória</system:String>
+    <system:String x:Key="LabelImportMappedCategory">Hozzárendelt kategória</system:String>
+    <system:String x:Key="LabelImportImportManufacturer">Import gyártó</system:String>
+    <system:String x:Key="LabelImportMappedManufacturer">Hozzárendelt gyártó</system:String>
+    <system:String x:Key="LabelImportImportPackage">Import tokozás</system:String>
+    <system:String x:Key="LabelImportMappedPackage">Hozzárendelt tokozás</system:String>
+    <system:String x:Key="LabelImportAliasPackage">Alternatív nevek</system:String>
+    <system:String x:Key="LabelImportImportStorageLocation">Import tárolóhelyek</system:String>
+    <system:String x:Key="LabelImportNewStorageLocation">Új</system:String>
+    <system:String x:Key="LabelImportMappedStorageLocation">Hozzárendelt tárolóhely</system:String>
+    <system:String x:Key="LabelImportPartDetails">Alkatrész adatok</system:String>
+
+    <system:String x:Key="LabelImportCreateMissingPartCategories">Hiányzó alkatrész kategóriák létrehozása</system:String>
+    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Hiányzó alkatrész kategória paraméterek létrehozása</system:String>
+    <system:String x:Key="LabelImportCreateMissingManufacturers">Hiányzó gyártók létrehozása</system:String>
+    <system:String x:Key="LabelImportCreateMissingPackages">Hiányzó tokozások létrehozása</system:String>
+    <system:String x:Key="LabelImportCreateMissingStorageLocations">Hiányzó tárolóhelyek létrehozása</system:String>
+    <system:String x:Key="LabelImportAttachments">Melléklet fileok importálása</system:String>
+
+    <system:String x:Key="StatusExportPartsDone">A kiválasztott alkatrész kategóriák exportálva lettek.</system:String>
+    <system:String x:Key="StatusExportPartsFailed">A kiválasztott alkatrész kategóriák exportálása sikertelen.</system:String>
+
+    <system:String x:Key="StatusImportPartsDone">Alkatrészek sikeresen importálva.</system:String>
+    <system:String x:Key="StatusImportPartsFailed">Alkatrészek importálása sikertelen.</system:String>
+    <system:String x:Key="StatusImportPartsOpenFailed">A file megnyitása sikertelen. Ellenőrizd, hogy nincs megnyitva más program által.</system:String>
+    <system:String x:Key="StatusImportPartsUnsupportedFormat">Nem támogatott import formátum.</system:String>
+    <system:String x:Key="StatusImportPartsNotFound">Alkatrész nem található az fileban.</system:String>
+    <system:String x:Key="StatusImportPartsCategoryNotSelected">Nincs kategória kiválasztva.</system:String>
+    <system:String x:Key="StatusImportSelectValidPartCategory">Válasz egy érvényes kategóriát.</system:String>
+    <system:String x:Key="StatusImportSelectValidManufacturer">Válasz egy érvényes gyártót.</system:String>
+    <system:String x:Key="StatusImportSelectValidPackage">Válasz egy érvényes tokozást.</system:String>
+    <system:String x:Key="StatusImportSelectValidStorageLocation">Válasz egy érvényes tárolási helyet.</system:String>
+    <system:String x:Key="StatusImportCannotCreateStorageLocation">A {0} tárolási helyet nem lehet létrehozni. A {1} már létezik, de nem csoport.</system:String>
+
+    <system:String x:Key="ExportDialogFilterXLSX">Táblázat</system:String>
+    <system:String x:Key="ExportDialogFilterJSON">JavaScript objektum</system:String>
+
+    <!-- Part attachments -->
+    <system:String x:Key="TitleAttachments">Mellékletek</system:String>
+    <system:String x:Key="TitleEditAttachmentName">Melléklet nevének szerkesztése</system:String>
+    <system:String x:Key="TitleAddNewAttachment">Új melléklet hozzáadása</system:String>
+
+    <system:String x:Key="MessageCannotOpenAttachment">{0} melléklet megnyitása sikertelen.</system:String>
+    <system:String x:Key="MessageAttachmentDeleteConfirmation">Biztos, hogy törlöd a(z) {0} mellékletet?</system:String>
+
+    <system:String x:Key="LabelPartAttachmentName">Név</system:String>
+    <system:String x:Key="LabelPartAttachmentType">Típus</system:String>
+    <system:String x:Key="LabelPartAttachmentFileName">File név</system:String>
+    <system:String x:Key="LabelPartAttachmentAddButtonTooltip">Melléklet hozzáadása</system:String>
+    <system:String x:Key="LabelPartAttachmentPasteButtonTooltip">Melléklet beillesztése vágólapról</system:String>
+    <system:String x:Key="LabelPartAttachmentMetaSearchTooltip">Adatlap keresése a meta keresővel</system:String>
+
+    <system:String x:Key="LabelPartAttachmentDropZone">Dobd ide</system:String>
+    <system:String x:Key="LabelPartAttachmentAllSupportedFiles">Támogatott file-ok</system:String>
+    <system:String x:Key="LabelPartAttachmentImageFiles">Kép file-ok</system:String>
+    <system:String x:Key="LabelPartAttachmentPdfFiles">Pdf file-ok</system:String>
+    <system:String x:Key="LabelPartAttachmentAllFiles">Minden file</system:String>
+
+    <system:String x:Key="StatusAttachmentDeleteUnsuccessful">{0} melléklet törlése sikertelen</system:String>
+    <system:String x:Key="StatusAttachmentSaveUnsuccessful">{0} melléklet mentése sikertelen.</system:String>
+    <system:String x:Key="StatusAttachmentDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusAttachmentSaved">{0} sikeresen elmentve.</system:String>
+    <system:String x:Key="StatusAttachmentNotSupportedFormat">{0} file formátum nem támogatott.</system:String>
+    <system:String x:Key="StatusAttachmentPasteNotSupported">Támogatott formátum nem található a vágólapon.</system:String>
+    <system:String x:Key="StatusAttachmentDropNotSupported">Nincs támogatott formátum.</system:String>
+    <system:String x:Key="StatusAttachmentDownloadEmptyFile">A letöltött file {0} üres vagy érvénytelen.</system:String>
+
+    <!-- Storage Locations -->
+    <system:String x:Key="TitleStorageLocations">Tárolóhelyek</system:String>
+    <system:String x:Key="TitleAddNewStorageLocation">Új tárolóhely hozzáadása</system:String>
+    <system:String x:Key="TitleDuplicateStorageLocation">Tárolóhely duplikálása</system:String>
+    <system:String x:Key="TitleEditStorageLocation">Tárolóhely szerkesztése</system:String>
+    <system:String x:Key="TitleEditPartStockLevel">Raktárkészlet módosítása</system:String>
+    <system:String x:Key="TitleMovePartsIntoNewStorageLocation">Alkatrészek mozgatása</system:String>
+
+    <system:String x:Key="MessageStorageLocationGroupDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} tárolóhelycsoportot?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUnusedConfirmation">Biztos, hogy törlöd a(z) {0} tárolóhelycsoportot, ami {1} nem használt altárolóhelyet tartalmaz?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} tárolóhelycsoportot, ami {1} altárolóhelyet tartalmaz?
+
+Ez a tárolóhelycsoport {2} alkatrészt tartalmaz, ami át lesz mozgatva az {3} tárolóhelyre.</system:String>
+
+    <system:String x:Key="MessageStorageLocationDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} tárolóhelyet?</system:String>
+    <system:String x:Key="MessageStorageLocationDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} tárolóhelyet?
+
+Ez a tárolóhely {1} alkatrészt tartalmaz, ami át lesz mozgatva a(z) {2} tárolóhelyre.</system:String>
+
+    <system:String x:Key="MessageStorageLocationMovePartsMessage">A kiválasztott {0} alkatrész átmozgatása az alábbi tárolóhelyre:</system:String>
+
+    <system:String x:Key="LabelStorageLocationName">Tárolóhely név</system:String>
+    <system:String x:Key="LabelStorageLocationDescription">Leírás</system:String>
+    <system:String x:Key="LabelStorageLocationIsGroup">Csoport</system:String>
+    <system:String x:Key="LabelStorageLocationParent">Szülő tárolóhely</system:String>
+
+    <system:String x:Key="LabelStorageLocationAddButtonTooltip">Új tárolóhely hozzáadása</system:String>
+    <system:String x:Key="LabelStorageLocationGoToButtonTooltip">Ugrás a tárolóhelyre</system:String>
+    <system:String x:Key="LabelStorageLocationEditButton">Tárolóhely szerkesztése</system:String>
+    <system:String x:Key="LabelStorageLocationDeleteButton">Tárolóhely törlése</system:String>
+    <system:String x:Key="LabelStorageLocationDuplicateButton">Tárolóhely duplikálása</system:String>
+    <system:String x:Key="LabelStorageLocationShowPartsInThisLocation">Alkatrészek mutatása ebben a tárolóhelyben</system:String>
+
+    <system:String x:Key="LabelStorageLocationMoveToNewLocationButton">Kiválasztott alkatrészek átmozgatása új tárolóhelyre</system:String>
+    <system:String x:Key="LabelStorageLocationLowStockWarning">Alacsony készlet mutatása</system:String>
+    <system:String x:Key="LabelStorageLocationDuplicateAppendText">(Másolat)</system:String>
+    
+    <system:String x:Key="StatusStorageLocationLoadUnsuccessful">Tárolóhelyek betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleteUnsuccessful">{0} tárolóhely törlése sikertelen.</system:String>
+    <system:String x:Key="StatusStorageLocationSaveUnsuccessful">{0} tárolóhely mentése sikertelen.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusStorageLocationSaved">{0} sikeresen elmentve.</system:String>
+
+    <system:String x:Key="StatusStorageLocationStockLevelSaved">{0} sikeresen elmentve.</system:String>
+    <system:String x:Key="StatusStorageLocationStockLevelSaveUnsuccessful">{0} mentése sikertelen.</system:String>
+
+    <system:String x:Key="StatusStorageLocationMovePartsSaved">{0} alkatrész sikeresen átmozgatva.</system:String>
+    <system:String x:Key="StatusStorageLocationMovePartsSaveUnsuccessful">{0} alkatrész átmozgatása új helyre sikertelen.</system:String>
+
+    <!-- Package Categories -->
+    <system:String x:Key="TitlePackageCategories">Tokozás kategóriák</system:String>
+    <system:String x:Key="TitleAddNewPackageCategory">Új tokozás kategória hozzáadása</system:String>
+    <system:String x:Key="TitleEditPackageCategory">Tokozás kategória szerkesztése</system:String>
+
+    <system:String x:Key="MessagePackageCategoryDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} tokozás kategóriát?</system:String>
+    <system:String x:Key="MessagePackageCategoryDeleteWithUnusedPackagesConfirmation">Biztos, hogy törlöd a(z) {0} tokozás kategóriát, ami {1} nem használt tokozást tartalmaz?</system:String>
+    <system:String x:Key="MessagePackageCategoryDeleteWithUsedPackagesConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} tokozás kategóriát, ami {1} tokozást tartalmaz?
+
+A kategóriában lévő tokozás(ok)at {2} alkatrész használja, ami(k)nek a tokozása módosítva lesz {3}-re.</system:String>
+
+    <system:String x:Key="ColumnPackageCategoryID">Azonosító</system:String>
+    <system:String x:Key="ColumnPackageCategoryName">Név</system:String>
+    <system:String x:Key="ColumnPackageCategoryDescription">Leírás</system:String>
+    <system:String x:Key="ColumnPackageCategoryPackageCount">Tokozások #</system:String>
+    <system:String x:Key="ColumnPackageCategoryActionEdit">Tokozás kategória szerkesztése</system:String>
+    <system:String x:Key="ColumnPackageCategoryActionDelete">Tokozás kategória törlése</system:String>
+
+    <system:String x:Key="ColumnPackageCategoryPackageCountTooltip">Tokozások száma ebben a kategóriában</system:String>
+
+    <system:String x:Key="LabelPackageCategoryName">Kategória név</system:String>
+    <system:String x:Key="LabelPackageCategoryDescription">Leírás</system:String>
+
+    <system:String x:Key="LabelPackageCategoryAddButtonTooltip">Új tokozás kategória hozzáadása</system:String>
+
+    <system:String x:Key="StatusPackageCategoryLoadUnsuccessful">Tokozás kategóriák betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusPackageCategoryDeleteUnsuccessful">{0} tokozás kategória törlése sikertelen.</system:String>
+    <system:String x:Key="StatusPackageCategorySaveUnsuccessful">{0} tokozás kategória mentése sikertelen.</system:String>
+    <system:String x:Key="StatusPackageCategoryDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusPackageCategorySaved">{0} sikeresen elmentve.</system:String>
+
+    <!-- Packages -->
+    <system:String x:Key="TitlePackages">Tokozások</system:String>
+    <system:String x:Key="TitleAddNewPackage">Új tokozás hozzáadása</system:String>
+    <system:String x:Key="TitleDuplicatePackage">Tokozás duplikálása</system:String>
+    <system:String x:Key="TitleEditPackage">Tokozás szerkesztése</system:String>
+    <system:String x:Key="TitlePackageDimension">{0} tokozás méretei</system:String>
+    <system:String x:Key="TitlePackageImage">{0} tokozás képe</system:String>
+    <system:String x:Key="TitlePackageDetails">Tokozás részletei</system:String>
+
+    <system:String x:Key="MessagePackageDeleteUnusedConfirmation">Biztos, hogy törlöd a nem használt {0} tokozást?</system:String>
+    <system:String x:Key="MessagePackageDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} tokozást?
+
+Ezt a tokozást {1} alkatrész használja, ami(k)nek a tokozása módosítva lesz {2}-re.</system:String>
+
+    <system:String x:Key="ColumnPackageID">Azonosító</system:String>
+    <system:String x:Key="ColumnPackageImage">Kép</system:String>
+    <system:String x:Key="ColumnPackageCategory">Kategória</system:String>
+    <system:String x:Key="ColumnPackageMounting">Szerelés</system:String>
+    <system:String x:Key="ColumnPackagePinCount">Lábszám</system:String>
+    <system:String x:Key="ColumnPackagePinPitch">Lábtávolság</system:String>
+    <system:String x:Key="ColumnPackageBodySize">Tokméret</system:String>
+    <system:String x:Key="ColumnPackageName">Név</system:String>
+    <system:String x:Key="ColumnPackageAlias">Alternatív nevek</system:String>
+    <system:String x:Key="ColumnPackageDescription">Leírás</system:String>
+    <system:String x:Key="ColumnPackagePartsCount">Alkatrész #</system:String>
+    <system:String x:Key="ColumnPackageActionShowDetails">Tokozás részleteinek mutatása</system:String>
+    <system:String x:Key="ColumnPackageActionShowDimension">Tokozás méretrajzának mutatása</system:String>
+    <system:String x:Key="ColumnPackageActionEdit">Tokozás szerkesztése</system:String>
+    <system:String x:Key="ColumnPackageActionDelete">Tokozás törlése</system:String>
+    <system:String x:Key="ColumnPackageActionDuplicate">Tokozás duplikálása</system:String>
+    <system:String x:Key="ColumnPackageActionShowPartsWithThisPackage">Alkatrészek mutatása ezzel a tokozással</system:String>
+
+    <system:String x:Key="ColumnPackagePinCountTooltip">Lábak száma</system:String>
+    <system:String x:Key="ColumnPackagePinPitchTooltip">Lábtávolság (mm)</system:String>
+    <system:String x:Key="ColumnPackageBodySizeTooltip">Tokozás mérete lábak nélkül (Hossz x Szélesség x Magasság mm)</system:String>
+    <system:String x:Key="ColumnPackagePartsCountTooltip">Alkatrészek száma ezzel a tokozással</system:String>
+
+    <system:String x:Key="LabelPackageCategory">Kategória</system:String>
+    <system:String x:Key="LabelPackageName">Tokozás név</system:String>
+    <system:String x:Key="LabelPackageDescription">Leírás</system:String>
+    <system:String x:Key="LabelPackageAlias">Alternatív nevek</system:String>
+    <system:String x:Key="LabelPackageMounting">Szerelés</system:String>
+    <system:String x:Key="LabelPackagePinCount">Lábak száma</system:String>
+    <system:String x:Key="LabelPackagePinPitch">Lábtávolság</system:String>
+    <system:String x:Key="LabelPackageBodySize">Tokozás mérete</system:String>
+    <system:String x:Key="LabelPackageBodySizeTooltip">Tokozás mérete lábak nélkül (Hossz x Szélesség x Magasság mm)</system:String>
+    <system:String x:Key="LabelPackageImagePath">Tokozás képe</system:String>
+    <system:String x:Key="LabelPackageDimensionsDrawingPath">Tokozás méretrajza</system:String>
+    <system:String x:Key="LabelPackagePartCount">Alkatrészek száma</system:String>
+    <system:String x:Key="LabelPackagePartsCountTooltip">Alkatrészek száma ezzel a tokozással</system:String>
+
+    <system:String x:Key="LabelPackageDetailedFilterButtonTooltip">Részletes tokozás szűrő</system:String>
+    <system:String x:Key="LabelPackageAddButtonTooltip">Új tokozás hozzáadása</system:String>
+    <system:String x:Key="LabelPackageShowDimensionDrawingTooltip">Tokozás méretrajzának mutatása</system:String>
+    <system:String x:Key="LabelPackageShowPackageDetailsTooltip">Tokozás részleteinek mutatása</system:String>
+    <system:String x:Key="LabelPackageDuplicateAppendText">(Másolat)</system:String>
+
+    <system:String x:Key="StatusPackageLoadUnsuccessful">Tokozások betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusPackageDeleteUnsuccessful">{0} tokozás törlése sikertelen.</system:String>
+    <system:String x:Key="StatusPackageSaveUnsuccessful">{0} tokozás mentése sikertelen.</system:String>
+    <system:String x:Key="StatusPackageDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusPackageSaved">{0} sikeresen elmentve.</system:String>
+
+    <!-- Manufacturers -->
+    <system:String x:Key="TitleManufacturers">Gyártók</system:String>
+    <system:String x:Key="TitleAddNewManufacturer">Új gyártó hozzáadása</system:String>
+    <system:String x:Key="TitleEditManufacturer">Gyártó szerkesztése</system:String>
+    <system:String x:Key="TitleManufacturerDetails">Gyártó részletes adatai</system:String>
+
+    <system:String x:Key="MessageManufacturerDeleteUnusedConfirmation">Biztos, hogy törlöd a nem használt {0} gyártót?</system:String>
+    <system:String x:Key="MessageManufacturerDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} gyártót?
+
+Ezt a gyártót {1} alkatrész használja, ami(k)nek a gyártója módosítva lesz {2}-re.</system:String>
+
+    <system:String x:Key="ColumnManufacturerID">Azonosító</system:String>
+    <system:String x:Key="ColumnManufacturerLogo">Logó</system:String>
+    <system:String x:Key="ColumnManufacturerName">Név</system:String>
+    <system:String x:Key="ColumnManufacturerShortName">Rövidítés</system:String>
+    <system:String x:Key="ColumnManufacturerDescription">Leírás</system:String>
+    <system:String x:Key="ColumnManufacturerURL">URL</system:String>
+    <system:String x:Key="ColumnManufacturerICLogo">IC Logó</system:String>
+    <system:String x:Key="ColumnManufacturerPartsCount">Alkatrész #</system:String>
+    <system:String x:Key="ColumnManufacturerActionShowDetails">Gyártó részleteinek mutatása</system:String>
+    <system:String x:Key="ColumnManufacturerActionEdit">Gyártó szerkesztése</system:String>
+    <system:String x:Key="ColumnManufacturerActionDelete">Gyártó törlése</system:String>
+    <system:String x:Key="ColumnManufacturerActionShowPartFromThisManufacturer">Alkatrészek mutatása ettől a gyártótól</system:String>
+
+    <system:String x:Key="ColumnManufacturerPartsCountTooltip">Alkatrészek száma ezzel a gyártóval</system:String>
+
+    <system:String x:Key="LabelManufacturerName">Gyártó név</system:String>
+    <system:String x:Key="LabelManufacturerShortName">Rövidítés</system:String>
+    <system:String x:Key="LabelManufacturerDescription">Leírás</system:String>
+    <system:String x:Key="LabelManufacturerURL">URL</system:String>
+    <system:String x:Key="LabelManufacturerLogoPath">Logó</system:String>
+    <system:String x:Key="LabelManufacturerICLogoPath">IC Logó</system:String>
+    <system:String x:Key="LabelManufacturerPartCount">Alkatrészek száma</system:String>
+    <system:String x:Key="LabelManufacturerPartsCountTooltip">Alkatrészek száma ezzel a gyártóval</system:String>
+
+    <system:String x:Key="LabelManufacturerDetailedFilterButtonTooltip">Részletes gyártó szűrő</system:String>
+    <system:String x:Key="LabelManufacturerAddButtonTooltip">Új gyártó hozzáadása</system:String>
+    <system:String x:Key="LabelManufacturerShowManufacturerDetailsTooltip">Gyártó részleteinek mutatása</system:String>
+    <system:String x:Key="LabelManufacturerOpenManufacturerLinkTooltip">Link megnyitása böngészőben</system:String>
+
+    <system:String x:Key="StatusManufacturerLoadUnsuccessful">Gyártók betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusManufacturerDeleteUnsuccessful">{0} gyártó törlése sikertelen.</system:String>
+    <system:String x:Key="StatusManufacturerSaveUnsuccessful">{0} gyártó mentése sikertelen.</system:String>
+    <system:String x:Key="StatusManufacturerDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusManufacturerSaved">{0} sikeresen mentve.</system:String>
+
+    <!-- Projects -->
+    <system:String x:Key="TitleProjects">Projektek</system:String>
+    <system:String x:Key="TitleAddNewProject">Új projekt hozzáadása</system:String>
+    <system:String x:Key="TitleDuplicateProject">Projekt duplikálása</system:String>
+    <system:String x:Key="TitleEditProject">Projekt szerkesztése</system:String>
+
+    <system:String x:Key="MessageProjectGroupDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} Projektcsoportot?</system:String>
+    <system:String x:Key="MessageProjectGroupDeleteNotEmptyConfirmation">Biztos, hogy törlöd a(z) {0} Projektcsoportot, ami {1} alprojektet tartalmaz?</system:String>
+
+    <system:String x:Key="MessageProjectDeleteConfirmation">Biztos, hogy törlöd a {0} Projektet?</system:String>
+
+    <system:String x:Key="LabelProjectName">Projekt név</system:String>
+    <system:String x:Key="LabelProjectDescription">Leírás</system:String>
+    <system:String x:Key="LabelProjectIsGroup">Csoport</system:String>
+    <system:String x:Key="LabelProjectIsArchived">Arhiválva</system:String>
+    <system:String x:Key="LabelProjectImageFileName">Projekt kép</system:String>
+    <system:String x:Key="LabelProjectNote">Jegyzet</system:String>
+    <system:String x:Key="LabelProjectParent">Szülő projekt</system:String>
+
+    <system:String x:Key="LabelProjectAddButtonTooltip">Új projekt hozzáadása</system:String>
+    <system:String x:Key="LabelProjectEditButton">Projekt szerkesztése</system:String>
+    <system:String x:Key="LabelProjectDeleteButton">Projekt törlése</system:String>
+    <system:String x:Key="LabelProjectDuplicateButton">Projekt duplikálása</system:String>
+    <system:String x:Key="LabelProjectDuplicateAppendText">(Másolat)</system:String>
+    <system:String x:Key="LabelProjectCreatedTooltip">Projekt létrehozva</system:String>
+
+    <system:String x:Key="StatusProjectLoadUnsuccessful">Projektek betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectBomLoadUnsuccessful">Projekt alkatrészlista betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectHistoryLoadUnsuccessful">Projekt történet betöltése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectDeleteUnsuccessful">{0} projekt törlése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectSaveUnsuccessful">{0} projekt mentése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusProjectSaved">{0} sikeresen elmentve.</system:String>
+
+    <!-- Project tabs -->
+    <system:String x:Key="TabProjectDetails">Részletek</system:String>
+    <system:String x:Key="TabProjectBOM">Alkartészlista</system:String>
+    <system:String x:Key="TabProjectAttachment">Mellékletek</system:String>
+    <system:String x:Key="TabProjectBulids">Építések</system:String>
+    <system:String x:Key="TabProjectHistory">Történet</system:String>
+
+    <!-- Projects BOM Entry -->
+    <system:String x:Key="TitleProjectBom">Alkatrészlista</system:String>
+    <system:String x:Key="TitleAddNewProjectBomEntry">Új alkatrész hozzáadása</system:String>
+    <system:String x:Key="TitleEditProjectBomEntry">Alkatrész szerkesztése</system:String>
+
+    <system:String x:Key="ColumnProjectBomEntryID">ID</system:String>
+    <system:String x:Key="ColumnProjectBomEntryQuantity">Mennyiség</system:String>
+    <system:String x:Key="ColumnProjectBomEntryComponent">Alkatrész</system:String>
+    <system:String x:Key="ColumnProjectBomEntryDesignators">Pozició</system:String>
+    <system:String x:Key="ColumnProjectBomEntryDescription">Leirás</system:String>
+    <system:String x:Key="ColumnProjectBomEntryActionEdit">Alkatrész szerkesztése</system:String>
+    <system:String x:Key="ColumnProjectBomEntryActionDelete">Alkatrész törlése</system:String>
+
+    <system:String x:Key="LabelProjectBomEntryQuantity">Mennyiség</system:String>
+    <system:String x:Key="LabelProjectBomEntryComponentName">Alkatrész</system:String>
+    <system:String x:Key="LabelProjectBomEntryDesignators">Pozició</system:String>
+    <system:String x:Key="LabelProjectBomEntryDescription">Leirás</system:String>
+
+    <system:String x:Key="LabelProjectBomEntryAddButtonTooltip">Alkatrész hozzáadása</system:String>
+
+    <system:String x:Key="MessageProjectBomEntryDeleteConfirmation">Biztos, hogy törlöd a {0} alkatészt?</system:String>
+
+    <system:String x:Key="StatusProjectBomEntryDeleteUnsuccessful">{0} alkatrész törlése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectBomEntrySaveUnsuccessful">{0} alkatrész mentése sikertelen.</system:String>
+    <system:String x:Key="StatusProjectBomEntryDeleted">{0} sikeresen törölve.</system:String>
+    <system:String x:Key="StatusProjectBomEntrySaved">{0} sikeresen elmentve.</system:String>
+
+    <!-- Projects History -->
+    <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventData">Dátum</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventType">Esemény</system:String>
+    <system:String x:Key="ColumnProjectHistoryDescription">Leirás</system:String>
+    
+    <system:String x:Key="LabelProjectHistoryEventType">Esemény</system:String>
+    <system:String x:Key="LabelProjectHistoryDate">Dátum</system:String>
+    <system:String x:Key="LabelProjectHistoryDescription">Leirás</system:String>
+
+    <!-- Meta Search -->
+    <system:String x:Key="TitleMetaSearch">Meta kereső</system:String>
+    <system:String x:Key="TitleMetaSearchPackageImage">{0} tokozás képe</system:String>
+    <system:String x:Key="TitleMetaSearchPackageImages">Tokozás képei</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsPackage">Tokozás</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsParameters">Paraméterek</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsManufacturer">Gyártó</system:String>
+    <system:String x:Key="TitleMetaSearchDetailsDatasheets">Adatlapok</system:String>
+    <system:String x:Key="TitleMetaSearchSaveDatasheet">Adatlap mentése</system:String>
+    <system:String x:Key="TitleMetaSearchDatasheetPreview">{0} adatlap</system:String>
+    <system:String x:Key="TitleMetaSearchRecentSearches">Korábbi keresések</system:String>
+    <system:String x:Key="TitleMetaSearchPrepareDatasheets">Adatlapok előkészítése</system:String>
+    <system:String x:Key="TitleMetaSearchHumanVerification">Emberi jelenlét ellenőrzése</system:String>
+
+    <system:String x:Key="LabelMetaSearchCountFailed">sikertelen</system:String>
+    <system:String x:Key="LabelMetaSearchInfoButtonTooltip">Keresési információk</system:String>
+    <system:String x:Key="LabelMetaSearchRecentSearchesButtonTooltip">Korábbi keresések listája</system:String>
+    <system:String x:Key="LabelMetaSearchRecentSearchAgainButtonTooltip">{0} újrakeresése</system:String>
+    <system:String x:Key="LabelMetaSearchSourceFaildTooltip">Source failed: {0}</system:String>
+    <system:String x:Key="LabelMetaSearchInfo" xml:space="preserve">Alkatrészeket kereshetsz az interneten és a találatokból saját alkatrészeket rögzíthetsz az alkatrész adatlapjával és paramétereivel együtt.
+
+Tippek:
+    • A találati sor kiválasztásakor néhány oszlop értéke frissítve lesz az alkatrész részleteinek lekérése során.
+    • Paraméterek lekérdezése csak diszkrét félvezetőknél működik, és leginkább csak az alltransistor forrásból.
+    • Arra nincs garancia, hogy a paraméterek pontosak lesznek a te alkatrészednél. 
+    • Egyes alkatrészek azonos típusszámmal, de más gyártótól egészen más paraméterekkel lehetnek specifikálva az adatlapokban.
+    • Ez a funkció internetes forrásokra támaszkodik, amik lehetnek pontatlanok vagy esetleg nem lesznek elérhetőek a jövőben.
+    • Saját alkatrész létrehozásakor gondosan válaszd ki az alkatrész kategória nevét, mert az később már nem változtatható.
+    • Egyes források nem adnak meg külön gyártót, tokozás vagy paramétereket. Az alkalmazás megpróbálja kitalálni ezeket a leírásból.
+    </system:String>
+    <system:String x:Key="LabelMetaSearchPreviewDatasheetButtonTooltip">Adatlap előnézetének megtekintése</system:String>
+    <system:String x:Key="LabelMetaSearchSaveDatasheetButtonTooltip">Adatlap mentése</system:String>
+    <system:String x:Key="LabelMetaSearchCopyDatasheetToClipboarButtonTooltip">Adatlap vágólapra másolása</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnPartsTooltip">Saját készlet megtekintése az Alkatrészek-nél:</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnStockTooltip">Saját készlet megtekintése a Tárolóhelyek-nél:</system:String>
+
+    <system:String x:Key="LabelMetaSearchDetailsNoPackageAvailable">Tokozás nem érhető el</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoParameterAvailable">Paraméter nem érhető el</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoManufacturerAvailable">Gyártó nem érhető el</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsNoDatasheetAvailable">Adatlap nem érhető el</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsTooMuchTrafficDetected">A forrás weboldal túl nagy forgalmat észlel. Old meg a capcha-t és tölts le az adatlapot kézzel.</system:String>
+    <system:String x:Key="LabelMetaSearchHumanVerificationMessage">A {0} forrás emberi jelenlét ellenőrzést végez az első kereséskor. Várd meg az oldal betöltödését, és klikkelj a checkbox-ra, ha szükséges. Modern rendszereken automatikusan továbblép.</system:String>
+    <system:String x:Key="LabelMetaSearchHumanVerificationMissingWebView2">{0} szükséges az {1} emberi jelenlét ellenőrzés végrehajtásához. Töltsd le és installáld, hogy keresni tudj ezen a forráson, vagy kapcsold ki ezt a forrást.</system:String>
+
+    <system:String x:Key="ColumnMetaSearchSource">Forrás</system:String>
+    <system:String x:Key="ColumnMetaSearchCategory">Kategória</system:String>
+    <system:String x:Key="ColumnMetaSearchPartType">Típusszám</system:String>
+    <system:String x:Key="ColumnMetaSearchMarking">Jelölés</system:String>
+    <system:String x:Key="ColumnMetaSearchManufacturer">Gyártó</system:String>
+    <system:String x:Key="ColumnMetaSearchPackageShow">Tokozás méretrajza és képe</system:String>
+    <system:String x:Key="ColumnMetaSearchPackage">Tokozás</system:String>
+    <system:String x:Key="ColumnMetaSearchDescription">Leírás</system:String>
+
+    <system:String x:Key="StatusMetaSearchSaveDatasheetDone">Az adatlap sikeresen mentve.</system:String>
+    <system:String x:Key="StatusMetaSearchSaveDatasheetFailed">Az adatlap mentése sikertelen.</system:String>
+
+    <system:String x:Key="StatusMetaSearchCopyDatasheetToClipboardDone">Az adatlap vágólapra másolva.</system:String>
+    <system:String x:Key="StatusMetaSearchCopyDatasheetToClipboardFailed">A vágólapra másolás sikertelen.</system:String>
+    <system:String x:Key="StatusMetaSearchDownloadTryAgainLater">{0} letöltése sikertelen. Próbáld újra később.</system:String>
+
+    <!-- Marking Code Search -->
+    <system:String x:Key="TitleSearchMarkingCode">SMD kód kereső</system:String>
+    <system:String x:Key="TitleSearchMarkingCodePackageImage">{0} tokozás képe</system:String>
+    <system:String x:Key="TitleSearchMarkingCodePackageImages">Tokozás képei</system:String>
+    <system:String x:Key="TitleSearchMarkingCodeRecentSearches">Korábbi keresések</system:String>
+    <system:String x:Key="TitleSearchMarkingCodeDatasheetPreview">{0} adatlap</system:String>
+
+    <system:String x:Key="LabelMarkingCodeSearchCountFailed">sikertelen</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchInfoButtonTooltip">Keresési információk</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchRecentSearchesButtonTooltip">Korábbi keresések listája</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchRecentSearchAgainButtonTooltip">{0} újrakeresése</system:String>
+    <system:String x:Key="LabelMarkingCodeSearchInfo" xml:space="preserve">Az SMD alkatrészek kis mérete miatt a gyártók nem képesek a teljes típusszámot felírni az alkatrészek tokjára. Ehelyett jelölő kódokat használnak amik általában 2 vagy 3 betű és szám kombinációja. Ezzel a keresővel a jelölő kód alapján lehet keresni az eredeti típusszámot.
+
+Tippek:
+    • A találatok számának korlátozása miatt használd a pontos egyezést a keresésnél, ha lehetséges.
+    • Csak számokat és betűket adj meg a kereső mezőben.
+    • Speciális karaktereket nem minden forrás támogat. Ez hosszú válaszidőt vagy sikertelen keresést eredményezhet egyes forrásoknál. 
+    • Egyes források csak a Pontos egyezés vagy Kezdődik keresési módokat támogatják.
+    • Egyes források a találatokat lapozva adják, a program csak néhány lapnyi (10) találatot olvas be. 
+    • További találatokért megnyithatod az eredeti találati oldalt a kis jobbra nyíl gombokkal.
+    • A találatokban szereplő jelölés tartalmazhat csillagot (*). Ez egy joker karakter, akármennyi más karaktert helyettesíthet.
+    • A találatokban szereplő jelölés tartalmazhat kérdőjelet (?). Ez egy joker karakter, egy karaktert helyettesíthet.
+    • A találatokban szereplő jelölés néha nem egy hanem több jelölés.
+    • Ez a funkció internetes forrásokra támaszkodik, amik esetleg nem lesznek elérhetőek a jövőben.
+    </system:String>
+
+    <system:String x:Key="LabelMarkingCodeDetailedFilterButtonTooltip">Részletes szűrő</system:String>
+    <system:String x:Key="LabelMarkingCodeSourceFaildTooltip">Forrás sikertelen: {0}</system:String>
+
+    <system:String x:Key="ColumnMarkingCodeSource">Forrás</system:String>
+    <system:String x:Key="ColumnMarkingCodeMarking">Felirat</system:String>
+    <system:String x:Key="ColumnMarkingCodeDatasheetShow">Adatlap megtekintése</system:String>
+    <system:String x:Key="ColumnMarkingCodePartTypeSearch">Adatlap keresése a meta keresővel</system:String>
+    <system:String x:Key="ColumnMarkingCodePartType">Típusszám</system:String>
+    <system:String x:Key="ColumnMarkingCodeManufacturer">Gyártó</system:String>
+    <system:String x:Key="ColumnMarkingCodePackageShow">Tokozás méretrajza és képe</system:String>
+    <system:String x:Key="ColumnMarkingCodePackage">Tokozás</system:String>
+    <system:String x:Key="ColumnMarkingCodePinCount">Lábszám</system:String>
+    <system:String x:Key="ColumnMarkingCodeDescription">Leírás</system:String>
+
+    <!-- Distributor Search -->
+    <system:String x:Key="TitleDistributorSearch">Forgalmazó kereső</system:String>
+
+    <system:String x:Key="TitleDistributorSearchProductImage">{0} termék képe</system:String>
+    <system:String x:Key="TitleDistributorSearchPackageImage">{0} tokozás képe</system:String>
+    <system:String x:Key="TitleDistributorSearchPackageImages">Tokozás képei</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsPackage">Tokozás</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsParameters">Paraméterek</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsManufacturer">Gyártó</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsAvailability">Elérhetőség</system:String>
+    <system:String x:Key="TitleDistributorSearchDetailsDatasheets">Adatlapok</system:String>
+    <system:String x:Key="TitleDistributorSearchSaveDatasheet">Adatlap mentése</system:String>
+    <system:String x:Key="TitleDistributorSearchDatasheetPreview">{0} adatlap</system:String>
+    <system:String x:Key="TitleDistributorSearchRecentSearches">Korábbi keresések</system:String>
+    <system:String x:Key="TitleDistributorSearchPrepareDatasheets">Adatlapok előkészítése</system:String>
+    <system:String x:Key="TitleDistributorSearchHumanVerification">Emberi jelenlét ellenőrzése</system:String>
+
+    <system:String x:Key="LabelDistributorSearchCountFailed">sikertelen</system:String>
+    <system:String x:Key="LabelDistributorSearchInfoButtonTooltip">Keresési információk</system:String>
+    <system:String x:Key="LabelDistributorSearchRecentSearchesButtonTooltip">Korábbi keresések listája</system:String>
+    <system:String x:Key="LabelDistributorSearchRecentSearchAgainButtonTooltip">{0} újrakeresése</system:String>
+    <system:String x:Key="LabelDistributorSearchSourceFaildTooltip">Source failed: {0}</system:String>
+    <system:String x:Key="LabelDistributorSearchInfo" xml:space="preserve">Alkatrészeket kereshetsz az interneten és a találatokból saját alkatrészeket rögzíthetsz az alkatrész adatlapjával és paramétereivel együtt.
+
+Tippek:
+    • Ez a funkció internetes forrásokra támaszkodik, amik lehetnek pontatlanok vagy esetleg nem lesznek elérhetőek a jövőben.
+    </system:String>
+    <system:String x:Key="LabelDistributorSearchPreviewDatasheetButtonTooltip">Adatlap előnézetének megtekintése</system:String>
+    <system:String x:Key="LabelDistributorSearchSaveDatasheetButtonTooltip">Adatlap mentése</system:String>
+    <system:String x:Key="LabelDistributorSearchCopyDatasheetToClipboarButtonTooltip">Adatlap vágólapra másolása</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnPartsTooltip">Saját készlet megtekintése az Alkatrészek-nél:</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnStockTooltip">Saját készlet megtekintése a Tárolóhelyek-nél:</system:String>
+
+    <system:String x:Key="LabelDistributorSearchDetailsNoPackageAvailable">Tokozás nem érhető el</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoParameterAvailable">Paraméter nem érhető el</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">Gyártó nem érhető el</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">Ár információ nem érhető el</system:String>
+    <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">Adatlap nem érhető el</system:String>
+    <system:String x:Key="LabelDistributorSearchAddProductImage">Termékkép hozzáadása</system:String>
+
+    <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">Rend. szám</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNameStock">Készlet</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNameMOC">Min. Rend.</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailNamePrices">Árak</system:String>
+
+    <system:String x:Key="LabelDistributorSearchAvailTooltipOrderNr">Forgalmazó rendelési száma</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipStock">Elérhető készlet</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipMOC">Minimálisan rendelhető mennyiség</system:String>
+    <system:String x:Key="LabelDistributorSearchAvailTooltipPrices">Ár a megadott darabszámtól</system:String>
+
+    <system:String x:Key="ColumnDistributorSearchSource">Forrás</system:String>
+    <system:String x:Key="ColumnDistributorSearchCategory">Kategória</system:String>
+    <system:String x:Key="ColumnDistributorSearchPartShowDistributorPage">Forgalmazó oldalának megnyitása</system:String>
+    <system:String x:Key="ColumnDistributorSearchPartType">Típusszám</system:String>
+    <system:String x:Key="ColumnDistributorSearchMarking">Jelölés</system:String>
+    <system:String x:Key="ColumnDistributorSearchManufacturer">Gyártó</system:String>
+    <system:String x:Key="ColumnDistributorSearchPackageShow">Tokozás méretrajza és képe</system:String>
+    <system:String x:Key="ColumnDistributorSearchPackage">Tokozás</system:String>
+    <system:String x:Key="ColumnDistributorSearchOrderNumber">Rend. szám</system:String>
+    <system:String x:Key="ColumnDistributorSearchStockLevel">Készlet</system:String>
+    <system:String x:Key="ColumnDistributorSearchPrice">Ár</system:String>
+    <system:String x:Key="ColumnDistributorSearchDescription">Leírás</system:String>
+
+    <system:String x:Key="StatusDistributorSearchSaveDatasheetDone">Az adatlap sikeresen mentve.</system:String>
+    <system:String x:Key="StatusDistributorSearchSaveDatasheetFailed">Az adatlap mentése sikertelen.</system:String>
+
+    <system:String x:Key="StatusDistributorSearchCopyDatasheetToClipboardDone">Az adatlap vágólapra másolva.</system:String>
+    <system:String x:Key="StatusDistributorSearchCopyDatasheetToClipboardFailed">A vágólapra másolás sikertelen.</system:String>
+    <system:String x:Key="StatusDistributorSearchDownloadTryAgainLater">{0} letöltése sikertelen. Próbáld újra később.</system:String>
+
+    <!-- Settings -->
+    <system:String x:Key="TitleSettings">Beállítások</system:String>
+    <system:String x:Key="TitleInitialSelectLanguage">Nyelv kiválasztása</system:String>
+    <system:String x:Key="TitleInitialAcceptLicense">Licenc elfogadása</system:String>
+    <system:String x:Key="TitleNewVersionAvailable">Új verzió érhető el</system:String>
+
+    <system:String x:Key="TabSettingsGeneral">Általános</system:String>
+    <system:String x:Key="TabSettingsTables">Táblázatok</system:String>
+    <system:String x:Key="TabSettingsRegional">Területi</system:String>
+
+    <system:String x:Key="LabelSettingsStartupPage">Kezdőlap</system:String>
+    <system:String x:Key="LabelSettingsWindowOpenPosition">Ablak megnyitási pozíciója</system:String>
+    <system:String x:Key="LabelSettingsTabStripLocation">Fülek helye</system:String>
+    <system:String x:Key="LabelSettingsAttachmentsInitialFit">Mellékletek megnyitási módja</system:String>
+
+    <system:String x:Key="LabelSettingsTableUseAlternateColors">Váltott háttérszín</system:String>
+    <system:String x:Key="LabelSettingsTableUseHeaderSeparatorLine">Fejléc elválasztó vonal</system:String>
+    <system:String x:Key="LabelSettingsTableBorderMode">Keret</system:String>
+    <system:String x:Key="LabelSettingsTableRowSeparatorMode">Sor elválasztó</system:String>
+    <system:String x:Key="LabelSettingsTableExample">Példa</system:String>
+   
+    <system:String x:Key="LabelSettingsLanguage">Nyelv</system:String>
+    <system:String x:Key="LabelSettingsDisplayFormats">Formátumok</system:String>
+
+    <system:String x:Key="LabelSettingsFormatsExample">Formátum példák</system:String>
+    <system:String x:Key="LabelSettingsCultureInfoName">Kultúra név</system:String>
+    <system:String x:Key="LabelSettingsSampleNumber">Szám formátum</system:String>
+    <system:String x:Key="LabelSettingsSampleDate">Dátum formátum</system:String>
+
+    <system:String x:Key="LabelSettingsAcceptLicense">Megértetem és elfogadom a licenc feltételeket</system:String>
+
+    <system:String x:Key="MessageSettingCloseAllTabsForLanguageChange">A nyelv váltáshoz minden fület újra kell nyitni. Valamelyik fülön nem mentett módosítások vannak. Biztos, hogy folytatod?</system:String>
+
+    <system:String x:Key="StatusSettingsSaved">A beállítások sikeresen elmentve.</system:String>
+    <system:String x:Key="StatusSetttingsSaveUnsuccessful">A beállítások mentése sikertelen.</system:String>
+
+    <!-- About -->
+    <system:String x:Key="TitleAbout">Névjegy</system:String>
+
+    <system:String x:Key="TabAboutAbout">Névjegy</system:String>
+    <system:String x:Key="TabAboutLicenses">Licencek</system:String>
+    <system:String x:Key="TabAboutDonation">Támogatás</system:String>
+
+    <system:String x:Key="LabelAboutSubtitle">Elektronikai alkatrészkereső és nyilvántartó</system:String>
+    <system:String x:Key="LabelAboutDescription">MyElecParts egy ingyenes, könnyen használható elektronikai alkatrészkereső és nyilvántartó program személyes használatra hobbistáknak és alkotóknak. Üzleti célra nem használható.</system:String>
+
+    <system:String x:Key="LabelAboutWantsToHelp">Segíteni szeretnél?</system:String>
+    <system:String x:Key="LabelAboutFeedbackButton">• Oszd meg az ötleteidet</system:String>
+    <system:String x:Key="LabelAboutTranslationButton">• Fordítsd le más nyelvre</system:String>
+    <system:String x:Key="LabelAboutDonationButton">• Támogasd a továbbfejlesztést</system:String>
+    <system:String x:Key="LabelAboutVisitHomepageButton">• Látogasd meg a weboldalt</system:String>
+
+    <system:String x:Key="LabelLicenseLicenseLink">(licenc)</system:String>
+
+    <system:String x:Key="LabelLicenseAppLicenseHeader">Alkalmazás licenc</system:String>
+    <system:String x:Key="LabelLicenseAppLicense1">MyElecPart egy ingyenesen terjeszthető program ami nem nyilt forráskódú. A program a Creative Commons CC BY-NC-ND 4.0 nemzetközi licenc oltalma alá esik. A logóra kattintva a licenc eredeti szövege olvasható.</system:String>
+    <system:String x:Key="LabelLicenseAppLicense2"  xml:space="preserve">Ez a licenc a következő jogokat biztosítja:
+
+    • MyElecPart ingyenesen használható személyes célokra.
+    • A program ingyenesen terjeszthető az eredeti, nem módosított formájában.
+    • Kereskedelmi használat és árusítás nem engedélyezett.
+    • Néhány MyElecPart funkció web alapú szolgáltatásokat használ,
+       nem garantált, hogy az általuk nyújtott adatok 100%-ban pontosak és hibamentesek.
+    • A webes szolgáltatások a jövőben megszünhetnek, ez egyes funkciókat csorbíthat.    
+    • A programot mindenki saját felelősségére használja. 
+    • A szoftver használatával okozott esetleges károkért a szerző nem felelős.</system:String>
+
+    <system:String x:Key="LabelLicenseThirdPartyLicenseHeader">Harmadik féltől származó licencek</system:String>
+    <system:String x:Key="LabelLicenseThirdPartyLicense">MyElecPart az alábbi nyílt forráskódú könyvtárakat és erőforrásokat használja:</system:String>
+
+    <system:String x:Key="LabelDontionHeader">Támogatás</system:String>
+    <system:String x:Key="LabelDontionText" xml:space="preserve">A MyElecPartot a szabadidőmben fejlesztettem. Ez egy egyszemélyes projekt, és mint láthatod, rengeteg munka van benne. Sok időt töltöttem egyedi funkciókat hozzáadásával, használható tokozás könyvtár létrehozásával, vagy, hogy tökélyre csiszoljak minden részletet, hogy még szórakoztatóbbá és kényelmesebbé tegyem a használatát.
+
+Ez egy freeware szoftver, ingyenesen használhatod személyes célokra, de ha megteheted, kérlek támogasd a jövőbeni fejlesztést és hívj meg egy virtuális kávéra :)</system:String>
+
+</ResourceDictionary>

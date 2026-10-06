@@ -1,0 +1,292 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib"
+                    xml:lang="hu">
+
+    <!-- Resource Culture -->
+    <!-- See the supported list: https://azuliadesigns.com/c-sharp-tutorials/list-net-culture-country-codes/ -->
+    <system:String x:Key="CultureInfo">hu-HU</system:String>
+    
+    <!-- Boolean Display Params -->
+    <system:String x:Key="BooleanFalseText">Nem</system:String>
+    <system:String x:Key="BooleanTrueText">Igen</system:String>
+    
+    <!-- Clipboard -->
+    <system:String x:Key="ClipboardCut">Kivágás</system:String>
+    <system:String x:Key="ClipboardCopy">Másolás</system:String>
+    <system:String x:Key="ClipboardPaste">Beillesztés</system:String>
+
+    <!-- Toast or dialog -->
+    <system:String x:Key="ErrorMessageUnhandledException" xml:space="preserve">Nem kezelt kivétel történt: 
+{0}: 
+{1}</system:String>
+    <system:String x:Key="ErrorMessageOpenExternalUrl">Az URL-t nem lehet megnyitni: {0}</system:String>
+    <system:String x:Key="ErrorMessageOpenEmailClient">Az email alkalmazást nem lehet megnyitni: {0}</system:String>
+    <system:String x:Key="MessageHasUnsavedChangesConfirmation">Nincs minden változtatás mentve. Biztos, hogy kilépsz az alkalmazásból?</system:String>
+
+    <!-- Validation  -->
+    <system:String x:Key="ValErrorToast">Nincs minden mező helyesen kitöltve.</system:String>
+    <system:String x:Key="ValErrorInvalidInput">Érvénytelen adat!</system:String>
+    <system:String x:Key="ValErrorRequired">Kötelező mező!</system:String>
+    <system:String x:Key="ValErrorMinLength">Minimum {0} karakter</system:String>
+    <system:String x:Key="ValErrorMaxLength">Maximum {0} karakter</system:String>
+    <system:String x:Key="ValErrorRange">Érvényes tartomány: {0} ... {1}</system:String>
+    <system:String x:Key="ValErrorUnique">Egyedi érték megadása szükséges!</system:String>
+    <system:String x:Key="ValErrorFileName">Nem használható fájlnévnek!</system:String>
+    <system:String x:Key="ValErrorMinItems">Minimum {0} elem megadása szükséges</system:String>
+
+    <!-- Filter evaluator  -->
+    <system:String x:Key="FilterErrorOperatorWithoutFirstOperand">{0} operátor első operandus nélkül.</system:String>
+    <system:String x:Key="FilterErrorUnexpectedToken">Váratlan token {0}</system:String>
+    <system:String x:Key="FilterErrorInvalidExpression">Érvénytelen kifejezés: {0}</system:String>
+    <system:String x:Key="FilterErrorUnterminatedQuotedString">Idézőjel nincs bezárva.</system:String>
+    <system:String x:Key="FilterErrorUnexpectedEndOfExpression">A kifejezés nem teljes.</system:String>
+    <system:String x:Key="FilterColumnCoparationNotAllowedInThisMode">Oszlop összehasonlítás nem engedélyezett</system:String>
+    <system:String x:Key="FilterUnknownColumn">Ismeretlen oszlop: {0}</system:String>
+    <system:String x:Key="FilterUnknownComparisonOperatorExpected">Összehasonlító operátor hiányzik</system:String>
+    <system:String x:Key="FilterOperatorNotAllowedForColumn">Operátor {0} nem használhat ehhez az oszlophoz: {1}</system:String>
+    <system:String x:Key="FilterColumnOrConstantOperandExpected">Oszlop vagy konstans hiányzik</system:String>
+    <system:String x:Key="FilterColumnTypeMismatch">Oszlop {0} és {1} különböző típusú.</system:String>
+    <system:String x:Key="FilterInvalidNumericValue">Érvénytelen szám: {0}</system:String>
+    <system:String x:Key="FilterInvalidColumnSyntax">Érvénytelen oszlopnév megadás</system:String>
+
+    <!-- MCheckBox -->
+    <system:String x:Key="CheckBoxUnknown">Ismeretlen</system:String>
+    <system:String x:Key="CheckBoxFalse">Nem</system:String>
+    <system:String x:Key="CheckBoxTrue">Igen</system:String>
+
+    <!-- LogWindow -->
+    <system:String x:Key="LogWindowDelete">Törlés</system:String>
+    <system:String x:Key="LogWindowCopy">Másolás</system:String>
+    <system:String x:Key="LogWindowSave">Mentés</system:String>
+    <system:String x:Key="LogWindowSaveDialogHeader">Log file mentése</system:String>
+    <system:String x:Key="LogWindowSaveDialogFilter">Log fileok</system:String>
+    <system:String x:Key="LogWindowFilterString">Szűrő</system:String>
+    <system:String x:Key="LogWindowAutoScroll">Automata görgetés</system:String>
+    <system:String x:Key="LogWindowDate">Dátum</system:String>
+    <system:String x:Key="LogWindowThread">Szál</system:String>
+    <system:String x:Key="LogWindowLevel">Szint</system:String>
+    <system:String x:Key="LogWindowComponent">Komponens</system:String>
+    <system:String x:Key="LogWindowText">Szöveg</system:String>
+
+    <!-- DialogWindow -->
+    <system:String x:Key="DialogHeaderInfo">Infó</system:String>
+    <system:String x:Key="DialogHeaderError">Hiba</system:String>
+    <system:String x:Key="DialogButtonOK">OK</system:String>
+    <system:String x:Key="DialogButtonCancel">Mégsem</system:String>
+    <system:String x:Key="DialogButtonClose">Bezár</system:String>
+    <system:String x:Key="DialogButtonSave">Mentés</system:String>
+    <system:String x:Key="DialogButtonDelete">Törlés</system:String>
+    <system:String x:Key="DialogButtonNext">Tovább</system:String>
+    <system:String x:Key="DialogButtonExit">Kilép</system:String>
+    <system:String x:Key="DialogButtonContinue">Folytatás</system:String>
+    <system:String x:Key="DialogButtonAdd">Hozzáad</system:String>
+
+    <!-- Notification Toast -->
+    <system:String x:Key="ToastHeaderInfo">Infó</system:String>
+    <system:String x:Key="ToastHeaderWarning">Figyelem</system:String>
+    <system:String x:Key="ToastHeaderError">Hiba</system:String>
+    <system:String x:Key="ToastHeaderSuccess">Siker</system:String>
+    
+    <!-- MDataGrid -->
+    <system:String x:Key="MDataGridNoRecordsFound">Rekord nem található</system:String>
+    <system:String x:Key="MDataGridCopyCellValue">Cella tartalmának másolása</system:String>
+    <system:String x:Key="MDataGridGoToLink">{0} megnyitása</system:String>
+    <system:String x:Key="MDataGridDetailedFilter">Részletes szűrés</system:String>
+    <system:String x:Key="MDataGridButtonClearFilter">Szűrő törlés</system:String>
+    <system:String x:Key="MDataGridButtonApplyFilter">Szűrő alkalmazása</system:String>
+    <system:String x:Key="MDataGridButtonFilter">Szűrés</system:String>
+
+    <system:String x:Key="MDataGridFilterHistoryPopupTitle">Korábbi szűrők</system:String>
+    <system:String x:Key="MDataGridFilterHistoryFilterAgainButtonTooltip">{0} újraszűrése</system:String>
+
+    <system:String x:Key="MDataGridButtonFilterHistoryTooltip">Szűrési előzmények megjelenítése</system:String>
+    <system:String x:Key="MDataGridButtonShowFilterExamplesTooltip">Szűrési példák megjelenítése</system:String>
+    <system:String x:Key="MDataGridFilterExpressionGenericExamples"  xml:space="preserve">Szűrési példák:
+       
+    apple ⟶ Bármely oszlop tartalmazza az apple-t
+    apple* ⟶ Bármely oszlop apple-lel kezdődik
+    *apple ⟶ Bármely oszlop apple-lel végződik
+    "apple" ⟶ Bármely oszlop pontosan megegyezik
+        
+AND, OR és NOT és zárójelezés is támogatott:
+
+    apple AND banana ⟶ Valamely oszlop tartalmazza az apple-t, valamely a banana-t
+    apple OR banana ⟶ Bármely oszlop tartalmazza apple-t vagy banana-t
+    NOT apple* ⟶ Egyik oszlop sem kezdődik apple-lel
+    (apple OR banana) AND NOT juice ⟶ Bármelyik de nem juice
+        
+Oszlop összehasonlítás is támogatott:
+
+    [Raktáron] >=10 AND [Raktáron] &lt; 20
+    [Raktáron] &lt; [Min. Készlet]
+    [Tokozás] = "TO-92"
+    [Szerelés] &lt;> "THT"
+    </system:String>
+
+    <system:String x:Key="MDataGridFilterExpressionColumnExamples"  xml:space="preserve">Oszlopszűrési példák:
+       
+    apple ⟶ Az oszlop tartalmazza az apple-t
+    apple* ⟶ Az oszlop apple-lel kezdődik
+    *apple ⟶ Az oszlop apple-lel végződik
+    "apple" ⟶ Az oszlop pontosan megegyezik
+    "" ⟶ Az oszlop üres
+        
+AND, OR és NOT és zárójelezés is támogatott:
+
+    apple AND banana ⟶ Az oszlop tartalmazza mindkettőt
+    apple OR banana ⟶ Az oszlop bármelyiket tartalmazza
+    apple OR "" ⟶ Az oszlop tartalmazza az apple-t vagy üres
+    NOT apple* ⟶ Az oszlop nem apple-lel kezdódik
+    (apple OR banana) AND NOT juice ⟶ Bármelyik de nem juice 
+    NOT "" ⟶ Az oszlop nem üres
+    </system:String>
+    
+    <system:String x:Key="MDataGridSelectColumnsDialogTitle">Oszlopok kiválasztása</system:String>
+    <system:String x:Key="MDataGridSelectColumnsDragHandleTooltip">Oszlopok átrendezése húzással</system:String>
+    <system:String x:Key="MDataGridSelectColumnsDialogResetToDefault">Visszaállít</system:String>
+    
+    <!-- MDataGridBorderMode enum -->
+    <system:String x:Key="MDataGridBorderModeNone">Nincs</system:String>
+    <system:String x:Key="MDataGridBorderModeSingle">Szimpla</system:String>
+    <system:String x:Key="MDataGridBorderModeDouble">Dupla</system:String>
+
+    <!-- MDataGridRowSeparatorMode enum -->
+    <system:String x:Key="MDataGridRowSeparatorModeNone">Nincs</system:String>
+    <system:String x:Key="MDataGridRowSeparatorModeSeparatorRow">Vízszintes vonalak</system:String>
+    <system:String x:Key="MDataGridRowSeparatorModeSeparatorColumn">Függőleges vonalak</system:String>
+    <system:String x:Key="MDataGridRowSeparatorModeSeparatorGrid">Háló</system:String>
+
+    <!-- MListBox -->
+    <system:String x:Key="MListBoxSelectNone">Nincs</system:String>
+    <system:String x:Key="MListBoxSelectAllItem">Mindent kiválaszt</system:String>
+    <system:String x:Key="MListBoxTooltipAddNewItem">Új elem hozzáadása</system:String>
+
+    <!-- MDatePicker -->
+    <system:String x:Key="MDatePickerToday">Mai nap</system:String>
+    <system:String x:Key="MDatePickerClear">Törlés</system:String>
+    
+    <!-- MImageViewer -->
+    <system:String x:Key="MImageViewerPrintTooltip">Kép nyomtatása</system:String>
+    <system:String x:Key="MImageViewerInfoTooltip">Kép információk</system:String>
+    <system:String x:Key="MImageViewerZoomInTooltip">Nagyítás</system:String>
+    <system:String x:Key="MImageViewerZoomOutTooltip">Kicsinyítés</system:String>
+    <system:String x:Key="MImageViewerZoomLevelTooltip">Aktuális nagyítás mértéke</system:String>
+    <system:String x:Key="MImageViewerRotateLeftTooltip">Forgatás balra</system:String>
+    <system:String x:Key="MImageViewerRotateRightTooltip">Forgatás jobbra</system:String>
+    <system:String x:Key="MImageViewerFitTooltip">Teljes kép mutatása</system:String>
+    <system:String x:Key="MImageViewerFitHeightTooltip">Igazítás teljes magasságra</system:String>
+    <system:String x:Key="MImageViewerFitWidthTooltip">Igazítás teljes szélességre</system:String>
+
+    <system:String x:Key="MImageViewerInfoFileName">Fájlnév</system:String>
+    <system:String x:Key="MImageViewerInfoFileSize">Fájlméret</system:String>
+    <system:String x:Key="MImageViewerInfoFileSizeFormat">{0:0.0} kB ({1} byte)</system:String>
+    <system:String x:Key="MImageViewerInfoDialogHeader">Képinformáció</system:String>
+    <system:String x:Key="MImageViewerInfoFileFormat">Fájlformátum</system:String>
+    <system:String x:Key="MImageViewerInfoResolution">Felbontás</system:String>
+    <system:String x:Key="MImageViewerInfoResolutionFormat">{0:0} x {1:0}</system:String>
+    <system:String x:Key="MImageViewerInfoColorDepth">Színmélység</system:String>
+
+    <!-- MSelectImage -->
+    <system:String x:Key="MSelectImageOpenImageDialogHeader">Képfájl megnyitása</system:String>
+    <system:String x:Key="MSelectImageImageFiles">Képfájlok</system:String>
+    <system:String x:Key="MSelectImageAllFiles">Minden fájl</system:String>
+    <system:String x:Key="MSelectImageCannotOpenImage">A {0} képet nem lehet megnyitni.</system:String>
+    <system:String x:Key="MSelectImageCannotCopyToClipboard">A képet nem lehet vágólapra másolni.</system:String>
+    <system:String x:Key="MSelectImageCannotCutToClipboard">A képet nem lehet vágólapra tenni.</system:String>
+    <system:String x:Key="MSelectImageCannotPasteFromClipboard">A vágólapról nem sikerült képet bemásolni.</system:String>
+    <system:String x:Key="MSelectImageCannotSaveImage">A {0} képet nem sikerült menteni.</system:String>
+    <system:String x:Key="MSelectImageTooltipOpenFolder">Kép megnyitása a fájlrendszerről. Drag and drop is működik</system:String>
+    <system:String x:Key="MSelectImageTooltipPaste">Kép beszúrása vágólapról</system:String>
+    <system:String x:Key="MSelectImageTooltipRotate">Kép forgatása jobbra</system:String>
+    <system:String x:Key="MSelectImageTooltipFit">Kép igazítása vízszintesen vagy függőlegesen</system:String>
+
+    <!-- MinMaxRange and MinTypMax -->
+    <system:String x:Key="RangeMinValueFieldName">Min.</system:String>
+    <system:String x:Key="RangeTypValueFieldName">Tip.</system:String>
+    <system:String x:Key="RangeMaxValueFieldName">Max.</system:String>
+
+    <!-- MPdfViewer -->
+    <system:String x:Key="MPdfViewerInfoDialogHeader">Pdf információk</system:String>
+    <system:String x:Key="MPdfViewerSidePanelTooltip">Oldalpanel megjelenítése</system:String>
+    <system:String x:Key="MPdfViewerSearchTooltip">Szöveg keresése</system:String>
+    <system:String x:Key="MPdfViewerSaveAsTooltip">Mentés</system:String>
+    <system:String x:Key="MPdfViewerPrintTooltip">Nyomtatás</system:String>
+    <system:String x:Key="MPdfViewerInfoTooltip">Pdf információk megjelenítése</system:String>
+    <system:String x:Key="MPdfViewerPreviousPageTooltip">Előző oldal</system:String>
+    <system:String x:Key="MPdfViewerNextPageTooltip">Következő oldal</system:String>
+    <system:String x:Key="MPdfViewerCurrentPageNumberTooltip">Aktuális oldalszám</system:String>
+    <system:String x:Key="MPdfViewerPageNumberOf">/ {0}</system:String>
+    <system:String x:Key="MPdfViewerZoomInTooltip">Nagyítás</system:String>
+    <system:String x:Key="MPdfViewerZoomOutTooltip">Kicsinyítés</system:String>
+    <system:String x:Key="MPdfViewerZoomLevelTooltip">Aktuális nagyítás mértéke</system:String>
+    <system:String x:Key="MPdfViewerRotateLeftTooltip">Forgatás balra</system:String>
+    <system:String x:Key="MPdfViewerRotateRightTooltip">Forgatás jobbra</system:String>
+    <system:String x:Key="MPdfViewerFitHeightTooltip">Igazítás teljes magasságra</system:String>
+    <system:String x:Key="MPdfViewerFitWidthTooltip">Igazítás teljes szélességre</system:String>
+    <system:String x:Key="MPdfViewerBookModeTooltip">Váltás egy és kétoldalas nézet között</system:String>
+
+    <system:String x:Key="MPdfViewerSidePanelTabBookmarks">Könyvjelzők</system:String>
+    <system:String x:Key="MPdfViewerSidePanelTabThumbnails">Áttekintő</system:String>
+
+    <system:String x:Key="MPdfViewerSearchPrevMatchTooltip">Előző találat</system:String>
+    <system:String x:Key="MPdfViewerSearchNextMatchTooltip">Következő találat</system:String>
+    <system:String x:Key="MPdfViewerSearchMatchCaseTooltip">Kis- és nagybetűk különbözőek</system:String>
+    <system:String x:Key="MPdfViewerSearchMatchWholeWordsTooltip">Teljes szavak keresése</system:String>
+    <system:String x:Key="MPdfViewerSearchHighlightAllMatchesTooltip">Összes találat mutatása</system:String>
+    <system:String x:Key="MPdfViewerSearchNoMatchesFoundTooltip">Nincs találat</system:String>
+    <system:String x:Key="MPdfViewerSearchWrapAroundTooltip">A keresés elérte a kiindulópontot</system:String>
+    <system:String x:Key="MPdfViewerSearchCloseTooltip">Keresés bezárása</system:String>
+    <system:String x:Key="MPdfViewerSearchMatchesCount">{0} / {1} találat</system:String>
+
+    <system:String x:Key="MPdfViewerInfoFileName">Fájlnév</system:String>
+    <system:String x:Key="MPdfViewerInfoFileSize">Fájlméret</system:String>
+    <system:String x:Key="MPdfViewerInfoFileSizeFormat">{0:0.0} kB ({1} byte)</system:String>
+    <system:String x:Key="MPdfViewerInfoTitle">Cím</system:String>
+    <system:String x:Key="MPdfViewerInfoAuthor">Szerző</system:String>
+    <system:String x:Key="MPdfViewerInfoSubject">Tárgy</system:String>
+    <system:String x:Key="MPdfViewerInfoKeywords">Kulcsszavak</system:String>
+    <system:String x:Key="MPdfViewerInfoCreationDate">Létrehozás dátuma</system:String>
+    <system:String x:Key="MPdfViewerInfoModificationDate">Módosítás dátuma</system:String>
+    <system:String x:Key="MPdfViewerInfoCreator">Alkotó program</system:String>
+    <system:String x:Key="MPdfViewerInfoProducer">PDF készítő</system:String>
+    <system:String x:Key="MPdfViewerInfoVersion">PDF verzió</system:String>
+    <system:String x:Key="MPdfViewerInfoPageCount">Oldalszám</system:String>
+    <system:String x:Key="MPdfViewerInfoPageSize">Lapméret</system:String>
+    <system:String x:Key="MPdfViewerInfoPageSizeFormat">{0:0.0} x {1:0.0} mm</system:String>
+
+    <system:String x:Key="MPdfViewerSaveDialogHeader">PDF file mentése</system:String>
+    <system:String x:Key="MPdfViewerSaveDialogFilter">PDF fájlok</system:String>
+    <system:String x:Key="MPdfViewerSaveAsDone">A PDF sikeresen mentve.</system:String>
+    <system:String x:Key="MPdfViewerSaveAsFailed">Az PDF mentése sikertelen.</system:String>
+
+    <!-- MTextEditor -->
+    <system:String x:Key="MTextEditorSearchTooltip">Szöveg keresése</system:String>
+    <system:String x:Key="MTextEditorPrintTooltip">Nyomtatás</system:String>
+    <system:String x:Key="MTextEditorInfoTooltip">Fájl információk megjelenítése</system:String>
+    <system:String x:Key="MTextEditorUndo">Visszavonás</system:String>
+    <system:String x:Key="MTextEditorRedo">Újra</system:String>
+    <system:String x:Key="MTextEditorIncreaseFontSizeTooltip">Betüméret növelése</system:String>
+    <system:String x:Key="MTextEditorDecreaseFontSizeTooltip">Betüméret csökkentése</system:String>
+    <system:String x:Key="MTextEditorCurrentFontSizeTooltip">Aktuális betüméret</system:String>
+    <system:String x:Key="MTextEditorShowLineNumber">Sorok számozásának megjelenítése</system:String>
+    <system:String x:Key="MTextEditorWordWrap">Automatikus sortörés</system:String>
+
+    <system:String x:Key="MTextEditorSearchPrevMatchTooltip">Előző találat</system:String>
+    <system:String x:Key="MTextEditorSearchNextMatchTooltip">Következő találat</system:String>
+    <system:String x:Key="MTextEditorSearchMatchCaseTooltip">Kis- és nagybetűk különbözőek</system:String>
+    <system:String x:Key="MTextEditorSearchMatchWholeWordsTooltip">Teljes szavak keresése</system:String>
+    <system:String x:Key="MTextEditorSearchHighlightAllMatchesTooltip">Összes találat mutatása</system:String>
+    <system:String x:Key="MTextEditorSearchNoMatchesFoundTooltip">Nincs találat</system:String>
+    <system:String x:Key="MTextEditorSearchWrapAroundTooltip">A keresés elérte a kiindulópontot</system:String>
+    <system:String x:Key="MTextEditorSearchCloseTooltip">Keresés bezárása</system:String>
+    <system:String x:Key="MTextEditorSearchMatchesCount">{0} / {1} találat</system:String>
+
+    <system:String x:Key="MTextEditorInfoDialogHeader">Fájl információk</system:String>
+    <system:String x:Key="MTextEditorInfoFileName">Fájlnév</system:String>
+    <system:String x:Key="MTextEditorInfoFileSize">Fájlméret</system:String>
+    <system:String x:Key="MTextEditorInfoFileSizeFormat">{0:0.0} kB ({1} byte)</system:String>
+    <system:String x:Key="MTextEditorInfoFileFormat">Fájlformátum</system:String>
+    <system:String x:Key="MTextEditorInfoLineNumbers">Sorok száma</system:String>
+    
+</ResourceDictionary>
