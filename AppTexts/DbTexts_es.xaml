@@ -4,11 +4,11 @@
                     xml:lang="es">
 
     <!-- Part categories -->
-    <system:String x:Key="DbPartCategoryNameRoot">Todo</system:String>
+    <system:String x:Key="DbPartCategoryNameRoot">Global</system:String>
     <system:String x:Key="DbPartCategoryDescRoot">Todos los componentes</system:String>
 
     <!-- Part categories - Analog IC -->
-    <system:String x:Key="DbPartCategoryNameAnalogIC">CI Analógico</system:String>
+    <system:String x:Key="DbPartCategoryNameAnalogIC">C.I. Analógico</system:String>
     <system:String x:Key="DbPartCategoryDescAnalogIC">Circuitos Integrados Analógicos</system:String>
 
     <system:String x:Key="DbPartCategoryNameADC">Convertidor A/D</system:String>
@@ -27,7 +27,7 @@
     <system:String x:Key="DbPartCategoryParamDescADCDifferential">Entrada diferencial</system:String>
 
     <system:String x:Key="DbPartCategoryNameAudioAmp">Amplificador de audio</system:String>
-    <system:String x:Key="DbPartCategoryDescAudioAmp">CI para amplificadores de audio</system:String>
+    <system:String x:Key="DbPartCategoryDescAudioAmp">C.I. de amplificador de audio</system:String>
     <system:String x:Key="DbPartCategoryParamNameAudioAmpChannels">Canales</system:String>
     <system:String x:Key="DbPartCategoryParamDescAudioAmpChannels">Número de canales</system:String>
     <system:String x:Key="DbPartCategoryParamNameAudioAmpClass">Clase</system:String>
@@ -89,7 +89,7 @@
     <system:String x:Key="DbPartCategoryParamNameMOSFETDriverIo">Io</system:String>
     <system:String x:Key="DbPartCategoryParamDescMOSFETDriverIo">Corriente de salida</system:String>
 
-    <system:String x:Key="DbPartCategoryNameMiscAnalog">Otros CI analógicos</system:String>
+    <system:String x:Key="DbPartCategoryNameMiscAnalog">Otros C.I. analógicos</system:String>
     <system:String x:Key="DbPartCategoryDescMiscAnalog">Otros circuitos integrados analógicos</system:String>
     <system:String x:Key="DbPartCategoryParamNameMiscAnalogVcc">Vcc</system:String>
     <system:String x:Key="DbPartCategoryParamDescMiscAnalogVcc">Rango de tensión de alimentación</system:String>
@@ -190,7 +190,7 @@
     <system:String x:Key="DbPartCategoryParamDescReferenceTolerance">Precisión en porcentaje</system:String>
 
     <!-- Part categories - Digital IC -->
-    <system:String x:Key="DbPartCategoryNameDigitalIC">CI Digital</system:String>
+    <system:String x:Key="DbPartCategoryNameDigitalIC">C.I. Digital</system:String>
     <system:String x:Key="DbPartCategoryDescDigitalIC">Circuitos integrados digitales</system:String>
 
     <system:String x:Key="DbPartCategoryNameLogic">Lógico</system:String>
@@ -313,7 +313,7 @@
 
     <!-- Part categories - Digital IC - Interface -->
     <system:String x:Key="DbPartCategoryNameInterface">Interfaz</system:String>
-    <system:String x:Key="DbPartCategoryDescInterface">CI de interfaz</system:String>
+    <system:String x:Key="DbPartCategoryDescInterface">C.I. de interfaz</system:String>
     <system:String x:Key="DbPartCategoryParamNameInterfaceFunction">Función</system:String>
     <system:String x:Key="DbPartCategoryParamDescInterfaceFunction">Función</system:String>
     <system:String x:Key="DbPartCategoryParamNameInterfaceType">Tipo</system:String>
@@ -334,7 +334,7 @@
     <system:String x:Key="DbPartCategoryParamDescRTCVcc">Rango de tensión de alimentación</system:String>
 
     <!-- Part categories - Digital IC - Misc. Digital -->
-    <system:String x:Key="DbPartCategoryNameMiscDigital">Otros CI digitales</system:String>
+    <system:String x:Key="DbPartCategoryNameMiscDigital">Otros C.I. digitales</system:String>
     <system:String x:Key="DbPartCategoryDescMiscDigital">Otros circuitos integrados digitales</system:String>
     <system:String x:Key="DbPartCategoryParamNameMiscDigitalVcc">Vcc</system:String>
     <system:String x:Key="DbPartCategoryParamDescMiscDigitalVcc">Rango de tensión de alimentación</system:String>
@@ -357,7 +357,7 @@
     <system:String x:Key="DbPartCategoryParamDescDiodeTrr">Tiempo de recuperación en inversa</system:String>
 
     <system:String x:Key="DbPartCategoryNameBridgeRectifier">Puente de diodos</system:String>
-    <system:String x:Key="DbPartCategoryDescBridgeRectifier">Rectificador en puente de diodos</system:String>
+    <system:String x:Key="DbPartCategoryDescBridgeRectifier">Rectificadores en puente de diodos</system:String>
 
     <system:String x:Key="DbPartCategoryNameRectifier">Rectificador</system:String>
     <system:String x:Key="DbPartCategoryDescRectifier">Diodos rectificadores</system:String>
@@ -417,7 +417,7 @@
     <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericSupplyVoltage">Alimentación</system:String>
     <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericSupplyVoltage">Tension de alimentación</system:String>
     <system:String x:Key="DbPartCategoryParamNameDisplayAlphanumericController">Controlador</system:String>
-    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericController">CI controlador</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayAlphanumericController">C.I. controlador</system:String>
 
     <system:String x:Key="DbPartCategoryNameDisplayGraphic">Gráficas</system:String>
     <system:String x:Key="DbPartCategoryDescDisplayGraphic">Pantallas gráficas/de matriz</system:String>
@@ -434,7 +434,7 @@
     <system:String x:Key="DbPartCategoryParamNameDisplayGraphicSupplyVoltage">Alimentación</system:String>
     <system:String x:Key="DbPartCategoryParamDescDisplayGraphicSupplyVoltage">Tensión de alimentación</system:String>
     <system:String x:Key="DbPartCategoryParamNameDisplayGraphicController">Controlador</system:String>
-    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicController">CI controlador</system:String>
+    <system:String x:Key="DbPartCategoryParamDescDisplayGraphicController">C.I. controlador</system:String>
 
     <system:String x:Key="DbPartCategoryNameLED">LED</system:String>
     <system:String x:Key="DbPartCategoryDescLED">Diodos de emisión de luz</system:String>
@@ -617,7 +617,7 @@
     <system:String x:Key="DbPartCategoryNameTransistor">Transistor</system:String>
     <system:String x:Key="DbPartCategoryDescTransistor">Transistores</system:String>
 
-    <system:String x:Key="DbPartCategoryNameBJT">BJT</system:String>
+    <system:String x:Key="DbPartCategoryNameBJT">Bipolar</system:String>
     <system:String x:Key="DbPartCategoryDescBJT">Transistor de unión bipolar</system:String>
     
     <system:String x:Key="DbPartCategoryParamNameBJTMaterial">Material</system:String>
@@ -751,7 +751,7 @@
 
 
     <!-- Storage locations -->
-    <system:String x:Key="DbStorageLocationNameRoot">Todo</system:String>
+    <system:String x:Key="DbStorageLocationNameRoot">Global</system:String>
     <system:String x:Key="DbStorageLocationDescRoot">Todas las ubicaciones de almacén</system:String>
 
     <system:String x:Key="DbStorageLocationNameUnknown">Desconocida</system:String>
@@ -765,41 +765,41 @@
     <system:String x:Key="DbPackageDescUnknown">Sin especificar</system:String>
 
     <system:String x:Key="DbPackageCategoryNameBridge">Puente</system:String>
-    <system:String x:Key="DbPackageCategoryDescBridge">Encapsulado de Puente de Diodos</system:String>
+    <system:String x:Key="DbPackageCategoryDescBridge">Puente de Diodos</system:String>
     <system:String x:Key="DbPackageDescBridgeDIL">Puente de Diodos DIL</system:String>
     <system:String x:Key="DbPackageDescBridgeInLine">Puente de Diodos en Fila</system:String>
     <system:String x:Key="DbPackageDescBridgeRound">Puente de Diodos Redondo</system:String>
     <system:String x:Key="DbPackageDescBridgeQuad">Puente de Diodos Cuadrado</system:String>
-    <system:String x:Key="DbPackageDescBridge3PhaseQuad">Puente de Diodos Cuadrado de 3 Fases</system:String>
+    <system:String x:Key="DbPackageDescBridge3PhaseQuad">Puente de Diodos de 3 Fases Cuadrado</system:String>
 
     <system:String x:Key="DbPackageCategoryNameCapacitor">Condensador</system:String>
-    <system:String x:Key="DbPackageCategoryDescCapacitor">Encapsulado de condensador</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitor">Condensador</system:String>
     <system:String x:Key="DbPackageDescCapacitorMLCC">Encapsulado de condensador cerámico multicapa</system:String>
     <system:String x:Key="DbPackageDescCapacitorCeramicDisc">Encapsulado de condensador cerámico de disco</system:String>
     <system:String x:Key="DbPackageDescCapacitorFilm">Encapsulado de condensador de película</system:String>
 
-    <system:String x:Key="DbPackageCategoryNameCapacitorPolarised">Condensador pol.</system:String>
-    <system:String x:Key="DbPackageCategoryDescCapacitorPolarised">Encapsulado de condensador polarizado</system:String>
+    <system:String x:Key="DbPackageCategoryNameCapacitorPolarised">Cond. polarizado</system:String>
+    <system:String x:Key="DbPackageCategoryDescCapacitorPolarised">Condensador polarizado</system:String>
     <system:String x:Key="DbPackageDescCapacitorElectrolytic">Encapsulado de condensador electrolítico</system:String>
     <system:String x:Key="DbPackageDescCapacitorTantalun">Encapsulado de condensador de tántalo</system:String>
 
     <system:String x:Key="DbPackageCategoryNameDecawatt">Decawatt</system:String>
-    <system:String x:Key="DbPackageCategoryDescDecawatt">Encapsulado de transistor Decawatt</system:String>
+    <system:String x:Key="DbPackageCategoryDescDecawatt">Transistor Decawatt</system:String>
     <system:String x:Key="DbPackageDescDecawatt">Encapsulado Decawatt</system:String>
     <system:String x:Key="DbPackageDescDecawatt2">Encapsulado Decawatt doble</system:String>
     <system:String x:Key="DbPackageDescDecawatt3">Encapsulado Decawatt triple</system:String>
 
     <system:String x:Key="DbPackageCategoryNameDisplay">Pantalla</system:String>
     <system:String x:Key="DbPackageCategoryDescDisplay">Pantalla</system:String>
-    <system:String x:Key="DbPackageDescDisplayLED">Pantalla LED</system:String>
+    <system:String x:Key="DbPackageDescDisplayLED">Dígito(s) LED</system:String>
     <system:String x:Key="DbPackageDescDisplayLCD">Pantalla de cristal líquido</system:String>
 
     <system:String x:Key="DbPackageCategoryNameCDIP">CDIP</system:String>
-    <system:String x:Key="DbPackageCategoryDescCDIP">Encapsulado DIP cerámico con ventana</system:String>
+    <system:String x:Key="DbPackageCategoryDescCDIP">DIP cerámico con ventana</system:String>
     <system:String x:Key="DbPackageDescCDIL">Encapsulado DIP cerámico con ventana</system:String>
 
     <system:String x:Key="DbPackageCategoryNameDIP">DIP</system:String>
-    <system:String x:Key="DbPackageCategoryDescDIP">Encapsulado DIP (doble fila de pines)</system:String>
+    <system:String x:Key="DbPackageCategoryDescDIP">Encapsulado DIP (2 filas de pines)</system:String>
     <system:String x:Key="DbPackageDescDIL">Encapsulado DIP</system:String>
     <system:String x:Key="DbPackageDescDILTabs">Encapsulado DIP con lengüetas</system:String>
     <system:String x:Key="DbPackageDescDILWide">Encapsulado DIP ancho</system:String>
@@ -809,12 +809,12 @@
     <system:String x:Key="DbPackageDescDiode">Encapsulado de diodo</system:String>
 
     <system:String x:Key="DbPackageCategoryNameInductorSMD">Bobina SMD</system:String>
-    <system:String x:Key="DbPackageCategoryDescInductorSMD">Encapsulado de bobina SMD</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorSMD">Bobina de montaje superficial</system:String>
     <system:String x:Key="DbPackageDescInductorShilded">Bobina SMD blindada</system:String>
     <system:String x:Key="DbPackageDescInductorUnshilded">Bobina SMD no blindada</system:String>
 
     <system:String x:Key="DbPackageCategoryNameInductorTH">Bobina THT</system:String>
-    <system:String x:Key="DbPackageCategoryDescInductorTH">Encapsulado de bobina THT</system:String>
+    <system:String x:Key="DbPackageCategoryDescInductorTH">Bobina de montaje por orificio</system:String>
     <system:String x:Key="DbPackageDescInductorAxialLeaded">Bobina axial</system:String>
     <system:String x:Key="DbPackageDescInductorRadialLeaded">Bobina radial</system:String>
     <system:String x:Key="DbPackageDescInductorToroid">Bobina toroidal</system:String>
@@ -824,7 +824,7 @@
     <system:String x:Key="DbPackageDescLED">Diodo emisor de luz</system:String>
 
     <system:String x:Key="DbPackageCategoryNameOpto">Opto</system:String>
-    <system:String x:Key="DbPackageCategoryDescOpto">Encapsulado de optoacoplador</system:String>
+    <system:String x:Key="DbPackageCategoryDescOpto">Optoacoplador</system:String>
     <system:String x:Key="DbPackageDescOptoGullWings">Encapsulado de doble fila (montaje superficial)</system:String>
     <system:String x:Key="DbPackageDescOptoMFP">Encapsulado MFP</system:String>
     <system:String x:Key="DbPackageDescOptoSOIC">Encapsulado SOIC opto</system:String>
@@ -834,12 +834,12 @@
     <system:String x:Key="DbPackageDescPLCC">Encapsulado PLCC</system:String>
 
     <system:String x:Key="DbPackageCategoryNamePotmeter">Potenciómetro</system:String>
-    <system:String x:Key="DbPackageCategoryDescPotmeter">Potenciómetros de ajuste y de control</system:String>
+    <system:String x:Key="DbPackageCategoryDescPotmeter">Potenciómetros de ajuste/control</system:String>
     <system:String x:Key="DbPackageDescPotmeterTrimmer">Potenciómetro de ajuste</system:String>
     <system:String x:Key="DbPackageDescPotmeterControl">Potenciómetro de control</system:String>
 
     <system:String x:Key="DbPackageCategoryNameResistor">Resistencia</system:String>
-    <system:String x:Key="DbPackageCategoryDescResistor">Encapsulados de resistencia</system:String>
+    <system:String x:Key="DbPackageCategoryDescResistor">Resistencias</system:String>
     <system:String x:Key="DbPackageDescResistorSMD0402">Resistencia SMD de 0.0625W o 0.125W</system:String>
     <system:String x:Key="DbPackageDescResistorSMD0603">Resistencia SMD de 0.1W o 0.2W</system:String>
     <system:String x:Key="DbPackageDescResistorSMD0805">Resistencia SMD de 0.125W o 0.25W</system:String>
@@ -870,14 +870,14 @@
     <system:String x:Key="DbPackageDescOscillator">Encapsulado de oscilador</system:String>
 
     <system:String x:Key="DbPackageCategoryNameSIP">SIP</system:String>
-    <system:String x:Key="DbPackageCategoryDescSIP">Encapsulado SIP (1 fila)</system:String>
+    <system:String x:Key="DbPackageCategoryDescSIP">Encapsulado SIP (de 1 fila)</system:String>
     <system:String x:Key="DbPackageDescSIP">Encapsulado SIP</system:String>
     <system:String x:Key="DbPackageDescSIPMiddlePower">Encapsulado SIP de media potencia</system:String>
     <system:String x:Key="DbPackageDescSIPPower">Encapsulado SIP de potencia</system:String>
     <system:String x:Key="DbPackageDescSIPPowerZigZag">Encapsulado SIP de potencia en zig-zag</system:String>
 
     <system:String x:Key="DbPackageCategoryNameSOD">SOD</system:String>
-    <system:String x:Key="DbPackageCategoryDescSOD">Encapsulado de diodo SOD</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOD">Diodo SOD</system:String>
     <system:String x:Key="DbPackageDescMELF">Encapsulado de diodo MELF</system:String>
     <system:String x:Key="DbPackageDescSOD">Encapsulado de diodo SOD</system:String>
 
@@ -898,11 +898,11 @@
     <system:String x:Key="DbPackageDescSOP">Encapsulado SOP</system:String>
 
     <system:String x:Key="DbPackageCategoryNameSOT">SOT</system:String>
-    <system:String x:Key="DbPackageCategoryDescSOT">Encapsulado de transistor SOT</system:String>
+    <system:String x:Key="DbPackageCategoryDescSOT">Transistor SOT</system:String>
     <system:String x:Key="DbPackageDescSOT">Encapsulado de transistor SOT</system:String>
 
     <system:String x:Key="DbPackageCategoryNameStud">Perno</system:String>
-    <system:String x:Key="DbPackageCategoryDescStud">Encapsulado de montaje por perno</system:String>
+    <system:String x:Key="DbPackageCategoryDescStud">Dispositivo de montaje por perno</system:String>
     <system:String x:Key="DbPackageDescStudDiodeM5">Encapsulado de diodo con perno (M5x0.8)</system:String>
     <system:String x:Key="DbPackageDescStudDiodeM6orM8">Encapsulado de diodo con perno (M6x1, M8x1.25)</system:String>
     <system:String x:Key="DbPackageDescStudDiodeM12">Encapsulado de diodo con perno (M12x1.75)</system:String>
@@ -914,7 +914,7 @@
     <system:String x:Key="DbPackageDescStudScrM24">Encapsulado de tiristor con perno (M24x1.5)</system:String>
 
     <system:String x:Key="DbPackageCategoryNameTOPlastic">TO plástico</system:String>
-    <system:String x:Key="DbPackageCategoryDescTOPlastic">Encapsulado plástico de transistor</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOPlastic">Transistor TO de plástico</system:String>
     <system:String x:Key="DbPackageDescTOPlasticIsolated">Encapsulado de plástico con lengüeta aislada</system:String>
     <system:String x:Key="DbPackageDescTOPlasticIsolated2Pin">Encapsulado de plástico con lengüeta aislada de 2 terminales</system:String>
     <system:String x:Key="DbPackageDescTOPlasticIsolated3Pin">Encapsulado de plástico con lengüeta aislada de 3 terminales</system:String>
@@ -926,8 +926,8 @@
     <system:String x:Key="DbPackageDescTOPlastic11Pin">Encapsulado de plástico de 11 terminales</system:String>
     <system:String x:Key="DbPackageDescTOPlastic15Pin">Encapsulado de plástico de 15 terminales</system:String>
 
-    <system:String x:Key="DbPackageCategoryNameTOMetal">TO metal</system:String>
-    <system:String x:Key="DbPackageCategoryDescTOMetal">Encapsulado metálico de transistor</system:String>
+    <system:String x:Key="DbPackageCategoryNameTOMetal">TO metálico</system:String>
+    <system:String x:Key="DbPackageCategoryDescTOMetal">Transistor TO de metal</system:String>
     <system:String x:Key="DbPackageDescTOMetal">Encapsulado de metal</system:String>
 
     <system:String x:Key="DbPackageCategoryNameTQFP">TQFP</system:String>
@@ -935,7 +935,7 @@
     <system:String x:Key="DbPackageDescTQFP">Encapsulado cuadrado TQFP</system:String>
 
     <system:String x:Key="DbPackageCategoryNameTransformer">Transformador</system:String>
-    <system:String x:Key="DbPackageCategoryDescTransformer">Transformadores de red</system:String>
+    <system:String x:Key="DbPackageCategoryDescTransformer">Transformador de red</system:String>
     <system:String x:Key="DbPackageDescTransformer">Transformador PCB</system:String>
 
     <system:String x:Key="DbPackageCategoryNameTSSOP">TSSOP</system:String>
@@ -1098,7 +1098,7 @@
     <system:String x:Key="DbManufacturerDescZilog">Zilog, Inc.</system:String>
 
     <!-- Projects -->
-    <system:String x:Key="DbProjectNameRoot">Todo</system:String>
+    <system:String x:Key="DbProjectNameRoot">Global</system:String>
     <system:String x:Key="DbProjectDescRoot">Todos los proyectos</system:String>
 
 </ResourceDictionary>
