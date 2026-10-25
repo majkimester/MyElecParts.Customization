@@ -76,7 +76,7 @@
     <system:String x:Key="DialogButtonCancel">Cancelar</system:String>
     <system:String x:Key="DialogButtonClose">Cerrar</system:String>
     <system:String x:Key="DialogButtonSave">Guardar</system:String>
-    <system:String x:Key="DialogButtonDelete">Borrar</system:String>
+    <system:String x:Key="DialogButtonDelete">Eliminar</system:String>
     <system:String x:Key="DialogButtonNext">Siguiente</system:String>
     <system:String x:Key="DialogButtonExit">Salir</system:String>
     <system:String x:Key="DialogButtonContinue">Continuar</system:String>
@@ -86,14 +86,14 @@
     <system:String x:Key="ToastHeaderInfo">Información</system:String>
     <system:String x:Key="ToastHeaderWarning">Aviso</system:String>
     <system:String x:Key="ToastHeaderError">Error</system:String>
-    <system:String x:Key="ToastHeaderSuccess">Perfecto</system:String>
+    <system:String x:Key="ToastHeaderSuccess">¡Perfecto!</system:String>
     
     <!-- MDataGrid -->
-    <system:String x:Key="MDataGridNoRecordsFound">No se ha encontrado ningún registro</system:String>
+    <system:String x:Key="MDataGridNoRecordsFound">No se encontró ningún registro</system:String>
     <system:String x:Key="MDataGridCopyCellValue">Copiar el contenido de la celda</system:String>
     <system:String x:Key="MDataGridGoToLink">Abrir {0}</system:String>
-    <system:String x:Key="MDataGridDetailedFilter">Filtro detallado</system:String>
-    <system:String x:Key="MDataGridButtonClearFilter">Borrar filtro</system:String>
+    <system:String x:Key="MDataGridDetailedFilter">Filtro de datos</system:String>
+    <system:String x:Key="MDataGridButtonClearFilter">Quitar filtro</system:String>
     <system:String x:Key="MDataGridButtonApplyFilter">Aplicar filtro</system:String>
     <system:String x:Key="MDataGridButtonFilter">Filtro</system:String>
 
@@ -105,7 +105,7 @@
     <system:String x:Key="MDataGridFilterExpressionGenericExamples"  xml:space="preserve">Ejemplos de filtro general:
        
     apple ⟶ Cualquier columna que contenga "apple", ignorando mayúsculas
-    apple* ⟶ Cualquier columna que empiece con "apple"
+    apple* ⟶ Cualquier columna que empiece por "apple"
     *apple ⟶ Cualquier columna que termine en "apple"
     "apple" ⟶ Cualquier columna que coincida exactamente
         
@@ -113,7 +113,7 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
 
     apple AND banana ⟶ Alguna columna contiene "apple" y otra contiene "banana"
     apple OR banana ⟶ Cualquier columna que contenga "apple" o "banana"
-    NOT apple* ⟶ Ninguna columna empieza con "apple"
+    NOT apple* ⟶ Ninguna columna empieza por "apple"
     (apple OR banana) AND NOT juice ⟶ Cualquiera de las dos pero que no contenga "juice"
         
 También se admite la comparación de columnas:
@@ -127,7 +127,7 @@ También se admite la comparación de columnas:
     <system:String x:Key="MDataGridFilterExpressionColumnExamples"  xml:space="preserve">Ejemplos de filtro de columna:
        
     apple ⟶ La columna contiene "apple", ignorando mayúsculas
-    apple* ⟶ La columna empieza con "apple"
+    apple* ⟶ La columna empieza por "apple"
     *apple ⟶ La columna termina en "apple"
     "apple" ⟶ La columna coincide exactamente
     "" ⟶ La columna está vacía
@@ -136,7 +136,7 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
 
     apple AND banana ⟶ La columna contiene ambos
     apple OR banana ⟶ La columna contiene cualquiera de las dos
-    apple OR "" ⟶ La columna contiene "apple" or está vacía
+    apple OR "" ⟶ La columna contiene "apple" o está vacía
     NOT apple* ⟶ La columna no empieza por "apple"
     (apple OR banana) AND NOT juice ⟶ Cualquiera de las dos pero no "juice" 
     NOT "" ⟶ La columna no está vacía
@@ -174,7 +174,7 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
     <system:String x:Key="MImageViewerZoomLevelTooltip">Nivel de zoom actual</system:String>
     <system:String x:Key="MImageViewerRotateLeftTooltip">Girar a la izquierda</system:String>
     <system:String x:Key="MImageViewerRotateRightTooltip">Girar a la derecha</system:String>
-    <system:String x:Key="MImageViewerFitTooltip">Ajustar el ancho o alto de la imagen</system:String>
+    <system:String x:Key="MImageViewerFitTooltip">Ajustar imagen a lo ancho, o a lo alto</system:String>
     <system:String x:Key="MImageViewerFitHeightTooltip">Ajustar a lo alto</system:String>
     <system:String x:Key="MImageViewerFitWidthTooltip">Ajustar a lo ancho</system:String>
 
@@ -207,7 +207,7 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
     <system:String x:Key="RangeMaxValueFieldName">Máx.</system:String>
 
     <!-- MPdfViewer -->
-    <system:String x:Key="MPdfViewerInfoDialogHeader">Información de PDF</system:String>
+    <system:String x:Key="MPdfViewerInfoDialogHeader">Información PDF</system:String>
     <system:String x:Key="MPdfViewerSidePanelTooltip">Mostrar panel lateral</system:String>
     <system:String x:Key="MPdfViewerSearchTooltip">Buscar texto</system:String>
     <system:String x:Key="MPdfViewerSaveAsTooltip">Guardar como</system:String>
@@ -229,9 +229,9 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
     <system:String x:Key="MPdfViewerSidePanelTabBookmarks">Marcadores</system:String>
     <system:String x:Key="MPdfViewerSidePanelTabThumbnails">Miniaturas</system:String>
 
-    <system:String x:Key="MPdfViewerSearchPrevMatchTooltip">Buscar anterior</system:String>
-    <system:String x:Key="MPdfViewerSearchNextMatchTooltip">Buscar siguiente</system:String>
-    <system:String x:Key="MPdfViewerSearchMatchCaseTooltip">Mayús-/minúsculas a parte</system:String>
+    <system:String x:Key="MPdfViewerSearchPrevMatchTooltip">Caso anterior</system:String>
+    <system:String x:Key="MPdfViewerSearchNextMatchTooltip">Caso siguiente</system:String>
+    <system:String x:Key="MPdfViewerSearchMatchCaseTooltip">Distinguir Mayús-/minúsculas</system:String>
     <system:String x:Key="MPdfViewerSearchMatchWholeWordsTooltip">Sólo palabras completas</system:String>
     <system:String x:Key="MPdfViewerSearchHighlightAllMatchesTooltip">Resaltar todos los casos</system:String>
     <system:String x:Key="MPdfViewerSearchNoMatchesFoundTooltip">No se encontró ningún caso</system:String>
@@ -261,32 +261,32 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
     <system:String x:Key="MPdfViewerSaveAsFailed">No se pudo guardar el archivo PDF.</system:String>
 
     <!-- MTextEditor -->
-    <system:String x:Key="MTextEditorSearchTooltip">Search text</system:String>
-    <system:String x:Key="MTextEditorPrintTooltip">Print</system:String>
-    <system:String x:Key="MTextEditorInfoTooltip">Show file info</system:String>
-    <system:String x:Key="MTextEditorUndo">Undo</system:String>
-    <system:String x:Key="MTextEditorRedo">Redo</system:String>
-    <system:String x:Key="MTextEditorIncreaseFontSizeTooltip">Increase font size</system:String>
-    <system:String x:Key="MTextEditorDecreaseFontSizeTooltip">Decrease font size</system:String>
-    <system:String x:Key="MTextEditorCurrentFontSizeTooltip">Current font size</system:String>
-    <system:String x:Key="MTextEditorShowLineNumber">Show line number</system:String>
-    <system:String x:Key="MTextEditorWordWrap">Word wrap</system:String>
+    <system:String x:Key="MTextEditorSearchTooltip">Buscar texto</system:String>
+    <system:String x:Key="MTextEditorPrintTooltip">Imprimir</system:String>
+    <system:String x:Key="MTextEditorInfoTooltip">Mostrar información del archivo</system:String>
+    <system:String x:Key="MTextEditorUndo">Deshacer</system:String>
+    <system:String x:Key="MTextEditorRedo">Rehacer</system:String>
+    <system:String x:Key="MTextEditorIncreaseFontSizeTooltip">Aumentar tamaño de la fuente</system:String>
+    <system:String x:Key="MTextEditorDecreaseFontSizeTooltip">Reducir tamaño de la fuente</system:String>
+    <system:String x:Key="MTextEditorCurrentFontSizeTooltip">Tamaño actual de la fuente</system:String>
+    <system:String x:Key="MTextEditorShowLineNumber">Mostrar numeracón de líneas</system:String>
+    <system:String x:Key="MTextEditorWordWrap">Ajustar líneas</system:String>
 
-    <system:String x:Key="MTextEditorSearchPrevMatchTooltip">Previous match</system:String>
-    <system:String x:Key="MTextEditorSearchNextMatchTooltip">Next match</system:String>
-    <system:String x:Key="MTextEditorSearchMatchCaseTooltip">Match case</system:String>
-    <system:String x:Key="MTextEditorSearchMatchWholeWordsTooltip">Match Whole words</system:String>
-    <system:String x:Key="MTextEditorSearchHighlightAllMatchesTooltip">Highlight all matches</system:String>
-    <system:String x:Key="MTextEditorSearchNoMatchesFoundTooltip">No matches found.</system:String>
-    <system:String x:Key="MTextEditorSearchWrapAroundTooltip">Find reached the starting point of the search.</system:String>
-    <system:String x:Key="MTextEditorSearchCloseTooltip">Close search</system:String>
-    <system:String x:Key="MTextEditorSearchMatchesCount">{0} of {1} matches</system:String>
+    <system:String x:Key="MTextEditorSearchPrevMatchTooltip">Caso anterior</system:String>
+    <system:String x:Key="MTextEditorSearchNextMatchTooltip">Caso siguiente</system:String>
+    <system:String x:Key="MTextEditorSearchMatchCaseTooltip">Distinguir Mayúsculas/minúsculas</system:String>
+    <system:String x:Key="MTextEditorSearchMatchWholeWordsTooltip">Búsqueda de palabras completas</system:String>
+    <system:String x:Key="MTextEditorSearchHighlightAllMatchesTooltip">Resaltar todos los casos</system:String>
+    <system:String x:Key="MTextEditorSearchNoMatchesFoundTooltip">No se encontró ningún caso.</system:String>
+    <system:String x:Key="MTextEditorSearchWrapAroundTooltip">Se ha llegado al punto de inicio de la búsqueda.</system:String>
+    <system:String x:Key="MTextEditorSearchCloseTooltip">Cerrar búsqueda</system:String>
+    <system:String x:Key="MTextEditorSearchMatchesCount">{0} / {1} casos</system:String>
 
-    <system:String x:Key="MTextEditorInfoDialogHeader">File info</system:String>
-    <system:String x:Key="MTextEditorInfoFileName">File name</system:String>
-    <system:String x:Key="MTextEditorInfoFileSize">File size</system:String>
+    <system:String x:Key="MTextEditorInfoDialogHeader">Información del archivo</system:String>
+    <system:String x:Key="MTextEditorInfoFileName">Nombre de archivo</system:String>
+    <system:String x:Key="MTextEditorInfoFileSize">Tamaño de archivo</system:String>
     <system:String x:Key="MTextEditorInfoFileSizeFormat">{0:0.0} kB ({1} bytes)</system:String>
-    <system:String x:Key="MTextEditorInfoFileFormat">File format</system:String>
-    <system:String x:Key="MTextEditorInfoLineNumbers">Number of lines</system:String>
-    
+    <system:String x:Key="MTextEditorInfoFileFormat">Formato de archivo</system:String>
+    <system:String x:Key="MTextEditorInfoLineNumbers">Número de líneas</system:String>
+
 </ResourceDictionary>
