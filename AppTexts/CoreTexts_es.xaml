@@ -81,6 +81,7 @@
     <system:String x:Key="DialogButtonExit">Salir</system:String>
     <system:String x:Key="DialogButtonContinue">Continuar</system:String>
     <system:String x:Key="DialogButtonAdd">Añadir</system:String>
+    <system:String x:Key="DialogCheckboxConfirmation">Confirmación</system:String>
 
     <!-- Notification Toast -->
     <system:String x:Key="ToastHeaderInfo">Información</system:String>
@@ -289,4 +290,16 @@ Se admiten los operadores AND, OR y NOT, así como el uso de paréntesis:
     <system:String x:Key="MTextEditorInfoFileFormat">Formato de archivo</system:String>
     <system:String x:Key="MTextEditorInfoLineNumbers">Número de líneas</system:String>
 
+    <!-- MMarkdownViewer -->
+    <system:String x:Key="MMarkdownViewerSaveAsTooltip">Save as</system:String>
+    <system:String x:Key="MMarkdownViewerPrintTooltip">Print</system:String>
+    <system:String x:Key="MMarkdownViewerSelectAll">Select all</system:String>
+    <system:String x:Key="MMarkdownViewerCopySelectionAsText">Copy as text</system:String>
+    <system:String x:Key="MMarkdownViewerCopyAllAsMarkdown">Copy all as markdown</system:String>
+
+    <system:String x:Key="MMarkdownViewerSaveDialogHeader">Save as Markdown file</system:String>
+    <system:String x:Key="MMarkdownViewerSaveDialogFilter">Markdown files</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsDone">Markdown saved successfully.</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsFailed">Failed to save the Markdown file.</system:String>
+    
 </ResourceDictionary>

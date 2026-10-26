@@ -28,7 +28,7 @@
     <system:String x:Key="ButtonExit">Salir</system:String>
     <system:String x:Key="ButtonSelect">Seleccionar</system:String>
     <system:String x:Key="ButtonAccept">Aceptar</system:String>
-    <system:String x:Key="ButtonSolveCapcha">Resolver el Captcha</system:String>
+    <system:String x:Key="ButtonSolveCaptcha">Resolver el Captcha</system:String>
     <system:String x:Key="ButtonExport">Exportar</system:String>
     <system:String x:Key="ButtonImport">Importar</system:String>
     <system:String x:Key="ButtonContinue">Continuar</system:String>
@@ -296,7 +296,6 @@
 
 {2} componente(s) ya utiliza(n) esas opciones y el valor almacenado del parámetro se eliminará.</system:String>
 
-    <system:String x:Key="ColumnPartCategoryParameterID">ID</system:String>
     <system:String x:Key="ColumnPartCategoryParameterName">Nombre</system:String>
     <system:String x:Key="ColumnPartCategoryParameterDescription">Descripción</system:String>
     <system:String x:Key="ColumnPartCategoryParameterType">Tipo</system:String>
@@ -331,8 +330,7 @@
     <system:String x:Key="TitlePartDetails">Datos del componente</system:String>
     <system:String x:Key="TitleParameters">Parámetros</system:String>
     <system:String x:Key="TitleAddNewPart">Añadir componente nuevo</system:String>
-    <system:String x:Key="TitleDuplicatePart">Duplicar componente</system:String>
-    <system:String x:Key="TitleEditPart">Modificar componente</system:String>
+    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Move {0} into another category</system:String>
 
     <system:String x:Key="MessagePartDeleteConfirmation">¿Está seguro de que desea eliminar el componente {0}?</system:String>
     <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">No se han guardado todos los cambios. ¿Está seguro de que desea cerrar el componente {0} sin guardarlos?</system:String>
@@ -356,6 +354,7 @@
     <system:String x:Key="ColumnPartActionEditStockLevel">Modificar niveles de stock</system:String>
     <system:String x:Key="ColumnPartActionIncreaseStock">Aumentar cantidad en stock</system:String>
     <system:String x:Key="ColumnPartActionDecreaseStock">Reducir cantidad en stock</system:String>
+    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Move into another part category</system:String>
 
     <system:String x:Key="LabelPartName">Modelo</system:String>
     <system:String x:Key="LabelPartManufacturerName">Referencia del fabricante</system:String>
@@ -386,11 +385,17 @@
     <system:String x:Key="LabelPartExportPartsButton">Exportar componentes</system:String>
     <system:String x:Key="LabelPartImportPartsButton">Importar componentes</system:String>
 
+    <system:String x:Key="LabelPartNewParameters">New parameters</system:String>
+    <system:String x:Key="LabelPartOriginalParameters">Original parameters</system:String>
+
     <system:String x:Key="StatusPartLoadUnsuccessful">No se pudieron cargar los componentes.</system:String>
     <system:String x:Key="StatusPartDeleteUnsuccessful">No se pudo eliminar el componente {0}.</system:String>
     <system:String x:Key="StatusPartSaveUnsuccessful">No se pudo guardar el componente {0}.</system:String>
+    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">Cannot move {0} into {1} part category.</system:String>
     <system:String x:Key="StatusPartDeleted">{0} ha sido eliminado.</system:String>
     <system:String x:Key="StatusPartSaved">{0} ha sido guardado.</system:String>
+    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} moved into {1} part category successfully.</system:String>
+    <system:String x:Key="StatusPartCloseEditPartTabFirst">Close {0} tab first.</system:String>
 
     <!-- Part export / import -->
     <system:String x:Key="TitleExportPart">Exportar componentes</system:String>
@@ -418,13 +423,6 @@
     <system:String x:Key="LabelImportNewStorageLocation">Nueva</system:String>
     <system:String x:Key="LabelImportMappedStorageLocation">Ubicación de almacén asignada</system:String>
     <system:String x:Key="LabelImportPartDetails">Datos del componente</system:String>
-
-    <system:String x:Key="LabelImportCreateMissingPartCategories">Crear las categorías de componentes que faltan</system:String>
-    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Crear los parámetros de categoría que faltan</system:String>
-    <system:String x:Key="LabelImportCreateMissingManufacturers">Crear los fabricantes que faltan</system:String>
-    <system:String x:Key="LabelImportCreateMissingPackages">Crear los encapsulados que faltan</system:String>
-    <system:String x:Key="LabelImportCreateMissingStorageLocations">Crear las ubicaciones de almacén que faltan</system:String>
-    <system:String x:Key="LabelImportAttachments">Importar archivos adjuntos</system:String>
 
     <system:String x:Key="StatusExportPartsDone">Se han exportado las categorías de componentes seleccionadas.</system:String>
     <system:String x:Key="StatusExportPartsFailed">No se han podido exportar las categorías de componentes seleccionadas.</system:String>
@@ -476,6 +474,7 @@
 
     <!-- Storage Locations -->
     <system:String x:Key="TitleStorageLocations">Ubicaciones de almacén</system:String>
+    <system:String x:Key="TitleStorageCategories">Ubicaciones</system:String>
     <system:String x:Key="TitleAddNewStorageLocation">Añadir ubicación de almacén nueva</system:String>
     <system:String x:Key="TitleDuplicateStorageLocation">Duplicar ubicación de almacén</system:String>
     <system:String x:Key="TitleEditStorageLocation">Modificar ubicación de almacén</system:String>
@@ -534,7 +533,6 @@
 
 {2} componente(s) que usa(n) esta familia se actualizarán al encapsulado {3}.</system:String>
 
-    <system:String x:Key="ColumnPackageCategoryID">ID</system:String>
     <system:String x:Key="ColumnPackageCategoryName">Nombre</system:String>
     <system:String x:Key="ColumnPackageCategoryDescription">Descripción</system:String>
     <system:String x:Key="ColumnPackageCategoryPackageCount">Encapsulados</system:String>
@@ -560,7 +558,6 @@
     <system:String x:Key="TitleDuplicatePackage">Duplicar encapsulado</system:String>
     <system:String x:Key="TitleEditPackage">Modificar encapsulado</system:String>
     <system:String x:Key="TitlePackageDimension">Dimensiones del encapsulado {0}</system:String>
-    <system:String x:Key="TitlePackageImage">Imagen del encapsulado {0}</system:String>
     <system:String x:Key="TitlePackageDetails">Datos del encapsulado</system:String>
 
     <system:String x:Key="MessagePackageDeleteUnusedConfirmation">¿Está seguro de que desea eliminar el encapsulado {0} sin utilizar?</system:String>
@@ -568,7 +565,6 @@
 
 {1} componente(s) ya lo utiliza(n) y se actualizarán al encapsulado {2}.</system:String>
 
-    <system:String x:Key="ColumnPackageID">ID</system:String>
     <system:String x:Key="ColumnPackageImage">Imagen</system:String>
     <system:String x:Key="ColumnPackageCategory">Familia</system:String>
     <system:String x:Key="ColumnPackageMounting">Montaje</system:String>
@@ -628,7 +624,6 @@
 
 {1} componente(s) ya lo utiliza(n) y se actualizarán al fabricante {2}.</system:String>
 
-    <system:String x:Key="ColumnManufacturerID">ID</system:String>
     <system:String x:Key="ColumnManufacturerLogo">Logotipo</system:String>
     <system:String x:Key="ColumnManufacturerName">Nombre</system:String>
     <system:String x:Key="ColumnManufacturerShortName">Abreviatura</system:String>
@@ -701,7 +696,7 @@
     <system:String x:Key="TabProjectDetails">Detalles</system:String>
     <system:String x:Key="TabProjectBOM">Lista de Materiales</system:String>
     <system:String x:Key="TabProjectAttachment">Anexos</system:String>
-    <system:String x:Key="TabProjectBulids">Ensamblajes</system:String>
+    <system:String x:Key="TabProjectBuilds">Ensamblajes</system:String>
     <system:String x:Key="TabProjectHistory">Historial</system:String>
 
     <!-- Projects BOM Entry -->
@@ -733,7 +728,7 @@
 
     <!-- Projects History -->
     <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
-    <system:String x:Key="ColumnProjectHistoryEventData">Fecha</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventDate">Fecha</system:String>
     <system:String x:Key="ColumnProjectHistoryEventType">Evento</system:String>
     <system:String x:Key="ColumnProjectHistoryDescription">Descripción</system:String>
 
@@ -844,7 +839,6 @@ Consejos:
     <!-- Distributor Search -->
     <system:String x:Key="TitleDistributorSearch">Buscador de distribuidores</system:String>
 
-    <system:String x:Key="TitleDistributorSearchProductImage">Imagen del producto {0}</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImage">Imagen del encapsulado {0}</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImages">Imágenes del encapsulado</system:String>
     <system:String x:Key="TitleDistributorSearchDetailsPackage">Encapsulado</system:String>
@@ -879,7 +873,6 @@ Consejos:
     <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">Ninguno disponible</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">Ninguno disponible</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">Ninguna disponible</system:String>
-    <system:String x:Key="LabelDistributorSearchAddProductImage">Añadir imagen del producto</system:String>
 
     <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">N.º de pedido</system:String>
     <system:String x:Key="LabelDistributorSearchAvailNameStock">Stock</system:String>

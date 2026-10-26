@@ -81,6 +81,7 @@
     <system:String x:Key="DialogButtonExit">Izađi</system:String>
     <system:String x:Key="DialogButtonContinue">Nastavi</system:String>
     <system:String x:Key="DialogButtonAdd">Dodaj</system:String>
+    <system:String x:Key="DialogCheckboxConfirmation">Potvrda</system:String>
 
     <!-- Notification Toast -->
     <system:String x:Key="ToastHeaderInfo">Informacija</system:String>
@@ -288,5 +289,17 @@ Podržani su i AND, OR i NOT, kao i zagrade:
     <system:String x:Key="MTextEditorInfoFileSizeFormat">{0:0.0} kB ({1} bajtova)</system:String>
     <system:String x:Key="MTextEditorInfoFileFormat">Format datoteke</system:String>
     <system:String x:Key="MTextEditorInfoLineNumbers">Broj redova</system:String>
+
+    <!-- MMarkdownViewer -->
+    <system:String x:Key="MMarkdownViewerSaveAsTooltip">Save as</system:String>
+    <system:String x:Key="MMarkdownViewerPrintTooltip">Print</system:String>
+    <system:String x:Key="MMarkdownViewerSelectAll">Select all</system:String>
+    <system:String x:Key="MMarkdownViewerCopySelectionAsText">Copy as text</system:String>
+    <system:String x:Key="MMarkdownViewerCopyAllAsMarkdown">Copy all as markdown</system:String>
+
+    <system:String x:Key="MMarkdownViewerSaveDialogHeader">Save as Markdown file</system:String>
+    <system:String x:Key="MMarkdownViewerSaveDialogFilter">Markdown files</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsDone">Markdown saved successfully.</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsFailed">Failed to save the Markdown file.</system:String>
     
 </ResourceDictionary>

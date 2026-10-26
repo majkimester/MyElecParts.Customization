@@ -28,7 +28,7 @@
     <system:String x:Key="ButtonExit">Izađi</system:String>
     <system:String x:Key="ButtonSelect">Izaberi</system:String>
     <system:String x:Key="ButtonAccept">Prihvati</system:String>
-    <system:String x:Key="ButtonSolveCapcha">Reši Captcha</system:String>
+    <system:String x:Key="ButtonSolveCaptcha">Reši Captcha</system:String>
     <system:String x:Key="ButtonExport">Izvezi</system:String>
     <system:String x:Key="ButtonImport">Uvezi</system:String>
     <system:String x:Key="ButtonContinue">Nastavi</system:String>
@@ -296,7 +296,6 @@
 
 {2} komponenta(i) već koristi te opcije i sačuvana vrednost parametra će biti uklonjena.</system:String>
 
-    <system:String x:Key="ColumnPartCategoryParameterID">ID</system:String>
     <system:String x:Key="ColumnPartCategoryParameterName">Naziv</system:String>
     <system:String x:Key="ColumnPartCategoryParameterDescription">Opis</system:String>
     <system:String x:Key="ColumnPartCategoryParameterType">Tip</system:String>
@@ -331,8 +330,7 @@
     <system:String x:Key="TitlePartDetails">Detalji komponente</system:String>
     <system:String x:Key="TitleParameters">Parametri</system:String>
     <system:String x:Key="TitleAddNewPart">Dodaj novu komponentu</system:String>
-    <system:String x:Key="TitleDuplicatePart">Dupliraj komponentu</system:String>
-    <system:String x:Key="TitleEditPart">Izmeni komponentu</system:String>
+    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Move {0} into another category</system:String>
 
     <system:String x:Key="MessagePartDeleteConfirmation">Da li ste sigurni da želite da obrišete komponentu {0}?</system:String>
     <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">Imate nesačuvane izmene. Da li ste sigurni da želite da zatvorite komponentu {0}?</system:String>
@@ -356,6 +354,7 @@
     <system:String x:Key="ColumnPartActionEditStockLevel">Izmeni nivo zalihe</system:String>
     <system:String x:Key="ColumnPartActionIncreaseStock">Povećaj zalihu</system:String>
     <system:String x:Key="ColumnPartActionDecreaseStock">Smanji zalihu</system:String>
+    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Move into another part category</system:String>
 
     <system:String x:Key="LabelPartName">Kataloški broj</system:String>
     <system:String x:Key="LabelPartManufacturerName">MPN</system:String>
@@ -386,11 +385,17 @@
     <system:String x:Key="LabelPartExportPartsButton">Izvezi komponente</system:String>
     <system:String x:Key="LabelPartImportPartsButton">Uvezi komponente</system:String>
 
+    <system:String x:Key="LabelPartNewParameters">New parameters</system:String>
+    <system:String x:Key="LabelPartOriginalParameters">Original parameters</system:String>
+
     <system:String x:Key="StatusPartLoadUnsuccessful">Nije moguće učitati komponente.</system:String>
     <system:String x:Key="StatusPartDeleteUnsuccessful">Nije moguće obrisati komponentu {0}.</system:String>
     <system:String x:Key="StatusPartSaveUnsuccessful">Nije moguće sačuvati komponentu {0}.</system:String>
+    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">Cannot move {0} into {1} part category.</system:String>
     <system:String x:Key="StatusPartDeleted">{0} uspešno obrisano.</system:String>
     <system:String x:Key="StatusPartSaved">{0} uspešno sačuvano.</system:String>
+    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} moved into {1} part category successfully.</system:String>
+    <system:String x:Key="StatusPartCloseEditPartTabFirst">Close {0} tab first.</system:String>
 
     <!-- Part export / import -->
     <system:String x:Key="TitleExportPart">Izvezi komponente</system:String>
@@ -418,13 +423,6 @@
     <system:String x:Key="LabelImportNewStorageLocation">Novo</system:String>
     <system:String x:Key="LabelImportMappedStorageLocation">Mapirana lokacija</system:String>
     <system:String x:Key="LabelImportPartDetails">Podaci o komponenti</system:String>
-
-    <system:String x:Key="LabelImportCreateMissingPartCategories">Kreiraj nedostajuće kategorije komponenti</system:String>
-    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Kreiraj nedostajuće parametre kategorija</system:String>
-    <system:String x:Key="LabelImportCreateMissingManufacturers">Kreiraj nedostajuće proizvođače</system:String>
-    <system:String x:Key="LabelImportCreateMissingPackages">Kreiraj nedostajuća kućišta</system:String>
-    <system:String x:Key="LabelImportCreateMissingStorageLocations">Kreiraj nedostajuće lokacije skladišta</system:String>
-    <system:String x:Key="LabelImportAttachments">Uvezi fajlove priloga</system:String>
 
     <system:String x:Key="StatusExportPartsDone">Izabrane kategorije komponenti su uspešno izvezene.</system:String>
     <system:String x:Key="StatusExportPartsFailed">Izvoz izabranih kategorija komponenti nije uspeo.</system:String>
@@ -476,6 +474,7 @@
 
     <!-- Storage Locations -->
     <system:String x:Key="TitleStorageLocations">Lokacije skladišta</system:String>
+    <system:String x:Key="TitleStorageCategories">Lokacije skladišta</system:String>
     <system:String x:Key="TitleAddNewStorageLocation">Dodaj novu lokaciju skladišta</system:String>
     <system:String x:Key="TitleDuplicateStorageLocation">Dupliraj lokaciju skladišta</system:String>
     <system:String x:Key="TitleEditStorageLocation">Izmeni lokaciju skladišta</system:String>
@@ -534,7 +533,6 @@
 
 {2} komponenta(i) u ovoj kategoriji kućišta biće ažurirano na kućište {3}.</system:String>
 
-    <system:String x:Key="ColumnPackageCategoryID">ID</system:String>
     <system:String x:Key="ColumnPackageCategoryName">Naziv</system:String>
     <system:String x:Key="ColumnPackageCategoryDescription">Opis</system:String>
     <system:String x:Key="ColumnPackageCategoryPackageCount"># Kućišta</system:String>
@@ -560,7 +558,6 @@
     <system:String x:Key="TitleDuplicatePackage">Dupliraj kućište</system:String>
     <system:String x:Key="TitleEditPackage">Izmeni kućište</system:String>
     <system:String x:Key="TitlePackageDimension">Dimenzije kućišta {0}</system:String>
-    <system:String x:Key="TitlePackageImage">Slika kućišta {0}</system:String>
     <system:String x:Key="TitlePackageDetails">Detalji kućišta</system:String>
 
     <system:String x:Key="MessagePackageDeleteUnusedConfirmation">Da li ste sigurni da želite da obrišete neiskorišćeno kućište {0}?</system:String>
@@ -568,7 +565,6 @@
 
 {1} komponenta(i) ga već koristi i biće ažurirano na kućište {2}.</system:String>
 
-    <system:String x:Key="ColumnPackageID">ID</system:String>
     <system:String x:Key="ColumnPackageImage">Slika</system:String>
     <system:String x:Key="ColumnPackageCategory">Kategorija</system:String>
     <system:String x:Key="ColumnPackageMounting">Montaža</system:String>
@@ -628,7 +624,6 @@
 
 {1} komponenta(i) ga već koristi i biće ažurirano na proizvođača {2}.</system:String>
 
-    <system:String x:Key="ColumnManufacturerID">ID</system:String>
     <system:String x:Key="ColumnManufacturerLogo">Logo</system:String>
     <system:String x:Key="ColumnManufacturerName">Naziv</system:String>
     <system:String x:Key="ColumnManufacturerShortName">Kratki naziv</system:String>
@@ -701,7 +696,7 @@
     <system:String x:Key="TabProjectDetails">Detalji</system:String>
     <system:String x:Key="TabProjectBOM">BOM</system:String>
     <system:String x:Key="TabProjectAttachment">Prilozi</system:String>
-    <system:String x:Key="TabProjectBulids">Izrade</system:String>
+    <system:String x:Key="TabProjectBuilds">Izrade</system:String>
     <system:String x:Key="TabProjectHistory">Istorija</system:String>
 
     <!-- Projects BOM Entry -->
@@ -733,7 +728,7 @@
 
     <!-- Projects History -->
     <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
-    <system:String x:Key="ColumnProjectHistoryEventData">Datum</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventDate">Datum</system:String>
     <system:String x:Key="ColumnProjectHistoryEventType">Događaj</system:String>
     <system:String x:Key="ColumnProjectHistoryDescription">Opis</system:String>
 
@@ -844,7 +839,6 @@ Saveti:
     <!-- Distributor Search -->
     <system:String x:Key="TitleDistributorSearch">Pretraga distributera</system:String>
 
-    <system:String x:Key="TitleDistributorSearchProductImage">Slika proizvoda {0}</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImage">Slika kućišta {0}</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImages">Slike kućišta</system:String>
     <system:String x:Key="TitleDistributorSearchDetailsPackage">Kućište</system:String>
@@ -879,7 +873,6 @@ Saveti:
     <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">Proizvođač nije dostupan</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">Podaci o ceni nisu dostupni</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">Datasheet nije dostupan</system:String>
-    <system:String x:Key="LabelDistributorSearchAddProductImage">Dodaj sliku proizvoda</system:String>
 
     <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">Broj narudžbine</system:String>
     <system:String x:Key="LabelDistributorSearchAvailNameStock">Zaliha</system:String>

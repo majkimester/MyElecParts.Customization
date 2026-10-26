@@ -81,6 +81,7 @@
     <system:String x:Key="DialogButtonExit">Kilép</system:String>
     <system:String x:Key="DialogButtonContinue">Folytatás</system:String>
     <system:String x:Key="DialogButtonAdd">Hozzáad</system:String>
+    <system:String x:Key="DialogCheckboxConfirmation">Megerősítés</system:String>
 
     <!-- Notification Toast -->
     <system:String x:Key="ToastHeaderInfo">Infó</system:String>
@@ -288,5 +289,17 @@ AND, OR és NOT és zárójelezés is támogatott:
     <system:String x:Key="MTextEditorInfoFileSizeFormat">{0:0.0} kB ({1} byte)</system:String>
     <system:String x:Key="MTextEditorInfoFileFormat">Fájlformátum</system:String>
     <system:String x:Key="MTextEditorInfoLineNumbers">Sorok száma</system:String>
+
+    <!-- MMarkdownViewer -->
+    <system:String x:Key="MMarkdownViewerSaveAsTooltip">Mentés</system:String>
+    <system:String x:Key="MMarkdownViewerPrintTooltip">Nyomtatás</system:String>
+    <system:String x:Key="MMarkdownViewerSelectAll">Mindent kiválaszt</system:String>
+    <system:String x:Key="MMarkdownViewerCopySelectionAsText">Másolás szövegként</system:String>
+    <system:String x:Key="MMarkdownViewerCopyAllAsMarkdown">Az egész másolása Markdown-ként</system:String>
+
+    <system:String x:Key="MMarkdownViewerSaveDialogHeader">Mentés Markdown fájlként</system:String>
+    <system:String x:Key="MMarkdownViewerSaveDialogFilter">Markdown fájlok</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsDone">Markdown sikeresen mentve.</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsFailed">A Markdown fájl mentése sikertelen.</system:String>
     
 </ResourceDictionary>

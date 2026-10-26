@@ -28,7 +28,7 @@
     <system:String x:Key="ButtonExit">Exit</system:String>
     <system:String x:Key="ButtonSelect">Select</system:String>
     <system:String x:Key="ButtonAccept">Accept</system:String>
-    <system:String x:Key="ButtonSolveCapcha">Solve Capcha</system:String>
+    <system:String x:Key="ButtonSolveCaptcha">Solve Captcha</system:String>
     <system:String x:Key="ButtonExport">Export</system:String>
     <system:String x:Key="ButtonImport">Import</system:String>
     <system:String x:Key="ButtonContinue">Continue</system:String>
@@ -147,7 +147,7 @@
     <system:String x:Key="MetaSearchCategoryTRANSISTOR_UJT">Transistor / UJT</system:String>
 
     <system:String x:Key="MetaSearchCategoryTRIGGER_DIAC">Trigger / Diac</system:String>
-    <system:String x:Key="MetaSearchCategoryTRIGGER_SCR">Trigger / SCR</system:String>
+    <system:String x:Key="MetaSearchCategoryTRIGGER_SCR">Trigger / Thyristor</system:String>
     <system:String x:Key="MetaSearchCategoryTRIGGER_TRIAC">Trigger / Triac</system:String>
 
     <system:String x:Key="MetaSearchCategoryOPTO_OPTOCOUPLER">Opto / Optocoupler</system:String>
@@ -296,7 +296,6 @@
 
 {2} part(s) already use those options and the stored parameter value will be removed.</system:String>
 
-    <system:String x:Key="ColumnPartCategoryParameterID">ID</system:String>
     <system:String x:Key="ColumnPartCategoryParameterName">Name</system:String>
     <system:String x:Key="ColumnPartCategoryParameterDescription">Description</system:String>
     <system:String x:Key="ColumnPartCategoryParameterType">Type</system:String>
@@ -315,7 +314,7 @@
     <system:String x:Key="LabelPartCategoryParameterEnumeration">Enumeration</system:String>
     <system:String x:Key="LabelPartCategoryParameterDefaultValue">Default Value</system:String>
     <system:String x:Key="LabelPartCategoryMetaSearchParamID">Meta search ID</system:String>
-    <system:String x:Key="LabelPartCategoryMetaSearchParamIDTooltip">Meta search parameter identifier. It is used to assing a meta search result parameter to a real part category parameter.</system:String>
+    <system:String x:Key="LabelPartCategoryMetaSearchParamIDTooltip">Meta search parameter identifier. It is used to assign a meta search result parameter to a real part category parameter.</system:String>
 
     <system:String x:Key="LabelPartCategoryParameterAddButtonTooltip">Add new part category parameter</system:String>
     <system:String x:Key="LabelPartManagePartCategoryParametersTooltip">Manage part category parameters</system:String>
@@ -331,8 +330,7 @@
     <system:String x:Key="TitlePartDetails">Part details</system:String>
     <system:String x:Key="TitleParameters">Parameters</system:String>
     <system:String x:Key="TitleAddNewPart">Add new part</system:String>
-    <system:String x:Key="TitleDuplicatePart">Duplicate part</system:String>
-    <system:String x:Key="TitleEditPart">Edit part</system:String>
+    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Move {0} into another category</system:String>
 
     <system:String x:Key="MessagePartDeleteConfirmation">Are you sure to delete the {0} part?</system:String>
     <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">You have unsaved changes. Are you sure to close {0} part?</system:String>
@@ -356,6 +354,7 @@
     <system:String x:Key="ColumnPartActionEditStockLevel">Edit stock level</system:String>
     <system:String x:Key="ColumnPartActionIncreaseStock">Increase stock level</system:String>
     <system:String x:Key="ColumnPartActionDecreaseStock">Decrease stock level</system:String>
+    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Move into another part category</system:String>
 
     <system:String x:Key="LabelPartName">Part number</system:String>
     <system:String x:Key="LabelPartManufacturerName">Manufacturer part number</system:String>
@@ -386,11 +385,17 @@
     <system:String x:Key="LabelPartExportPartsButton">Export parts</system:String>
     <system:String x:Key="LabelPartImportPartsButton">Import parts</system:String>
 
+    <system:String x:Key="LabelPartNewParameters">New parameters</system:String>
+    <system:String x:Key="LabelPartOriginalParameters">Original parameters</system:String>
+
     <system:String x:Key="StatusPartLoadUnsuccessful">Cannot load parts.</system:String>
     <system:String x:Key="StatusPartDeleteUnsuccessful">Cannot delete {0} part.</system:String>
     <system:String x:Key="StatusPartSaveUnsuccessful">Cannot save {0} part.</system:String>
+    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">Cannot move {0} into {1} part category.</system:String>
     <system:String x:Key="StatusPartDeleted">{0} deleted successfully.</system:String>
     <system:String x:Key="StatusPartSaved">{0} saved successfully.</system:String>
+    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} moved into {1} part category successfully.</system:String>
+    <system:String x:Key="StatusPartCloseEditPartTabFirst">Close {0} tab first.</system:String>
 
     <!-- Part export / import -->
     <system:String x:Key="TitleExportPart">Export parts</system:String>
@@ -418,13 +423,6 @@
     <system:String x:Key="LabelImportNewStorageLocation">New</system:String>
     <system:String x:Key="LabelImportMappedStorageLocation">Mapped storage location</system:String>
     <system:String x:Key="LabelImportPartDetails">Part data</system:String>
-
-    <system:String x:Key="LabelImportCreateMissingPartCategories">Create missing part categories</system:String>
-    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Create missing part category parameters</system:String>
-    <system:String x:Key="LabelImportCreateMissingManufacturers">Create missing manufacturers</system:String>
-    <system:String x:Key="LabelImportCreateMissingPackages">Create missing packages</system:String>
-    <system:String x:Key="LabelImportCreateMissingStorageLocations">Create missing storage locations</system:String>
-    <system:String x:Key="LabelImportAttachments">Import attachment files</system:String>
 
     <system:String x:Key="StatusExportPartsDone">Selected part categories are successfully exported.</system:String>
     <system:String x:Key="StatusExportPartsFailed">Export of the selected part categories failed.</system:String>
@@ -476,6 +474,7 @@
 
     <!-- Storage Locations -->
     <system:String x:Key="TitleStorageLocations">Storage locations</system:String>
+    <system:String x:Key="TitleStorageCategories">Storage locations</system:String>
     <system:String x:Key="TitleAddNewStorageLocation">Add new storage location</system:String>
     <system:String x:Key="TitleDuplicateStorageLocation">Duplicate storage location</system:String>
     <system:String x:Key="TitleEditStorageLocation">Edit storage location</system:String>
@@ -534,7 +533,6 @@
 
 {2} part(s) under this package category will be updated to {3} package.</system:String>
 
-    <system:String x:Key="ColumnPackageCategoryID">ID</system:String>
     <system:String x:Key="ColumnPackageCategoryName">Name</system:String>
     <system:String x:Key="ColumnPackageCategoryDescription">Description</system:String>
     <system:String x:Key="ColumnPackageCategoryPackageCount"># Packages</system:String>
@@ -560,7 +558,6 @@
     <system:String x:Key="TitleDuplicatePackage">Duplicate package</system:String>
     <system:String x:Key="TitleEditPackage">Edit package</system:String>
     <system:String x:Key="TitlePackageDimension">{0} package dimensions</system:String>
-    <system:String x:Key="TitlePackageImage">{0} package image</system:String>
     <system:String x:Key="TitlePackageDetails">Package details</system:String>
 
     <system:String x:Key="MessagePackageDeleteUnusedConfirmation">Are you sure to delete the unused {0} package?</system:String>
@@ -568,7 +565,6 @@
 
 {1} part(s) already use it and will be updated to {2} package.</system:String>
 
-    <system:String x:Key="ColumnPackageID">ID</system:String>
     <system:String x:Key="ColumnPackageImage">Image</system:String>
     <system:String x:Key="ColumnPackageCategory">Category</system:String>
     <system:String x:Key="ColumnPackageMounting">Mounting</system:String>
@@ -628,7 +624,6 @@
 
 {1} part(s) already use it and will be updated to {2} manufacturer.</system:String>
 
-    <system:String x:Key="ColumnManufacturerID">ID</system:String>
     <system:String x:Key="ColumnManufacturerLogo">Logo</system:String>
     <system:String x:Key="ColumnManufacturerName">Name</system:String>
     <system:String x:Key="ColumnManufacturerShortName">Short Name</system:String>
@@ -701,7 +696,7 @@
     <system:String x:Key="TabProjectDetails">Details</system:String>
     <system:String x:Key="TabProjectBOM">BOM</system:String>
     <system:String x:Key="TabProjectAttachment">Attachments</system:String>
-    <system:String x:Key="TabProjectBulids">Builds</system:String>
+    <system:String x:Key="TabProjectBuilds">Builds</system:String>
     <system:String x:Key="TabProjectHistory">History</system:String>
 
     <!-- Projects BOM Entry -->
@@ -733,7 +728,7 @@
 
     <!-- Projects History -->
     <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
-    <system:String x:Key="ColumnProjectHistoryEventData">Date</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventDate">Date</system:String>
     <system:String x:Key="ColumnProjectHistoryEventType">Event</system:String>
     <system:String x:Key="ColumnProjectHistoryDescription">Description</system:String>
 
@@ -767,7 +762,7 @@ Hints:
     • Parameter collection works only with discret semiconductor mainly from the alltransistor source.
     • No garantee that the provided parameter values are correct for your part. 
     • A part with the same part number but from different maunfacturer might be specified differently in datasheets.
-    • This function relies on internet sources. They might not accurate and might not be available in the future.
+    • This function relies on internet sources. They might not be accurate and might not be available in the future.
     • When you create an inventory part select category name carefully as you will not be able to change it later.
     • Some sources do not provide specific manufacturer, package or parameters. The app tries to guess them from the description.
     </system:String>
@@ -781,7 +776,7 @@ Hints:
     <system:String x:Key="LabelMetaSearchDetailsNoParameterAvailable">No parameter available</system:String>
     <system:String x:Key="LabelMetaSearchDetailsNoManufacturerAvailable">No manufacturer available</system:String>
     <system:String x:Key="LabelMetaSearchDetailsNoDatasheetAvailable">No datasheet available</system:String>
-    <system:String x:Key="LabelMetaSearchDetailsTooMuchTrafficDetected">Too much traffic detected by the source site. Solve the capcha and download the datasheet manually.</system:String>
+    <system:String x:Key="LabelMetaSearchDetailsTooMuchTrafficDetected">Too much traffic detected by the source site. Solve the captcha and download the datasheet manually.</system:String>
     <system:String x:Key="LabelMetaSearchHumanVerificationMessage">The {0} source does human verification at first search. Please wait for the page loading and click on checkbox if needed. It will continue automatically on modern systems.</system:String>
     <system:String x:Key="LabelMetaSearchHumanVerificationMissingWebView2">{0} is required to do {1} source human verification. Download and install it before you can do a search on this source or disable it.</system:String>
 
@@ -844,7 +839,6 @@ Hints:
     <!-- Distributor Search -->
     <system:String x:Key="TitleDistributorSearch">Distributor search</system:String>
 
-    <system:String x:Key="TitleDistributorSearchProductImage">{0} product image</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImage">{0} package image</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImages">Package images</system:String>
     <system:String x:Key="TitleDistributorSearchDetailsPackage">Package</system:String>
@@ -879,7 +873,6 @@ Hints:
     <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">No manufacturer available</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">No price info available</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">No datasheet available</system:String>
-    <system:String x:Key="LabelDistributorSearchAddProductImage">Add product image</system:String>
 
     <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">Order Nr.</system:String>
     <system:String x:Key="LabelDistributorSearchAvailNameStock">Stock</system:String>

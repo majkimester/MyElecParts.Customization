@@ -28,7 +28,7 @@
     <system:String x:Key="ButtonExit">Kilépés</system:String>
     <system:String x:Key="ButtonSelect">Kiválaszt</system:String>
     <system:String x:Key="ButtonAccept">Elfogad</system:String>
-    <system:String x:Key="ButtonSolveCapcha">Capcha megoldása</system:String>
+    <system:String x:Key="ButtonSolveCaptcha">Capcha megoldása</system:String>
     <system:String x:Key="ButtonExport">Exportálás</system:String>
     <system:String x:Key="ButtonImport">Importálás</system:String>
     <system:String x:Key="ButtonContinue">Folytatás</system:String>
@@ -251,7 +251,7 @@
 
 {1} alkatrész ez alatt a kategória alatt TÖRÖLVE lesz.</system:String>
 
-    <system:String x:Key="MessagePartCategoryDelete">{0} alkatrész kategoria törlése</system:String>
+    <system:String x:Key="MessagePartCategoryDelete">{0} alkatrész kategória törlése</system:String>
     <system:String x:Key="MessagePartCategoryDeleteAllParts">Az összes alkatrész törlése a {0} alkatrész kategóriában</system:String>
     <system:String x:Key="MessagePartCategoryDeleteEmptyConfirmation">Biztos, hogy törlöd az üres {0} alkatrész kategóriát?</system:String>
     <system:String x:Key="MessagePartCategoryDeleteUsedConfirmation" xml:space="preserve">Biztos, hogy törlöd a(z) {0} alkatrész kategóriát?
@@ -296,7 +296,6 @@
 
 {2} alkatrész már használja ezt a paramétert, és a tárolt paraméterérték törlésre kerül.</system:String>
 
-    <system:String x:Key="ColumnPartCategoryParameterID">Azonosító</system:String>
     <system:String x:Key="ColumnPartCategoryParameterName">Név</system:String>
     <system:String x:Key="ColumnPartCategoryParameterDescription">Leírás</system:String>
     <system:String x:Key="ColumnPartCategoryParameterType">Típus</system:String>
@@ -331,8 +330,7 @@
     <system:String x:Key="TitlePartDetails">Alkatrész részletek</system:String>
     <system:String x:Key="TitleParameters">Paraméterek</system:String>
     <system:String x:Key="TitleAddNewPart">Új alkatrész hozzáadása</system:String>
-    <system:String x:Key="TitleDuplicatePart">Alkatrész duplikálása</system:String>
-    <system:String x:Key="TitleEditPart">Alkatrész szerkesztése</system:String>
+    <system:String x:Key="TitlePartMoveIntoAnotherCategory">{0} átmozgatása másik kategóriába</system:String>
 
     <system:String x:Key="MessagePartDeleteConfirmation">Biztos, hogy törlöd a(z) {0} alkatrészt?</system:String>
     <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">Nincs minden változtatás mentve az oldalon. Biztos, hogy bezárod a {0} alkatrészt mentés nélkül?</system:String>
@@ -356,6 +354,7 @@
     <system:String x:Key="ColumnPartActionEditStockLevel">Raktárkészlet módosítása</system:String>
     <system:String x:Key="ColumnPartActionIncreaseStock">Raktárkészlet növelése</system:String>
     <system:String x:Key="ColumnPartActionDecreaseStock">Raktárkészlet csökkentése</system:String>
+    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Alkatrész átmozgatása másik kategóriába</system:String>
 
     <system:String x:Key="LabelPartName">Típusszám</system:String>
     <system:String x:Key="LabelPartManufacturerName">Gyártói megnevezés</system:String>
@@ -386,11 +385,17 @@
     <system:String x:Key="LabelPartExportPartsButton">Alkatrészek exportálása</system:String>
     <system:String x:Key="LabelPartImportPartsButton">Alkatrészek importálása</system:String>
 
+    <system:String x:Key="LabelPartNewParameters">Új paraméterek</system:String>
+    <system:String x:Key="LabelPartOriginalParameters">Eredeti paraméterek</system:String>
+
     <system:String x:Key="StatusPartLoadUnsuccessful">Alkatrészek betöltése sikertelen.</system:String>
     <system:String x:Key="StatusPartDeleteUnsuccessful">{0} törlése sikertelen.</system:String>
     <system:String x:Key="StatusPartSaveUnsuccessful">{0} mentése sikertelen.</system:String>
+    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">{0} átmozgatása {1} kategóriába sikertelen.</system:String>
     <system:String x:Key="StatusPartDeleted">{0} sikeresen törölve.</system:String>
     <system:String x:Key="StatusPartSaved">{0} sikeresen elmentve.</system:String>
+    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} sikeresen átmozgatva {1} kategóriába.</system:String>
+    <system:String x:Key="StatusPartCloseEditPartTabFirst">Először zárd be a {0} fület.</system:String>
 
     <!-- Part export / import -->
     <system:String x:Key="TitleExportPart">Alkatrészek exportálása</system:String>
@@ -418,13 +423,6 @@
     <system:String x:Key="LabelImportNewStorageLocation">Új</system:String>
     <system:String x:Key="LabelImportMappedStorageLocation">Hozzárendelt tárolóhely</system:String>
     <system:String x:Key="LabelImportPartDetails">Alkatrész adatok</system:String>
-
-    <system:String x:Key="LabelImportCreateMissingPartCategories">Hiányzó alkatrész kategóriák létrehozása</system:String>
-    <system:String x:Key="LabelImportCreateMissingPartCategoryParameters">Hiányzó alkatrész kategória paraméterek létrehozása</system:String>
-    <system:String x:Key="LabelImportCreateMissingManufacturers">Hiányzó gyártók létrehozása</system:String>
-    <system:String x:Key="LabelImportCreateMissingPackages">Hiányzó tokozások létrehozása</system:String>
-    <system:String x:Key="LabelImportCreateMissingStorageLocations">Hiányzó tárolóhelyek létrehozása</system:String>
-    <system:String x:Key="LabelImportAttachments">Melléklet fileok importálása</system:String>
 
     <system:String x:Key="StatusExportPartsDone">A kiválasztott alkatrész kategóriák exportálva lettek.</system:String>
     <system:String x:Key="StatusExportPartsFailed">A kiválasztott alkatrész kategóriák exportálása sikertelen.</system:String>
@@ -476,6 +474,7 @@
 
     <!-- Storage Locations -->
     <system:String x:Key="TitleStorageLocations">Tárolóhelyek</system:String>
+    <system:String x:Key="TitleStorageCategories">Tárolóhelyek</system:String>
     <system:String x:Key="TitleAddNewStorageLocation">Új tárolóhely hozzáadása</system:String>
     <system:String x:Key="TitleDuplicateStorageLocation">Tárolóhely duplikálása</system:String>
     <system:String x:Key="TitleEditStorageLocation">Tárolóhely szerkesztése</system:String>
@@ -534,7 +533,6 @@ Ez a tárolóhely {1} alkatrészt tartalmaz, ami át lesz mozgatva a(z) {2} tár
 
 A kategóriában lévő tokozás(ok)at {2} alkatrész használja, ami(k)nek a tokozása módosítva lesz {3}-re.</system:String>
 
-    <system:String x:Key="ColumnPackageCategoryID">Azonosító</system:String>
     <system:String x:Key="ColumnPackageCategoryName">Név</system:String>
     <system:String x:Key="ColumnPackageCategoryDescription">Leírás</system:String>
     <system:String x:Key="ColumnPackageCategoryPackageCount">Tokozások #</system:String>
@@ -560,7 +558,6 @@ A kategóriában lévő tokozás(ok)at {2} alkatrész használja, ami(k)nek a to
     <system:String x:Key="TitleDuplicatePackage">Tokozás duplikálása</system:String>
     <system:String x:Key="TitleEditPackage">Tokozás szerkesztése</system:String>
     <system:String x:Key="TitlePackageDimension">{0} tokozás méretei</system:String>
-    <system:String x:Key="TitlePackageImage">{0} tokozás képe</system:String>
     <system:String x:Key="TitlePackageDetails">Tokozás részletei</system:String>
 
     <system:String x:Key="MessagePackageDeleteUnusedConfirmation">Biztos, hogy törlöd a nem használt {0} tokozást?</system:String>
@@ -568,7 +565,6 @@ A kategóriában lévő tokozás(ok)at {2} alkatrész használja, ami(k)nek a to
 
 Ezt a tokozást {1} alkatrész használja, ami(k)nek a tokozása módosítva lesz {2}-re.</system:String>
 
-    <system:String x:Key="ColumnPackageID">Azonosító</system:String>
     <system:String x:Key="ColumnPackageImage">Kép</system:String>
     <system:String x:Key="ColumnPackageCategory">Kategória</system:String>
     <system:String x:Key="ColumnPackageMounting">Szerelés</system:String>
@@ -628,7 +624,6 @@ Ezt a tokozást {1} alkatrész használja, ami(k)nek a tokozása módosítva les
 
 Ezt a gyártót {1} alkatrész használja, ami(k)nek a gyártója módosítva lesz {2}-re.</system:String>
 
-    <system:String x:Key="ColumnManufacturerID">Azonosító</system:String>
     <system:String x:Key="ColumnManufacturerLogo">Logó</system:String>
     <system:String x:Key="ColumnManufacturerName">Név</system:String>
     <system:String x:Key="ColumnManufacturerShortName">Rövidítés</system:String>
@@ -701,7 +696,7 @@ Ezt a gyártót {1} alkatrész használja, ami(k)nek a gyártója módosítva le
     <system:String x:Key="TabProjectDetails">Részletek</system:String>
     <system:String x:Key="TabProjectBOM">Alkartészlista</system:String>
     <system:String x:Key="TabProjectAttachment">Mellékletek</system:String>
-    <system:String x:Key="TabProjectBulids">Építések</system:String>
+    <system:String x:Key="TabProjectBuilds">Építések</system:String>
     <system:String x:Key="TabProjectHistory">Történet</system:String>
 
     <!-- Projects BOM Entry -->
@@ -733,7 +728,7 @@ Ezt a gyártót {1} alkatrész használja, ami(k)nek a gyártója módosítva le
 
     <!-- Projects History -->
     <system:String x:Key="ColumnProjectHistoryID">ID</system:String>
-    <system:String x:Key="ColumnProjectHistoryEventData">Dátum</system:String>
+    <system:String x:Key="ColumnProjectHistoryEventDate">Dátum</system:String>
     <system:String x:Key="ColumnProjectHistoryEventType">Esemény</system:String>
     <system:String x:Key="ColumnProjectHistoryDescription">Leirás</system:String>
     
@@ -844,7 +839,6 @@ Tippek:
     <!-- Distributor Search -->
     <system:String x:Key="TitleDistributorSearch">Forgalmazó kereső</system:String>
 
-    <system:String x:Key="TitleDistributorSearchProductImage">{0} termék képe</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImage">{0} tokozás képe</system:String>
     <system:String x:Key="TitleDistributorSearchPackageImages">Tokozás képei</system:String>
     <system:String x:Key="TitleDistributorSearchDetailsPackage">Tokozás</system:String>
@@ -879,7 +873,6 @@ Tippek:
     <system:String x:Key="LabelDistributorSearchDetailsNoManufacturerAvailable">Gyártó nem érhető el</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsPriceInfoAvailable">Ár információ nem érhető el</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsNoDatasheetAvailable">Adatlap nem érhető el</system:String>
-    <system:String x:Key="LabelDistributorSearchAddProductImage">Termékkép hozzáadása</system:String>
 
     <system:String x:Key="LabelDistributorSearchAvailNameOrderNr">Rend. szám</system:String>
     <system:String x:Key="LabelDistributorSearchAvailNameStock">Készlet</system:String>
