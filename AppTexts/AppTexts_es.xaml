@@ -6,7 +6,7 @@
     <!-- Tab names -->
     <system:String x:Key="TabDashboard">Panel de Control</system:String>
     <system:String x:Key="TabParts">Componentes</system:String>
-    <system:String x:Key="TabStorageLocations">Ubicaciones</system:String>
+    <system:String x:Key="TabStorageLocations">Almacenamiento</system:String>
     <system:String x:Key="TabManufacturers">Fabricantes</system:String>
     <system:String x:Key="TabPackages">Encapsulados</system:String>
     <system:String x:Key="TabProjects">Proyectos</system:String>
@@ -186,7 +186,7 @@
     <system:String x:Key="LabelDashboardPartAttachmentsCount">Documentos</system:String>
     <system:String x:Key="LabelDashboardTotalPartsCount">Unidades totales</system:String>
 
-    <system:String x:Key="LabelDashboardStorageLocationsButtonTooltip">Abrir ubicaciones</system:String>
+    <system:String x:Key="LabelDashboardStorageLocationsButtonTooltip">Abrir almacenamiento</system:String>
     <system:String x:Key="LabelDashboardStorageLocationGroupsCount">Agrupaciones</system:String>
     <system:String x:Key="LabelDashboardStorageLocationsCount">Ubicaciones</system:String>
     <system:String x:Key="LabelDashboardStorageLocationsInUseCount">Ubicaciones en uso</system:String>
@@ -238,7 +238,7 @@
     <system:String x:Key="TitleAddNewPartCategoryGroup">Añadir grupo de categorías nuevo</system:String>
     <system:String x:Key="TitleAddNewPartCategory">Añadir categoría de componentes nueva</system:String>
     <system:String x:Key="TitleEditPartCategory">Modificar categoría de componentes</system:String>
-    <system:String x:Key="TitleDownloadDatasheets">Descargar hojas de datos</system:String>
+    <system:String x:Key="TitleDownloadDatasheets">Descargando hojas de datos</system:String>
     <system:String x:Key="TitleDeleteAllParts">Eliminar componentes</system:String>
     <system:String x:Key="TitleDeletePartCategory">Eliminar categoría de componentes</system:String>
 
@@ -330,7 +330,7 @@
     <system:String x:Key="TitlePartDetails">Datos del componente</system:String>
     <system:String x:Key="TitleParameters">Parámetros</system:String>
     <system:String x:Key="TitleAddNewPart">Añadir componente nuevo</system:String>
-    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Move {0} into another category</system:String>
+    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Trasladar {0} a otra categoría</system:String>
 
     <system:String x:Key="MessagePartDeleteConfirmation">¿Está seguro de que desea eliminar el componente {0}?</system:String>
     <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">No se han guardado todos los cambios. ¿Está seguro de que desea cerrar el componente {0} sin guardarlos?</system:String>
@@ -354,7 +354,7 @@
     <system:String x:Key="ColumnPartActionEditStockLevel">Modificar niveles de stock</system:String>
     <system:String x:Key="ColumnPartActionIncreaseStock">Aumentar cantidad en stock</system:String>
     <system:String x:Key="ColumnPartActionDecreaseStock">Reducir cantidad en stock</system:String>
-    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Move into another part category</system:String>
+    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Trasladar a otra categoría</system:String>
 
     <system:String x:Key="LabelPartName">Modelo</system:String>
     <system:String x:Key="LabelPartManufacturerName">Referencia del fabricante</system:String>
@@ -385,17 +385,17 @@
     <system:String x:Key="LabelPartExportPartsButton">Exportar componentes</system:String>
     <system:String x:Key="LabelPartImportPartsButton">Importar componentes</system:String>
 
-    <system:String x:Key="LabelPartNewParameters">New parameters</system:String>
-    <system:String x:Key="LabelPartOriginalParameters">Original parameters</system:String>
+    <system:String x:Key="LabelPartNewParameters">Parámetros nuevos</system:String>
+    <system:String x:Key="LabelPartOriginalParameters">Parámetros originales</system:String>
 
     <system:String x:Key="StatusPartLoadUnsuccessful">No se pudieron cargar los componentes.</system:String>
     <system:String x:Key="StatusPartDeleteUnsuccessful">No se pudo eliminar el componente {0}.</system:String>
     <system:String x:Key="StatusPartSaveUnsuccessful">No se pudo guardar el componente {0}.</system:String>
-    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">Cannot move {0} into {1} part category.</system:String>
+    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">No se pudo trasladar el componente {0} a la categoría {1}.</system:String>
     <system:String x:Key="StatusPartDeleted">{0} ha sido eliminado.</system:String>
     <system:String x:Key="StatusPartSaved">{0} ha sido guardado.</system:String>
-    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} moved into {1} part category successfully.</system:String>
-    <system:String x:Key="StatusPartCloseEditPartTabFirst">Close {0} tab first.</system:String>
+    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} ha sido trasladado a la categoría de componentes {1}.</system:String>
+    <system:String x:Key="StatusPartCloseEditPartTabFirst">Cierre primero la pestaña {0}.</system:String>
 
     <!-- Part export / import -->
     <system:String x:Key="TitleExportPart">Exportar componentes</system:String>
@@ -419,9 +419,9 @@
     <system:String x:Key="LabelImportImportPackage">Encapsulado a importar</system:String>
     <system:String x:Key="LabelImportMappedPackage">Encapsulado asignado</system:String>
     <system:String x:Key="LabelImportAliasPackage">Alias</system:String>
-    <system:String x:Key="LabelImportImportStorageLocation">Ubicación de almacén a importar</system:String>
+    <system:String x:Key="LabelImportImportStorageLocation">Ubicación a importar</system:String>
     <system:String x:Key="LabelImportNewStorageLocation">Nueva</system:String>
-    <system:String x:Key="LabelImportMappedStorageLocation">Ubicación de almacén asignada</system:String>
+    <system:String x:Key="LabelImportMappedStorageLocation">Ubicación asignada</system:String>
     <system:String x:Key="LabelImportPartDetails">Datos del componente</system:String>
 
     <system:String x:Key="StatusExportPartsDone">Se han exportado las categorías de componentes seleccionadas.</system:String>
@@ -431,12 +431,12 @@
     <system:String x:Key="StatusImportPartsFailed">No se pudo realizar la importación de componentes.</system:String>
     <system:String x:Key="StatusImportPartsOpenFailed">No se pudo abrir el archivo. Compruebe que no lo tenga abierto otro programa.</system:String>
     <system:String x:Key="StatusImportPartsUnsupportedFormat">Formato de importación no compatible.</system:String>
-    <system:String x:Key="StatusImportPartsNotFound">No se encontró ningún componente en el archivo de entrada.</system:String>
+    <system:String x:Key="StatusImportPartsNotFound">No se encontraron componentes en el archivo de entrada.</system:String>
     <system:String x:Key="StatusImportPartsCategoryNotSelected">No se ha seleccionado ninguna categoría.</system:String>
     <system:String x:Key="StatusImportSelectValidPartCategory">Seleccione una categoría de componentes válida.</system:String>
     <system:String x:Key="StatusImportSelectValidManufacturer">Seleccione un fabricante válido.</system:String>
     <system:String x:Key="StatusImportSelectValidPackage">Seleccione un encapsulado válido.</system:String>
-    <system:String x:Key="StatusImportSelectValidStorageLocation">Seleccione una ubicación de almacén válida.</system:String>
+    <system:String x:Key="StatusImportSelectValidStorageLocation">Seleccione una ubicación de almacenamiento válida.</system:String>
     <system:String x:Key="StatusImportCannotCreateStorageLocation">No se pudo crear la ubicación {0}. {1} ya existe, pero no es una agrupación.</system:String>
 
     <system:String x:Key="ExportDialogFilterXLSX">Hoja de cálculo</system:String>
@@ -473,24 +473,24 @@
     <system:String x:Key="StatusAttachmentDownloadEmptyFile">El archivo descargado {0} está vacío o no es válido.</system:String>
 
     <!-- Storage Locations -->
-    <system:String x:Key="TitleStorageLocations">Ubicaciones de almacén</system:String>
+    <system:String x:Key="TitleStorageLocations">Almacenamiento</system:String>
     <system:String x:Key="TitleStorageCategories">Ubicaciones</system:String>
-    <system:String x:Key="TitleAddNewStorageLocation">Añadir ubicación de almacén nueva</system:String>
-    <system:String x:Key="TitleDuplicateStorageLocation">Duplicar ubicación de almacén</system:String>
-    <system:String x:Key="TitleEditStorageLocation">Modificar ubicación de almacén</system:String>
+    <system:String x:Key="TitleAddNewStorageLocation">Añadir ubicación de almacenamiento nueva</system:String>
+    <system:String x:Key="TitleDuplicateStorageLocation">Duplicar ubicación de almacenamiento</system:String>
+    <system:String x:Key="TitleEditStorageLocation">Modificar ubicación de almacenamiento</system:String>
     <system:String x:Key="TitleEditPartStockLevel">Modificar niveles de stock</system:String>
     <system:String x:Key="TitleMovePartsIntoNewStorageLocation">Trasladar componentes</system:String>
 
     <system:String x:Key="MessageStorageLocationGroupDeleteEmptyConfirmation">¿Está seguro de que desea eliminar la agrupación de ubicaciones {0} vacía?</system:String>
-    <system:String x:Key="MessageStorageLocationGroupDeleteUnusedConfirmation">¿Está seguro de que desea eliminar la agrupación {0} que contiene {1} ubicación(es) de almacén sin utilizar?</system:String>
-    <system:String x:Key="MessageStorageLocationGroupDeleteUsedConfirmation" xml:space="preserve">¿Está seguro de que desea eliminar la agrupación {0} con {1} ubicación(es) de almacén?
+    <system:String x:Key="MessageStorageLocationGroupDeleteUnusedConfirmation">¿Está seguro de que desea eliminar la agrupación {0} que contiene {1} ubicación(es) de almacenamiento sin utilizar?</system:String>
+    <system:String x:Key="MessageStorageLocationGroupDeleteUsedConfirmation" xml:space="preserve">¿Está seguro de que desea eliminar la agrupación {0} con {1} ubicación(es) de almacenamiento?
 
-{2} componente(s) de esta agrupación se trasladarán a la ubicación de almacén {3}.</system:String>
+{2} componente(s) de esta agrupación se trasladarán a la ubicación de almacenamiento {3}.</system:String>
 
     <system:String x:Key="MessageStorageLocationDeleteEmptyConfirmation">¿Está seguro de que desea eliminar la ubicación {0} vacía?</system:String>
-    <system:String x:Key="MessageStorageLocationDeleteUsedConfirmation" xml:space="preserve">¿Está seguro de que desea eliminar la ubicación {0} del almacén?
+    <system:String x:Key="MessageStorageLocationDeleteUsedConfirmation" xml:space="preserve">¿Está seguro de que desea eliminar la ubicación de almacenamiento {0}?
 
-{1} componente(s) de esta ubicación de almacén se trasladarán a la ubicación {2}.</system:String>
+{1} componente(s) de esta ubicación de almacenamiento se trasladarán a la ubicación {2}.</system:String>
 
     <system:String x:Key="MessageStorageLocationMovePartsMessage">{0} componente(s) seleccionado(s) se trasladarán a la ubicación:</system:String>
 
@@ -499,20 +499,20 @@
     <system:String x:Key="LabelStorageLocationIsGroup">Grupo</system:String>
     <system:String x:Key="LabelStorageLocationParent">Agrupación principal</system:String>
 
-    <system:String x:Key="LabelStorageLocationAddButtonTooltip">Añadir ubicación de almacén nueva</system:String>
-    <system:String x:Key="LabelStorageLocationGoToButtonTooltip">Ir a la ubicación de almacén</system:String>
+    <system:String x:Key="LabelStorageLocationAddButtonTooltip">Añadir ubicación nueva</system:String>
+    <system:String x:Key="LabelStorageLocationGoToButtonTooltip">Ir a la ubicación de almacenamiento</system:String>
     <system:String x:Key="LabelStorageLocationEditButton">Modificar ubicación</system:String>
     <system:String x:Key="LabelStorageLocationDeleteButton">Eliminar ubicación</system:String>
     <system:String x:Key="LabelStorageLocationDuplicateButton">Duplicar ubicación</system:String>
     <system:String x:Key="LabelStorageLocationShowPartsInThisLocation">Mostrar componentes de esta ubicación</system:String>
 
-    <system:String x:Key="LabelStorageLocationMoveToNewLocationButton">Trasladar los componentes seleccionados a otra ubicación de almacén</system:String>
+    <system:String x:Key="LabelStorageLocationMoveToNewLocationButton">Trasladar los componentes seleccionados a otra ubicación de almacenamiento</system:String>
     <system:String x:Key="LabelStorageLocationLowStockWarning">Mostrar stock bajo</system:String>
     <system:String x:Key="LabelStorageLocationDuplicateAppendText">(Copia)</system:String>
 
-    <system:String x:Key="StatusStorageLocationLoadUnsuccessful">No se pudieron cargar las ubicaciones de almacén.</system:String>
-    <system:String x:Key="StatusStorageLocationDeleteUnsuccessful">No se pudo eliminar la ubicación {0} del almacén.</system:String>
-    <system:String x:Key="StatusStorageLocationSaveUnsuccessful">No se pudo guardar la ubicación {0} en el almacén.</system:String>
+    <system:String x:Key="StatusStorageLocationLoadUnsuccessful">No se pudieron cargar las ubicaciones de almacenamiento.</system:String>
+    <system:String x:Key="StatusStorageLocationDeleteUnsuccessful">No se pudo eliminar la ubicación de almacenamiento {0}.</system:String>
+    <system:String x:Key="StatusStorageLocationSaveUnsuccessful">No se pudo guardar la ubicación de almacenamiento {0}.</system:String>
     <system:String x:Key="StatusStorageLocationDeleted">{0} ha sido eliminada.</system:String>
     <system:String x:Key="StatusStorageLocationSaved">{0} ha sido guardada.</system:String>
 
@@ -747,7 +747,7 @@
     <system:String x:Key="TitleMetaSearchSaveDatasheet">Guardar hoja de datos</system:String>
     <system:String x:Key="TitleMetaSearchDatasheetPreview">Hoja de datos {0}</system:String>
     <system:String x:Key="TitleMetaSearchRecentSearches">Búsquedas recientes</system:String>
-    <system:String x:Key="TitleMetaSearchPrepareDatasheets">Preparar hojas de datos</system:String>
+    <system:String x:Key="TitleMetaSearchPrepareDatasheets">Preparando hojas de datos</system:String>
     <system:String x:Key="TitleMetaSearchHumanVerification">Verificación de usuario</system:String>
 
     <system:String x:Key="LabelMetaSearchCountFailed">error</system:String>
@@ -770,7 +770,7 @@ Consejos:
     <system:String x:Key="LabelMetaSearchSaveDatasheetButtonTooltip">Guardar hoja de datos</system:String>
     <system:String x:Key="LabelMetaSearchCopyDatasheetToClipboarButtonTooltip">Copiar hoja de datos al portapapeles</system:String>
     <system:String x:Key="LabelMetaSearchButtonShowOwnPartsTooltip">Mostrar stock propio en Componentes:</system:String>
-    <system:String x:Key="LabelMetaSearchButtonShowOwnStockTooltip">Mostrar stock propio en Ubicaciones de almacén:</system:String>
+    <system:String x:Key="LabelMetaSearchButtonShowOwnStockTooltip">Mostrar stock propio en Almacenamiento:</system:String>
 
     <system:String x:Key="LabelMetaSearchDetailsNoPackageAvailable">Ninguno disponible</system:String>
     <system:String x:Key="LabelMetaSearchDetailsNoParameterAvailable">Ninguno disponible</system:String>
@@ -866,7 +866,7 @@ Consejos:
     <system:String x:Key="LabelDistributorSearchSaveDatasheetButtonTooltip">Guardar hoja de datos</system:String>
     <system:String x:Key="LabelDistributorSearchCopyDatasheetToClipboarButtonTooltip">Copiar hoja de datos al portapapeles</system:String>
     <system:String x:Key="LabelDistributorSearchButtonShowOwnPartsTooltip">Mostrar stock propio en Componentes:</system:String>
-    <system:String x:Key="LabelDistributorSearchButtonShowOwnStockTooltip">Mostrar stock propio en Ubicaciones de almacén:</system:String>
+    <system:String x:Key="LabelDistributorSearchButtonShowOwnStockTooltip">Mostrar stock propio en Almacenamiento:</system:String>
 
     <system:String x:Key="LabelDistributorSearchDetailsNoPackageAvailable">Ninguno disponible</system:String>
     <system:String x:Key="LabelDistributorSearchDetailsNoParameterAvailable">Ninguno disponible</system:String>

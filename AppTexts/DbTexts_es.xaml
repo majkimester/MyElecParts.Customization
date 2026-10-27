@@ -752,7 +752,7 @@
 
     <!-- Storage locations -->
     <system:String x:Key="DbStorageLocationNameRoot">Global</system:String>
-    <system:String x:Key="DbStorageLocationDescRoot">Todas las ubicaciones de almacén</system:String>
+    <system:String x:Key="DbStorageLocationDescRoot">Todas las ubicaciones de almacenamiento</system:String>
 
     <system:String x:Key="DbStorageLocationNameUnknown">Desconocida</system:String>
     <system:String x:Key="DbStorageLocationDescUnknown">Sin especificar</system:String>
