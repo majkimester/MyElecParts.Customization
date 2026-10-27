@@ -291,15 +291,15 @@ Podržani su i AND, OR i NOT, kao i zagrade:
     <system:String x:Key="MTextEditorInfoLineNumbers">Broj redova</system:String>
 
     <!-- MMarkdownViewer -->
-    <system:String x:Key="MMarkdownViewerSaveAsTooltip">Save as</system:String>
-    <system:String x:Key="MMarkdownViewerPrintTooltip">Print</system:String>
-    <system:String x:Key="MMarkdownViewerSelectAll">Select all</system:String>
-    <system:String x:Key="MMarkdownViewerCopySelectionAsText">Copy as text</system:String>
-    <system:String x:Key="MMarkdownViewerCopyAllAsMarkdown">Copy all as markdown</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsTooltip">Sačuvaj kao</system:String>
+    <system:String x:Key="MMarkdownViewerPrintTooltip">Štampaj</system:String>
+    <system:String x:Key="MMarkdownViewerSelectAll">Izaberi sve</system:String>
+    <system:String x:Key="MMarkdownViewerCopySelectionAsText">Kopiraj kao tekst</system:String>
+    <system:String x:Key="MMarkdownViewerCopyAllAsMarkdown">Kopiraj sve kao Markdown</system:String>
 
-    <system:String x:Key="MMarkdownViewerSaveDialogHeader">Save as Markdown file</system:String>
-    <system:String x:Key="MMarkdownViewerSaveDialogFilter">Markdown files</system:String>
-    <system:String x:Key="MMarkdownViewerSaveAsDone">Markdown saved successfully.</system:String>
-    <system:String x:Key="MMarkdownViewerSaveAsFailed">Failed to save the Markdown file.</system:String>
+    <system:String x:Key="MMarkdownViewerSaveDialogHeader">Sačuvaj kao Markdown fajl</system:String>
+    <system:String x:Key="MMarkdownViewerSaveDialogFilter">Markdown fajlovi</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsDone">Markdown je uspešno sačuvan.</system:String>
+    <system:String x:Key="MMarkdownViewerSaveAsFailed">Čuvanje Markdown fajla nije uspelo.</system:String>
     
 </ResourceDictionary>

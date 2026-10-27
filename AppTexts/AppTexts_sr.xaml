@@ -330,7 +330,7 @@
     <system:String x:Key="TitlePartDetails">Detalji komponente</system:String>
     <system:String x:Key="TitleParameters">Parametri</system:String>
     <system:String x:Key="TitleAddNewPart">Dodaj novu komponentu</system:String>
-    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Move {0} into another category</system:String>
+    <system:String x:Key="TitlePartMoveIntoAnotherCategory">Premesti {0} u drugu kategoriju</system:String>
 
     <system:String x:Key="MessagePartDeleteConfirmation">Da li ste sigurni da želite da obrišete komponentu {0}?</system:String>
     <system:String x:Key="MessagePartHasUnsavedChangesConfirmation">Imate nesačuvane izmene. Da li ste sigurni da želite da zatvorite komponentu {0}?</system:String>
@@ -354,7 +354,7 @@
     <system:String x:Key="ColumnPartActionEditStockLevel">Izmeni nivo zalihe</system:String>
     <system:String x:Key="ColumnPartActionIncreaseStock">Povećaj zalihu</system:String>
     <system:String x:Key="ColumnPartActionDecreaseStock">Smanji zalihu</system:String>
-    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Move into another part category</system:String>
+    <system:String x:Key="ColumnPartActionMoveIntoAnotherCategory">Premesti u drugu kategoriju komponenti</system:String>
 
     <system:String x:Key="LabelPartName">Kataloški broj</system:String>
     <system:String x:Key="LabelPartManufacturerName">MPN</system:String>
@@ -385,17 +385,17 @@
     <system:String x:Key="LabelPartExportPartsButton">Izvezi komponente</system:String>
     <system:String x:Key="LabelPartImportPartsButton">Uvezi komponente</system:String>
 
-    <system:String x:Key="LabelPartNewParameters">New parameters</system:String>
-    <system:String x:Key="LabelPartOriginalParameters">Original parameters</system:String>
+    <system:String x:Key="LabelPartNewParameters">Novi parametri</system:String>
+    <system:String x:Key="LabelPartOriginalParameters">Originalni parametri</system:String>
 
     <system:String x:Key="StatusPartLoadUnsuccessful">Nije moguće učitati komponente.</system:String>
     <system:String x:Key="StatusPartDeleteUnsuccessful">Nije moguće obrisati komponentu {0}.</system:String>
     <system:String x:Key="StatusPartSaveUnsuccessful">Nije moguće sačuvati komponentu {0}.</system:String>
-    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">Cannot move {0} into {1} part category.</system:String>
+    <system:String x:Key="StatusPartMoveIntoAnotherPartCategoryUnsuccessful">Nije moguće premestiti {0} u kategoriju komponenti {1}.</system:String>
     <system:String x:Key="StatusPartDeleted">{0} uspešno obrisano.</system:String>
     <system:String x:Key="StatusPartSaved">{0} uspešno sačuvano.</system:String>
-    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} moved into {1} part category successfully.</system:String>
-    <system:String x:Key="StatusPartCloseEditPartTabFirst">Close {0} tab first.</system:String>
+    <system:String x:Key="StatusPartMovedIntoAnotherPartCategory">{0} je uspešno premešteno u kategoriju komponenti {1}.</system:String>
+    <system:String x:Key="StatusPartCloseEditPartTabFirst">Prvo zatvorite tab {0}.</system:String>
 
     <!-- Part export / import -->
     <system:String x:Key="TitleExportPart">Izvezi komponente</system:String>
