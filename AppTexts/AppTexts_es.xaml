@@ -183,7 +183,7 @@
     <system:String x:Key="LabelDashboardPartsButtonTooltip">Abrir componentes</system:String>
     <system:String x:Key="LabelDashboardPartCategoriesCount">Categorías</system:String>
     <system:String x:Key="LabelDashboardPartTypesCount">Modelos</system:String>
-    <system:String x:Key="LabelDashboardPartAttachmentsCount">Documentos</system:String>
+    <system:String x:Key="LabelDashboardPartAttachmentsCount">Anexos</system:String>
     <system:String x:Key="LabelDashboardTotalPartsCount">Unidades totales</system:String>
 
     <system:String x:Key="LabelDashboardStorageLocationsButtonTooltip">Abrir almacenamiento</system:String>
@@ -405,7 +405,7 @@
 
     <system:String x:Key="LabelExportFileFormat">Formato de exportación</system:String>
     <system:String x:Key="LabelExportColumns">Columnas</system:String>
-    <system:String x:Key="LabelExportCopyAttachments">Copiar archivos adjuntos</system:String>
+    <system:String x:Key="LabelExportCopyAttachments">Copiar anexos</system:String>
     <system:String x:Key="LabelExportXlsxUseColorTheme">Usar tema de color</system:String>
     <system:String x:Key="LabelExportXlsxUseAutoFilter">Mostrar autofiltro</system:String>
     <system:String x:Key="LabelExportXlsxFreezePane">Inmovilizar panel</system:String>
@@ -443,17 +443,17 @@
     <system:String x:Key="ExportDialogFilterJSON">Objeto JavaScript</system:String>
 
     <!-- Part attachments -->
-    <system:String x:Key="TitleAttachments">Archivos adjuntos</system:String>
-    <system:String x:Key="TitleEditAttachmentName">Renombrar archivo adjunto</system:String>
-    <system:String x:Key="TitleAddNewAttachment">Añadir archivo adjunto nuevo</system:String>
+    <system:String x:Key="TitleAttachments">Anexos</system:String>
+    <system:String x:Key="TitleEditAttachmentName">Renombrar anexo</system:String>
+    <system:String x:Key="TitleAddNewAttachment">Añadir anexo nuevo</system:String>
 
-    <system:String x:Key="MessageCannotOpenAttachment">No se pudo abrir el archivo adjunto {0}.</system:String>
-    <system:String x:Key="MessageAttachmentDeleteConfirmation">¿Está seguro de que desea eliminar el archivo adjunto {0}?</system:String>
+    <system:String x:Key="MessageCannotOpenAttachment">No se pudo abrir el anexo {0}.</system:String>
+    <system:String x:Key="MessageAttachmentDeleteConfirmation">¿Está seguro de que desea eliminar el anexo {0}?</system:String>
 
     <system:String x:Key="LabelPartAttachmentName">Nombre</system:String>
     <system:String x:Key="LabelPartAttachmentType">Tipo</system:String>
     <system:String x:Key="LabelPartAttachmentFileName">Nombre de archivo</system:String>
-    <system:String x:Key="LabelPartAttachmentAddButtonTooltip">Añadir archivo adjunto</system:String>
+    <system:String x:Key="LabelPartAttachmentAddButtonTooltip">Añadir anexo</system:String>
     <system:String x:Key="LabelPartAttachmentPasteButtonTooltip">Pegar desde el portapapeles</system:String>
     <system:String x:Key="LabelPartAttachmentMetaSearchTooltip">Buscar hoja de datos con el meta buscador</system:String>
 
@@ -463,10 +463,10 @@
     <system:String x:Key="LabelPartAttachmentPdfFiles">Archivos PDF</system:String>
     <system:String x:Key="LabelPartAttachmentAllFiles">Todos los archivos</system:String>
 
-    <system:String x:Key="StatusAttachmentDeleteUnsuccessful">No se pudo eliminar el archivo adjunto: {0}</system:String>
-    <system:String x:Key="StatusAttachmentSaveUnsuccessful">No se pudo guardar el archivo adjunto: {0}</system:String>
+    <system:String x:Key="StatusAttachmentDeleteUnsuccessful">No se pudo eliminar el anexo: {0}</system:String>
+    <system:String x:Key="StatusAttachmentSaveUnsuccessful">No se pudo guardar el anexo: {0}</system:String>
     <system:String x:Key="StatusAttachmentDeleted">{0} ha sido eliminado.</system:String>
-    <system:String x:Key="StatusAttachmentSaved">El archivo adjunto {0} ha sido guardado.</system:String>
+    <system:String x:Key="StatusAttachmentSaved">El anexo {0} ha sido guardado.</system:String>
     <system:String x:Key="StatusAttachmentNotSupportedFormat">Formato de archivo incompatible: {0}</system:String>
     <system:String x:Key="StatusAttachmentPasteNotSupported">No se encontró ningún formato compatible en el portapapeles.</system:String>
     <system:String x:Key="StatusAttachmentDropNotSupported">No hay ningún formato compatible.</system:String>
@@ -917,7 +917,7 @@ Consejos:
     <system:String x:Key="LabelSettingsStartupPage">Página de inicio</system:String>
     <system:String x:Key="LabelSettingsWindowOpenPosition">Posición de la ventana</system:String>
     <system:String x:Key="LabelSettingsTabStripLocation">Ubicación de las pestañas</system:String>
-    <system:String x:Key="LabelSettingsAttachmentsInitialFit">Modo de apertura de archivos adjuntos</system:String>
+    <system:String x:Key="LabelSettingsAttachmentsInitialFit">Modo de apertura de anexos</system:String>
 
     <system:String x:Key="LabelSettingsTableUseAlternateColors">Usar colores alternados</system:String>
     <system:String x:Key="LabelSettingsTableUseHeaderSeparatorLine">Usar separador de cabecera</system:String>
